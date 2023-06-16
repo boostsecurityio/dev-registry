@@ -19,9 +19,9 @@ setup:
            exit 1;;
       esac
 
-      curl -fsSL -O "https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.13.4/codeql-bundle-linux64.tar.gz"
+      curl -fsSL -O "https://github.com/github/codeql-action/releases/download/codeql-bundle-20230524/codeql-bundle-linux64.tar.gz"
 
-      echo "4de0b3f799a4f4fe98426046ff62e4684bd4711242547e552a22f645e60996d8  codeql-bundle-linux64.tar.gz" | sha256sum --check
+      echo "4331b56293066197e34796f29f0a495bb2015ca2f80e1af47eea01e103be0300  codeql-bundle-linux64.tar.gz" | sha256sum --check
 
       tar -xzf codeql-bundle-linux64.tar.gz
 
@@ -61,7 +61,7 @@ steps:
 
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:5d1ff3b@sha256:c65d0fd61472170fd37488d25703e8e0669034163b353c07ee41f83524a50462
+          image: public.ecr.aws/boostsecurityio/boost-scanner-codeql:c0368a1@sha256:48a99a6408126eec7beddf7a7e61057bbc6b9a4ad4a810f438f28c4328f41bc6
           command: process
           environment:
             PYTHONIOENCODING: utf-8
