@@ -10,11 +10,11 @@ config:
 
 steps:
   - scan:
+      format: metadata
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:1b7e1d7@sha256:6b5860b6b22455564d83f9834e2770920b03bfefe6f63c10d2f58e1032c35694
+          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:12f2ddb@sha256:b04845a4fa90b2542867e2cceeffb117991c8d65a8fbe369e285e1cb0c808e1f
           command: scan
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
-      format: metadata

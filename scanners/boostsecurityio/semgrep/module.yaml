@@ -13,7 +13,7 @@ steps:
   - scan:
       command:
         docker:
-          image: returntocorp/semgrep:1.24.0@sha256:a99766f9ea158adede767dd69b5271636d400194d94748430eb1e68ab2efbc61
+          image: returntocorp/semgrep:1.27.0@sha256:7026020ebb6c1aa477431a2ba550df3ae4d080822e391d03bb816eeac700a36b
           command: semgrep scan --sarif --quiet --disable-version-check
           workdir: /src
           environment:
@@ -23,5 +23,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-semgrep:37a2507@sha256:23e93e66f3e91701a6af566c81b918fba459d1244205af4ab6e2c7fb14c08e69
+          image: public.ecr.aws/boostsecurityio/boost-scanner-semgrep:233743f@sha256:83611487e28b8727f1f6cda0889bc50e7322ea7841064c2324d80f3aaf1c4282
           command: process
