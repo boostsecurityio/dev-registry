@@ -35,33 +35,6 @@ rules:
     name: cicd-azure-devops-using-user-managed-agent-pools
     pretty_name: CI/CD - Azure Pipeline Self-Hosted Agent Pools
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-azure-devops-using-user-managed-agent-pools.html'
-  cicd-binary-artifacts-stored-in-scm:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-missing-artifact-integrity-verification
-      - boost-baseline
-      - boost-hardened
-    description: Checks for binary / executable artifacts (ex. *.jar, *.class, *.so,
-      etc.) stored in the Git repository.Generally, such binary artifacts should not
-      be committed to Git and should be built with reproducible build system from source.
-    group: supply-chain-missing-artifact-integrity-verification
-    name: cicd-binary-artifacts-stored-in-scm
-    pretty_name: CI/CD - Binary artifacts stored in SCM
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-binary-artifacts-stored-in-scm.html'
-  cicd-aws-github-oidc-sub:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-weak-configuration
-      - cloud-insecure-iam
-      - boost-hardened
-    description: Checks for IAM policies with lax validation of GitHub's OIDC subject
-      claim.
-    group: supply-chain-cicd-weak-configuration
-    name: cicd-aws-github-oidc-sub
-    pretty_name: CI/CD - Weak GitHub OIDC Claim Verification
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-aws-github-oidc-sub.html'
   cicd-branch-protection-absent:
     categories:
       - ALL
@@ -229,31 +202,6 @@ rules:
     pretty_name: CI/CD - Branch Protection - Allows reviewer to self-review their own
       changes
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-branch-protection.html'
-  cicd-circleci-unversioned-orb:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-weak-configuration
-      - boost-baseline
-      - boost-hardened
-    description: Checks for CircleCI workflows using unversioned Orbs.
-    group: supply-chain-cicd-weak-configuration
-    name: cicd-circleci-unversioned-orb
-    pretty_name: CI/CD - CircleCI Unversionned Orb
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-circleci-unversioned-orb.html'
-  cicd-circleci-shell-injection:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-vulnerable-pipeline
-      - boost-baseline
-      - boost-hardened
-    description: Checks for CircleCI workflows where pipeline variables are used in
-      shell commands.
-    group: supply-chain-cicd-vulnerable-pipeline
-    name: cicd-circleci-shell-injection
-    pretty_name: CI/CD - CircleCI Shell Injection
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-circleci-shell-injection.html'
   cicd-gha-can-create-and-approve-pull-requests:
     categories:
       - ALL
@@ -307,112 +255,6 @@ rules:
     name: cicd-gha-read-write-token-permissions
     pretty_name: CI/CD - GitHub Actions have Read / Write permissions
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-read-write-token-permission.html'
-  cicd-gha-risky-pull-request-target-usage:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-vulnerable-pipeline
-      - supply-chain-cicd-severe-issues
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Action workflow using pull_request_target where the
-      code from the incoming PR is checked out.This is risky if you end up executing
-      arbitrary code from the incoming PR as an attacker could steal repository secrets.
-    group: supply-chain-cicd-vulnerable-pipeline
-    name: cicd-gha-risky-pull-request-target-usage
-    pretty_name: CI/CD - GitHub Action risky pull_request_target usage
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-risky-pull-request-target-usage.html'
-  cicd-gha-shell-injection-detected:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-vulnerable-pipeline
-      - supply-chain-cicd-severe-issues
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Action workflows where untrusted attributes controllable
-      by the Pull Request author could lead to code execution.
-    group: supply-chain-cicd-vulnerable-pipeline
-    name: cicd-gha-shell-injection-detected
-    pretty_name: CI/CD - GitHub Action with shell injection
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-shell-injection-detected.html'
-  cicd-gha-unsecure-commands:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-weak-configuration
-      - supply-chain-cicd-severe-issues
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Acton workflows that enables deprecated unsecure
-      commands.
-    group: supply-chain-cicd-weak-configuration
-    name: cicd-gha-unsecure-commands
-    pretty_name: CI/CD - GitHub Action Unsecure Commands
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-unsecure-commands.html'
-  cicd-gha-curl-eval:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-missing-artifact-integrity-verification
-      - supply-chain-cicd-severe-issues
-      - boost-baseline
-      - boost-hardened
-    description: Checks for data evaluted from a curl command.
-    group: supply-chain-missing-artifact-integrity-verification
-    name: cicd-gha-curl-eval
-    pretty_name: CI/CD - GitHub Action evaluates curl's output
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-curl-eval.html'
-  cicd-gha-script-injection:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-vulnerable-pipeline
-      - supply-chain-cicd-severe-issues
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Action workflows using actions/github-script with
-      untrusted attributes.
-    group: supply-chain-cicd-vulnerable-pipeline
-    name: cicd-gha-script-injection
-    pretty_name: CI/CD - GitHub Script Injection
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-script-injection.html'
-  cicd-gha-write-all-permissions:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-weak-configuration
-      - boost-baseline
-    description: Checks for GitHub Action workflows that enables write on all permissions.
-    group: supply-chain-cicd-weak-configuration
-    name: cicd-gha-write-all-permissions
-    pretty_name: CI/CD - GitHub Action uses write-all permissions
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-write-all-permissions.html'
-  cicd-gha-workflow-dispatch-inputs:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-weak-configuration
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Action workflows defines workflow_dispatch inputs.
-    group: supply-chain-cicd-weak-configuration
-    name: cicd-gha-workflow-dispatch-inputs
-    pretty_name: CI/CD - GitHub Action uses inputs
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-workflow-dispatch-inputs.html'
-  cicd-gha-risky-workflow-run-checkout:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-cicd-vulnerable-pipeline
-      - boost-baseline
-      - boost-hardened
-    description: Checks for GitHub Action workflow using workflow_run where the code
-      from the incoming PR is checked out.
-    group: supply-chain-cicd-vulnerable-pipeline
-    name: cicd-gha-risky-workflow-run-checkout
-    pretty_name: CI/CD - GitHub Action risky workflow_run usage
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-risky-workflow-run-checkout.html'
   cicd-sca-scanning-absent:
     categories:
       - ALL
@@ -556,10 +398,10 @@ rules:
       - boost-baseline
       - boost-hardened
     description: Checks for GitHub repositories where an Audit Log event indicates that
-      Branch Protection was overriden using administrator's privilege.
+      Branch Protection was overridden using administrator's privilege.
     group: supply-chain-scm-weak-configuration
     name: cicd-scm-gh-audit-log-branch-protection-overriden
-    pretty_name: CI/CD - Audit Log - Branch Protection Overriden by Admin
+    pretty_name: CI/CD - Audit Log - Branch Protection Overridden by Admin
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-gh-audit-log-branch-protection-overriden.html'
   cicd-scm-gl-on-push-secret-detection:
     categories:
@@ -599,17 +441,3 @@ rules:
     name: cicd-gl-deployment-approval
     pretty_name: CI/CD - GitLab Environment no approvals required for deployments
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gl-deployment-approval.html'
-  cicd-unpinned-dependencies:
-    categories:
-      - ALL
-      - supply-chain
-      - supply-chain-missing-artifact-integrity-verification
-      - boost-baseline
-      - boost-hardened
-    description: Checks for dependency management manifests (ex. package.json, Gemfile,
-      pyproject.toml, Pipfile, go.mod, etc.),without a corresponding cryptographic dependency
-      lock file (ex. package-lock.json, Gemfile.lock, poetry.lock, Pipfile.lock, go.sum).
-    group: supply-chain-missing-artifact-integrity-verification
-    name: cicd-unpinned-dependencies
-    pretty_name: CI/CD - Using unpinned dependencies
-    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-unpinned-dependencies.html'
