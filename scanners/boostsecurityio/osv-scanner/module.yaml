@@ -36,7 +36,7 @@ setup:
       LINUX_X86_64_SHA: 588c42cdc23b64947ebbd0756193fd800c5d281e8fa6df4c309943060b398fcc
       LINUX_ARM64_SHA: 7e12aedda030c0a9bef4b5efcd2cdde5fedcc657b050ae48b97bb43b9e5e773c
       MACOS_ARM64_SHA: 0edc0d9769a1ee69607a085669bfdbd86c5dcd1b5550439820d6ef148fa9d555
-      MACOS_X86_64_SHA: 588c42cdc23b64947ebbd0756193fd800c5d281e8fa6df4c309943060b398fcc
+      MACOS_X86_64_SHA: 32e343998d892baf309b76b131f2b8cfb6b58a589bba52512d6538db052ba656
     run: |
       BINARY_URL="https://github.com/google/osv-scanner/releases/download/v${VERSION}"
       ARCH=$(uname -m)
