@@ -56,8 +56,6 @@ setup:
 steps:
   - scan:
       command:
-          environment:
-            SNYK_ADDITIONAL_ARGS: ${SNYK_ADDITIONAL_ARGS}
           run: |
             $SETUP_PATH/snyk test --json --all-projects ${SNYK_ADDITIONAL_ARGS} || ecode=$?
             [ ${ecode:-0} -lt 2 ] || exit $ecode
