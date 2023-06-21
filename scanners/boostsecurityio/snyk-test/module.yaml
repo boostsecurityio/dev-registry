@@ -9,7 +9,6 @@ scan_types:
 
 
 config:
-  require_full_repo: true
   support_diff_scan: true
 
 
