@@ -6,6 +6,7 @@ name: BoostSecurity Native Scanner
 namespace: default
 scan_types:
   - sast
+  - cicd
 
 
 config:

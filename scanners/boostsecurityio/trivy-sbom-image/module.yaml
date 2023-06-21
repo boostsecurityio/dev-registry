@@ -4,7 +4,7 @@ id: boostsecurityio/trivy-sbom-image
 name: BoostSecurity Trivy (Image SBOM)
 namespace: boostsecurityio/trivy-sbom-image
 scan_types:
-  - sca
+  - sbom
 
 config:
   support_diff_scan: false
