@@ -54,8 +54,8 @@ setup:
           SHA="${MACOS_ARM64_SHA} osv-scanner"
           ;;
         "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_${VERSION}_darwin_arm64"
-          SHA="${MACOS_ARM64_SHA} osv-scanner"
+          BINARY_URL="${BINARY_URL}/osv-scanner_${VERSION}_darwin_amd64"
+          SHA="${MACOS_X86_64_SHA} osv-scanner"
           ;;
         *)
           echo "Unsupported machine: ${OPTARG}"
