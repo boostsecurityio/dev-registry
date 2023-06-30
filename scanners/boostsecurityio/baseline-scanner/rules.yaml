@@ -946,21 +946,6 @@ rules:
     name: azure-vault-secret-expiry
     pretty_name: Azure Vault Secret Expiry
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/azure-vault-secret-expiry.html'
-  basic-auth-credentials:
-    categories:
-    - ALL
-    - stored-secrets
-    - boost-baseline
-    - boost-hardened
-    - cwe-798
-    - cwe-522
-    - owasp-top-10
-    - cwe-top-25
-    description: Checks for basic authentication credentials stored in source.
-    group: stored-secrets
-    name: basic-auth-credentials
-    pretty_name: Basic Auth Credentials
-    ref: '{BOOSTSEC_DOC_BASE_URL}/secrets/index.html'
   cert-expired:
     categories:
     - ALL
