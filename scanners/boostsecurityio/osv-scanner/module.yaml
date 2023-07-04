@@ -82,7 +82,7 @@ steps:
     format: sarif
     post-processor:
       docker:
-          image: public.ecr.aws/boostsecurityio/boost-converter-sca:884a076@sha256:760fce5307bc80d7d2a0d0dddcdd87696c4539b30695ffd25cae69ec3061c7e0
+          image: public.ecr.aws/boostsecurityio/boost-converter-sca:6caacc5@sha256:d1556a777d2e6ef1c721f489ec5f2c4a05b8a5960098dff41768e9527f558161
           command: process --scanner osv
           environment:
               PYTHONIOENCODING: utf-8
