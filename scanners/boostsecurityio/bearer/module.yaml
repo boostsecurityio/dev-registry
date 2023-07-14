@@ -54,5 +54,5 @@ steps:
     format: sarif
     post-processor:
       docker:
-        image: public.ecr.aws/boostsecurityio/boost-scanner-bearer:baf09a2@sha256:4b6f2bbd1d4793439c2d0692b00295a42c50fc89d5595c8a7810b6b8da77b567
+        image: public.ecr.aws/boostsecurityio/boost-scanner-bearer:fc69f64@sha256:bc2df1892c6fc13afc81e66c75e86a36835dd6b85282cdb9dabc12bbeca0f05a
         command: sast -
