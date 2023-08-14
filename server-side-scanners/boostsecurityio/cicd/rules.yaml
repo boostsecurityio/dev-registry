@@ -283,6 +283,18 @@ rules:
     name: cicd-scm-2fa-enforcement-absent
     pretty_name: CI/CD - Missing SCM 2FA Enforcement
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-2fa-enforcement-absent.html'
+  cicd-scm-inactive-members:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-scm-weak-configuration
+      - supply-chain-cicd-weak-configuration
+      - boost-hardened
+    description: Checks for SCMs with inactive members.
+    group: supply-chain-scm-weak-configuration
+    name: cicd-scm-inactive-members
+    pretty_name: CI/CD - Inactive SCM Members
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-inactive-members.html'
   cicd-scm-gh-app-with-elevated-permissions:
     categories:
       - ALL
