@@ -473,7 +473,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 071a71ff-f868-47a4-ac0b-3c59e4ab5443
     pretty_name: 'Container should not share the host network namespace '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#network_mode
@@ -1533,7 +1533,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 192fe40b-b1c3-448a-aba2-6cc19a300fe3
     pretty_name: 'Cronjobs must have a configured deadline, which means the attribute
       ''startingDeadlineSeconds'' must be defined '
@@ -2082,7 +2082,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 21719347-d02b-497d-bda4-04a03c8e5b61
     pretty_name: 'Memory requests should be defined for each container. This allows
       the kubelet to reserve the requested amount of system resources and prevents
@@ -2132,7 +2132,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 221e0658-cb2a-44e3-b08a-db96a341d6fa
     pretty_name: '''pids_limit'' should be set and different than -1 '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir
@@ -2188,7 +2188,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 229588ef-8fde-40c8-8756-f4f2b5825ded
     pretty_name: 'Memory requests should be defined for each container. This allows
       the kubelet to reserve the requested amount of system resources and prevents
@@ -2597,7 +2597,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 27fcc7d6-c49b-46e0-98f1-6c082a6a2750
     pretty_name: 'Ensuring the process does not gain any new privileges lessens the
       risk associated with many operations. '
@@ -3042,7 +3042,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 2f01fb2d-828a-499d-b98e-b83747305052
     pretty_name: 'AWS CloudFormation Stack should have a stack policy in order to
       protect stack resources from update actions '
@@ -3886,7 +3886,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 3b3b4411-ad1f-40e7-b257-a78a6bb9673a
     pretty_name: 'VPCs without attached subnets may indicate that they are not being
       used '
@@ -4254,7 +4254,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 404fde2c-bc4b-4371-9747-7054132ac953
     pretty_name: 'Seccomp offers a whitelist of common system calls, blocking all
       others. Having less kernel exposed to an app then increases security. '
@@ -4585,7 +4585,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 461ed7e4-f8d5-4bc1-b3c6-64ddb4fd00a3
     pretty_name: 'Check if Deployment resources don''t have a podAntiAffinity policy,
       which prevents multiple pods from being scheduled on the same node. '
@@ -4956,7 +4956,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 4ac0e2b7-d2d2-4af7-8799-e8de6721ccda
     pretty_name: 'CPU limits should be set because if the system has CPU time free,
       a container is guaranteed to be allocated as much CPU as it requests '
@@ -5364,7 +5364,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 4f31dd9f-2cc3-4751-9b53-67e4af83dac0
     pretty_name: 'The hosts process namespace should not be shared by containers '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#pid
@@ -5823,7 +5823,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 577ac19c-6a77-46d7-9f14-e049cdd15ec2
     pretty_name: 'CPU requests should be set to ensure the sum of the resource requests
       of the scheduled Containers is less than the capacity of the node '
@@ -5945,7 +5945,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 58876b44-a690-4e9f-9214-7735fa0dd15d
     pretty_name: 'Cronjobs must have a configured deadline, which means the attribute
       ''starting_deadline_seconds'' must be defined '
@@ -6502,7 +6502,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 5f4735ce-b9ba-4d95-a089-a37a767b716f
     pretty_name: 'CPU limits should be set because if the system has CPU time free,
       a container is guaranteed to be allocated as much CPU as it requests '
@@ -6672,7 +6672,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 610e266e-6c12-4bca-9925-1ed0cd29742b
     pretty_name: 'Attribute ''security_opt'' should be defined. '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#security_opt
@@ -7323,7 +7323,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 6b610c50-99fb-4ef0-a5f3-e312fd945bc3
     pretty_name: 'CPU limits should be set because if the system has CPU time free,
       a container is guaranteed to be allocated as much CPU as it requests '
@@ -7343,7 +7343,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 6b6bdfb3-c3ae-44cb-88e4-7405c1ba2c8a
     pretty_name: 'Container should not share the host network namespace '
     ref: https://kubernetes.io/docs/concepts/policy/pod-security-policy/
@@ -7659,7 +7659,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 6ea57c8b-f9c0-4ec7-bae3-bd75a9dee27d
     pretty_name: 'SimpleDB Domain resource should not be declared '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-simpledb.html
@@ -7907,7 +7907,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 72ceb736-0aee-43ea-a191-3a69ab135681
     pretty_name: 'ROS Stack should have a stack policy in order to protect stack resources
       from and during update actions '
@@ -8659,7 +8659,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 7f8f1b60-43df-4c28-aa21-fb836dbd8071
     pretty_name: 'API Gateway Stage should have API Gateway UsagePlan defined and
       associated. '
@@ -9020,7 +9020,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 83a229ba-483e-47c6-8db7-dc96969bce5a
     pretty_name: 'Ensure that ''Threat Detection'' is enabled for Azure SQL Database '
     ref: https://www.terraform.io/docs/providers/azurerm/r/sql_database.html
@@ -9524,7 +9524,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 8af7162d-6c98-482f-868e-0d33fb675ca8
     pretty_name: 'The host''s user namespace should not be shared. '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#userns_mode
@@ -10766,7 +10766,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: 9d43040e-e703-4e16-8bfe-8d4da10fa7e6
     pretty_name: 'A Pod''s Containers must have the same CPU requests as limits set,
       which is recommended to avoid resource DDOS of the node during spikes. This
@@ -11459,7 +11459,7 @@ rules:
     - cwe-547
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ASP_Low_Visibility_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -11470,7 +11470,7 @@ rules:
     - boost-baseline
     - cwe-520
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ASP_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/
@@ -11602,7 +11602,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: ASP_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -11952,7 +11952,7 @@ rules:
     - boost-baseline
     - checkmarx-force-com-code-quality
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Apex_Force_com_Code_Quality_Hardcoded_Messages
     pretty_name: Hardcoded Messages
     ref: https://checkmarx.com/resource/documents/
@@ -12320,7 +12320,7 @@ rules:
     - checkmarx-force-com-serious-security-risk
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Apex_Force_com_Serious_Security_Risk_Insecure_Cookie
     pretty_name: Insecure Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -14300,7 +14300,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CPP_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -17283,7 +17283,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Environment_Injection
     pretty_name: Environment Injection
     ref: https://checkmarx.com/resource/documents/
@@ -17294,7 +17294,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -17414,7 +17414,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Setting_Manipulation
     pretty_name: Setting Manipulation
     ref: https://checkmarx.com/resource/documents/
@@ -17632,7 +17632,7 @@ rules:
     - checkmarx-stored-vulnerabilities
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Stored_Vulnerabilities_Stored_Environment_Injection
     pretty_name: Stored Environment Injection
     ref: https://checkmarx.com/resource/documents/
@@ -17667,7 +17667,7 @@ rules:
     - boost-baseline
     - checkmarx-stored-vulnerabilities
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CPP_Stored_Vulnerabilities_Stored_Log_Forging
     pretty_name: Stored Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -18015,7 +18015,7 @@ rules:
     - checkmarx-best-coding-practice
     - ALL
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions
     pretty_name: Insufficient Logging of Database Actions
     ref: https://checkmarx.com/resource/documents/
@@ -18026,7 +18026,7 @@ rules:
     - checkmarx-best-coding-practice
     - ALL
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Exceptions
     pretty_name: Insufficient Logging of Exceptions
     ref: https://checkmarx.com/resource/documents/
@@ -18037,7 +18037,7 @@ rules:
     - checkmarx-best-coding-practice
     - ALL
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Sensitive_Operations
     pretty_name: Insufficient Logging of Sensitive Operations
     ref: https://checkmarx.com/resource/documents/
@@ -18675,7 +18675,7 @@ rules:
     - boost-baseline
     - cwe-520
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/
@@ -18856,7 +18856,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -19285,7 +19285,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -19296,7 +19296,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -19320,7 +19320,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -19331,7 +19331,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Insecure_Cookie
     pretty_name: Insecure Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -19772,7 +19772,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_DebugEnabled
     pretty_name: DebugEnabled
     ref: https://checkmarx.com/resource/documents/
@@ -19819,7 +19819,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/
@@ -19853,7 +19853,7 @@ rules:
     - checkmarx-webconfig
     - ALL
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_Password_in_Configuration_File
     pretty_name: Password in Configuration File
     ref: https://checkmarx.com/resource/documents/
@@ -19864,7 +19864,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_RequireSSL
     pretty_name: RequireSSL
     ref: https://checkmarx.com/resource/documents/
@@ -20876,7 +20876,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/
@@ -21183,7 +21183,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Go_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -21364,7 +21364,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Hardcoded_Password_in_Connection_String
     pretty_name: Hardcoded Password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -21400,7 +21400,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Missing_HttpOnly_Cookie
     pretty_name: Missing HttpOnly Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -21411,7 +21411,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Missing_Secure_Cookie
     pretty_name: Missing Secure Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -22194,7 +22194,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_DB_Control_of_System_or_Config_Setting
     pretty_name: DB Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/
@@ -22496,7 +22496,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Groovy_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -22507,7 +22507,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Groovy_Low_Visibility_Logic_Time_Bomb
     pretty_name: Logic Time Bomb
     ref: https://checkmarx.com/resource/documents/
@@ -22590,7 +22590,7 @@ rules:
     - cwe-315
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Plaintext_Storage_in_a_Cookie
     pretty_name: Plaintext Storage in a Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -22753,7 +22753,7 @@ rules:
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Sensitive_Cookie_in_HTTPS_Session_Without_Secure_Attribute
     pretty_name: Sensitive Cookie in HTTPS Session Without Secure Attribute
     ref: https://checkmarx.com/resource/documents/
@@ -22932,7 +22932,7 @@ rules:
     - cwe-547
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/
@@ -23090,7 +23090,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_External_Control_of_System_or_Config_Setting
     pretty_name: External Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/
@@ -23113,7 +23113,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -23124,7 +23124,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -23135,7 +23135,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/
@@ -23647,7 +23647,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/
@@ -23817,7 +23817,7 @@ rules:
     - boost-baseline
     - cwe-942
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Cordova_Cordova_Insufficient_Domain_Whitelist
     pretty_name: Cordova Insufficient Domain Whitelist
     ref: https://checkmarx.com/resource/documents/
@@ -24041,7 +24041,7 @@ rules:
     - cwe-315
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Low_Visibility_Client_Cookies_Inspection
     pretty_name: Client Cookies Inspection
     ref: https://checkmarx.com/resource/documents/
@@ -24208,7 +24208,7 @@ rules:
     - boost-baseline
     - cwe-942
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Low_Visibility_Client_Overly_Permissive_Message_Posting
     pretty_name: Client Overly Permissive Message Posting
     ref: https://checkmarx.com/resource/documents/
@@ -24868,7 +24868,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Medium_Threat_XML_External_Entities_XXE
     pretty_name: XML External Entities XXE
     ref: https://checkmarx.com/resource/documents/
@@ -25197,7 +25197,7 @@ rules:
     - boost-baseline
     - checkmarx-server-side-vulnerabilities
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Server_Side_Vulnerabilities_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -25220,7 +25220,7 @@ rules:
     - boost-baseline
     - checkmarx-server-side-vulnerabilities
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_Server_Side_Vulnerabilities_Information_Exposure_Through_Log_Files
     pretty_name: Information Exposure Through Log Files
     ref: https://checkmarx.com/resource/documents/
@@ -25357,7 +25357,7 @@ rules:
     - boost-baseline
     - checkmarx-server-side-vulnerabilities
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_Server_Side_Vulnerabilities_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -25720,7 +25720,7 @@ rules:
     - boost-baseline
     - checkmarx-server-side-vulnerabilities
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Server_Side_Vulnerabilities_Unprotected_Cookie
     pretty_name: Unprotected Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -25940,7 +25940,7 @@ rules:
     - cwe-117
     - boost-baseline
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_XS_XS_Log_Injection
     pretty_name: XS Log Injection
     ref: https://checkmarx.com/resource/documents/
@@ -26217,7 +26217,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/
@@ -27171,7 +27171,7 @@ rules:
     - checkmarx-best-coding-practice
     - ALL
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions
     pretty_name: Insufficient Logging of Database Actions
     ref: https://checkmarx.com/resource/documents/
@@ -27182,7 +27182,7 @@ rules:
     - checkmarx-best-coding-practice
     - ALL
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Best_Coding_Practice_Insufficient_Logging_of_Exceptions
     pretty_name: Insufficient Logging of Exceptions
     ref: https://checkmarx.com/resource/documents/
@@ -28180,7 +28180,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_DB_Control_of_System_or_Config_Setting
     pretty_name: DB Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/
@@ -28555,7 +28555,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -28566,7 +28566,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Logic_Time_Bomb
     pretty_name: Logic Time Bomb
     ref: https://checkmarx.com/resource/documents/
@@ -28709,7 +28709,7 @@ rules:
     - cwe-315
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Plaintext_Storage_in_a_Cookie
     pretty_name: Plaintext Storage in a Cookie
     ref: https://checkmarx.com/resource/documents/
@@ -28857,7 +28857,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Reflected_Environment_Injection
     pretty_name: Reflected Environment Injection
     ref: https://checkmarx.com/resource/documents/
@@ -28904,7 +28904,7 @@ rules:
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Sensitive_Cookie_in_HTTPS_Session_Without_Secure_Attribute
     pretty_name: Sensitive Cookie in HTTPS Session Without Secure Attribute
     ref: https://checkmarx.com/resource/documents/
@@ -28939,7 +28939,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Stored_Environment_Injection
     pretty_name: Stored Environment Injection
     ref: https://checkmarx.com/resource/documents/
@@ -28950,7 +28950,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Stored_Log_Forging
     pretty_name: Stored Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -29134,7 +29134,7 @@ rules:
     - boost-baseline
     - ALL
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Use_Of_Hardcoded_Password_In_Config
     pretty_name: Use Of Hardcoded Password In Config
     ref: https://checkmarx.com/resource/documents/
@@ -29181,7 +29181,7 @@ rules:
     - cwe-547
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/
@@ -29387,7 +29387,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_External_Control_of_System_or_Config_Setting
     pretty_name: External Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/
@@ -29422,7 +29422,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -29433,7 +29433,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -29444,7 +29444,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/
@@ -29468,7 +29468,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Improper_Restriction_of_Stored_XXE_Ref
     pretty_name: Improper Restriction of Stored XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -29480,7 +29480,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -30056,7 +30056,7 @@ rules:
     - boost-baseline
     - checkmarx-potential
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Potential_Potential_Hardcoded_password_in_Connection_String
     pretty_name: Potential Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -30205,7 +30205,7 @@ rules:
     - boost-baseline
     - checkmarx-potential
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Potential_Potential_XXE_Injection
     pretty_name: Potential XXE Injection
     ref: https://checkmarx.com/resource/documents/
@@ -31044,7 +31044,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Javascript_Kony_Kony_Unsecure_Browser_Configuration
     pretty_name: Kony Unsecure Browser Configuration
     ref: https://checkmarx.com/resource/documents/
@@ -31056,7 +31056,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Javascript_Kony_Kony_Unsecure_iOSBrowser_Configuration
     pretty_name: Kony Unsecure iOSBrowser Configuration
     ref: https://checkmarx.com/resource/documents/
@@ -31943,7 +31943,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Kotlin_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -32455,7 +32455,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: ObjectiveC_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -32854,7 +32854,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ObjectiveC_Medium_Threat_XML_External_Entity
     pretty_name: XML External Entity
     ref: https://checkmarx.com/resource/documents/
@@ -33114,7 +33114,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -33151,7 +33151,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_Improper_Restriction_of_Stored_XXE_Ref
     pretty_name: Improper Restriction of Stored XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -33163,7 +33163,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -33971,7 +33971,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Perl_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -34111,7 +34111,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Perl_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -34536,7 +34536,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Php_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -34742,7 +34742,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/
@@ -34988,7 +34988,7 @@ rules:
     - cwe-11
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Low_Visibility_Debug_Enabled
     pretty_name: Debug Enabled
     ref: https://checkmarx.com/resource/documents/
@@ -35072,7 +35072,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Python_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -35279,7 +35279,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Python_Medium_Threat_Filtering_Sensitive_Logs
     pretty_name: Filtering Sensitive Logs
     ref: https://checkmarx.com/resource/documents/
@@ -35290,7 +35290,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Hardcoded_Password_in_Connection_String
     pretty_name: Hardcoded Password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -35313,7 +35313,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/
@@ -35325,7 +35325,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/
@@ -35360,7 +35360,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Missing_Secure_In_Config
     pretty_name: Missing Secure In Config
     ref: https://checkmarx.com/resource/documents/
@@ -36091,7 +36091,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Ruby_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -36333,7 +36333,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Ruby_Medium_Threat_Filtering_Sensitive_Logs
     pretty_name: Filtering Sensitive Logs
     ref: https://checkmarx.com/resource/documents/
@@ -36796,7 +36796,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Debug_Loglevel_Enabled
     pretty_name: Akka Debug Loglevel Enabled
     ref: https://checkmarx.com/resource/documents/
@@ -36818,7 +36818,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Encrypt_Data_Disabled
     pretty_name: Akka Encrypt Data Disabled
     ref: https://checkmarx.com/resource/documents/
@@ -36829,7 +36829,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Missing_Max_Age
     pretty_name: Akka Missing Max Age
     ref: https://checkmarx.com/resource/documents/
@@ -36840,7 +36840,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Serialize_Enabled
     pretty_name: Akka Serialize Enabled
     ref: https://checkmarx.com/resource/documents/
@@ -36851,7 +36851,7 @@ rules:
     - boost-baseline
     - cwe-15
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Untrusted_Mode_Enabled
     pretty_name: Akka Untrusted Mode Enabled
     ref: https://checkmarx.com/resource/documents/
@@ -36995,7 +36995,7 @@ rules:
     - cwe-547
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/
@@ -37104,7 +37104,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_External_XML_Entities_XXE
     pretty_name: External XML Entities XXE
     ref: https://checkmarx.com/resource/documents/
@@ -37127,7 +37127,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -37138,7 +37138,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/
@@ -37173,7 +37173,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Missing_Secure_Flag
     pretty_name: Missing Secure Flag
     ref: https://checkmarx.com/resource/documents/
@@ -37359,7 +37359,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Stored_External_XML_Entities_XXE
     pretty_name: Stored External XML Entities XXE
     ref: https://checkmarx.com/resource/documents/
@@ -38084,7 +38084,7 @@ rules:
     - boost-baseline
     - cwe-611
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Swift_Medium_Threat_XML_External_Entity
     pretty_name: XML External Entity
     ref: https://checkmarx.com/resource/documents/
@@ -38261,7 +38261,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: VB6_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -38309,7 +38309,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VB6_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -38976,7 +38976,7 @@ rules:
     - boost-baseline
     - cwe-520
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/
@@ -39108,7 +39108,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: VbNet_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/
@@ -39339,7 +39339,7 @@ rules:
     - boost-baseline
     - checkmarx-medium-threat
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/
@@ -39571,7 +39571,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_DebugEnabled
     pretty_name: DebugEnabled
     ref: https://checkmarx.com/resource/documents/
@@ -39607,7 +39607,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_HttpOnlyCookies_XSS
     pretty_name: HttpOnlyCookies XSS
     ref: https://checkmarx.com/resource/documents/
@@ -39641,7 +39641,7 @@ rules:
     - checkmarx-webconfig
     - ALL
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_Password_In_Configuration_File
     pretty_name: Password In Configuration File
     ref: https://checkmarx.com/resource/documents/
@@ -39652,7 +39652,7 @@ rules:
     - boost-baseline
     - checkmarx-webconfig
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_RequireSSL
     pretty_name: RequireSSL
     ref: https://checkmarx.com/resource/documents/
@@ -39715,7 +39715,7 @@ rules:
     - cwe-315
     - boost-baseline
     description: TBD
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbScript_Low_Visibility_Cookies_Inspection
     pretty_name: Cookies Inspection
     ref: https://checkmarx.com/resource/documents/
@@ -40038,7 +40038,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: a31b7b82-d994-48c4-bd21-3bab6c31827a
     pretty_name: 'Check if Deployment resources don''t have a podAntiAffinity policy,
       which prevents multiple pods from being scheduled on the same node. '
@@ -40245,7 +40245,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: a62a99d1-8196-432f-8f80-3c100b05d62a
     pretty_name: 'Containers can mount sensitive folders from the hosts, giving them
       potentially dangerous access to critical host configurations and binaries. '
@@ -40611,7 +40611,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: aafa7d94-62de-4fbf-8838-b69ee217b0e6
     pretty_name: 'A Pod''s Containers must have the same Memory requests as limits
       set, which is recommended to avoid resource DDOS of the node during spikes.
@@ -40679,7 +40679,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: ac1564a3-c324-4747-9fa1-9dfc234dace0
     pretty_name: 'Container should not share the host network namespace '
     ref: https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/pod#host_network
@@ -40892,7 +40892,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: ae5b6871-7f45-42e0-bb4c-ab300c4d2026
     pretty_name: 'Privileged containers should be used with extreme caution, they
       have all of the capabilities that the linux kernel offers for docker. '
@@ -40943,7 +40943,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: aee3c7d2-a811-4201-90c7-11c028be9a46
     pretty_name: 'Containers must have the same resource requests set as limits. This
       is recommended to avoid resource DDoS of the node during spikes and means that
@@ -41049,7 +41049,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: b139213e-7d24-49c2-8025-c18faa21ecaa
     pretty_name: 'Kubernetes nodes must have auto upgrades set to true, which means
       Node ''auto_upgrade'' should be enabled for Kubernetes Clusters '
@@ -41059,7 +41059,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: b14d1bc4-a208-45db-92f0-e21f8e2588e9
     pretty_name: 'Memory limits should be defined for each container. This prevents
       potential resource exhaustion by ensuring that containers consume not more than
@@ -41478,7 +41478,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: b61cce4b-0cc4-472b-8096-15617a6d769b
     pretty_name: 'Azure App Service should have managed identity enabled '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service#identity
@@ -41525,7 +41525,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: b7652612-de4e-4466-a0bf-1cd81f0c6063
     pretty_name: 'Containers can mount sensitive folders from the hosts, giving them
       potentially dangerous access to critical host configurations and binaries. '
@@ -41788,7 +41788,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: baa3890f-bed7-46f5-ab8f-1da8fc91c729
     pretty_name: 'Container should not share the host IPC namespace '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir
@@ -41866,7 +41866,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: bb9ac4f7-e13b-423d-a010-c74a1bfbe492
     pretty_name: 'Memory limits should be defined for each container. This prevents
       potential resource exhaustion by ensuring that containers consume not more than
@@ -42472,7 +42472,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: c407c3cf-c409-4b29-b590-db5f4138d332
     pretty_name: 'PostgreSQL Server Threat Detection Policy should be enabled '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_server#threat_detection_policy
@@ -42799,7 +42799,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: c999cf62-0920-40f8-8dda-0caccd66ed7e
     pretty_name: 'API Gateway Stage should have API Gateway UsagePlan defined and
       associated. '
@@ -42839,7 +42839,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: ca469dd4-c736-448f-8ac1-30a642705e0a
     pretty_name: 'CPU requests should be set to ensure the sum of the resource requests
       of the scheduled Containers is less than the capacity of the node '
@@ -43021,7 +43021,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: cd290efd-6c82-4e9d-a698-be12ae31d536
     pretty_name: 'Container should not share the host IPC namespace '
     ref: https://kubernetes.io/docs/concepts/policy/pod-security-policy/
@@ -43120,7 +43120,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: ce76b7d0-9e77-464d-b86f-c5c48e03e22d
     pretty_name: 'Some capabilities are not needed in certain (or any) containers.
       Make sure that you only add capabilities that your container needs. Drop unnecessary
@@ -43161,7 +43161,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: cefdad16-0dd5-4ac5-8ed2-a37502c78672
     pretty_name: 'Service account should not have improper privileges like admin,
       editor, owner, or write roles '
@@ -43635,7 +43635,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: d6e10477-2e19-4bcd-b8a8-19c65b89ccdf
     pretty_name: 'Kubernetes nodes must have auto upgrades set to true, which means
       Node ''auto_upgrade'' should be enabled for Kubernetes Clusters '
@@ -43674,7 +43674,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: d740d048-8ed3-49d3-b77b-6f072f3b669e
     pretty_name: 'Check if StatefulSet resources don''t have a podAntiAffinity policy,
       which prevents multiple pods from being scheduled on the same node. '
@@ -44014,7 +44014,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: dc5c5fee-6c53-43b0-ab11-4c660e064aaf
     pretty_name: 'Kubernetes nodes must have auto upgrades set to true, which means
       the attribute ''nodePools'' must be defined and the subattribute ''managment''
@@ -44139,7 +44139,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: de4421f1-4e35-43b4-9783-737dd4e4a47e
     pretty_name: 'PodSecurityPolicy should set ''readOnly'' to true in every host
       path allowed '
@@ -44852,7 +44852,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: e94d3121-c2d1-4e34-a295-139bfeb73ea3
     pretty_name: 'Container should not share the host IPC namespace '
     ref: https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/pod#host_ipc
@@ -45584,7 +45584,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: f4c9b5f5-68b8-491f-9e48-4f96644a1d51
     pretty_name: 'In ECS Task Definition of FARGATE launch type if you specify an
       invalid CPU or Memory value, you will receive an error '
@@ -46160,7 +46160,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: fd097ed0-7fe6-4f58-8b71-fef9f0820a21
     pretty_name: 'Memory limits should be defined for each container. This prevents
       potential resource exhaustion by ensuring that containers consume not more than
@@ -46266,7 +46266,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: cloud_insecure-iam
+    group: cloud-insecure-iam
     name: ffe0fd52-7a8b-4a5c-8fc7-49844418e6c9
     pretty_name: 'AWS CloudFormation Stack should have a stack policy in order to
       protect stack resources from update actions '
