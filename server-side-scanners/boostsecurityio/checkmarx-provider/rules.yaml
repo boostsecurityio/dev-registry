@@ -4,7 +4,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0008c003-79aa-42d8-95b8-1c2fe37dbfe6
     pretty_name: 'Multiple commands (RUN, COPY, ADD) should be grouped in order to
       reduce the number of layers. '
@@ -65,7 +65,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 013bdb4b-9246-4248-b0c3-7fb0fee42a29
     pretty_name: 'Required properties receive value from requests, which makes unnecessary
       declare a default value '
@@ -75,7 +75,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 015eac96-6313-43c0-84e5-81b1374fa637
     pretty_name: 'Schema reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -128,7 +128,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0220e1c5-65d1-49dd-b7c2-cef6d6cb5283
     pretty_name: 'Schema Object reference must always point to ''#/definitions'' '
     ref: https://swagger.io/specification/v2/#schema-object
@@ -137,7 +137,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 02323c00-cdc3-4fdc-a310-4f2b3e7a1660
     pretty_name: 'Check if containers are running with low UID, which might cause
       conflicts with the host''s user table. '
@@ -212,7 +212,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 03856cb2-e46c-4daf-bfbf-214ec93c882b
     pretty_name: 'The field ''enum'' of Schema Object should be consistent with the
       schema''s type '
@@ -314,7 +314,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 050f085f-a8db-4072-9010-2cca235cc02f
     pretty_name: 'AWS Auto Scaling Groups must have associated ELBs to ensure high
       availability and improve application performance. This means the attribute ''load_balancers''
@@ -345,7 +345,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 05505192-ba2c-4a81-9b25-dcdbcc973746
     pretty_name: 'Parameter Objects should not have duplicate names for ''header''
       location, since HTTP headers are not case sensitive. '
@@ -435,7 +435,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 069a5378-2091-43f0-aa3b-ee8f20996e99
     pretty_name: HTTP Responses status code should be in range of [200-599]
     ref: https://swagger.io/specification/v2/#parameterObject
@@ -772,7 +772,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0b76d993-ee52-43e0-8b39-3787d2ddabf1
     pretty_name: 'All global responses definitions should be in use '
     ref: https://swagger.io/specification/v2/#responsesDefinitionsObject
@@ -791,7 +791,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0bc1477d-0922-478b-ae16-674a7634a1a8
     pretty_name: Property 'allowEmptyValue' should be only defined for query parameters
       and formData parameters
@@ -841,7 +841,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0ca1017d-3b80-423e-bb9c-6cd5898d34bd
     pretty_name: 'Lambda permission may be misconfigured if the action field is not
       filled in by ''lambda:InvokeFunction'' '
@@ -883,7 +883,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0de50145-e845-47f4-9a15-23bcf2125710
     pretty_name: 'The property ''required'' determines whether the parameter is mandatory.
       If the parameter location is ''path'', this property is required and its value
@@ -905,7 +905,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0e5872b4-19a0-4165-8b2f-56d9e14b909f
     pretty_name: 'Make sure that any managed IAM policies are implemented in a group
       and not in a user. '
@@ -965,7 +965,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 0f6cd0ab-c366-4595-84fc-fbd8b9901e4d
     pretty_name: 'Request Body reference must always point to ''#/components/RequestBodies'' '
     ref: https://swagger.io/specification/#request-body-object
@@ -1013,7 +1013,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 10c61e4b-eed5-49cf-9c7d-d4bf02e9edfa
     pretty_name: 'Schema Object Property key should be unique through out the fields
       ''properties'', ''allOf'', ''additionalProperties'' '
@@ -1033,7 +1033,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1123031a-f921-4c5b-bd86-ef354ecfd37a
     pretty_name: 'Check if any label in the metadata is invalid. '
     ref: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
@@ -1136,7 +1136,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 128df7ec-f185-48bc-8913-ce756a3ccb85
     pretty_name: 'Running outdated versions of Google Kubernetes Engine (GKE) can
       expose it to known vulnerabilities and attacks. To reduce these risks, it is
@@ -1208,7 +1208,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 133fee21-37ef-45df-a563-4d07edc169f4
     pretty_name: 'AWS Key Management Service (KMS) must only possess usable Customer
       Master Keys (CMK), which means the CMKs must have the attribute ''enabled''
@@ -1320,7 +1320,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 151331e2-11f4-4bb6-bd35-9a005e695087
     pretty_name: 'Components object fixed fields (schemas, responses, parameters,
       examples, requestBodies, headers, securitySchemes, links, and callbacks) should
@@ -1461,7 +1461,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 17e52ca3-ddd0-4610-9d56-ce107442e110
     pretty_name: 'The Horizontal Pod Autoscaler must target a valid object '
     ref: https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/horizontal_pod_autoscaler#metric
@@ -1481,7 +1481,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1819ac03-542b-4026-976b-f37addd59f3b
     pretty_name: 'EBS Volumes that are unattached to instances may contain sensitive
       data '
@@ -1543,7 +1543,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 194ef1f8-360e-4c14-8ed2-e83e2bafa142
     pretty_name: The path parameter must have a corresponding template path for a
       given operation
@@ -1594,7 +1594,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1a1aea94-745b-40a7-b860-0702ea6ee636
     pretty_name: 'Schema Object should not reference it self in ''allOf'', ''oneOf'',
       ''anyOf'' and ''not'' properties '
@@ -1717,7 +1717,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1bc1c685-e593-450e-88fb-19db4c82aa1d
     pretty_name: 'IAM password should have the required minimum length '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy
@@ -1735,7 +1735,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1bc367f6-901d-4870-ad0c-71d79762ef52
     pretty_name: 'Content Delivery Network (CDN) service is used within an AWS account
       to secure and accelerate the delivery of websites. The use of a CDN can provide
@@ -1835,7 +1835,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1db3a5a5-bf75-44e5-9e44-c56cfc8b1ac5
     pretty_name: 'StatefulSets should be assigned with a PodDisruptionBudget to ensure
       high availability '
@@ -1899,7 +1899,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 1e434b25-8763-4b00-a5ca-ca03b7abbb66
     pretty_name: 'All names should follow snake case pattern. '
     ref: https://www.terraform.io/docs/extend/best-practices/naming.html#naming
@@ -2033,7 +2033,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 20a482d5-c5d9-4a7a-b7a4-60d0805047b4
     pretty_name: 'Security operation field should be defined in ''#/components/securitySchemes'' '
     ref: https://swagger.io/specification/#operation-object
@@ -2042,7 +2042,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 20cb3159-b219-496b-8dac-54ae3ab2021a
     pretty_name: 'Non-Array Schema should not have ''items'' defined '
     ref: https://swagger.io/specification/#schema-object
@@ -2063,7 +2063,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 21245007-91c4-40e5-964e-40c85d1e5aa6
     pretty_name: OperationId should be unique when defined
     ref: https://swagger.io/specification/v2/#operationObject
@@ -2113,7 +2113,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 21cef75f-289f-470e-8038-c7cee0664164
     pretty_name: 'Sees if Kubernetes Drop Capabilities exists to ensure containers
       security context '
@@ -2258,7 +2258,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 237402e2-c2f0-46c9-9cf5-286160cf7bfc
     pretty_name: 'All path should be unique, if has more than one operation, all operations
       should be part of same Path Object '
@@ -2367,7 +2367,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 25635c31-ee32-4708-88e5-fced87516f51
     pretty_name: Operation External Documentation URL should be a valid URL
     ref: https://swagger.io/specification/v2/#externalDocumentationObject
@@ -2406,7 +2406,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2596545e-1757-4ff7-a15a-8a9a180a42f3
     pretty_name: 'Parameter Object reference must always point to ''#/parameters'' '
     ref: https://swagger.io/specification/v2/#parameter-object
@@ -2504,7 +2504,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 268ca686-7fb7-4ae9-b129-955a2a89064e
     pretty_name: 'Sees if Kubernetes Drop Capabilities exists to ensure containers
       security context '
@@ -2534,7 +2534,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 26f06397-36d8-4ce7-b993-17711261d777
     pretty_name: 'Content Type should be set to ''multipart/form-data'' in case of
       uploading an arbitrary number of files (array) '
@@ -2616,7 +2616,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2844c749-bd78-4cd1-90e8-b179df827602
     pretty_name: 'AWS Key Management Service (KMS) must only possess usable Customer
       Master Keys (CMK), which means the CMKs must have the attribute ''Enabled''
@@ -2707,7 +2707,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2a153952-2544-4687-bcc9-cc8fea814a9b
     pretty_name: 'All variables should contain a valid description. '
     ref: https://www.terraform.io/docs/language/values/variables.html#input-variable-documentation
@@ -2747,7 +2747,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2ab6de9a-0136-415c-be92-79d2e4fd750f
     pretty_name: 'Azure SQL Server''s Admin account login must avoid using names like
       ''Admin'', that are too predictable, which means the attribute ''administrator_login''
@@ -2866,7 +2866,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2bd608ae-8a1f-457f-b710-c237883cb313
     pretty_name: 'Schema Object should not be have a required property that is not
       defined on properties '
@@ -2916,7 +2916,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2cf35b40-ded3-43d6-9633-c8dcc8bcc822
     pretty_name: 'Example should match one of MimeTypes on ''produces''. It is important
       to know that, if a ''produces'' is declared on operation it will override global
@@ -2946,7 +2946,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2d6646f4-2946-420f-8c14-3232d49ae0cb
     pretty_name: 'Header Object reference must always point to ''#/components/headers'' '
     ref: https://swagger.io/specification/#responses-object
@@ -2974,7 +2974,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2e275f16-b627-4d3f-ae73-a6153a23ae8f
     pretty_name: 'Parameter reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -3002,7 +3002,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2e9b6612-8f69-42e0-a5b8-ed17739c2f3a
     pretty_name: 'Schema Object properties should not contain ''enum'' and schema
       keywords '
@@ -3101,7 +3101,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 2f652c42-619d-4361-b361-9f599688f8ca
     pretty_name: 'The Horizontal Pod Autoscaler must target a valid object '
     ref: https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
@@ -3263,7 +3263,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 31dd6fc0-f274-493b-9614-e063086c19fc
     pretty_name: 'A Parameter Object must contain either a ''schema'' property, or
       a ''content'' property, but not both since they are mutually exclusive '
@@ -3295,7 +3295,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 327b0729-4c5c-4c44-8b5c-e476cd9c7290
     pretty_name: 'It''s considered a best practice to have point in time recovery
       enabled for DynamoDB Table '
@@ -3336,7 +3336,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 332cf2ad-380d-4b90-b436-46f8e635cf38
     pretty_name: 'Contact Object URL should be a valid URL '
     ref: https://swagger.io/specification/#contact-object
@@ -3365,7 +3365,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 338b6cab-961d-4998-bb49-e5b6a11c9a5c
     pretty_name: 'It''s considered a best practice for an EC2 instance to use an EBS
       optimized instance. This provides the best performance for your EBS volumes
@@ -3421,7 +3421,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 34664094-59e0-4524-b69f-deaa1a68cce3
     pretty_name: 'Security Contact Email should be defined '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/security_center_contact#email
@@ -3562,7 +3562,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 37140f7f-724a-4c87-a536-e9cee1d61533
     pretty_name: 'Security Requirement Object should only have scopes defined for
       security schemes of type ''oauth2'' and ''openIdConnect'' '
@@ -3581,7 +3581,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 376c9390-7e9e-4cb8-a067-fd31c05451fd
     pretty_name: 'Header reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -3772,7 +3772,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3a01790c-ebee-4da6-8fd3-e78657383b75
     pretty_name: 'The value of ''additionalProperties'' should be set as object instead
       of boolean, since swagger 2.0 does not support boolean value for it '
@@ -3794,7 +3794,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3a81fc06-566f-492a-91dd-7448e409e2cd
     pretty_name: 'All generic git repositories should reference a revision. '
     ref: https://www.terraform.io/docs/language/modules/sources.html#selecting-a-revision
@@ -3906,7 +3906,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3b615f00-c443-4ba9-acc4-7c308716917d
     pretty_name: 'The media type prefix should be set as ''application'', ''audio'',
       ''font'', ''example'', ''image'', ''message'', ''model'', ''multipart'', ''text''
@@ -3917,7 +3917,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3b6d777b-76e3-4133-80a3-0d6f667ade7f
     pretty_name: 'RDS instance should have automatic minor upgrades enabled, which
       means the attribute ''auto_minor_version_upgrade'' must be set to true. '
@@ -4009,7 +4009,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3d7d7b6c-fb0a-475e-8a28-c125e30d15f0
     pretty_name: 'Host field should be an IP or a valid host name '
     ref: https://swagger.io/specification/v2/#swagger-object
@@ -4037,7 +4037,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3ddd74cc-6582-486c-8b0c-2b48cb38e0a3
     pretty_name: The header Parameter should not be named as 'Accept'. If so, it will
       be ignored.
@@ -4047,7 +4047,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3ddf3417-424d-420d-8275-0724dc426520
     pretty_name: 'Lambda permission may be misconfigured if the action field is not
       filled in by ''lambda:InvokeFunction'' '
@@ -4116,7 +4116,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3e4d34d2-36cf-4449-976d-6c256db8fc49
     pretty_name: Schema/Parameter items should be defined when the schema/parameter
       is set to an array.
@@ -4135,7 +4135,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3e6c7b1c-8a8d-43ab-98b9-65159f44db4a
     pretty_name: Paths object may be empty due to ACL constraints, meaning they are
       not exposed
@@ -4145,7 +4145,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3e9fcc67-1f64-405f-b2f9-0a6be17598f0
     pretty_name: 'Microsoft.Security securityContacts should have a phone number defined '
     ref: https://docs.microsoft.com/en-us/azure/templates/microsoft.security/securitycontacts?tabs=json
@@ -4185,7 +4185,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3f2cf811-88fa-4eda-be45-7a191a18aba9
     pretty_name: 'No password expiration policy '
     ref: https://docs.ansible.com/ansible/latest/collections/community/aws/iam_password_policy_module.html
@@ -4222,7 +4222,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 3fb03214-25d4-4bd4-867c-c2d8d708a483
     pretty_name: 'Schema Object should have all required properties defined '
     ref: https://swagger.io/specification/#schema-object
@@ -4273,7 +4273,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 40d3df21-c170-4dbe-9c02-4289b51f994f
     pretty_name: 'Schema discriminator values should match defined properties. '
     ref: https://swagger.io/specification/#schema-object
@@ -4291,7 +4291,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4190dda7-af03-4cf0-a128-70ac1661ca09
     pretty_name: 'Property ''allowReserved'' of the encoding object should be defined
       when the media type of the request body is ''application/x-www-form-urlencoded''.
@@ -4331,7 +4331,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 420e6360-47bb-46f6-9072-b20ed22c842d
     pretty_name: 'StatefulSets should have an existing headless ''serviceName''. The
       headless service labels should also be implemented on StatefulSets labels. '
@@ -4350,7 +4350,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 429b2106-ba37-43ba-9727-7f699cc611e1
     pretty_name: 'All properties defined in OpenAPI objects should be known '
     ref: https://swagger.io/specification/v2/
@@ -4407,7 +4407,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 43789711-161b-4708-b5bb-9d1c626f7492
     pretty_name: 'Azure Container Service (AKS) should use Azure Policies Add-On '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#azure_policy
@@ -4455,7 +4455,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 445020f6-b69e-4484-847f-02d4b7768902
     pretty_name: 'IAM password should have at least one uppercase letter '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-iam-user
@@ -4474,7 +4474,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 448db771-06ea-4dee-b48c-1689cbfb4b43
     pretty_name: Examples values and fields should be compliant with the schema type
     ref: https://swagger.io/specification/v2/#example-object
@@ -4627,7 +4627,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 46d3b74d-9fe9-45bf-9e9e-efb7f701ee28
     pretty_name: Global External Documentation URL should be a valid URL
     ref: https://swagger.io/specification/v2/#externalDocumentationObject
@@ -4636,7 +4636,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 46facedc-f243-4108-ab33-583b807d50b0
     pretty_name: 'A Parameter Object must contain either a ''schema'' property, or
       a ''content'' property '
@@ -4784,7 +4784,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 48e9e1fe-cf79-45b5-93e6-8b55ae5dadfd
     pretty_name: 'Operation Object should have at least one successful HTTP status
       code defined '
@@ -4813,7 +4813,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 49113af4-29ca-458e-b8d4-724c01a4a24f
     pretty_name: 'When using kube-controller-manager commands, the ''--terminated-pod-gc-threshold''
       should be set between 0 and 12501 '
@@ -4823,7 +4823,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 492c6cbb-f3f8-4807-aa4f-42b8b1c46b59
     pretty_name: Schema/Parameter/Header Object define type should not use a keyword
       of another type
@@ -4979,7 +4979,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4b410d24-1cbe-4430-a632-62c9a931cf1c
     pretty_name: 'Use of Curl or Wget should be done instead of Add to fetch packages
       from remote URLs due to the use of Add being strongly discouraged '
@@ -5048,7 +5048,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4bcbcd52-3028-469f-bc14-02c7dbba2df2
     pretty_name: 'Property ''allowEmptyValue'' should be only defined for query parameters
       and formData parameters '
@@ -5121,7 +5121,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4c415497-7410-4559-90e8-f2c8ac64ee38
     pretty_name: 'Containers must not be allowed to run with root privileges, which
       means the attributes ''privileged'' and ''allow_privilege_escalation'' must
@@ -5145,7 +5145,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4cac7ace-b0fb-477d-830d-65395d9109d9
     pretty_name: 'Schema Object reference must always point to ''#/components/schemas'' '
     ref: https://swagger.io/specification/#schema-object
@@ -5154,7 +5154,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 4cd8de87-b595-48b6-ab3c-1904567135ab
     pretty_name: 'Encoding Map Key should not define a ''Content-Type'' in the ''headers''
       field. If so, it will be ignored. '
@@ -5462,7 +5462,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 51978067-3b22-4c29-aaf3-96bf0bc28897
     pretty_name: The header Parameter should not be named as 'Content-Type'. If so,
       it will be ignored.
@@ -5556,7 +5556,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 530e8291-2f22-4bab-b7ea-306f1bc2a308
     pretty_name: 'Azure SQL Server must avoid using predictable Active Directory Administrator
       Account names, like ''Admin'', which means the attribute ''ad_user'' must be
@@ -5685,7 +5685,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 55975007-f6e7-4134-83c3-298f1fe4b519
     pretty_name: 'SQL Server alert email should be enabled '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_server_security_alert_policy#email_account_admins
@@ -5704,7 +5704,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 561710b1-b845-4562-95ce-2397a05ccef4
     pretty_name: 'The template path must have a corresponding path parameter for a
       given operation '
@@ -5792,7 +5792,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5744cbb8-5946-4b75-a196-ade44449525b
     pretty_name: 'Deployments targeted by HorizontalPodAutoscaler should not have
       a statically configured replica count set '
@@ -5802,7 +5802,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 574e8d82-1db2-4b9c-b526-e320ede9a9ff
     pretty_name: 'All Alerts should be enabled in SQL Database Server SecurityAlerts
       Policy Properties '
@@ -5965,7 +5965,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 58f06434-a88c-4f74-826c-db7e10cc7def
     pretty_name: 'The field ''content'' of the request body object should be set to
       ''multipart'' or ''application/x-www-form-urlencoded'' when field ''encoding''
@@ -5987,7 +5987,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5907595b-5b6d-4142-b173-dbb0e73fbff8
     pretty_name: 'Expose only the ports that your application needs and avoid exposing
       ports like SSH (22) '
@@ -6008,7 +6008,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5915c20f-dffa-4cee-b5d4-f457ddc0151a
     pretty_name: 'All array fields should not be empty '
     ref: https://swagger.io/specification/
@@ -6038,7 +6038,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 59312e8a-a64e-41e7-a252-618533dd1ea8
     pretty_name: 'All outputs should contain a valid description. '
     ref: https://www.terraform.io/docs/language/values/outputs.html#description-output-value-documentation
@@ -6108,7 +6108,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 59c2f769-7cc2-49c8-a3de-4e211135cfab
     pretty_name: 'Property ''allowEmptyValue'' is ignored in the following cases:
       {sytle: simple, explode: false}, {sytle: simple, explode: true}, {sytle: spaceDelimited,
@@ -6160,7 +6160,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5aea1d7e-b834-4749-b143-2c7ec3bd5922
     pretty_name: 'Tag External Documentation URL should be a valid URL '
     ref: https://swagger.io/specification/#external-documentation-object
@@ -6199,7 +6199,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5b6d53dd-3ba3-4269-b4d7-f82e880e43c3
     pretty_name: 'In case of an unresponsive container, a Liveness Probe can help
       your application become more available since it restarts the container. However,
@@ -6416,7 +6416,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5e5ecb9d-04b5-4e4f-b5a5-6ee04279b275
     pretty_name: 'OpenAPI Object should contain all of its required fields '
     ref: https://swagger.io/specification/v2/
@@ -6425,7 +6425,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5e6c9c68-8a82-408e-8749-ddad78cbb9c5
     pretty_name: 'It''s considered a best practice for AWS Security Group to have
       a description '
@@ -6435,7 +6435,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5e7acff5-095b-40ac-9073-ac2e4ad8a512
     pretty_name: 'IAM policy should not apply directly to users, should be with a
       group '
@@ -6454,7 +6454,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 5ea61624-3733-4a3a-8ca4-b96fec9c5aeb
     pretty_name: 'Operation External Documentation URL should be a valid URL '
     ref: https://swagger.io/specification/#external-documentation-object
@@ -6562,7 +6562,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 60224630-175a-472a-9e23-133827040766
     pretty_name: 'It''s considered a best practice for an EC2 instance to use an EBS
       optimized instance. This provides the best performance for your EBS volumes
@@ -6604,7 +6604,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 609cd557-66b4-41fa-8edd-2abc6c7cfd08
     pretty_name: Path object should have at least one operation object defined
     ref: https://swagger.io/specification/v2/#pathItemObject
@@ -6652,7 +6652,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 60fb6621-9f02-473b-9424-ba9a825747d3
     pretty_name: 'Link object ''OperationId'' should not have both ''operationId''
       and ''operationRef'' defined since they are mutually exclusive. '
@@ -6691,7 +6691,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6172e7ab-d2b7-45f8-a7db-1603931d8ba3
     pretty_name: Responses Object should not be empty
     ref: https://swagger.io/specification/v2/#responsesObject
@@ -6916,7 +6916,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 663062e9-473d-4e87-99bc-6f3684b3df40
     pretty_name: 'Azure SQL Server''s Admin account login must avoid using names like
       ''Admin'', that are too predictable, which means the attribute ''admin_username''
@@ -7051,7 +7051,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6797f581-0433-4768-ae3e-7ceb2f8b138e
     pretty_name: 'Azure Instances should use SSH Key instead of basic authentication '
     ref: https://docs.microsoft.com/en-us/azure/templates/microsoft.compute/virtualmachines?tabs=json#linuxconfiguration-object
@@ -7070,7 +7070,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 67fd0c4a-68cf-46d7-8c41-bc9fba7e40ae
     pretty_name: 'Leaving the last user as root can cause security risks. Change to
       another user after running the commands the need privileges '
@@ -7108,7 +7108,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 68eb4bf3-f9bf-463d-b5cf-e029bb446d2e
     pretty_name: 'It''s considered a best practice for all rules in AWS Security Group
       to have a description '
@@ -7129,7 +7129,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6952a7e0-6e48-4285-bbc1-27c64e60f888
     pretty_name: 'Schema External Documentation URL should be a valid URL '
     ref: https://swagger.io/specification/#external-documentation-object
@@ -7138,7 +7138,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 698a464e-bb3e-4ba8-ab5e-e6599b7644a0
     pretty_name: 'Components parameters definitions should be referenced or removed
       from Open API definition '
@@ -7148,7 +7148,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 698ed579-b239-4f8f-a388-baa4bcb13ef8
     pretty_name: 'Check containers periodically to see if they are running properly. '
     ref: https://docs.docker.com/compose/compose-file/compose-file-v3/#healthcheck
@@ -7187,7 +7187,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 69d7aefd-149d-47b8-8d89-1c2181a8067b
     pretty_name: 'The path parameter must have a corresponding template path for a
       given operation '
@@ -7197,7 +7197,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 69e7c320-b65d-41bb-be02-d63ecc0bcc9d
     pretty_name: 'ECR Repository should have Policies attached to it '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository_policy
@@ -7216,7 +7216,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6a2c219f-da5e-4745-941e-5ea8cde23356
     pretty_name: 'Example reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -7352,7 +7352,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6b76f589-9713-44ab-97f5-59a3dba1a285
     pretty_name: 'Components request bodies definitions should be referenced or removed
       from Open API definition '
@@ -7499,7 +7499,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6d2e0790-cc3d-4c74-b973-d4e8b09f4455
     pretty_name: 'All global schemas definitions should be in use '
     ref: https://swagger.io/specification/v2/#definitionsObject
@@ -7547,7 +7547,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6db03a91-f933-4f13-ab38-a8b87a7de54d
     pretty_name: 'ElastiCache Nodes should be created across multi az, which means
       ''az_mode'' should be set to ''cross-az'' in multi nodes cluster '
@@ -7616,7 +7616,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6e3fd2ed-5c83-4c68-9679-7700d224d379
     pretty_name: 'It''s considered a best practice when using Application Load Balancers
       to drop invalid header fields '
@@ -7678,7 +7678,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 6f5f5444-1422-495f-81ef-24cefd61ed2c
     pretty_name: 'Password policy password_reuse_prevention doesn''t exist or is equal
       to 0 '
@@ -7719,7 +7719,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 704fcc44-a58f-4af5-82e2-93f2a58ef918
     pretty_name: 'As a best practice, it is better to assign an IAM Role to a group
       than to a user '
@@ -7808,7 +7808,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 71beb6ab-8b70-4816-a9ac-a0ff1fb22a62
     pretty_name: Schema Object should have all required properties defined
     ref: https://swagger.io/specification/v2/#schemaObject
@@ -7818,7 +7818,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 71bf8cf8-f0a1-42fa-b9d2-d10525e0a38e
     pretty_name: 'Exposing UNIX ports out of range from 0 to 65535 '
     ref: https://docs.docker.com/engine/reference/builder/#expose
@@ -7848,7 +7848,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7249e3b0-9231-4af3-bc5f-5daf4988ecbf
     pretty_name: 'StatefulSets should be assigned with a PodDisruptionBudget to ensure
       high availability '
@@ -7917,7 +7917,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 72d259ca-9741-48dd-9f62-eb11f2936b37
     pretty_name: 'The header Parameter should not be named as ''Content-Type''. If
       so, it will be ignored. '
@@ -7960,7 +7960,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7350fa23-dcf7-4938-916d-6a60b0c73b50
     pretty_name: 'AWS Key Management Service (KMS) must only possess usable Customer
       Master Keys (CMK), which means the CMKs must have the attribute ''is_enabled''
@@ -8000,7 +8000,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 73c3bc54-3cc6-4c0a-b30a-e19f2abfc951
     pretty_name: 'The Body Parameter Object should have the attribute ''schema'' defined '
     ref: https://swagger.io/specification/v2/#parameterObject
@@ -8052,7 +8052,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 741f1291-47ac-4a85-a07b-3d32a9d6bd3e
     pretty_name: 'It''s considered a best practice to have point in time recovery
       enabled for DynamoDB Table '
@@ -8084,7 +8084,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 74a18d1a-cf02-4a31-8791-ed0967ad7fdc
     pretty_name: 'AWS Cognito UserPool should have MFA (Multi-Factor Authentication)
       defined to users '
@@ -8094,7 +8094,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 750b40be-4bac-4f59-bdc4-1ca0e6c3450e
     pretty_name: 'Every defined property must be unique throughout the whole API '
     ref: https://swagger.io/specification/v2/#schemaObject
@@ -8103,7 +8103,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 750f6448-27c0-49f8-a153-b81735c1e19c
     pretty_name: 'When ''collectionformat'' is defined as ''multi'', ''in'' field
       must be ''query'' or ''formData'' '
@@ -8142,7 +8142,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 75ec6890-83af-4bf1-9f16-e83726df0bd0
     pretty_name: 'Lambda permission may be misconfigured if the action field is not
       filled in by ''lambda:InvokeFunction'' '
@@ -8306,7 +8306,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 78dfd8f0-a6ee-48ec-af8c-e4d9b3292a07
     pretty_name: The field 'default' of Schema/Parameter/Header Object should be consistent
       with the schema's/parameter's/header's type
@@ -8336,7 +8336,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 79d745f0-d5f3-46db-9504-bef73e9fd528
     pretty_name: 'ECS Service should have at least 1 task running '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-deploymentconfiguration
@@ -8345,7 +8345,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7a01dfbd-da62-4165-aed7-71349ad42ab4
     pretty_name: 'Response reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -8364,7 +8364,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7a70eed6-de3a-4da2-94da-a2bbc8fe2a48
     pretty_name: 'IAM password should have the required symbols '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy
@@ -8601,7 +8601,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7f15962a-d862-451c-ac9b-84ec13747aa6
     pretty_name: Schema/Parameter/Header Object properties should not contain 'enum'
       and schema keywords
@@ -8611,7 +8611,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7f203940-39c4-4ea7-91ee-7aba16bca9e2
     pretty_name: 'Property ''allowReserved'' should be only defined for query parameters '
     ref: https://swagger.io/specification/#parameter-object
@@ -8649,7 +8649,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7f8843f0-9ea5-42b4-a02b-753055113195
     pretty_name: 'Geo Restriction feature should be enabled, to restrict or allow
       users in specific locations accessing web application content '
@@ -8669,7 +8669,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 7f91992f-b4c8-43bf-9bf9-fae9ecdb6e3a
     pretty_name: 'Operations file parameters consumes must be ''multipart/form-data'',
       ''application/x-www-form-urlencoded'' or both '
@@ -8719,7 +8719,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 801f0c6a-a834-4467-89c6-ddecffb46b5a
     pretty_name: 'Link reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -8798,7 +8798,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 811762c8-2e99-4f70-88f9-a63875a953b1
     pretty_name: Schema Object should not be have a required property that is not
       defined on properties
@@ -8808,7 +8808,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 815021c8-a50c-46d9-b192-24f71072c400
     pretty_name: 'Paths object may be empty due to ACL constraints, meaning they are
       not exposed '
@@ -9000,7 +9000,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 83957b81-39c1-4191-8e12-671d2ce14354
     pretty_name: 'IAM password should have at least one uppercase letter '
     ref: https://docs.ansible.com/ansible/latest/collections/community/aws/iam_password_policy_module.html
@@ -9009,7 +9009,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 839f238f-2e3a-4a72-b945-8abdf91af955
     pretty_name: 'IAM user resource Login Profile Password should have at least one
       number '
@@ -9067,7 +9067,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 84c826c9-1893-4b34-8cdd-db97645b4bf3
     pretty_name: 'Path object should have at least one operation object defined '
     ref: https://swagger.io/specification/#path-item-object
@@ -9096,7 +9096,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 857f8808-e96a-4ba8-a9b7-f2d4ec6cad94
     pretty_name: 'RDS instance should have automatic minor upgrades enabled, which
       means the attribute ''auto_minor_version_upgrade'' must be set to true. '
@@ -9156,7 +9156,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8657197e-3f87-4694-892b-8144701d83c1
     pretty_name: 'Check if Readiness Probe is not configured. '
     ref: https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/pod#readiness_probe
@@ -9165,7 +9165,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 86733e01-a435-4bd5-a8b0-5108be9dc1e4
     pretty_name: The Header Response should not be named as 'Content-Type', 'Authorization'
       or 'Accept'. If so, it will be ignored.
@@ -9311,7 +9311,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 881a6e71-c2a7-4fe2-b9c3-dfcf08895331
     pretty_name: 'Examples values and fields should be compliant with the schema type '
     ref: https://swagger.io/specification/#example-object
@@ -9403,7 +9403,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 89806cdc-9c2e-4bd1-a0dc-53f339bcfb2a
     pretty_name: 'Check if IAM account password has the reuse password configured
       with 24 '
@@ -9432,7 +9432,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 89b79fe5-49bd-4d39-84ce-55f5fc6f7764
     pretty_name: 'SQL Database Server should contain emails to be notified in the
       event of a Security Alert '
@@ -9462,7 +9462,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8a301064-c291-4b20-adcb-403fe7fd95fd
     pretty_name: 'Using the command RUN to override the default shell instead of the
       SHELL command leads to inefficiencies. It also does not make sense since Docker
@@ -9503,7 +9503,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8aee4754-970d-4c5f-8142-a49dfe388b1a
     pretty_name: 'Every defined Server Variable Object should be used in a Service
       URL. '
@@ -9583,7 +9583,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8bc2168c-1723-4eeb-a6f3-a1ba614b9a6d
     pretty_name: 'IAM password should have the required minimum length '
     ref: https://docs.ansible.com/ansible/latest/collections/community/aws/iam_password_policy_module.html
@@ -9602,7 +9602,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8bfed1c6-2d59-4924-bc7f-9b9d793ed0df
     pretty_name: 'The map content property of the parameter object should only contain
       one entry '
@@ -9673,7 +9673,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8c84f75e-5048-4926-a4cb-33e7b3431300
     pretty_name: 'The header Parameter should not be named as ''Authorization''. If
       so, it will be ignored. '
@@ -9701,7 +9701,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8d0921d6-4131-461f-a253-99e873f8f77e
     pretty_name: 'Any variable used in the Service URL should be defined in the Service
       Object through ''variables''. '
@@ -9711,7 +9711,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8d29754a-2a18-460d-a1ba-9509f8d359da
     pretty_name: 'IAM Access Analyzer should be enabled and configured to continuously
       monitor resource permissions '
@@ -9740,7 +9740,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8dd0ff1f-0da4-48df-9bb3-7f338ae36a40
     pretty_name: 'It''s considered a best practice for an EC2 instance to use an EBS
       optimized instance. This provides the best performance for your EBS volumes
@@ -9761,7 +9761,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8e3063f4-b511-45c3-b030-f3b0c9131951
     pretty_name: 'IAM Password should have at least one lowercase letter '
     ref: https://docs.ansible.com/ansible/latest/collections/community/aws/iam_password_policy_module.html
@@ -9780,7 +9780,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8e94dced-9bcc-4203-8eb7-7e41202b2505
     pretty_name: 'AWS Auto Scaling Groups must have associated ELBs to ensure high
       availability and improve application performance. This means the attribute ''load_balancers''
@@ -9829,7 +9829,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8f98334a-99aa-4d85-b72a-1399ca010413
     pretty_name: 'OSS Bucket should have transfer acceleration enabled '
     ref: https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/oss_bucket#transfer_acceleration
@@ -9867,7 +9867,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 8fe6d18a-ad4c-4397-8884-e3a9da57f4c9
     pretty_name: The field 'enum' of Schema Object should be consistent with the schema's
       type
@@ -9984,7 +9984,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 91f16d09-689e-4926-aca7-155157f634ed
     pretty_name: 'ECS Service should have at least 1 task running '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_service
@@ -10013,7 +10013,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9239c289-9e4c-4d92-8be1-9d506057c971
     pretty_name: 'License Object URL should be a valid URL '
     ref: https://swagger.io/specification/#license-object
@@ -10133,7 +10133,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 949376f1-f560-4c6d-a016-63424ca931bb
     pretty_name: Schema discriminator property should be a string
     ref: https://swagger.io/specification/v2/#schema-object
@@ -10142,7 +10142,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 94b76ea5-e074-4ca2-8a03-c5a606e30645
     pretty_name: 'Kubernetes APIs evolve over time and are sometimes removed with
       newer releases. To prevent incompatibilities when upgrading Kubernetes, deprecated
@@ -10238,7 +10238,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 962fa01e-b791-4dcc-b04a-4a3e7389be5e
     pretty_name: 'Components schemas definitions should be referenced or removed from
       Open API definition '
@@ -10327,7 +10327,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 96beb800-566f-49a9-a0ea-dbdf4bc80429
     pretty_name: 'Each field on Open API specification which accepts ''$ref'', infers
       that field is using a reference object, which has only ''$ref'' key '
@@ -10355,7 +10355,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 96fe318e-d631-4156-99fa-9080d57280ae
     pretty_name: 'Periodically newer versions are released for PHP software either
       due to security flaws or to include additional functionality. Using the latest
@@ -10408,7 +10408,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 97e94d17-e2c7-4109-a53b-6536ac1bb64e
     pretty_name: 'The number of gateways attached should not approach or go beyond
       the limit of 3, in a particular VPC '
@@ -10429,7 +10429,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 98295b32-ec09-4b5b-89a9-39853197f914
     pretty_name: 'Schema reference should exists on definitions field '
     ref: https://swagger.io/specification/v2/#definitionsObject
@@ -10448,7 +10448,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9850d621-7485-44f7-8bdd-b3cf426315cf
     pretty_name: 'IAM password should have the required minimum length '
     ref: https://www.pulumi.com/registry/packages/aws/api-docs/iam/accountpasswordpolicy/#minimumpasswordlength_yaml
@@ -10499,7 +10499,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 990eaf09-d6f1-4c3c-b174-a517b1de8917
     pretty_name: 'Responses Object should not be empty '
     ref: https://swagger.io/specification/#responses-object
@@ -10508,7 +10508,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 99614418-f82b-4852-a9ae-5051402b741c
     pretty_name: 'The MAINTAINER instruction sets the Author field of the generated
       images. The LABEL instruction is a much more flexible version of this and you
@@ -10600,7 +10600,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9b18fc19-7fb8-49b1-8452-9c757c70f926
     pretty_name: 'ElastiCache Nodes should be created across multi az, which means
       ''AZMode'' should be set to ''cross-az'' in multi nodes cluster '
@@ -10640,7 +10640,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9b83114b-b2a1-4534-990d-06da015e47aa
     pretty_name: 'Lambda permission may be misconfigured if the action field is not
       filled in by ''lambda:InvokeFunction'' '
@@ -10708,7 +10708,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9c3ea128-7e9a-4b4c-8a32-75ad17a2d3ae
     pretty_name: 'Components responses definitions should be referenced or removed
       from Open API definition '
@@ -10728,7 +10728,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9cf25d62-0b96-42c8-b66d-998cd6ee5bb8
     pretty_name: 'IAM user resource Login Profile Password should have at least one
       number '
@@ -10777,7 +10777,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: 9d47956b-29cd-43b1-9e6e-b39a4d484353
     pretty_name: Non-Array Schema should not have 'items' defined
     ref: https://swagger.io/specification/v2/#schema-object
@@ -12331,7 +12331,7 @@ rules:
     - checkmarx-force-com-serious-security-risk
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Apex_Force_com_Serious_Security_Risk_Insecure_Endpoint
     pretty_name: Insecure Endpoint
     ref: https://checkmarx.com/resource/documents/
@@ -19842,7 +19842,7 @@ rules:
     - cwe-694
     - checkmarx-webconfig
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: CSharp_WebConfig_NonUniqueFormName
     pretty_name: NonUniqueFormName
     ref: https://checkmarx.com/resource/documents/
@@ -24891,7 +24891,7 @@ rules:
     - checkmarx-reactnative
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: JavaScript_ReactNative_Insecure_Text_Entry
     pretty_name: Insecure Text Entry
     ref: https://checkmarx.com/resource/documents/
@@ -25888,7 +25888,7 @@ rules:
     - boost-baseline
     - checkmarx-vue
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: JavaScript_Vue_Use_of_vif_and_vfor_On_Same_Element
     pretty_name: Use of vif and vfor On Same Element
     ref: https://checkmarx.com/resource/documents/
@@ -28797,7 +28797,7 @@ rules:
     - boost-baseline
     - cwe-495
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Java_Low_Visibility_Private_Array_Returned_From_A_Public_Method
     pretty_name: Private Array Returned From A Public Method
     ref: https://checkmarx.com/resource/documents/
@@ -28808,7 +28808,7 @@ rules:
     - cwe-496
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Java_Low_Visibility_Public_Data_Assigned_to_Private_Array
     pretty_name: Public Data Assigned to Private Array
     ref: https://checkmarx.com/resource/documents/
@@ -30762,7 +30762,7 @@ rules:
     - cwe-608
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Java_Struts_Struts_Non_Private_Field_In_ActionForm_Class
     pretty_name: Struts Non Private Field In ActionForm Class
     ref: https://checkmarx.com/resource/documents/
@@ -31090,7 +31090,7 @@ rules:
     - boost-baseline
     - checkmarx-lightning
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Javascript_Lightning_Lightning_Aura_Attribute_With_Object_Type
     pretty_name: Lightning Aura Attribute With Object Type
     ref: https://checkmarx.com/resource/documents/
@@ -31183,7 +31183,7 @@ rules:
     - boost-baseline
     - checkmarx-lightning
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Javascript_Lightning_Lightning_Use_of_Same_Controller_Method_In_Different_Components
     pretty_name: Lightning Use of Same Controller Method In Different Components
     ref: https://checkmarx.com/resource/documents/
@@ -33982,7 +33982,7 @@ rules:
     - boost-baseline
     - cwe-252
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Perl_Low_Visibility_Not_Checking_Regular_Expressions_Results
     pretty_name: Not Checking Regular Expressions Results
     ref: https://checkmarx.com/resource/documents/
@@ -34005,7 +34005,7 @@ rules:
     - boost-baseline
     - cwe-625
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Perl_Low_Visibility_Permissive_Regular_Expression
     pretty_name: Permissive Regular Expression
     ref: https://checkmarx.com/resource/documents/
@@ -34016,7 +34016,7 @@ rules:
     - boost-baseline
     - cwe-665
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Perl_Low_Visibility_Prohibit_Indirect_Object_Call_Syntax
     pretty_name: Prohibit Indirect Object Call Syntax
     ref: https://checkmarx.com/resource/documents/
@@ -34027,7 +34027,7 @@ rules:
     - boost-baseline
     - checkmarx-low-visibility
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Perl_Low_Visibility_Signifying_Inheritence_At_Runtime
     pretty_name: Signifying Inheritence At Runtime
     ref: https://checkmarx.com/resource/documents/
@@ -34074,7 +34074,7 @@ rules:
     - cwe-824
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: Perl_Low_Visibility_Variables_Outside_The_Scope_of_a_Regex
     pretty_name: Variables Outside The Scope of a Regex
     ref: https://checkmarx.com/resource/documents/
@@ -39630,7 +39630,7 @@ rules:
     - cwe-694
     - checkmarx-webconfig
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: VbNet_WebConfig_NonUniqueFormName
     pretty_name: NonUniqueFormName
     ref: https://checkmarx.com/resource/documents/
@@ -39797,7 +39797,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a05331ee-1653-45cb-91e6-13637a76e4f0
     pretty_name: 'Deployments should be assigned with a PodDisruptionBudget to ensure
       high availability '
@@ -39828,7 +39828,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a0bf7382-5d5a-4224-924c-3db8466026c9
     pretty_name: 'The Server URL should be an absolute URL '
     ref: https://swagger.io/specification/#server-object
@@ -39929,7 +39929,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a1ee6ebe-3877-42ec-b9a6-e524e7d06aa2
     pretty_name: Operation Object should have at least one successful HTTP status
       code defined
@@ -40078,7 +40078,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a3e4e39a-e5fc-4ee9-8cf5-700febfa86dd
     pretty_name: 'AWS Security Group Ingress CIDR should not be /32 in case of IPV4
       or /128 in case of IPV6 '
@@ -40139,7 +40139,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a4dd69b8-49fa-45d2-a060-c76655405b05
     pretty_name: 'Property ''explode'' of the encoding object should be defined when
       the media type of the request body is ''application/x-www-form-urlencoded''.
@@ -40174,7 +40174,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a5375be3-521c-43bb-9eab-e2432e368ee4
     pretty_name: 'The media type prefix should be set as ''application'', ''audio'',
       ''font'', ''example'', ''image'', ''message'', ''model'', ''multipart'', ''text''
@@ -40225,7 +40225,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a599b0d1-ff89-4cb8-9ece-9951854c06f6
     pretty_name: 'All security requirement objects must be defined in ''securityDefinitions'' '
     ref: https://swagger.io/specification/v2/#securityRequirementObject
@@ -40255,7 +40255,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a659f3b5-9bf0-438a-bd9a-7d3a6427f1e3
     pretty_name: 'Check if Readiness Probe is not configured. '
     ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes
@@ -40274,7 +40274,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a68da022-e95a-4bc2-97d3-481e0bd6d446
     pretty_name: 'Components headers definitions should be referenced or removed from
       Open API definition '
@@ -40412,7 +40412,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a8852cc0-fd4b-4fc7-9372-1e43fad0732e
     pretty_name: 'Account admins should be notified by email in the event of security
       alerts '
@@ -40442,7 +40442,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a8e859da-4a43-4e7f-94b8-25d6e3bf8e90
     pretty_name: 'Schema/Parameter items should be defined when the schema/parameter
       is set to an array. '
@@ -40476,7 +40476,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a9228976-10cf-4b5f-b902-9e962aad037a
     pretty_name: 'Schema Object define type should not use a keyword of another type '
     ref: https://swagger.io/specification/#schema-object
@@ -40495,7 +40495,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a964d6e3-8e1e-4d93-8120-61fa640dd55a
     pretty_name: 'IAM User Login Profile should exist and have PasswordResetRequired
       property set to true '
@@ -40505,7 +40505,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: a96bbc06-8cde-4295-ad3c-ee343a7f658e
     pretty_name: 'The field ''default'' of Schema Object should be consistent with
       the schema''s type '
@@ -40600,7 +40600,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: aa93e17f-b6db-4162-9334-c70334e7ac28
     pretty_name: 'It is considered a best practice for every executable in a container
       to be owned by the root user even if it is executed by a non-root user, only
@@ -40623,7 +40623,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ab1263c2-81df-46f0-9f2c-0b62fdb68419
     pretty_name: 'Security field should be defined in ''#/components/securitySchemes'' '
     ref: https://swagger.io/specification/#security-requirement-object
@@ -40632,7 +40632,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ab2af219-cd08-4233-b5a1-a788aac88b51
     pretty_name: 'Property defining minimum has greater value than maximum defined '
     ref: https://swagger.io/specification/#schema-object
@@ -40641,7 +40641,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ab871897-ec02-4835-9818-702536ee1dda
     pretty_name: Parameters properties 'name' and 'in' should have unique combinations
     ref: https://swagger.io/specification/v2/#parameterObject
@@ -40749,7 +40749,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ad21e616-5026-4b9d-990d-5b007bfe679c
     pretty_name: 'AWS Auto Scaling Groups must have associated ELBs to ensure high
       availability and improve application performance. This means the attribute ''LoadBalancerNames''
@@ -40832,7 +40832,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: addc0eab-27f6-4c26-8526-d2ccd3732662
     pretty_name: Schema discriminator values should match defined properties.
     ref: https://swagger.io/specification/v2/#schema-object
@@ -40851,7 +40851,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ade74944-a674-4e00-859e-c6eab5bde441
     pretty_name: 'In case of an unresponsive container, a Liveness Probe can help
       your application become more available since it restarts the container. However,
@@ -40872,7 +40872,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ae13a37d-943b-47a7-a970-83c8598bcca3
     pretty_name: 'All path templates should not be empty '
     ref: https://swagger.io/specification/#paths-object
@@ -41028,7 +41028,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b05bb927-2df5-43cc-8d7b-6825c0e71625
     pretty_name: 'Components examples definitions should be referenced or removed
       from Open API definition '
@@ -41137,7 +41137,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b1a7fcb0-2afe-4d5c-a6a1-4e6311fc29e7
     pretty_name: 'Contact Object Email should be a valid email '
     ref: https://swagger.io/specification/#contact-object
@@ -41146,7 +41146,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b1b20ae3-8fa7-4af5-a74d-a2145920fcb1
     pretty_name: 'IAM password should have the required minimum length '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-iam-user
@@ -41188,7 +41188,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b23e9b98-0cb6-4fc9-b257-1f3270442678
     pretty_name: 'Deployments should be assigned with a PodDisruptionBudget to ensure
       high availability '
@@ -41208,7 +41208,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b2468463-3ac4-4930-890c-f35b2bf4485d
     pretty_name: All path should be unique, if has more than one operation, all operations
       should be part of same Path Object
@@ -41218,7 +41218,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b25398a2-0625-4e61-8e4d-a1bb23905bf6
     pretty_name: 'Content Delivery Network (CDN) service is used within an AWS account
       to secure and accelerate the delivery of websites. The use of a CDN can provide
@@ -41250,7 +41250,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b2d9dbf6-539c-4374-a1fd-210ddf5563a8
     pretty_name: 'Global External Documentation URL should be a valid URL '
     ref: https://swagger.io/specification/#external-documentation-object
@@ -41289,7 +41289,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b30981fa-a12e-49c7-a5bb-eeafb61d0f0f
     pretty_name: 'All global parameters definitions should be in use '
     ref: https://swagger.io/specification/v2/#parametersDefinitionsObject
@@ -41298,7 +41298,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b3871dd8-9333-4d6c-bd52-67eb898b71ab
     pretty_name: 'Response Object reference must always point to ''#/components/responses'' '
     ref: https://swagger.io/specification/#responses-object
@@ -41355,7 +41355,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b4803607-ed72-4d60-99e2-3fa6edf471c6
     pretty_name: 'The ''basePath'' value format must match the pattern ''^/'' '
     ref: https://swagger.io/specification/v2/#schema
@@ -41364,7 +41364,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b481d46c-9c61-480f-86d9-af07146dc4a4
     pretty_name: 'The discriminator property in the Schema Object should be a required
       property '
@@ -41374,7 +41374,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b4a7d925-738b-4219-99d9-87d6ee262a03
     pretty_name: Tag External Documentation URL should be a valid URL
     ref: https://swagger.io/specification/v2/#externalDocumentationObject
@@ -41383,7 +41383,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b4cc2c52-34a6-4b43-b57c-4bdeb4514a5a
     pretty_name: 'Virtual Network should have DDoS Protection Plan enabled '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network#ddos_protection_plan
@@ -41415,7 +41415,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b5102ea9-6527-4bb7-94fc-9b4076150e55
     pretty_name: Property defining minimum has greater value than maximum defined
     ref: https://swagger.io/specification/v2/#schemaObject
@@ -41635,7 +41635,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b90033cf-ad9f-4fb9-acd1-1b9d6d278c87
     pretty_name: 'Only one body parameter is allowed on operation''s parameters type
       field '
@@ -41720,7 +41720,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: b9db8a10-020c-49ca-88c6-780e5fdb4328
     pretty_name: 'Link object reference must always point to ''#/components/links'' '
     ref: https://swagger.io/specification/#link-object
@@ -41729,7 +41729,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ba066cda-e808-450d-92b6-f29109754d45
     pretty_name: 'Callback Object reference must always point to ''#/components/callbacks'' '
     ref: https://swagger.io/specification/#callback-object
@@ -41739,7 +41739,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ba239cb9-f342-4c20-812d-7b5a2aa6969e
     pretty_name: 'If the security scheme is not of type ''oauth2'', the array value
       must be empty '
@@ -41760,7 +41760,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ba48df05-eaa1-4d64-905e-4a4b051e7587
     pretty_name: 'Autoscaling groups should supply tags to configurate '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group#tag-and-tags
@@ -41828,7 +41828,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bac56e3c-1f71-4a74-8ae6-2fba07efcddb
     pretty_name: 'Reference to examples should point to #/components/examples '
     ref: https://swagger.io/specification/#reference-object
@@ -41856,7 +41856,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bb241e61-77c3-4b97-9575-c0f8a1e008d0
     pretty_name: 'StatefulSets should have an existing headless ''serviceName''. The
       headless service labels should also be implemented on StatefulSets labels. '
@@ -41877,7 +41877,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bbc7c137-6c7b-4fc4-984a-0c88e91fcaf9
     pretty_name: 'IAM Password should have at least one lowercase letter '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy
@@ -41961,7 +41961,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bc3dabb6-fd50-40f8-b9ba-7429c9f1fb0e
     pretty_name: 'Check if any label in the metadata is invalid. '
     ref: https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/pod#labels
@@ -42005,7 +42005,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bccfa089-89e4-47e0-a0e5-185fe6902220
     pretty_name: 'Response Object reference must always point to ''#/responses'' '
     ref: https://swagger.io/specification/v2/#responses-object
@@ -42014,7 +42014,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bcd3fc01-5902-4f2a-b05a-227f9bbf5450
     pretty_name: 'Azure SQL Server must avoid using predictable Active Directory Administrator
       Account names, like ''Admin'', which means the attribute ''login'' must be set
@@ -42045,7 +42045,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: bd2cbef5-62c4-40f1-af07-4b7f9ced6616
     pretty_name: Parameter Objects should not have duplicate names for 'header' location,
       since HTTP headers are not case sensitive.
@@ -42108,7 +42108,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: be1d8733-3731-40c7-a845-734741c6871d
     pretty_name: 'There is a constraining keyword in a property which is already restricted
       by enum values '
@@ -42155,7 +42155,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: be6a3722-af60-438c-b1b9-2a03e2958ab7
     pretty_name: The discriminator property in the Schema Object should be a required
       property
@@ -42346,7 +42346,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c19779a9-5774-4d2f-a3a1-a99831730375
     pretty_name: 'Components links definitions should be referenced or removed from
       Open API definition '
@@ -42356,7 +42356,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c201b7ad-6173-4598-a407-5edb04a1bcd7
     pretty_name: All path templates should not be empty
     ref: https://swagger.io/specification/v2/#pathsObject
@@ -42365,7 +42365,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c254adc4-ef25-46e1-8270-b7944adb4198
     pretty_name: 'OperationId should be unique when defined '
     ref: https://swagger.io/specification/#operation-object
@@ -42421,7 +42421,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c38d630d-a415-4e3e-bac2-65475979ba88
     pretty_name: 'The Body Parameter Object should only have the following properties
       defined - ''name'', ''in'', ''description'', ''required'', and ''schema'' '
@@ -42441,7 +42441,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c3cab8c4-6c52-47a9-942b-c27f26fbd7d2
     pretty_name: 'The In field of Parameter Object must be ''formData'' when type
       is ''file'' '
@@ -42568,7 +42568,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c5bb7461-aa57-470b-a714-3bc3d74f4669
     pretty_name: 'Link object ''OperationId'' should target an existing operation
       object in the OpenAPI definition '
@@ -42578,7 +42578,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c5ff7bc9-d8ea-46dd-81cb-8286f3222249
     pretty_name: 'IAM password should have at least one uppercase letter '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy
@@ -42637,7 +42637,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c66ebeaa-676c-40dc-a3ff-3e49395dcd5e
     pretty_name: 'The Servers array should have at least one server defined. If not,
       the default value would be a Server Object with a URL value of ''/''. '
@@ -42691,7 +42691,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: c7000383-16d0-4509-8cd3-585e5ea2e2f2
     pretty_name: Contact Object URL should be a valid URL
     ref: https://swagger.io/specification/v2/#contactObject
@@ -42820,7 +42820,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ca02f4e8-d3ae-4832-b7db-bb037516d9e7
     pretty_name: 'Request Body reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -42907,7 +42907,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cb3f5ed6-0d18-40de-a93d-b3538db31e8c
     pretty_name: 'It''s considered a best practice for AWS Security Group to have
       a description '
@@ -42947,7 +42947,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cbff2508-85c9-4448-a8b3-770070edf5ca
     pretty_name: Schema Object should not reference it self in 'allOf', 'oneOf', 'anyOf'
       and 'not' properties
@@ -42957,7 +42957,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cc4aaa9d-1070-461a-b519-04e00f42db8a
     pretty_name: 'Periodically, newer versions are released for Python software either
       due to security flaws or to include additional functionality. Using the latest
@@ -43010,7 +43010,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ccd0613f-cb77-4684-a892-183bd2674d12
     pretty_name: The property 'required' determines whether the parameter is mandatory.
       If the parameter location is 'path', this property is required and its value
@@ -43030,7 +43030,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cd7a52cf-8d7f-4cfe-bbeb-6306d23f576b
     pretty_name: 'Encoding Map Key should be set in schema defined properties '
     ref: https://swagger.io/specification/#media-type-object
@@ -43111,7 +43111,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ce60d060-efb8-4bfd-9cf7-ff8945d00d90
     pretty_name: 'No password expiration policy '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy
@@ -43171,7 +43171,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cf34805e-3872-4c08-bf92-6ff7bb0cfadb
     pretty_name: 'Containers should only run as non-root user. This limits the exploitability
       of security misconfigurations and restricts an attacker''s possibilities in
@@ -43193,7 +43193,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cf4a5f45-a27b-49df-843a-9911dbfe71d4
     pretty_name: 'The Media Type value should match the following format: /[+suffix][;parameters] '
     ref: https://swagger.io/specification/#media-type-object
@@ -43213,7 +43213,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cfdef2e5-1fe4-4ef4-bea8-c56e08963150
     pretty_name: 'ElastiCache Nodes should be created across multi az, which means
       ''AZMode'' should be set to ''cross-az'' in multi nodes cluster '
@@ -43224,7 +43224,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: cff9c3f7-e8f0-455f-9fb4-5f72326da96e
     pretty_name: 'All Secrets must have an expiration date defined '
     ref: https://docs.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults/secrets?tabs=json#SecretAttributes
@@ -43271,7 +43271,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d15db953-a553-4b8a-9a14-a3d62ea3d79d
     pretty_name: 'Components callbacks definitions should be referenced or removed
       from Open API definition '
@@ -43281,7 +43281,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d172a060-8569-4412-8045-3560ebd477e8
     pretty_name: 'OpenAPI Object should contain all of its required fields '
     ref: https://swagger.io/specification/
@@ -43300,7 +43300,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d2361d58-361c-49f0-9e50-b957fd608b29
     pretty_name: 'Schema should not have both ''writeOnly'' and ''readOnly'' set to
       true '
@@ -43416,7 +43416,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d3ea644a-9a5c-4fee-941f-f8a6786c0470
     pretty_name: 'Property ''style'' of the encoding object should be defined when
       the media type of the request body is ''application/x-www-form-urlencoded''.
@@ -43438,7 +43438,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d40f27e6-15fb-4b56-90f8-fc0ff0291c51
     pretty_name: 'Parameter Object reference must always point to ''#/components/parameters'' '
     ref: https://swagger.io/specification/#parameter-object
@@ -43471,7 +43471,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d47940ca-5970-45cc-bdd1-4d81398cee1f
     pretty_name: 'Operation summary should be short (less than 120 characters) '
     ref: https://swagger.io/specification/v2/#operation-object
@@ -43490,7 +43490,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d4e43db5-54d8-4dda-b3c2-0dc6f31a46bd
     pretty_name: 'The Header Response should not be named as ''Content-Type'', ''Authorization''
       or ''Accept''. If so, it will be ignored. '
@@ -43665,7 +43665,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d72a7869-e8b9-4e12-bcd2-e8be10b39fa7
     pretty_name: 'IAM password should have the required symbols '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-iam-user
@@ -43726,7 +43726,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d83bebc8-4e5e-4241-b783-cba9fb5a1c9a
     pretty_name: Contact Object Email should be a valid email
     ref: https://swagger.io/specification/v2/#contactObject
@@ -43745,7 +43745,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d86655c0-92f6-4ffc-b4d5-5b5775804c27
     pretty_name: 'HTTP Responses status code should be in range of [200-599] '
     ref: https://swagger.io/specification/#responses-object
@@ -43754,7 +43754,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d89a15bb-8dba-4c71-9529-bef6729b9c09
     pretty_name: 'When using kube-apiserver command, the ''--request-timeout'' flag
       value should not be too long '
@@ -43803,7 +43803,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: d991e4ae-42ab-429b-ab43-d5e5fa9ca633
     pretty_name: 'It''s considered a best practice for an EC2 instance to use an EBS
       optimized instance. This provides the best performance for your EBS volumes
@@ -43880,7 +43880,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: daaace5f-c0dc-4835-b526-7a116b7f4b4e
     pretty_name: 'All Enum Names should follow CamelCase and start with Capital Letter '
     ref: https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#enum_definition
@@ -43899,7 +43899,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: dadc2f36-1f5a-46c0-8289-75e626583123
     pretty_name: 'Schema discriminator property should be a string '
     ref: https://swagger.io/specification/#discriminator-object
@@ -43918,7 +43918,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: dafe30ec-325d-4516-85d1-e8e6776f012c
     pretty_name: 'Azure Instances should use SSH Key instead of basic authentication '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#admin_ssh_key
@@ -44118,7 +44118,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: de2b4910-8484-46d6-a055-dc1e793ee3ff
     pretty_name: License Object URL should be a valid URL
     ref: https://swagger.io/specification/v2/#licenseObject
@@ -44180,7 +44180,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: de92dd34-1b88-43e8-b825-6e02d73c4549
     pretty_name: 'IAM Password should have at least one lowercase letter '
     ref: https://www.pulumi.com/registry/packages/aws/api-docs/iam/accountpasswordpolicy/#requirelowercasecharacters_yaml
@@ -44199,7 +44199,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ded017bf-fb13-4f8d-868b-84aebcc572ad
     pretty_name: Schema Object Property key should be unique through out the fields
       'properties', 'allOf', 'additionalProperties'
@@ -44269,7 +44269,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e0099af2-fe17-411f-9991-0de28fe15f3c
     pretty_name: 'When using kube-apiserver command, the --enable-admission-plugins
       flag should have ''EventRateLimit'' plugin and the plugin should be correctly
@@ -44411,7 +44411,7 @@ rules:
     - boost-baseline
     - boost-hardened
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e2d834b7-8b25-4935-af53-4a60668dcbe0
     pretty_name: 'Azure Instances should use SSH Key instead of basic authentication '
     ref: https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_virtualmachine_module.html#parameter-linux_config/disable_password_authentication
@@ -44420,7 +44420,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e2e00c97-7171-4fb4-b461-d631df9a711c
     pretty_name: The header Parameter should not be named as 'Authorization'. If so,
       it will be ignored.
@@ -44458,7 +44458,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e38a8e0a-b88b-4902-b3fe-b0fcb17d5c10
     pretty_name: 'AWS services resource tags are an essential part of managing components.
       As a best practice, the field ''tags'' should have additional tags defined other
@@ -44480,7 +44480,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e3aa0612-4351-4a0d-983f-aefea25cf203
     pretty_name: 'Containers must not be allowed to run with root privileges, which
       means the attributes ''privileged'',''allowPrivilegeEscalation'' and ''readOnlyRootFilesystem''
@@ -44562,7 +44562,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e4f54ff4-d352-40e8-a096-5141073c37a2
     pretty_name: 'Content Delivery Network (CDN) service is used within an AWS account
       to secure and accelerate the delivery of websites. The use of a CDN can provide
@@ -44604,7 +44604,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e542bd46-58c4-4e0f-a52a-1fb4f9548e02
     pretty_name: 'RDS Cluster backup retention period should be specifically defined '
     ref: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_cluster#backup_retention_period
@@ -44632,7 +44632,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e592a0c5-5bdb-414c-9066-5dba7cdea370
     pretty_name: 'IAM Access Analyzer should be enabled and configured to continuously
       monitor resource permissions '
@@ -44731,7 +44731,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e7656d8d-7288-4bbe-b07b-22b389be75ce
     pretty_name: The template path must have a corresponding path parameter for a
       given operation
@@ -44899,7 +44899,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: e9db5fb4-6a84-4abb-b4af-3b94fbdace6d
     pretty_name: 'Responses reference should exist on responses definition field '
     ref: https://swagger.io/specification/v2/#responsesDefinitionsObject
@@ -44969,7 +44969,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: eb3f9744-d24e-4614-b1ff-2a9514eca21c
     pretty_name: 'Operation object parameters should not have both ''body'' and ''formatData''
       locations '
@@ -45018,7 +45018,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ec28bf61-a474-4dbe-b414-6dd3a067d6f0
     pretty_name: 'AWS Cognito UserPool should have MFA (Multi-Factor Authentication)
       defined to users '
@@ -45072,7 +45072,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ed48229d-d43e-4da7-b453-5f98d964a57a
     pretty_name: 'The Body Parameter Object should have the attribute ''schema'' defined '
     ref: https://swagger.io/specification/v2/#parameterObject
@@ -45112,7 +45112,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: ed6e3ba0-278f-47b6-a1f5-173576b40b7e
     pretty_name: 'Alicloud KMS must only possess usable Customer Master Keys (CMK),
       which means the CMKs must have the attribute ''is_enabled'' set to true '
@@ -45317,7 +45317,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f0104061-8bfc-4b45-8a7d-630eb502f281
     pretty_name: 'RDS instance should have automatic minor upgrades enabled, which
       means the attribute ''AutoMinorVersionUpgrade'' must be set to true. '
@@ -45406,7 +45406,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f2702af5-6016-46cb-bbc8-84c766032095
     pretty_name: 'The header Parameter should not be named as ''Accept''. If so, it
       will be ignored. '
@@ -45425,7 +45425,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f29904c8-6041-4bca-b043-dfa0546b8079
     pretty_name: 'Callback reference should exists on components field '
     ref: https://swagger.io/specification/#components-object
@@ -45492,7 +45492,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f34c1c68-4773-4df0-a103-6e2ca32e585f
     pretty_name: Each field on Open API specification which accepts '$ref', infers
       that field is using a reference object, which has only '$ref' key
@@ -45594,7 +45594,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f4cf35d6-da92-48de-ab70-57be2b2e6497
     pretty_name: 'IAM Password should have at least one lowercase letter '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-iam.html#scenario-iam-user
@@ -45671,7 +45671,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f5b2e6af-76f5-496d-8482-8f898c5fdb4a
     pretty_name: 'Parameters properties ''name'' and ''in'' should have unique combinations '
     ref: https://swagger.io/specification/#parameters-object
@@ -45680,7 +45680,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f5c45127-1d28-4b49-a692-0b97da1c3a84
     pretty_name: 'ECS Service should have at least 1 task running '
     ref: https://docs.ansible.com/ansible/latest/collections/community/aws/ecs_service_module.html#ansible-collections-community-aws-ecs-service-module
@@ -45758,7 +45758,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f7ab6c83-ef89-40e1-8a99-32e2599fb665
     pretty_name: Required properties receive value from requests, which makes unnecessary
       declare a default value
@@ -45777,7 +45777,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f7fa95b7-d819-484c-9a2b-665dd1bba25e
     pretty_name: Schema External Documentation URL should be a valid URL
     ref: https://swagger.io/specification/v2/#externalDocumentationObject
@@ -45824,7 +45824,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f8e08a38-fc6e-4915-abbe-a7aadf1d59ef
     pretty_name: 'Key Vault Secrets should have set Content Type '
     ref: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret#content_type
@@ -45887,7 +45887,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: f985a7d2-d404-4a7f-9814-f645f791e46e
     pretty_name: 'The Media Type value should match the following format: /[+suffix][;parameters] '
     ref: https://swagger.io/specification/#media-type-object
@@ -46012,7 +46012,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: fb2b0ecf-1492-491a-a70d-ba1df579175d
     pretty_name: 'Amazon ECS service should be configured to use Load Balancing to
       distribute traffic evenly across the tasks, which means there must exist at
@@ -46032,7 +46032,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: fb7d81e7-4150-48c4-b914-92fc05da6a2f
     pretty_name: 'All properties defined in OpenAPI objects should be known '
     ref: https://swagger.io/specification/
@@ -46041,7 +46041,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: fb889ae9-2d16-40b5-b41f-9da716c5abc1
     pretty_name: 'Parameter reference should exist on parameters definition field '
     ref: https://swagger.io/specification/v2/#parameterObject
@@ -46104,7 +46104,7 @@ rules:
     - ALL
     - boost-baseline
     description: TBD
-    group: best-practices
+    group: top10-insecure-design
     name: fc5109bf-01fd-49fb-8bde-4492b543c34a
     pretty_name: 'All variables should contain a valid type. '
     ref: https://www.terraform.io/docs/language/values/variables.html#input-variable-documentation
@@ -46288,7 +46288,7 @@ default:
     - ALL
     - boost-hardened
     description: the original rule did not map to a known CWE rule
-    group: best-practices
+    group: top10-insecure-design
     name: CWE-UNKNOWN
     pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
     ref: https://checkmarx.com/resource/documents/en/34965-46525-audit-guide.html
