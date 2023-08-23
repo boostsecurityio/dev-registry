@@ -46281,6 +46281,7 @@ rules:
     name: ffee2785-c347-451e-89f3-11aeb08e5c84
     pretty_name: 'Ensure that storage is encrypted. '
     ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html
+
 default:
   CWE-UNKNOWN:
     categories:
