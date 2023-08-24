@@ -38,8 +38,7 @@ rules:
       To prevent such a scenario, update the attribute ''EnforceHTTPS'' to true. '
     group: cloud-resources-public-access
     name: 00603add-7f72-448f-a6c0-9e456a7a3f94
-    pretty_name: Elasticsearch with HTTPS disabled
-    x://www.pulumi.com/registry/packages/aws/api-docs/elasticsearch/domain/#enforcehttps_yaml'
+    pretty_name: 'Elasticsearch with HTTPS disabled x://www.pulumi.com/registry/packages/aws/api-docs/elasticsearch/domain/#enforcehttps_yaml'
   00b78adf-b83f-419c-8ed8-c6018441dd3a:
     categories:
     - ALL
