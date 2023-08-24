@@ -11484,7 +11484,6 @@ rules:
   ASP_Low_Visibility_Improper_Session_Management:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-low-visibility
     - boost-baseline
@@ -11508,7 +11507,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -12679,7 +12677,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -12714,7 +12711,6 @@ rules:
     - ALL
     - checkmarx-secure-coding-guide
     - owasp-top-10
-    - cwe-788
     - boost-hardened
     - boost-baseline
     description: TBD
@@ -12848,7 +12844,6 @@ rules:
     - checkmarx-secure-coding-guide
     - owasp-top-10
     - boost-baseline
-    - cwe-226
     description: TBD
     group: top10-insecure-design
     name: Apple_Secure_Coding_Guide_Unscrubbed_Secret
@@ -12895,7 +12890,6 @@ rules:
     - ALL
     - owasp-top-10
     - checkmarx-best-coding-practices
-    - cwe-788
     - boost-baseline
     description: TBD
     group: top10-insecure-design
@@ -13074,7 +13068,6 @@ rules:
     - owasp-top-10
     - checkmarx-buffer-overflow
     - boost-hardened
-    - cwe-787
     - cwe-top-25
     - boost-baseline
     description: TBD
@@ -13730,7 +13723,6 @@ rules:
     - ALL
     - owasp-top-10
     - checkmarx-insecure-credential-storage
-    - cwe-208
     - boost-baseline
     description: TBD
     group: top10-insecure-design
@@ -13920,7 +13912,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-789
     - boost-baseline
     - checkmarx-integer-overflow
     description: TBD
@@ -14078,7 +14069,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -18361,7 +18351,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -18426,7 +18415,6 @@ rules:
   CSharp_Low_Visibility_Improper_Session_Management:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-low-visibility
     - boost-baseline
@@ -18461,7 +18449,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -18837,7 +18824,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-780
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -18946,7 +18932,6 @@ rules:
   CSharp_Medium_Threat_Excessive_Data_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -19070,7 +19055,6 @@ rules:
   CSharp_Medium_Threat_JWT_Sensitive_Information_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -19548,7 +19532,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-749
     - boost-baseline
     - checkmarx-web-config
     description: TBD
@@ -21748,7 +21731,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -21893,7 +21875,6 @@ rules:
   Groovy_Low_Visibility_Improper_Session_Management:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-low-visibility
     - boost-baseline
@@ -21939,7 +21920,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -22251,7 +22231,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-784
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -22385,7 +22364,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-789
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -22464,7 +22442,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-780
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -23173,7 +23150,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-228
     - boost-baseline
     description: TBD
     group: top10-insecure-design
@@ -23285,7 +23261,6 @@ rules:
     - ALL
     - checkmarx-cordova
     - boost-baseline
-    - cwe-942
     description: TBD
     group: top10-security-misconfiguration
     name: JavaScript_Cordova_Cordova_Insufficient_Domain_Whitelist
@@ -23662,7 +23637,6 @@ rules:
     - ALL
     - checkmarx-low-visibility
     - boost-baseline
-    - cwe-942
     description: TBD
     group: top10-security-misconfiguration
     name: JavaScript_Low_Visibility_Client_Overly_Permissive_Message_Posting
@@ -24246,7 +24220,6 @@ rules:
   JavaScript_Medium_Threat_JWT_Sensitive_Information_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -24559,7 +24532,6 @@ rules:
   JavaScript_Server_Side_Vulnerabilities_Excessive_Data_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - boost-baseline
     - checkmarx-server-side-vulnerability
@@ -24636,7 +24608,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - boost-baseline
     - checkmarx-server-side-vulnerability
     description: TBD
@@ -25331,7 +25302,6 @@ rules:
     - ALL
     - owasp-top-10
     - boost-baseline
-    - cwe-749
     - checkmarx-xs
     description: TBD
     group: top10-broken-access-control
@@ -26052,7 +26022,6 @@ rules:
     - owasp-top-10
     - checkmarx-android
     - boost-hardened
-    - cwe-749
     - boost-baseline
     description: TBD
     group: top10-vulnerable-components
@@ -27412,7 +27381,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -27580,7 +27548,6 @@ rules:
   Java_Low_Visibility_Improper_Session_Management:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-low-visibility
     - boost-baseline
@@ -27648,7 +27615,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -28070,7 +28036,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-784
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -28276,7 +28241,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-789
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -28389,7 +28353,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-780
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -28541,7 +28504,6 @@ rules:
   Java_Medium_Threat_Excessive_Data_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -28734,7 +28696,6 @@ rules:
   Java_Medium_Threat_JWT_Sensitive_Information_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -29349,7 +29310,6 @@ rules:
   Java_Potential_Potential_XXE_Injection:
     categories:
     - ALL
-    - cwe-776
     - boost-baseline
     - checkmarx-potential
     description: TBD
@@ -29395,7 +29355,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-208
     - boost-baseline
     description: TBD
     group: top10-insecure-design
@@ -30657,7 +30616,6 @@ rules:
     - owasp-top-10
     - checkmarx-android
     - boost-hardened
-    - cwe-749
     - boost-baseline
     description: TBD
     group: top10-vulnerable-components
@@ -30992,7 +30950,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-780
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -31038,7 +30995,6 @@ rules:
   Kotlin_Medium_Threat_JWT_Sensitive_Information_Exposure:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-medium-threat
     - boost-baseline
@@ -31458,7 +31414,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -32920,7 +32875,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-790
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -32932,7 +32886,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33194,7 +33147,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-789
     - checkmarx-medium-threat
     - boost-baseline
     description: TBD
@@ -33378,7 +33330,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33445,7 +33396,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33501,7 +33451,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-784
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33893,7 +33842,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33927,7 +33875,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -33963,7 +33910,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -34827,7 +34773,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -34863,7 +34808,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -34897,7 +34841,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -35712,7 +35655,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -35735,7 +35677,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -35862,7 +35803,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-780
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -37021,7 +36961,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -37720,7 +37659,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-203
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -37785,7 +37723,6 @@ rules:
   VbNet_Low_Visibility_Improper_Session_Management:
     categories:
     - ALL
-    - cwe-201
     - owasp-top-10
     - checkmarx-low-visibility
     - boost-baseline
@@ -37809,7 +37746,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-209
     - checkmarx-low-visibility
     - boost-baseline
     description: TBD
@@ -38409,7 +38345,6 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - cwe-749
     - boost-baseline
     - checkmarx-web-config
     description: TBD
