@@ -12316,7 +12316,7 @@ rules:
     - boost-hardened
     - cwe-79
     - owasp-top-10
-    - checkmarx-force-com-critical-security-risk
+    - checkmarx-force-com-critical-risk
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -12332,7 +12332,7 @@ rules:
     - boost-hardened
     - owasp-top-10
     - cwe-99
-    - checkmarx-force-com-critical-security-risk
+    - checkmarx-force-com-critical-risk
     - boost-baseline
     - ALL
     description: The product receives input from an upstream component, but it does
@@ -12347,7 +12347,7 @@ rules:
     - boost-hardened
     - cwe-89
     - owasp-top-10
-    - checkmarx-force-com-critical-security-risk
+    - checkmarx-force-com-critical-risk
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -12364,7 +12364,7 @@ rules:
     - boost-hardened
     - cwe-79
     - owasp-top-10
-    - checkmarx-force-com-critical-security-risk
+    - checkmarx-force-com-critical-risk
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -12377,7 +12377,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_CRUD_Delete:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-472
     - boost-baseline
@@ -12391,7 +12391,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_CSRF:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - cwe-352
     - owasp-top-10
     - boost-baseline
@@ -12406,7 +12406,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_CSRF_With_VF_Call:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - cwe-352
     - owasp-top-10
     - boost-baseline
@@ -12423,7 +12423,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     description: Cookies are not properly scoped, leaving sensitive user data susceptible
       to potential theft or manipulation via cross-site scripting (XSS) or cross-site
@@ -12435,7 +12435,7 @@ rules:
   Apex_Force_com_Serious_Security_Risk_Dangerous_Methods:
     categories:
     - cwe-243
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -12450,7 +12450,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     description: Accesses a field by dereferencing a potentially null pointer, exposing
       an Apex Force.com application to serious security risks including null dereference
@@ -12461,7 +12461,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_FLS_Create:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -12474,7 +12474,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_FLS_Create_Partial:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -12487,7 +12487,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_FLS_Read:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -12500,7 +12500,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_FLS_Update:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -12513,7 +12513,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_FLS_Update_Partial:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -12526,7 +12526,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_Frame_Spoofing:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -12541,7 +12541,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_HttpSplitting:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - cwe-113
     - owasp-top-10
     - boost-baseline
@@ -12557,7 +12557,7 @@ rules:
     categories:
     - boost-baseline
     - cwe-614
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - ALL
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
@@ -12568,7 +12568,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_Insecure_Endpoint:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-319
     - boost-baseline
@@ -12581,7 +12581,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_Sharing:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-472
     - boost-baseline
@@ -12595,7 +12595,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_Sharing_With_Controller:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     - cwe-472
     - boost-baseline
@@ -12609,7 +12609,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Apex_Force_com_Serious_Security_Risk_URL_Redirection_Attack:
     categories:
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - cwe-601
     - owasp-top-10
     - boost-baseline
@@ -12625,7 +12625,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-force-com-serious-security-risk
+    - checkmarx-force-com-serious-risk
     - owasp-top-10
     description: The 'inputText' function in Apex ignores Field-Level Security settings
       (FLS), which can result in unauthorized data access or modification on Salesforce's
@@ -16360,7 +16360,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: In compliance with MISRA C 2012 Rule 1.4, emergent features in C++
       should not be utilized, as these may lead to unpredictable program behavior,
@@ -16373,7 +16373,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Any unused, superfluous, or unreachable code within a C++ program,
       a violation of MISRA C:2012 Rule 2.x directive, which could compromise the reliability
@@ -16386,7 +16386,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: C++ comments that do not comply with the 'R03_X' rule from the MISRA
       C 2012 guidelines are detected. This includes cases where C-style comments (/*...*/),
@@ -16400,7 +16400,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Only standard ASCII characters and escape sequences should be used
       in character and string literals, as per the MISRA C 2012 guideline R04.X, in
@@ -16413,7 +16413,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifiers which should comply with specific naming conventions
       as stated in MISRA C 2012 Rule 5.x are not adhering to those conventions, leading
@@ -16426,7 +16426,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Bits in non-integral bit fields are accessed, violating the MISRA
       C 2012 rule 6.x, which states that bit-fields should only be defined to be of
@@ -16439,7 +16439,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Octal constants are prohibited as per MISRA C 2012 Rule 07.01 to
       avoid confusion with decimal values in C++ code.
@@ -16451,7 +16451,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Unsigned integer constants should be suffixed with "U" or "u" to
       ensure clear representation of their unsigned nature, avoiding possible misinterpretation
@@ -16464,7 +16464,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: In a constant suffix, the lowercase letter 'l' shall not be used
       due to its potential for confusion with the numeral '1', violating MISRA C:2012
@@ -16477,7 +16477,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: String literals are assigned to a pointer to non-const char, violating
       MISRA C 2012 Rule 07.04. This may inadvertently alter string literals, causing
@@ -16490,7 +16490,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifies C++ function prototypes that do not name the parameters,
       violating MISRA C++ 2012 Rule 8.2, which stipulates that all parameters in function
@@ -16503,7 +16503,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Two or more functions have been given identical names, a violation
       of MISRA C 2012 Rule 08.03, potentially creating ambiguity and misleading the
@@ -16516,7 +16516,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: When a function or an object is used, its compatible declaration
       must be visible in its scope, adhering to Rule 08.04 of MISRA C 2012 to ensure
@@ -16529,7 +16529,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: External objects in C++ code should be declared only once to comply
       with the MISRA C 2012 R08.05 rule, avoiding any confusion or errors due to multiple
@@ -16542,7 +16542,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Ensures that each identifier with external linkage is associated
       with exactly one definition within the entire program, in accordance with Rule
@@ -16555,7 +16555,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions and objects are defined as 'extern' while being referenced
       only in a single file, violating MISRA C:2012 Rule 08.07, which can lead to
@@ -16569,7 +16569,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: All internal linkage declarations must use the 'static' keyword in
       accordance with the MISRA C 2012 Rule 08.08 to prevent potential linkage and
@@ -16582,7 +16582,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Ensures that identifiers in C++ are defined at the smallest block
       scope possible, conforming to MISRA C 2012 Rule 08.09 which aims to improve
@@ -16595,7 +16595,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: An inline function in C++ doesn't have 'static' declaration, violating
       rule 8.10 of MISRA C 2012 standards, leading to potential clashes in function
@@ -16608,7 +16608,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: External array declarations must include a defined size to ensure
       compliance with MISRA C 2012 Rule 08.11 and avoid potential runtime issues.
@@ -16620,7 +16620,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Enumerated constant values specified implicitly must be unique in
       compliance with MISRA C 2012 Rule 8.12, to ensure clear differentiation between
@@ -16634,7 +16634,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: A pointer does not point to 'const', breaking the MISRA C 2012 Rule
       8.13 guideline, which can lead to unforeseen side effects or code vulnerabilities
@@ -16647,7 +16647,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule R08.14 in the MISRA C 2012 guidelines, precisely checks
       if the restrict type qualifier does not refer to an object with static storage
@@ -16661,7 +16661,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: A variable's value is being overwritten without prior usage, violating
       the MISRA C:2012 Rule 9.1 which states that every value, which is read, must
@@ -16674,7 +16674,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Array initializers must not contain more initializers than the dimension
       of the array, and the provided initializer must be compatible with the declared
@@ -16688,7 +16688,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Operands within an expression are of an inappropriate essential type,
       violating the MISRA C 2012 Rule 10.1, which aims to ensure correct and safe
@@ -16701,7 +16701,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Character types should not be used inappropriately in arithmetic
       operations to avoid unexpected results due to implicit type conversion, adhering
@@ -16714,7 +16714,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: An expression's value is assigned to a data type with inappropriate
       essential type, contradicting MISRA C 2012 Rule 10.3, which can lead to unexpected
@@ -16728,7 +16728,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Binary operators that operate on a basic type should have operands
       of the same type, as required by MISRA C 2012 Rule 10.4, to ensure type consistency
@@ -16741,7 +16741,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: A violation occurs when the value of an expression is cast to an
       inappropriate essential type according to the MISRA C 2012 standard rule R10.05,
@@ -16754,7 +16754,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Verifies that C++ code adheres to MISRA C 2012 rules 10.6, 10.7,
       and 10.8, ensuring type consistency of composite expressions to prevent integer
@@ -16767,7 +16767,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: R11.x Pointer Type Conversions detects violations of MISRA C 2012
       Rule 11.x, which prohibits conversions between pointer types that may lead to
@@ -16781,7 +16781,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: An issue with operator precedence in a C++ code line occurs when
       one expression consists of intertwined operators without the use of parentheses
@@ -16795,7 +16795,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The right-hand operand of a shift operator in C++ code exceeds the
       width in bits of the essential type of the left-hand operand, violating the
@@ -16808,7 +16808,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Prohibits the use of the comma operator, except in functions and
       arrays, as stated in rule R12.03 of the MISRA C 2012 guidelines to prevent ambiguous
@@ -16821,7 +16821,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Unsigned integer values are used in such a way that could result
       in wrap-around, violating the MISRA C 2012 guideline R12.04 for reliable and
@@ -16834,7 +16834,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The 'sizeof' operator is used with an operand that is not an array
       of type, in violation of MISRA C 2012 Rule 12.5. This may result in unintended
@@ -16847,7 +16847,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Side effects in an expression are not sequenced properly, resulting
       in unreliable operation under the MISRA C++:2008 Rule 13.x. This could lead
@@ -16860,7 +16860,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Control mechanisms in C++ programming, such as if-else and switch-case
       statements, contain expressions that do not resolve to Boolean values as per
@@ -16873,7 +16873,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Enforces MISRA C:2012 rules 15.1 to 15.3, which together prohibit
       usage of 'goto' statements for branch and iteration control, limiting its role
@@ -16886,7 +16886,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Iteration statements must have at most one break statement exiting
       the loop, per MISRA C 2012 Rule 15.4, thus enforcing a single point of exit
@@ -16899,7 +16899,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions should have a single exit point at the end, ensuring program
       flow isn't disrupted and handling resources more efficiently, per MISRA C 2012
@@ -16912,7 +16912,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The body of an iteration statement, selection statement, or a `catch`
       clause in a function definition or at block scope isn't a compound statement,
@@ -16926,7 +16926,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: This rule checks if 'if-else if' construct in C++ code complies with
       MISRA C 2012 Rule 15.07, which states that the construct must end with an 'else'
@@ -16939,7 +16939,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Switch-case constructs in C/C++ code are not adhering to MISRA 2012
       Rule 16.X, which requires a default label to end all switch statements to avoid
@@ -16952,7 +16952,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The standard header <stdarg.h> is used within the code, violating
       Rule 17.1 of MISRA C 2012, which prohibits the use of variable argument functions.
@@ -16964,7 +16964,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The code violates Rule 17.2 of MISRA C 2012 standard as it contains
       recursion, either direct or indirect, which might lead to unpredictable program
@@ -16977,7 +16977,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: "The program uses a function that has been declared implicitly, violating\
       \ the MISRA C 2012 Rule 17.03\u2014increasing potential for undeclared or mistyped\
@@ -16990,7 +16990,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Every non-void function must have a return statement with an expression,
       ensuring that a return value is specified, conforming to MISRA C 2012 Rule 17.4.
@@ -17002,7 +17002,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Enforces MISRA C 2012 directives 17.05 and 17.06 to ensure that a
       function does not take an array as a parameter, but rather a pointer to its
@@ -17015,7 +17015,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: In compliance with MISRA C 2012 Rule 17.07, the value returned by
       a function with a non-void return type must be utilized, preventing potential
@@ -17028,7 +17028,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Function parameters in the C++ language are altered or modified,
       which violates rule 17.08 of MISRA C 2012, potentially leading to unpredictable
@@ -17041,7 +17041,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Misuse of pointer arithmetic tends to violate rule 18.4 of MISRA
       C 2012, suggesting that subtraction or addition operators should not be applied
@@ -17054,7 +17054,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Declarations of pointer types used in nesting do not exceed two levels,
       adhering to the MISRA C 2012 Rule 18.5, to prevent complexities in interpreting
@@ -17067,7 +17067,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule ensures that the addresses of objects with automatic storage
       duration are not copied to other objects, as per MISRA C 2012 Rule 18.06. Doing
@@ -17080,7 +17080,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Variable length arrays and flexible array members are prohibited,
       adhering to guidelines R18.07 and R18.08 from MISRA-C:2012 rules, thus ensuring
@@ -17093,7 +17093,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifies cases in C++ code where two pointers are used to simultaneously
       manipulate the same memory space, a violation of rule 19.x of the MISRA C 2012
@@ -17106,7 +17106,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: When a '#include' directive is used in a file, it fails to respect
       the inclusion precedence outlined by MISRA C 2012 Rule 20.1, possibly disrupting
@@ -17119,7 +17119,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Include file names must be a sequence of valid (ISO 646 Basic) source
       characters, excluding NUL, and do not contain a UCN encoding a character that
@@ -17133,7 +17133,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Violates MISRA C 2012 Rule 20.3, which stipulates that the '#include'
       directive must not use an angle-bracket form when including system library files
@@ -17147,7 +17147,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Macro identifiers align with C++ language keyword names, which violates
       MISRA C 2012 Rule 20.04 and can lead to confusing or misleading code.
@@ -17159,7 +17159,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The '#undef' directive is utilized in the code, violating Rule 20.5
       of the MISRA C 2012 standard, which forbids the use of this directive in C programming
@@ -17172,7 +17172,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: The preprocessor concatenation operations do not comply with MISRA
       C 2012 Rules R20.10 to R20.12, implying a risk in misinterpretation of the combined
@@ -17185,7 +17185,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: 'Ensures compliance with MISRA C 2012 Rule 20.13: Every preprocessor
       directive in the code must be a valid and well-formed directive as per the standard.
@@ -17199,7 +17199,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: An 'if' directive and an 'else' directive from a pair of conditional
       inclusion preprocessor directives are not part of the same file in C++, violating
@@ -17213,7 +17213,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Checks for the usage of C Standard Library functions not permissible
       under MISRA C:2012 rules 21.1 to 21.12, to guarantee safety, reliability, and
@@ -17226,7 +17226,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: Checks for the use of C standard library types, as dictated by MISRA
       C:2012 Rules 21.13 to 21.20, which pose potential code safety and reliability
@@ -17239,7 +17239,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c-2012
+    - checkmarx-misrac
     - owasp-top-10
     description: 'Violates directive 4.13 of MISRA C 2012 guidelines: do not rely
       on undefined or unspecified behavior of any kind, including memory allocation
@@ -17252,7 +17252,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Enforces the use of "/* ... */" style for multi-line comments in
       C++ code instead of using a sequence of single line comments with "//", in accordance
@@ -17265,7 +17265,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Detects the presence of nested comments in C++ code, a violation
       of MISRA C:2004 Rule 2.3, which may lead to misinterpretation and ambiguity
@@ -17278,7 +17278,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Sections of code are commented out, violating Rule 02.04 of the MISRA
       C guidelines, which could indicate unfinished work or obsolete logic.
@@ -17290,7 +17290,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Code contains '#pragma' directives that are not explained with adjacent
       comments, thereby violating MISRA C rule 03.04, which deems it necessary to
@@ -17303,7 +17303,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Non-standard escape sequences are used in the program, violating
       rule R04.01 of the MISRA C guidelines, which requires all escape sequences to
@@ -17316,7 +17316,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Trigraph sequences are used in the code, violating the MISRA C Rule
       04.02, which discourages their usage owing to possible confusion and misinterpretation.
@@ -17328,7 +17328,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifier names in a C or C++ file exceed the recommended length
       specified by the MISRA-C coding standard, potentially leading to legibility
@@ -17341,7 +17341,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifiers in an inner scope are used that hide identifiers in an
       outer scope, which may lead to confusion and errors, contradicting the MISRA
@@ -17354,7 +17354,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The same name is used for different 'typedef' entities within the
       same codebase, violating MISRA C Rule 5.3, thus leading to potential code ambiguities.
@@ -17366,7 +17366,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A tag name is being reused for different types within the same scope,
       violating the MISRA C Rule 05.04, and potentially leading to type confusion.
@@ -17378,7 +17378,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: An identifier with the static storage class specification appears
       more than once within the same scope, contravening rule 05.05 of the Motor Industry
@@ -17391,7 +17391,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A single identifier name has been used for more than one entity within
       a scope, violating the MISRA C Rule 5.7 and leading to possible confusion and
@@ -17404,7 +17404,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The use of 'plain char' type, which doesn't specify signedness, is
       not compliant with MISRA C Rule 6.1 and may lead to unexpected behavior in C++.
@@ -17417,7 +17417,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Identifies instances in C++ code where plain 'char' type is used,
       in violation of MISRA C++ Rule 6-2-1 which recommends using 'signed' or 'unsigned'
@@ -17430,7 +17430,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Basic types in C++ code like int, char, etc., are used directly instead
       of through a typedef declaration, violating MISRA C Rule 6.3. This could lead
@@ -17443,7 +17443,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Bit fields should only be defined with `unsigned int` or `signed
       int` types, helping to prevent unexpected behavior or data corruption due to
@@ -17456,7 +17456,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A bit-field declaration with a size greater than the intended bit
       width may cause unintended results and violates MISRA C:2004 Rule 6.5.
@@ -17468,7 +17468,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: An octal constant (other than zero) is being used which could lead
       to confusion or errors, violating MISRA C rule 07.01.
@@ -17480,7 +17480,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The type of a standard library function is not identical in a function
       declaration and its corresponding definition, violating MISRA-C rule 08.03 and
@@ -17493,7 +17493,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Objects or functions are used in a header file (.h file), conflicting
       with MISRA C's Rule 08.05, which prohibits declaring such entities in header
@@ -17506,7 +17506,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Objects with block scope should not be declared in the block if they
       are only used by a single function, as outlined in MISRA C:2004, Rule 8.7, to
@@ -17519,7 +17519,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: An externally linked object is declared more than once, causing redundancy
       and potentially leading to unpredictable behavior, in violation of MISRA C rule
@@ -17532,7 +17532,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Enum elements in C++ are not initialized following the first member
       and all elements are not consistently initialized, contravening MISRA C rule
@@ -17545,7 +17545,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: 'In C or C++ programming, unsigned constants must explicitly carry
       the ''U'' suffix, as per MISRA C : Rule 10.6. This rule identifies when the
@@ -17559,7 +17559,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule checks for situations where logical '&&' and '||' operators
       don't have primary expressions as operands, which is a violation of MISRA C
@@ -17573,7 +17573,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Bitwise operators are applied to signed data types in C++, violating
       MISRA C guideline (Rule 12.07). This could lead to unpredictable behavior due
@@ -17586,7 +17586,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Applies the unary minus operator to an unsigned type, which, according
       to MISRA C Rule 12.9, can result in undefined behavior due to wrapping around
@@ -17599,7 +17599,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The comma operator is being used in an expression. According to the
       Motor Industry Software Reliability Association (MISRA) C rule 12.10, this is
@@ -17613,7 +17613,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Floating point values are treated as though they have an underlying
       bit representation, violating MISRA C rule 12.12, which can lead to unexpected
@@ -17626,7 +17626,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule indicates the usage of increment (++) and decrement (--)
       operators, which is not compliant with MISRA C guideline 12.13 due to potential
@@ -17639,7 +17639,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Assignment operators are used improperly within boolean expressions,
       violating MISRA C Rule 13.01. This could lead to unpredictable software behavior.
@@ -17651,7 +17651,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Compares floating point numbers for equality or inequality, which
       contradicts MISRA C R13.03 due to potential inaccuracies in floating point storage
@@ -17664,7 +17664,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Floating point objects are being used in for loop control structures,
       which is a violation of MISRA C rule 13.04. This can lead to unpredictable behavior
@@ -17677,7 +17677,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Violates MISRA C Rule 13.06 as the loop iterator is modified in the
       body of the loop, which may lead to unpredictable iteration behaviors.
@@ -17689,7 +17689,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Refers to the use of 'goto' statement in C++ which violates the MISRA
       C 2004 Rule 14.4, deeming it as non-compliant due to potential control flow
@@ -17702,7 +17702,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The 'continue' statement is used in iteration statements, which contradicts
       rule 14.05 of the MISRA C guidelines, recommending against its use for better
@@ -17715,7 +17715,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Indicates the presence of multiple break statements within a loop
       or iteration, which violates MISRA C Rule 14.06 and disrupts expected control
@@ -17728,7 +17728,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions must have a single point of exit at the end, maintaining
       only one return statement, as per the MISRA C:2012 Rule 14.7, to improve readability
@@ -17741,7 +17741,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The last statement of a switch case or an iteration directive is
       not a compound statement, which contradicts the MISRA C rule 14.08 guideline
@@ -17754,7 +17754,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: An 'if' or 'else if' conditional statement, containing a non-compound
       statement as its body, must be enclosed in braces {}. Violating this requirement
@@ -17768,7 +17768,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: 'An ''if'' / ''else if'' construct is not ending with an ''else''
       clause, violating MISRA C''s Rule 14.10 and potentially leading to unanticipated
@@ -17783,7 +17783,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A case in a switch statement is not enclosed by braces, violating
       the MISRA C Rule 15.1, thus possibly causing unexpected fall-through behavior.
@@ -17795,7 +17795,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A non-empty switch clause lacks a 'break' statement. According to
       the MISRA C Guidelines (Rule 15.2), this may lead to unintended execution of
@@ -17808,7 +17808,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A 'switch' statement in C++ does not have a 'default' clause as the
       last clause, violating the MISRA C Rule 15.03 and potentially leading to unexpected
@@ -17821,7 +17821,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A switch statement doesn't include any case labels, negating its
       purpose; as per MISRA C Rule 15.5, this renders the code non-compliant with
@@ -17834,7 +17834,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions with a variable number of arguments are used, in violation
       of MISRA C Rule 16.01. This can lead to potential security and stability issues.
@@ -17846,7 +17846,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule identifies uses of recursion within C++ code, a practice
       prohibited by the MISRA C standard due to the possible risks of stack overflow.
@@ -17858,7 +17858,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Violation of MISRA C Rule 16.3, indicating a function prototype is
       declared without specifying parameter identifiers, which may lead to confusion
@@ -17871,7 +17871,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The identifiers in a function prototype don't match those in its
       function definition, violating rule R16.04 of the Motor Industry Software Reliability
@@ -17884,7 +17884,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A function prototype declaration without parameters presents ambiguity
       and potential misuse opportunities, violating the MISRA C rule (16.05), which
@@ -17897,7 +17897,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: 'A function is invoked with a number of arguments that does not match
       the number of parameters in its declaration, violating MISRA C rule R16.06.
@@ -17912,7 +17912,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Parameters of a function that are pointers to non-const should be
       pointers to const if they are not modified, to maintain data integrity and prevent
@@ -17925,7 +17925,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Non-void functions in C++ lack an explicit return statement, violating
       MISRA C Rule 16.08, which may cause unpredictable program behavior due to undefined
@@ -17938,7 +17938,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The function identifier is being used inappropriately, i.e., not
       as a function call or pointer to function, which violates MISRA C Rule 16.09.
@@ -17950,7 +17950,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule identifies the use of 'union' data types in C++. According
       to MISRA C guidelines (Rule 18.4), unions should not be used due to potential
@@ -17963,7 +17963,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A non-preprocessor command appears before a '#include' directive
       in a file, which violates the MISRA C:2004 Rule 19.1, making the code prone
@@ -17976,7 +17976,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Header file names include non-standard characters, violating Rule
       19.2 of MISRA C which states that standardized or expanded identifiers should
@@ -17989,7 +17989,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The '#include' directive format does not adhere to the MISRA C 2012
       Rule 19.3, advocating that all '#include' directives should be located in either
@@ -18002,7 +18002,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The code violates MISRA C Rule 19.5 by using '#define' or '#undef'
       directive within a function or block scope, which can cause unpredictable behavior
@@ -18015,7 +18015,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: An '#undef' directive is used within a source file, causing potential
       discrepancies and undefined behaviour in the compiled program, a violation of
@@ -18028,7 +18028,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: A C++ macro utilizes multiple '#' or '##' preprocessor operators,
       violating MISRA-C rule 19.12 for safe and reliable code in embedded systems.
@@ -18040,7 +18040,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The C++ preprocessor operator (#) is in use, contradicting the MISRA
       C rule 19.13, which outlaws the utilization of this operator as a measure against
@@ -18053,7 +18053,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: In the examined C++ code, a preprocessor '#if' operator and its corresponding
       '#else' operator are located in separate files, which is a violation of the
@@ -18067,7 +18067,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The rule indicates the use of the 'errno' indicator from the 'errno.h'
       library in C++, which is a direct violation of the MISRA C:2012 Rule 20.5, stressing
@@ -18081,7 +18081,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The use of 'offsetof' macro from 'stddef.h' is not compliant with
       the Motor Industry Software Reliability Association's C coding standards (MISRA
@@ -18095,7 +18095,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The code uses setjmp/longjmp macros from <setjmp.h> which is disallowed
       by MISRA C Rule 20.7 due to its non-deterministic flow of control. This could
@@ -18108,7 +18108,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The code includes signal handling functionality from 'signal.h',
       a violation of the MISRA C Rule 20.08 (The signal handling facilities of <signal.h>
@@ -18121,7 +18121,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Objects from the 'stdio.h' library are used, which is prohibited
       by MISRA C guideline (Rule 20.9). This could introduce vulnerabilities associated
@@ -18134,7 +18134,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions atof, atoi, and atol from stdlib.h are used, which violates
       Rule 20.10 from the MISRA C Guidelines encouraging use of application-specific
@@ -18147,7 +18147,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: Functions 'abort', 'exit', 'getenv', and 'system' from 'stdlib.h'
       are used, violating MISRA C Rule 20.11 that discourages their usage due to potential
@@ -18160,7 +18160,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-misra-c
+    - checkmarx-misrac
     - owasp-top-10
     description: The code employs time handling functions or macros from the 'time.h'
       header file, violating MISRA C rule 20.12, which can lead to unpredictable behavior
@@ -21067,7 +21067,7 @@ rules:
   CSharp_WebConfig_CookieLess_Authentication:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-642
@@ -21082,7 +21082,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - owasp-top-10
     description: Session state is configured with cookieless enabled in web.config,
       leading to possible session hijacking through URL leaks.
@@ -21094,7 +21094,7 @@ rules:
     categories:
     - cwe-12
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: An ASP .NET application must enable custom error pages in order to
@@ -21107,7 +21107,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-11
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
@@ -21119,7 +21119,7 @@ rules:
     categories:
     - cwe-548
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: A directory listing is inappropriately exposed, yielding potentially
@@ -21131,7 +21131,7 @@ rules:
   CSharp_WebConfig_Elmah_Enabled:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-213
@@ -21148,7 +21148,7 @@ rules:
     categories:
     - cwe-489
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: The product is deployed to unauthorized actors with debugging code
@@ -21163,7 +21163,7 @@ rules:
     - cwe-1004
     - ALL
     - boost-baseline
-    - checkmarx-webconfig
+    - checkmarx-web-config
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
     group: top10-security-misconfiguration
@@ -21173,7 +21173,7 @@ rules:
   CSharp_WebConfig_Missing_X_Frame_Options:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-1021
     - boost-baseline
     - ALL
@@ -21187,7 +21187,7 @@ rules:
   CSharp_WebConfig_NonUniqueFormName:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-694
     - boost-baseline
     - ALL
@@ -21201,7 +21201,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-260
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
@@ -21214,7 +21214,7 @@ rules:
     - boost-baseline
     - cwe-614
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
@@ -21225,7 +21225,7 @@ rules:
   CSharp_WebConfig_SlidingExpiration:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-613
@@ -21240,7 +21240,7 @@ rules:
     categories:
     - boost-baseline
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-749
     - ALL
     description: The product provides an Applications Programming Interface (API)
@@ -21503,7 +21503,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-mobile-best-coding-practice
+    - checkmarx-best-coding-practices
     - owasp-top-10
     description: Sensitive information stored in external storage is not encrypted,
       leaving it vulnerable to unauthorized access or data breaches.
@@ -21515,7 +21515,7 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - checkmarx-mobile-best-coding-practice
+    - checkmarx-best-coding-practices
     - boost-baseline
     - cwe-250
     description: The product performs an operation at a privilege level that is higher
@@ -21529,7 +21529,7 @@ rules:
     categories:
     - cwe-477
     - owasp-top-10
-    - checkmarx-mobile-best-coding-practice
+    - checkmarx-best-coding-practices
     - boost-baseline
     - ALL
     description: The code uses deprecated or obsolete functions, which suggests that
@@ -21542,7 +21542,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-mobile-best-coding-practice
+    - checkmarx-best-coding-practices
     - owasp-top-10
     description: WebView cache data in Dart mobile applications is not properly cleared
       or controlled, posing a risk for sensitive information leakage.
@@ -21553,7 +21553,7 @@ rules:
   Dart_Mobile_High_Risk_Resource_Updated_By_URL_Data:
     categories:
     - boost-hardened
-    - checkmarx-mobile-high-risk
+    - checkmarx-android
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -21566,7 +21566,7 @@ rules:
   Dart_Mobile_High_Risk_Sensitive_Information_Over_HTTP:
     categories:
     - boost-hardened
-    - checkmarx-mobile-high-risk
+    - checkmarx-android
     - owasp-top-10
     - cwe-319
     - boost-baseline
@@ -21580,7 +21580,7 @@ rules:
   Dart_Mobile_High_Risk_Sensitive_Information_Through_URL_Scheme:
     categories:
     - boost-hardened
-    - checkmarx-mobile-high-risk
+    - checkmarx-android
     - owasp-top-10
     - cwe-319
     - boost-baseline
@@ -21595,7 +21595,7 @@ rules:
     categories:
     - boost-hardened
     - cwe-922
-    - checkmarx-mobile-high-risk
+    - checkmarx-android
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -21608,7 +21608,7 @@ rules:
   Dart_Mobile_High_Risk_Unsafe_Reflection:
     categories:
     - boost-hardened
-    - checkmarx-mobile-high-risk
+    - checkmarx-android
     - cwe-470
     - owasp-top-10
     - boost-baseline
@@ -21623,7 +21623,7 @@ rules:
   Dart_Mobile_Low_Visibility_App_Transport_Security_Disabled:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - cwe-319
     - boost-baseline
     - ALL
@@ -21636,7 +21636,7 @@ rules:
   Dart_Mobile_Low_Visibility_Autocorrection_Keystroke_Logging:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     - cwe-359
@@ -21652,7 +21652,7 @@ rules:
     categories:
     - cwe-922
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product stores sensitive information without properly limiting
@@ -21665,7 +21665,7 @@ rules:
     categories:
     - ALL
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - cwe-259
     description: The product contains a hard-coded password, which it uses for its
@@ -21677,7 +21677,7 @@ rules:
   Dart_Mobile_Low_Visibility_Implicit_Intent_With_Read_Write_Permissions:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - cwe-668
     - boost-baseline
     - ALL
@@ -21691,7 +21691,7 @@ rules:
     categories:
     - cwe-404
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product does not release or incorrectly releases a resource before
@@ -21704,7 +21704,7 @@ rules:
     categories:
     - cwe-477
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The code uses deprecated or obsolete functions, which suggests that
@@ -21716,7 +21716,7 @@ rules:
   Dart_Mobile_Low_Visibility_Insecure_HTTP_Connections_Enabled:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - cwe-319
     - boost-baseline
     - ALL
@@ -21729,7 +21729,7 @@ rules:
   Dart_Mobile_Low_Visibility_Missing_Certificate_Pinning:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - cwe-295
     - boost-baseline
     - ALL
@@ -21742,7 +21742,7 @@ rules:
     categories:
     - owasp-top-10
     - cwe-829
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product imports, requires, or includes executable functionality
@@ -21755,7 +21755,7 @@ rules:
     categories:
     - cwe-693
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product does not use or incorrectly uses a protection mechanism
@@ -21768,7 +21768,7 @@ rules:
     categories:
     - cwe-693
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product does not use or incorrectly uses a protection mechanism
@@ -21781,7 +21781,7 @@ rules:
     categories:
     - owasp-top-10
     - cwe-472
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The web application does not sufficiently verify inputs that are
@@ -21795,7 +21795,7 @@ rules:
     categories:
     - cwe-89
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -21811,7 +21811,7 @@ rules:
     categories:
     - cwe-79
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -21826,7 +21826,7 @@ rules:
     categories:
     - cwe-922
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product stores sensitive information without properly limiting
@@ -21839,7 +21839,7 @@ rules:
     categories:
     - cwe-89
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -21855,7 +21855,7 @@ rules:
     categories:
     - cwe-79
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     - cwe-top-25
@@ -21870,7 +21870,7 @@ rules:
     categories:
     - cwe-922
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product stores sensitive information without properly limiting
@@ -21883,7 +21883,7 @@ rules:
     categories:
     - owasp-top-10
     - cwe-377
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: Creating and using insecure temporary files can leave application
@@ -21896,7 +21896,7 @@ rules:
     categories:
     - cwe-927
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The Android application uses an implicit intent for transmitting
@@ -21908,7 +21908,7 @@ rules:
   Dart_Mobile_Low_Visibility_Use_of_Native_Language:
     categories:
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - cwe-695
     - boost-baseline
     - ALL
@@ -21922,7 +21922,7 @@ rules:
     categories:
     - cwe-330
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product uses insufficiently random numbers or values in a security
@@ -21935,7 +21935,7 @@ rules:
     categories:
     - cwe-922
     - owasp-top-10
-    - checkmarx-mobile-low-visibility
+    - checkmarx-android
     - boost-baseline
     - ALL
     description: The product stores sensitive information without properly limiting
@@ -21947,7 +21947,7 @@ rules:
   Dart_Mobile_Medium_Threat_Broken_or_Risky_Encryption_Algorithm:
     categories:
     - cwe-327
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -21959,7 +21959,7 @@ rules:
   Dart_Mobile_Medium_Threat_Broken_or_Risky_Hashing_Function:
     categories:
     - cwe-328
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -21974,7 +21974,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Communication_Over_HTTP:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - cwe-319
     - boost-baseline
@@ -21987,7 +21987,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Encoding_Used_Instead_of_Encryption:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - cwe-311
     - boost-baseline
@@ -22000,7 +22000,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Improper_Certificate_Validation:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - cwe-295
     - boost-baseline
@@ -22012,7 +22012,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Information_Exposure_Through_Query_String:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - cwe-598
     - boost-baseline
@@ -22026,7 +22026,7 @@ rules:
   Dart_Mobile_Medium_Threat_Insecure_Asymmetric_Cryptographic_Algorithm_Parameters:
     categories:
     - ALL
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - cwe-326
@@ -22039,7 +22039,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Insufficiently_Secure_Password_Storage_Algorithm_Parameters:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22053,7 +22053,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Pasteboard_Leakage:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22067,7 +22067,7 @@ rules:
   Dart_Mobile_Medium_Threat_Path_Traversal:
     categories:
     - ALL
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - cwe-22
@@ -22083,7 +22083,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Poor_Authorization_and_Authentication:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-287
     - owasp-top-10
     - boost-baseline
@@ -22097,7 +22097,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Public_Storage_SQL_Injection:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-89
     - owasp-top-10
     - boost-baseline
@@ -22113,7 +22113,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Public_Storage_WebView_JavaScript_Injection:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -22128,7 +22128,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_SQL_Injection_from_URL_Scheme_or_Intent:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-89
     - owasp-top-10
     - boost-baseline
@@ -22146,7 +22146,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     description: Sensitive input fields in Dart mobile applications allow third-party
       keyboards, posing a data leakage risk as these keyboards can capture and send
@@ -22158,7 +22158,7 @@ rules:
   Dart_Mobile_Medium_Threat_Unencrypted_Sensitive_Information_in_External_Storage:
     categories:
     - cwe-922
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22170,7 +22170,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Use_of_Cryptographically_Weak_PRNG:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-338
     - owasp-top-10
     - boost-baseline
@@ -22184,7 +22184,7 @@ rules:
   Dart_Mobile_Medium_Threat_Use_of_Hardcoded_Cryptographic_IV:
     categories:
     - ALL
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - cwe-326
@@ -22198,7 +22198,7 @@ rules:
   Dart_Mobile_Medium_Threat_Use_of_Hardcoded_Cryptographic_Key_in_Client:
     categories:
     - cwe-321
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22210,7 +22210,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_Use_of_Hardcoded_Salt:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - owasp-top-10
     - cwe-760
     - boost-baseline
@@ -22224,7 +22224,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_Medium_Threat_WebView_JavaScript_Injection_from_URL_Scheme:
     categories:
-    - checkmarx-mobile-medium-threat
+    - checkmarx-medium-threat
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -22240,7 +22240,7 @@ rules:
   Go_AWS_Lambda_AWS_Credentials_Leak:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22254,7 +22254,7 @@ rules:
   Go_AWS_Lambda_DynamoDB_NoSQL_Injection:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-74
     - owasp-top-10
     - boost-baseline
@@ -22269,7 +22269,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_AWS_Lambda_Hardcoded_AWS_Credentials:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22284,7 +22284,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_AWS_Lambda_Permission_Manipulation_In_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -22297,7 +22297,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_AWS_Lambda_Race_Condition_Global_Scope:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22310,7 +22310,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_AWS_Lambda_Unrestricted_Read_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -22324,7 +22324,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_AWS_Lambda_Unrestricted_Write_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -22339,7 +22339,7 @@ rules:
   Go_AWS_Lambda_Use_of_Hardcoded_Cryptographic_Key_On_Server:
     categories:
     - cwe-321
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22354,7 +22354,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-15
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
     group: top10-security-misconfiguration
@@ -25447,7 +25447,7 @@ rules:
   JavaScript_AWS_Lambda_DynamoDB_NoSQL_Injection:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-74
     - owasp-top-10
     - boost-baseline
@@ -25462,7 +25462,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_AWS_Lambda_Permission_Manipulation_in_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -25475,7 +25475,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_AWS_Lambda_Race_Condition_Concurrent_Instances:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-366
     - owasp-top-10
     - boost-baseline
@@ -25489,7 +25489,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_AWS_Lambda_Unrestricted_Read_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -25503,7 +25503,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_AWS_Lambda_Unrestricted_Write_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -25520,7 +25520,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-15
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
     group: top10-security-misconfiguration
@@ -25530,7 +25530,6 @@ rules:
   JavaScript_Angular_Angular_Client_DOM_XSS:
     categories:
     - boost-hardened
-    - checkmarx-angular
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -25546,7 +25545,6 @@ rules:
   JavaScript_Angular_Angular_Client_Stored_DOM_XSS:
     categories:
     - boost-hardened
-    - checkmarx-angular
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -25562,7 +25560,6 @@ rules:
   JavaScript_Angular_Angular_Deprecated_API:
     categories:
     - cwe-477
-    - checkmarx-angular
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -25574,7 +25571,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Angular_Angular_Improper_Type_Pipe_Usage:
     categories:
-    - checkmarx-angular
     - cwe-228
     - owasp-top-10
     - boost-baseline
@@ -25588,7 +25584,6 @@ rules:
   JavaScript_Angular_Angular_Usage_of_Unsafe_DOM_Sanitizer:
     categories:
     - cwe-116
-    - checkmarx-angular
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -26917,7 +26912,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_ReactNative_Clipboard_Information_Leakage:
     categories:
-    - checkmarx-reactnative
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -26931,7 +26925,6 @@ rules:
   JavaScript_ReactNative_Insecure_Text_Entry:
     categories:
     - cwe-549
-    - checkmarx-reactnative
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -26943,7 +26936,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_ReactNative_Insufficient_Transport_Layer_Security:
     categories:
-    - checkmarx-reactnative
     - owasp-top-10
     - cwe-319
     - boost-baseline
@@ -26957,7 +26949,6 @@ rules:
   JavaScript_ReactNative_Missing_Root_Or_Jailbreak_Check:
     categories:
     - cwe-693
-    - checkmarx-reactnative
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -26970,7 +26961,6 @@ rules:
   JavaScript_ReactNative_Unencrypted_Sensitive_Data_Storage:
     categories:
     - cwe-922
-    - checkmarx-reactnative
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -27093,7 +27083,7 @@ rules:
     - cwe-36
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses external input to construct a pathname that should
       be within a restricted directory, but it does not properly neutralize absolute
       path sequences such as "/abs/path" that can resolve to a location that is outside
@@ -27108,7 +27098,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The web application does not, or can not, sufficiently verify whether
       a well-formed, valid, consistent request was intentionally provided by the user
@@ -27123,7 +27113,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product stores sensitive information in cleartext within a resource
       that might be accessible to another control sphere.
     group: top10-insecure-design
@@ -27137,7 +27127,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27154,7 +27144,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of a command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27170,7 +27160,7 @@ rules:
     - cwe-482
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The code uses an operator for comparison when the intention was to
       perform an assignment.
     group: top10-insecure-design
@@ -27183,7 +27173,7 @@ rules:
     - cwe-472
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The web application does not sufficiently verify inputs that are
       assumed to be immutable but are actually externally controllable, such as hidden
       form fields.
@@ -27197,7 +27187,7 @@ rules:
     - cwe-369
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product divides a value by zero.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Divide_By_Zero
@@ -27209,7 +27199,7 @@ rules:
     - cwe-829
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product imports, requires, or includes executable functionality
       (such as a library) from a source that is outside of the intended control sphere.
     group: top10-software-data-integrity-failures
@@ -27222,7 +27212,7 @@ rules:
     - cwe-201
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The code transmits data to another actor, but a portion of the data
       includes sensitive information that should not be accessible to that actor.
     group: top10-broken-access-control
@@ -27235,7 +27225,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product contains an expression that will always evaluate to false.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Expression_is_Always_False
@@ -27247,7 +27237,7 @@ rules:
     - cwe-571
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product contains an expression that will always evaluate to true.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Expression_is_Always_True
@@ -27259,7 +27249,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product receives data from an HTTP agent/component (e.g., web
       server, proxy, browser, etc.), but it does not neutralize or incorrectly neutralizes
       CR and LF characters before the data is included in outgoing HTTP headers.
@@ -27272,7 +27262,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-547
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
@@ -27286,7 +27276,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: A directory listing is inappropriately exposed, yielding potentially
       sensitive information to attackers.
     group: top10-broken-access-control
@@ -27297,7 +27287,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-532
     description: Information written to log files can be of a sensitive nature and
       give valuable guidance to an attacker or expose sensitive user information.
@@ -27311,7 +27301,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product generates an error message that includes sensitive information
       about its environment, users, or associated data.
     group: top10-insecure-design
@@ -27325,7 +27315,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Relates to the usage of insecure direct object references.
     group: top10-broken-access-control
     name: JavaScript_Server_Side_Vulnerabilities_Insecure_Direct_Object_References
@@ -27338,7 +27328,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Relates to generic security misconfigurations.
     group: top10-broken-access-control
     name: JavaScript_Server_Side_Vulnerabilities_Insecure_Storage_of_Sensitive_Data
@@ -27350,7 +27340,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The web application does not, or can not, sufficiently verify whether
       a well-formed, valid, consistent request was intentionally provided by the user
@@ -27364,7 +27354,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-613
     description: According to WASC, "Insufficient Session Expiration is when a web
       site permits an attacker to reuse old session credentials or session IDs for
@@ -27378,7 +27368,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-613
     description: According to WASC, "Insufficient Session Expiration is when a web
       site permits an attacker to reuse old session credentials or session IDs for
@@ -27392,7 +27382,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-613
     description: According to WASC, "Insufficient Session Expiration is when a web
       site permits an attacker to reuse old session credentials or session IDs for
@@ -27406,7 +27396,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product implements an authentication technique, but it skips
       a step that weakens the technique.
     group: top10-id-authn-failures
@@ -27420,7 +27410,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: When an actor claims to have a given identity, the product does not
       prove or insufficiently proves that the claim is correct.
@@ -27434,7 +27424,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: When an actor claims to have a given identity, the product does not
       prove or insufficiently proves that the claim is correct.
@@ -27447,7 +27437,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-117
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
     group: top10-security-logging-monitoring-failures
@@ -27459,7 +27449,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-346
     description: The product does not properly verify that the source of data or communication
       is valid.
@@ -27473,7 +27463,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The code does not have a default case in an expression with multiple
       conditions, such as a switch statement.
     group: top10-insecure-design
@@ -27486,7 +27476,7 @@ rules:
     - cwe-311
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product does not encrypt sensitive or critical information before
       storage or transmission.
     group: top10-insecure-design
@@ -27500,7 +27490,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27516,7 +27506,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product does not check the return value from a method or function,
       which can prevent it from detecting unexpected states and conditions.
     group: top10-insecure-design
@@ -27529,7 +27519,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product omits a break statement within a switch or similar construct,
       causing code associated with multiple conditions to execute. This can cause
       problems when the programmer only intended to execute code associated with one
@@ -27544,7 +27534,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: A web application accepts a user-controlled input that specifies
       a link to an external site, and uses that link in a Redirect. This simplifies
       phishing attacks.
@@ -27558,7 +27548,7 @@ rules:
     - cwe-472
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The web application does not sufficiently verify inputs that are
       assumed to be immutable but are actually externally controllable, such as hidden
       form fields.
@@ -27572,7 +27562,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Obscuring a password with a trivial encoding does not protect the
       password.
     group: top10-crypto-failures
@@ -27585,7 +27575,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Storing a password in plaintext may result in a system compromise.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Plaintext_Storage_of_a_Password
@@ -27597,7 +27587,7 @@ rules:
     - cwe-285
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product does not perform or incorrectly performs an authorization
       check when an actor attempts to access a resource or perform an action.
     group: top10-broken-access-control
@@ -27610,7 +27600,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The web application does not, or can not, sufficiently verify whether
       a well-formed, valid, consistent request was intentionally provided by the user
@@ -27625,7 +27615,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-359
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product does not properly prevent a person's private, personal
       information from being accessed by actors who either (1) are not explicitly
       authorized to access the information or (2) do not have the implicit consent
@@ -27640,7 +27630,7 @@ rules:
     - cwe-400
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product does not properly control the allocation and maintenance
       of a limited resource, thereby enabling an actor to influence the amount of
@@ -27656,7 +27646,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product does not neutralize or incorrectly neutralizes user-controllable
       input before it is placed in output that is used as a web page that is served
@@ -27671,7 +27661,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses external input to construct a pathname that should
       be within a restricted directory, but it does not properly neutralize sequences
       such as ".." that can resolve to a location that is outside of that directory.
@@ -27686,7 +27676,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27702,7 +27692,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses OpenSSL and trusts or uses a certificate without
       using the SSL_get_verify_result() function to ensure that the certificate satisfies
       all necessary security requirements.
@@ -27716,7 +27706,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The web server receives a URL or similar request from an upstream
       component and retrieves the contents of this URL, but it does not sufficiently
@@ -27732,7 +27722,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27749,7 +27739,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Relates to generic security misconfigurations.
     group: top10-security-misconfiguration
     name: JavaScript_Server_Side_Vulnerabilities_Security_Misconfiguration
@@ -27761,7 +27751,7 @@ rules:
     - cwe-319
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product transmits sensitive or security-critical data in cleartext
       in a communication channel that can be sniffed by unauthorized actors.
     group: top10-broken-access-control
@@ -27774,7 +27764,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-730
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Relates to avenues that can cause denial of serivce.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Server_DoS_by_Loop
@@ -27786,7 +27776,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-730
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: Relates to avenues that can cause denial of serivce.
     group: top10-insecure-design
     name: JavaScript_Server_Side_Vulnerabilities_Server_DoS_by_Sleep
@@ -27798,7 +27788,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -27814,7 +27804,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - cwe-22
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product uses external input to construct a pathname that is intended
       to identify a file or directory that is located underneath a restricted parent
@@ -27832,7 +27822,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product does not neutralize or incorrectly neutralizes user-controllable
       input before it is placed in output that is used as a web page that is served
@@ -27847,7 +27837,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses a function that accepts a format string as an argument,
       but the format string originates from an external source.
     group: top10-injection
@@ -27858,7 +27848,7 @@ rules:
     categories:
     - boost-baseline
     - cwe-614
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - ALL
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
@@ -27873,7 +27863,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     - cwe-top-25
     description: The product allows the attacker to upload or transfer files of dangerous
       types that can be automatically processed within the product's environment.
@@ -27887,7 +27877,7 @@ rules:
     - cwe-915
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product receives input from an upstream component that specifies
       multiple attributes, properties, or fields that are to be initialized or updated
       in an object, but it does not properly control which attributes can be modified.
@@ -27901,7 +27891,7 @@ rules:
     - cwe-319
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product transmits sensitive or security-critical data in cleartext
       in a communication channel that can be sniffed by unauthorized actors.
     group: top10-broken-access-control
@@ -27914,7 +27904,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - cwe-259
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product contains a hard-coded password, which it uses for its
       own inbound authentication or for outbound communication to external components.
     group: top10-id-authn-failures
@@ -27927,7 +27917,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses a broken or risky cryptographic algorithm or protocol.
     group: top10-crypto-failures
     name: JavaScript_Server_Side_Vulnerabilities_Use_of_Broken_or_Risky_Cryptographic_Algorithm
@@ -27939,7 +27929,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The code uses deprecated or obsolete functions, which suggests that
       the code has not been actively reviewed or maintained.
     group: top10-insecure-design
@@ -27952,7 +27942,7 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-server-side-vulnerabilities
+    - checkmarx-server-side-vulnerability
     description: The product uses insufficiently random numbers or values in a security
       context that depends on unpredictable numbers.
     group: top10-crypto-failures
@@ -27961,7 +27951,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Declaration_of_Multiple_Vue_Components_per_File:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -27975,7 +27964,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Declaration_of_Vue_Component_Data_as_Property:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -27989,7 +27977,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Inconsistent_Component_Top_Level_Elements_Ordering:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -28003,7 +27990,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Inconsistent_use_of_Directive_Shorthands:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -28017,7 +28003,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Use_of_Implicit_Types_on_Vue_Component_Props:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -28031,7 +28016,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Use_of_Single_Word_Named_Vue_Components:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -28045,7 +28029,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Vue_Use_of_vif_and_vfor_On_Same_Element:
     categories:
-    - checkmarx-vue
     - owasp-top-10
     - cwe-710
     - boost-baseline
@@ -28060,7 +28043,6 @@ rules:
   JavaScript_Vue_Vue_DOM_XSS:
     categories:
     - boost-hardened
-    - checkmarx-vue
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -28300,7 +28282,7 @@ rules:
   Java_AWS_Lambda_AWS_Credentials_Leak:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -28314,7 +28296,7 @@ rules:
   Java_AWS_Lambda_DynamoDB_NoSQL_Injection:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-74
     - owasp-top-10
     - boost-baseline
@@ -28329,7 +28311,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Hardcoded_AWS_Credentials:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -28344,7 +28326,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Permission_Manipulation_in_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -28357,7 +28339,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Race_Condition_Global_Scope:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -28370,7 +28352,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Unrestricted_Delete_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -28384,7 +28366,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Unrestricted_Read_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -28398,7 +28380,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_AWS_Lambda_Unrestricted_Write_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -28413,7 +28395,7 @@ rules:
   Java_AWS_Lambda_Use_of_Hardcoded_Cryptographic_Key_On_Server:
     categories:
     - cwe-321
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -28428,7 +28410,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-15
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
     group: top10-security-misconfiguration
@@ -29986,7 +29968,6 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-exploitable-path
     - owasp-top-10
     description: Identifies instances in Java code where unsafe, potentially exploitable
       packages or classes are imported, risking security vulnerabilities.
@@ -29998,7 +29979,6 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-exploitable-path
     - owasp-top-10
     description: Java code where '.find()' methods are employed could introduce potential
       Regular Expression Denial of Service (ReDoS) vulnerabilities if user-supplied
@@ -32965,7 +32945,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-522
     description: The product transmits or stores authentication credentials, but it
       uses an insecure method that is susceptible to unauthorized interception and/or
@@ -32979,7 +32958,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-522
     description: The product transmits or stores authentication credentials, but it
       uses an insecure method that is susceptible to unauthorized interception and/or
@@ -32994,7 +32972,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-top-25
     description: The web application does not, or can not, sufficiently verify whether
       a well-formed, valid, consistent request was intentionally provided by the user
@@ -33008,7 +32985,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-208
     description: Two separate operations in a product require different amounts of
       time to complete, in a way that is observable to an actor and reveals security-relevant
@@ -33023,7 +32999,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-346
     description: The product does not properly verify that the source of data or communication
       is valid.
@@ -33037,7 +33012,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product does not use or incorrectly uses a protection mechanism
       that provides sufficient defense against directed attacks against the product.
     group: top10-insecure-design
@@ -33050,7 +33024,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-top-25
     description: The product does not perform an authorization check when an actor
       attempts to access a resource or perform an action.
@@ -33063,7 +33036,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-346
     description: The product does not properly verify that the source of data or communication
       is valid.
@@ -33077,7 +33049,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-top-25
     description: The product does not perform an authorization check when an actor
       attempts to access a resource or perform an action.
@@ -33091,7 +33062,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product does not use or incorrectly uses a protection mechanism
       that provides sufficient defense against directed attacks against the product.
     group: top10-insecure-design
@@ -33104,7 +33074,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product does not use or incorrectly uses a protection mechanism
       that provides sufficient defense against directed attacks against the product.
     group: top10-insecure-design
@@ -33117,7 +33086,6 @@ rules:
     - cwe-1021
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The web application does not restrict or incorrectly restricts frame
       objects or UI layers that belong to another application or domain, which can
       lead to user confusion about which interface the user is interacting with.
@@ -33131,7 +33099,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product constructs all or part of a command, data structure,
       or record using externally-influenced input from an upstream component, but
       it does not neutralize or incorrectly neutralizes special elements that could
@@ -33145,7 +33112,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-346
     description: The product does not properly verify that the source of data or communication
       is valid.
@@ -33158,7 +33124,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-522
     description: The product transmits or stores authentication credentials, but it
       uses an insecure method that is susceptible to unauthorized interception and/or
@@ -33172,7 +33137,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-346
     description: The product does not properly verify that the source of data or communication
       is valid.
@@ -33185,7 +33149,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-522
     description: The product transmits or stores authentication credentials, but it
       uses an insecure method that is susceptible to unauthorized interception and/or
@@ -33200,7 +33163,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - cwe-259
-    - checkmarx-spring
     description: The product contains a hard-coded password, which it uses for its
       own inbound authentication or for outbound communication to external components.
     group: top10-id-authn-failures
@@ -33213,7 +33175,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product uses a broken or risky cryptographic algorithm or protocol.
     group: top10-crypto-failures
     name: Java_Spring_Spring_Use_of_Broken_or_Risky_Cryptographic_Primitive
@@ -33226,7 +33187,6 @@ rules:
     - cwe-917
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product constructs all or part of an expression language (EL)
       statement in a framework such as a Java Server Page (JSP) using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -33242,7 +33202,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     - cwe-top-25
     description: The web application does not, or can not, sufficiently verify whether
       a well-formed, valid, consistent request was intentionally provided by the user
@@ -33256,7 +33215,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The setting for defaultHtmlEscape in the Spring configuration is
       not set to "true", presenting a potential cross-site scripting (XSS) vulnerability.
     group: top10-insecure-design
@@ -33354,7 +33312,7 @@ rules:
   Java_Struts_Struts2_Action_Field_Without_Validator:
     categories:
     - cwe-108
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33365,7 +33323,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts2_Duplicate_Action_Field_Validators:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-102
     - boost-baseline
@@ -33379,7 +33337,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts2_Duplicate_Validators:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-102
     - boost-baseline
@@ -33393,7 +33351,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts2_Undeclared_Validator:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-105
     - boost-baseline
@@ -33407,7 +33365,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts2_Validation_File_Without_Action:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-107
     - boost-baseline
@@ -33421,7 +33379,7 @@ rules:
   Java_Struts_Struts2_Validator_Without_Action_Field:
     categories:
     - cwe-110
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33433,7 +33391,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Duplicate_Config_Files:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-694
     - boost-baseline
@@ -33446,7 +33404,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Duplicate_Form_Bean:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-694
     - boost-baseline
@@ -33459,7 +33417,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Duplicate_Validation_Files:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-694
     - boost-baseline
@@ -33472,7 +33430,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Duplicate_Validation_Forms:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-102
     - boost-baseline
@@ -33486,7 +33444,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Form_Does_Not_Extend_Validation_Class:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - cwe-104
     - owasp-top-10
     - boost-baseline
@@ -33500,7 +33458,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Form_Field_Without_Validator:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-105
     - boost-baseline
@@ -33514,7 +33472,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Incomplete_Validate_Method_Definition:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33528,7 +33486,7 @@ rules:
   Java_Struts_Struts_Mapping_to_Missing_Form_Bean:
     categories:
     - cwe-457
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33540,7 +33498,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Missing_Form_Bean_Name:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-563
     - boost-baseline
@@ -33553,7 +33511,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Missing_Form_Bean_Type:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-563
     - boost-baseline
@@ -33567,7 +33525,7 @@ rules:
   Java_Struts_Struts_Missing_Forward_Name:
     categories:
     - cwe-489
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33580,7 +33538,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Non_Private_Field_In_ActionForm_Class:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33593,7 +33551,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Thread_Safety_Violation_In_Action_Class:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - cwe-362
     - owasp-top-10
     - boost-baseline
@@ -33610,7 +33568,7 @@ rules:
   Java_Struts_Struts_Unused_Action_Form:
     categories:
     - cwe-489
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33623,7 +33581,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Unused_Validation_Form:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - cwe-107
     - boost-baseline
@@ -33637,7 +33595,7 @@ rules:
   Java_Struts_Struts_Unvalidated_Action_Form:
     categories:
     - cwe-108
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33649,7 +33607,7 @@ rules:
   Java_Struts_Struts_Use_of_Relative_Path_in_Config:
     categories:
     - cwe-21
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33662,7 +33620,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Struts_Struts_Validation_Turned_Off:
     categories:
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -33677,7 +33635,7 @@ rules:
   Java_Struts_Struts_Validator_Without_Form_Field:
     categories:
     - cwe-110
-    - checkmarx-struts
+    - checkmarx-structs
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -35124,7 +35082,6 @@ rules:
     - cwe-917
     - boost-baseline
     - ALL
-    - checkmarx-spring
     description: The product constructs all or part of an expression language (EL)
       statement in a framework such as a Java Server Page (JSP) using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -37982,7 +37939,7 @@ rules:
   Python_AWS_Lambda_AWS_Credentials_Leak:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -37995,7 +37952,7 @@ rules:
   Python_AWS_Lambda_DynamoDB_NoSQL_Injection:
     categories:
     - boost-hardened
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-74
     - owasp-top-10
     - boost-baseline
@@ -38010,7 +37967,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Python_AWS_Lambda_Hardcoded_AWS_Credentials:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -38025,7 +37982,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Python_AWS_Lambda_Permission_Manipulation_in_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-285
     - boost-baseline
@@ -38038,7 +37995,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Python_AWS_Lambda_Race_Condition_Concurrent_Instances:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - cwe-366
     - owasp-top-10
     - boost-baseline
@@ -38052,7 +38009,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Python_AWS_Lambda_Unrestricted_Read_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -38066,7 +38023,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Python_AWS_Lambda_Unrestricted_Write_S3:
     categories:
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - cwe-639
     - boost-baseline
@@ -38081,7 +38038,7 @@ rules:
   Python_AWS_Lambda_Use_of_Hardcoded_Cryptographic_Key_On_Server:
     categories:
     - cwe-321
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -38096,7 +38053,7 @@ rules:
     - boost-baseline
     - ALL
     - cwe-15
-    - checkmarx-aws-lambda
+    - checkmarx-server-side-vulnerability
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
     group: top10-security-misconfiguration
@@ -38121,7 +38078,6 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-exploitable-path
     - owasp-top-10
     description: The code searches for Python imports using an insecure method, such
       as os.system or subprocess.Popen, making it susceptible to arbitrary code execution
@@ -38134,7 +38090,6 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-exploitable-path
     - owasp-top-10
     description: The Python 'find' method is used in a way that can potentially lead
       to exploitable path inconsistencies or traversal vulnerabilities, creating a
@@ -40127,7 +40082,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Ruby_Vulnerable_Outdated_Versions_Outdated_JSON_GEM_Remote_Code:
     categories:
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - owasp-top-10
     - cwe-20
     - boost-baseline
@@ -40143,7 +40098,7 @@ rules:
   Ruby_Vulnerable_Outdated_Versions_Outdated_JSON_Remote_Code_Execution:
     categories:
     - cwe-94
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -40159,7 +40114,7 @@ rules:
   Ruby_Vulnerable_Outdated_Versions_Outdated_Rails_Allows_Bypass_Access_Control:
     categories:
     - cwe-477
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -40172,7 +40127,7 @@ rules:
   Ruby_Vulnerable_Outdated_Versions_Outdated_Rails_Allows_Cross_Site_Request_Forgery:
     categories:
     - cwe-352
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -40186,7 +40141,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Ruby_Vulnerable_Outdated_Versions_Outdated_Rails_Allows_DOS_via_ActiveRecord:
     categories:
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - owasp-top-10
     - cwe-400
     - boost-baseline
@@ -40201,7 +40156,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Ruby_Vulnerable_Outdated_Versions_Outdated_Rails_Allows_SQL_Injection:
     categories:
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - cwe-89
     - owasp-top-10
     - boost-baseline
@@ -40217,7 +40172,7 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Ruby_Vulnerable_Outdated_Versions_Outdated_Rails_Allows_XSS:
     categories:
-    - checkmarx-vulnerable-outdated-versions
+    - top10-vulnerable-components
     - cwe-79
     - owasp-top-10
     - boost-baseline
@@ -43563,7 +43518,7 @@ rules:
   VbNet_WebConfig_CookieLess_Authentication:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-642
@@ -43578,7 +43533,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - owasp-top-10
     description: The session state in the web.config file of a VB.NET application
       is configured to be cookieless, which may expose Session IDs in the URL, increasing
@@ -43591,7 +43546,7 @@ rules:
     categories:
     - cwe-12
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: An ASP .NET application must enable custom error pages in order to
@@ -43604,7 +43559,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-11
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
@@ -43615,7 +43570,7 @@ rules:
   VbNet_WebConfig_Elmah_Enabled:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-213
@@ -43632,7 +43587,7 @@ rules:
     categories:
     - cwe-489
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: The product is deployed to unauthorized actors with debugging code
@@ -43646,7 +43601,7 @@ rules:
     categories:
     - cwe-1004
     - boost-hardened
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     description: The product uses a cookie to store sensitive information, but the
@@ -43658,7 +43613,7 @@ rules:
   VbNet_WebConfig_Missing_X_Frame_Options:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-1021
     - boost-baseline
     - ALL
@@ -43672,7 +43627,7 @@ rules:
   VbNet_WebConfig_NonUniqueFormName:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-694
     - boost-baseline
     - ALL
@@ -43686,7 +43641,7 @@ rules:
     categories:
     - boost-baseline
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-260
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
@@ -43699,7 +43654,7 @@ rules:
     - boost-baseline
     - cwe-614
     - ALL
-    - checkmarx-webconfig
+    - checkmarx-web-config
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
@@ -43710,7 +43665,7 @@ rules:
   VbNet_WebConfig_SlidingExpiration:
     categories:
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - boost-baseline
     - ALL
     - cwe-613
@@ -43725,7 +43680,7 @@ rules:
     categories:
     - boost-baseline
     - owasp-top-10
-    - checkmarx-webconfig
+    - checkmarx-web-config
     - cwe-749
     - ALL
     description: The product provides an Applications Programming Interface (API)
