@@ -11040,7 +11040,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Points out the situation where a method adorned with AllowPartiallyTrustedCallersAttribute
+      (APTCA) invokes a method without APTCA, thereby exposing potential elevation
+      of privileges threats.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods
     pretty_name: Aptca Methods Call Non Aptca Methods
@@ -11134,7 +11136,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Passing a null argument to the Equals method, which could potentially
+      lead to a NullReferenceException at runtime.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_NULL_Argument_to_Equals
     pretty_name: NULL Argument to Equals
@@ -11159,7 +11162,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: When PersistSecurityInfo is set to True in a connection string, sensitive
+      information like passwords persist in memory, exposing it to potential security
+      breaches.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_PersistSecurityInfo_is_True
     pretty_name: PersistSecurityInfo is True
@@ -11196,7 +11201,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Unclosed system resources (such as connections, files, or other types
+      of system resources) lead to resource leakage, resulting in possible performance
+      degradation or application crashes.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_Unclosed_Objects
     pretty_name: Unclosed Objects
@@ -11207,7 +11214,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Public methods' arguments are not validated, opening potential threats
+      of insecure data handling, injection attacks, or unintended behavior.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods
     pretty_name: Unvalidated Arguments Of Public Methods
@@ -11218,7 +11226,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Direct interaction with the System output stream can potentially
+      expose sensitive information or critical system details, increasing vulnerability
+      to potential security breaches.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_Use_of_System_Output_Stream
     pretty_name: Use of System Output Stream
@@ -11229,7 +11239,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Fields of a class are excessively visible, leading to potential encapsulation
+      violations or unintended state changes. Fields should be private or protected
+      and accessed via properties or methods to maintain proper encapsulation.
     group: top10-insecure-design
     name: ASP_Best_Coding_Practice_Visible_Fields
     pretty_name: Visible Fields
@@ -12076,7 +12088,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Async future methods are executed inside loops, which may lead to
+      governor limit exceptions due to an excessive number of future calls in Salesforce's
+      Apex code.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Async_Future_Method_Inside_Loops
     pretty_name: Async Future Method Inside Loops
@@ -12087,7 +12101,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Apex methods are not utilizing collections (lists, sets, or maps)
+      to process bulk data, which can result in inefficient SOQL queries, negatively
+      impacting the code performance in Salesforce.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Bulkify_Apex_Methods_Using_Collections_In_Methods
     pretty_name: Bulkify Apex Methods Using Collections In Methods
@@ -12098,7 +12114,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: In an Apex Salesforce.com codebase, DML operations are present inside
+      loop constructs, which may cause exceeding the governor limit, leading to inefficient
+      code execution.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_DML_Statements_Inside_Loops
     pretty_name: DML Statements Inside Loops
@@ -12109,7 +12127,8 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Uncertified HTTP callouts are used in Apex code, which can expose
+      sensitive business data and lead to insecure interactions with third-party services.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_HTTP_Callouts
     pretty_name: HTTP Callouts
@@ -12133,7 +12152,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Salesforce object IDs are hardcoded in the Apex source code, risking
+      loss of data access or integrity when records or objects are changed, removed,
+      or migrated to other Salesforce instances.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Hardcoding_Ids
     pretty_name: Hardcoding Ids
@@ -12144,7 +12165,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The code contains hardcoded references to Trigger.new, which limits
+      its reusability and adaptability, making it less maintainable and potentially
+      problematic if changes in data structure occur.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Hardcoding_Of_Trigger_New
     pretty_name: Hardcoding Of Trigger New
@@ -12155,7 +12178,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Direct references to Trigger.old in Apex Code may lead to unexpected
+      behavior or errors during updates and deletions, as this means hardcoding values
+      destined to change with every transaction.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Hardcoding_Of_Trigger_Old
     pretty_name: Hardcoding Of Trigger Old
@@ -12166,7 +12191,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The rule identifies instances of hardcoded references to static resources
+      within Apex code, which can result in maintenance issues and reduce the code's
+      ability to adapt to changes.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Hardcoding_References_To_Static_Resources
     pretty_name: Hardcoding References To Static Resources
@@ -12177,7 +12204,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Visualforce pages contain multiple forms, which may lead to conflicting
+      actions or unintuitive user experiences due to mishandled form submissions or
+      redundant code.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Multiple_Forms_In_Visualforce_Page
     pretty_name: Multiple Forms In Visualforce Page
@@ -12188,7 +12217,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Multiple triggers are defined on the same 'sObject' in Apex code,
+      possibly leading to unpredictable execution order and potential recursive behavior
+      issues.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Multiple_Trigger_On_same_sObject
     pretty_name: Multiple Trigger On same sObject
@@ -12199,7 +12230,8 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Salesforce Apex queries or SOQL statements lack 'WHERE' or 'LIMIT'
+      clauses, potentially causing data overload and performance issues.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Queries_With_No_Where_Or_Limit_Clause
     pretty_name: Queries With No Where Or Limit Clause
@@ -12210,7 +12242,8 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Highlights instances of SOSL/SOQL queries placed inside loops which
+      may result in governor limit exceptions in Apex Force.com code.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_SOSL_SOQL_Statments_Inside_Loops
     pretty_name: SOSL SOQL Statments Inside Loops
@@ -12221,7 +12254,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Unit test assertions in Apex code lack custom error messages, reducing
+      the ability to express specific failure conditions for better test maintainability
+      and readability.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Test_Assert_Without_Message
     pretty_name: Test Assert Without Message
@@ -12232,7 +12267,9 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: An Apex test method lacks 'System.assert()', 'System.assertEquals()'
+      or 'System.assertNotEquals()' calls, which may inhibit proper validation of
+      the code's functionality.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Test_Methods_With_No_Assert
     pretty_name: Test Methods With No Assert
@@ -12256,7 +12293,8 @@ rules:
     - checkmarx-force-com-code-quality
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Identifies use of the Salesforce AJAX Toolkit within Apex code, which
+      is deprecated and can lead to functionality issues in Salesforce apps.
     group: top10-insecure-design
     name: Apex_Force_com_Code_Quality_Use_Of_Ajax_Toolkit
     pretty_name: Use Of Ajax Toolkit
@@ -12388,7 +12426,9 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-force-com-serious-security-risk
-    description: TBD
+    description: Cookies are not properly scoped, leaving sensitive user data susceptible
+      to potential theft or manipulation via cross-site scripting (XSS) or cross-site
+      request forgery (CSRF) attacks.
     group: top10-broken-access-control
     name: Apex_Force_com_Serious_Security_Risk_Cookies_Scoping
     pretty_name: Cookies Scoping
@@ -12413,7 +12453,9 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-force-com-serious-security-risk
-    description: TBD
+    description: Accesses a field by dereferencing a potentially null pointer, exposing
+      an Apex Force.com application to serious security risks including null dereference
+      exceptions or unintended behavior.
     group: top10-broken-access-control
     name: Apex_Force_com_Serious_Security_Risk_Dereferenced_Field
     pretty_name: Dereferenced Field
@@ -12586,7 +12628,9 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-force-com-serious-security-risk
-    description: TBD
+    description: The 'inputText' function in Apex ignores Field-Level Security settings
+      (FLS), which can result in unauthorized data access or modification on Salesforce's
+      Force.com platform.
     group: top10-injection
     name: Apex_Force_com_Serious_Security_Risk_inputText_Ignoring_FLS
     pretty_name: inputText Ignoring FLS
@@ -12597,7 +12641,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The reRender frequency for actionPoller in Apex is set too high,
+      potentially causing performance issues due to excessive server load.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_ActionPoller_Frequency_Check
     pretty_name: ActionPoller Frequency Check
@@ -12608,7 +12653,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Visualforce components utilize the Ajax Toolkit, instead of standard
+      Visualforce Ajax or Apex, potentially resulting in performance degradation or
+      limited support issues.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Ajax_Toolkit_From_VF
     pretty_name: Ajax Toolkit From VF
@@ -12619,7 +12666,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Batch Apex is present in the codebase, which may lead to performance
+      issues when processing large data volumes.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Batch_Apex_exists
     pretty_name: Batch Apex exists
@@ -12630,7 +12678,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Outbound calls are made within a Batch Apex, which may cause scalability
+      issues due to governor limits on Salesforce's outbound HTTP callouts.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Batch_Apex_makes_outbound_call
     pretty_name: Batch Apex makes outbound call
@@ -12641,7 +12690,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The Database DML operation in Apex code has the 'DmlOptions' parameter
+      set to 'false', neglecting potential record locking contention considerations
+      in bulk data manipulation scenarios.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_DmlOptions_Set_To_False
     pretty_name: DmlOptions Set To False
@@ -12652,7 +12703,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Catches exceptions without handling them, leading to potential unaddressed
+      errors and application instability.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Empty_Catch_Blocks
     pretty_name: Empty Catch Blocks
@@ -12663,7 +12715,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: An 'if' statement in the Apex code does not contain any executable
+      statements, making it redundant and possibly indicative of incomplete or incorrect
+      logic.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Empty_IfStmt
     pretty_name: Empty IfStmt
@@ -12674,7 +12728,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The code contains methods that are empty or lack substantive content,
+      which might be unintentional leftovers from incomplete development or refactoring
+      and can introduce confusion and maintenance issues.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Empty_Methods
     pretty_name: Empty Methods
@@ -12685,7 +12741,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: A 'while' statement in the APEX code has an empty body, causing an
+      infinite loop that can result in script execution and performance problems.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Empty_WhileStmt
     pretty_name: Empty WhileStmt
@@ -12696,7 +12753,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Exposed test data in Apex classes may lead to leakage of sensitive
+      information, violating the Salesforce ISV (Independent Software Vendor) best
+      practices.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Find_Exposed_Test_Data
     pretty_name: Find Exposed Test Data
@@ -12707,7 +12766,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The Apex code contains @future annotation, possibly adding complexity
+      to transaction control flow and leading to unexpected order of execution.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Future_exists
     pretty_name: Future exists
@@ -12718,7 +12778,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The Salesforce Apex code under examination employs an outdated API
+      version, which may result in deprecated or unavailable functionality and suboptimal
+      performance or compatibility issues.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Old_API_Version
     pretty_name: Old API Version
@@ -12729,7 +12791,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Apex code to send outbound emails is employed, which may lead to
+      uncontrolled distribution of sensitive data or exhaustion of email sending limits.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Outbound_Email_Send
     pretty_name: Outbound Email Send
@@ -12740,7 +12803,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Apex reports without assigned filters can return an excessively broad
+      data set, potentially causing performance issues or disclosing sensitive information.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Report_with_no_Filter
     pretty_name: Report with no Filter
@@ -12751,7 +12815,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The SOQL query uses a dynamic 'null' in its WHERE clause, which may
+      lead to inconsistent results or potential vulnerabilities in Apex code.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_SOQL_Dynamic_null_in_Where
     pretty_name: SOQL Dynamic null in Where
@@ -12762,7 +12827,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: In Salesforce Apex code, a SOQL query uses a formula field within
+      the WHERE clause, causing unpredictable behavior and potential performance issues
+      while querying data.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_SOQL_Formula_in_Where
     pretty_name: SOQL Formula in Where
@@ -12831,7 +12898,8 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: The SOSL (Salesforce Object Search Language) query includes a WHERE
+      clause, which can lead to performance issues due to query inefficiency.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_SOSL_With_Where_Clause
     pretty_name: SOSL With Where Clause
@@ -12842,7 +12910,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Alerts developers when ViewState usage in Salesforce's Apex code
+      surpasses the size limit, helping to avoid performance issues and exceptions
+      at runtime.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Warn_About_Viewstate_Size_Limit
     pretty_name: Warn About Viewstate Size Limit
@@ -12853,7 +12923,9 @@ rules:
     - owasp-top-10
     - checkmarx-isv-quality-rules
     - ALL
-    description: TBD
+    description: Workflow rules in Apex cause automatic email transmission, which
+      could disrupt service through excessive messaging, violate data privacy regulations
+      or result in unintended information disclosure.
     group: top10-insecure-design
     name: Apex_ISV_Quality_Rules_Workflow_sends_Emails
     pretty_name: Workflow sends Emails
@@ -12864,7 +12936,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The Visualforce markup includes an unescaped merge field, "&{!...}",
+      which could make the application vulnerable to Cross-Site Scripting (XSS) attacks
+      due to rendering of untrusted data as real HTML content.
     group: top10-injection
     name: Apex_Low_Visibility_Escape_False_Warning
     pretty_name: Escape False Warning
@@ -12902,7 +12976,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Sensitive data, such as passwords, are exposed in Salesforce Apex
+      code due to being hard-coded, log-printed, or misused in a publicly visible
+      or easily accessible manner.
     group: top10-id-authn-failures
     name: Apex_Low_Visibility_Password_misuse
     pretty_name: Password misuse
@@ -12913,7 +12989,8 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Apex code lacks frame options in HTTP response headers, making it
+      prone to clickjacking attacks via potential frame injection.
     group: top10-injection
     name: Apex_Low_Visibility_Potential_Frame_Injection
     pretty_name: Potential Frame Injection
@@ -13341,7 +13418,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Numeric constants (known as 'magic numbers') are used directly in
+      the source code, making it hard to maintain and understand. Such numbers should
+      be replaced with named constants.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Magic_Numbers
     pretty_name: Magic Numbers
@@ -13353,7 +13432,8 @@ rules:
     - cwe-10712
     - owasp-top-10
     - checkmarx-best-coding-practices
-    description: TBD
+    description: C++ methods are defined without a return type, which can lead to
+      undefined behavior or misinterpretation of method purpose.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Methods_Without_ReturnType
     pretty_name: Methods Without ReturnType
@@ -13364,7 +13444,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A static constructor in C++ isn't private, which could potentially
+      allow unintended class instantiation and alteration of class states.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Non_Private_Static_Constructors
     pretty_name: Non Private Static Constructors
@@ -13402,7 +13483,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Public methods in C++ code neglect to validate arguments before use,
+      increasing the risk of unauthorized data access and manipulation.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods
     pretty_name: Unvalidated Arguments Of Public Methods
@@ -14974,7 +15056,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10775
-    description: TBD
+    description: Unused variables in C++ code are identified, serving as potential
+      indicators of incomplete program logic and unnecessary memory usage.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R00_01_03_Find_Unused_Variables
     pretty_name: R00 01 03 Find Unused Variables
@@ -14986,7 +15069,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10776
-    description: TBD
+    description: Typedef declarations that are never used in the code are identified,
+      indicating inefficient coding practices and unnecessary complexity.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R00_01_05_Find_Unused_Typedefs
     pretty_name: R00 01 05 Find Unused Typedefs
@@ -14998,7 +15082,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10777
-    description: TBD
+    description: Identifies defined functions within the C++ code that are not being
+      invoked or referenced anywhere, implying potential dead code and violating the
+      MISRA C++ Rule (R00.01.10).
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R00_01_10_Find_Unused_Defined_Functions
     pretty_name: R00 01 10 Find Unused Defined Functions
@@ -15010,7 +15096,8 @@ rules:
     - cwe-10778
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Unused parameters present in a function definition, in violation
+      of MISRA C++ Rule 0-1-11, are identified and flagged.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R00_01_11_Find_Unused_Parameters
     pretty_name: R00 01 11 Find Unused Parameters
@@ -15022,7 +15109,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10779
-    description: TBD
+    description: Virtual functions in C++ code that contain unused parameters, violating
+      Rule 00-1-12 of the MISRA C++ guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R00_01_12_Find_Virtual_Unused_Parameters
     pretty_name: R00 01 12 Find Virtual Unused Parameters
@@ -15033,7 +15121,8 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Trigraph sequences are present in the code, which violate MISRA C++
+      Rule 02.03.01, and can impact the readability and maintainability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_03_01_Trigraphs
     pretty_name: R02 03 01 Trigraphs
@@ -15045,7 +15134,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10750
-    description: TBD
+    description: The use of digraphs and trigraphs, alternates for C++ graphical characters,
+      violates MISRA C++ Rule 02.05.01 as these can potentially cause confusion or
+      misinterpretation.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_05_01_Digraphs
     pretty_name: R02 05 01 Digraphs
@@ -15056,7 +15147,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Code segments are found to be commented out, potentially causing
+      confusion and violating MISRA-C++ rule 2.7.2, which recommends against this
+      practice.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_07_02_Code_Commented_Out
     pretty_name: R02 07 02 Code Commented Out
@@ -15067,7 +15160,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Identifies sections of C++ code that have been commented out, which
+      may indicate outdated or erroneous code segments that can lead to confusion
+      during future code maintenance.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_07_03_Code_CPP_Commented_Out
     pretty_name: R02 07 03 Code CPP Commented Out
@@ -15078,7 +15173,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: An identifier in a localized scope hides an identifier in an outer
+      scope, which could cause confusion and unexpected outcomes as per the MISRA
+      C++ Rule R02.10.2.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_10_02_Identifiers_Hide_Outer_Scope_Identifiers
     pretty_name: R02 10 02 Identifiers Hide Outer Scope Identifiers
@@ -15089,7 +15186,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The same name is reused for different 'typedef' declarations, violating
+      rule 2.10.3 of MISRA C++, which recommends unique identifiers for independent
+      declarations to prevent naming conflicts and confusion.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_10_03_Typedef_Name_Reused
     pretty_name: R02 10 03 Typedef Name Reused
@@ -15100,7 +15199,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Names of class types, enumeration types, and union types should be
+      unique, ensuring clarity and reducing potential ambiguity or misunderstanding
+      in the code. Reusing these names can compromise code readability and maintainability.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_10_04_Class_Enum_Union_Names_Reused
     pretty_name: R02 10 04 Class Enum Union Names Reused
@@ -15112,7 +15213,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10751
-    description: TBD
+    description: The reuse of names of non-member, non-class static objects between
+      translation units may cause confusion or unexpected behavior, violating Rule
+      02.10.5 of the MISRA C++ guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_10_05_Non_Member_Static_Name_Reuse
     pretty_name: R02 10 05 Non Member Static Name Reuse
@@ -15123,7 +15226,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: In violation of MISRA C++:2008 rule 2-13-1, text strings and characters
+      contain escape sequences that are not defined in the ISO C++ standard. This
+      may lead to inconsistent behavior across different platforms or compilers.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_13_01_Non_ISO_Escapes
     pretty_name: R02 13 01 Non ISO Escapes
@@ -15134,7 +15239,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: In C++ code, a non-zero octal constant has been used, which is a
+      violation of MISRA C++ Rule 2.13.2, that suggests not using such constants to
+      avoid errors and confusion.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_13_02_Non_Zero_Octal_Constant
     pretty_name: R02 13 02 Non Zero Octal Constant
@@ -15145,7 +15252,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Unsigned hexadecimal or octal constants lack a 'U' suffix, which
+      can lead to data loss if the constant's value exceeds the range of its type.
+      Compliance with MISRA C++ Rule 02.13.03 is not maintained.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_13_03_U_Suffix_Not_Applied_To_Unsigned_Hex_Oct
     pretty_name: R02 13 03 U Suffix Not Applied To Unsigned Hex Oct
@@ -15157,7 +15266,9 @@ rules:
     - cwe-10780
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A violation occurs when there's a usage of lowercase letter 'u' or
+      'l' for integral literal suffixes. Following MISRA C++ Rule 2.13.4, these should
+      be in uppercase to avoid the risk of confusion with numbers '1' and '0'.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R02_13_04_Literal_Suffix_Uppercase
     pretty_name: R02 13 04 Literal Suffix Uppercase
@@ -15169,7 +15280,9 @@ rules:
     - ALL
     - cwe-10781
     - owasp-top-10
-    description: TBD
+    description: Identifies arrays declared without specifying an explicit size in
+      the definition, a violation of MISRA C++ Rule 3-1-3. Such undefined array sizes
+      may result in indeterminate behavior and vulnerabilities.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R03_01_03_Find_Arrays_Without_Size
     pretty_name: R03 01 03 Find Arrays Without Size
@@ -15180,7 +15293,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Functionally declared and defined in different files must have matching
+      parameter lists and return types to promote consistency and prevent potential
+      run-time errors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R03_02_01_Identical_Function_and_Object_Decl_Def
     pretty_name: R03 02 01 Identical Function and Object Decl Def
@@ -15191,7 +15306,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: An object definition occurs outside its minimal necessary scope in
+      reference to Rule MISRA C++:2008, 3-4-1, breaching the principle of limiting
+      object visibility to the least possible extent.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R03_04_01_Obj_Defined_Outside_Minimal_Scope
     pretty_name: R03 04 01 Obj Defined Outside Minimal Scope
@@ -15202,7 +15319,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Non-typedef'd basic types are used in the code, violating MISRA C++
+      Rule 3-9-2, which requires a typedef to be used instead. This might lead to
+      portability issues across different platforms.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R03_09_02_Non_Typedef_Basic_Types
     pretty_name: R03 09 02 Non Typedef Basic Types
@@ -15213,7 +15332,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: 'The rule identifies violations of MISRA C++: 2008 Rule 4-10-1, which
+      warns against using NULL as an integer value, preventing possible data corruption
+      or unexpected behaviors.'
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R04_10_01_NULL_As_An_Integer_Value
     pretty_name: R04 10 01 NULL As An Integer Value
@@ -15224,7 +15345,10 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A literal zero is used instead of the null pointer constant in C++
+      code, violating rule R04.10.02 of the Motor Industry Reliability Association's
+      (MISRA) C++ coding guidelines. This may lead to unexpected behavior and increased
+      vulnerability to bugs.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R04_10_02_Literal_Zero_As_Null_Pointer_Constant
     pretty_name: R04 10 02 Literal Zero As Null Pointer Constant
@@ -15235,7 +15359,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: An explicit conversion of an expression from a floating-point type
+      to an integer type occurs in a manner that is inconsistent with the MISRA C++
+      Rule R05-00-07. This could lead to unexpected behavior or numerical inaccuracies.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_00_07_Improper_Explicit_Floating_Integral_Conversion_Of_Expression
     pretty_name: R05 00 07 Improper Explicit Floating Integral Conversion Of Expression
@@ -15246,7 +15372,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A bitwise operator is applied to an unsigned char or short type,
+      violating MISRA C++ Rule 5.0.10, which could lead to unintended data manipulation
+      or improper system behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_00_10_Bitwise_Operator_On_Unsigned_Char_Short_Types
     pretty_name: R05 00 10 Bitwise Operator On Unsigned Char Short Types
@@ -15257,7 +15385,10 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The use of plain 'char' type is detected in the code. According to
+      MISRA C++ Rule 05-0-11, 'char' should be avoided due to its undefined signedness,
+      which can lead to unpredictable behavior. It recommends using 'signed char'
+      or 'unsigned char' explicitly instead.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_00_11_Plain_Char_Type_Usage
     pretty_name: R05 00 11 Plain Char Type Usage
@@ -15268,7 +15399,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The rule targets the code where plain "char" type is used, which
+      is a violation of MISRA C++ Rule 5-0-12 that mandates use of explicit "signed"
+      or "unsigned" char type to avoid unexpected behavior due to sign extension.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_00_12_Not_Plain_Char_Type_Usage
     pretty_name: R05 00 12 Not Plain Char Type Usage
@@ -15279,7 +15412,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Bitwise operators are applied on a signed integer data type, violating
+      the MISRA C++:2008 Rule 5-0-21, which could cause unexpected results due to
+      sign extension.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_00_21_Bitwise_Operator_On_Signed_Type
     pretty_name: R05 00 21 Bitwise Operator On Signed Type
@@ -15290,7 +15425,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Logical AND (&&) and OR (||) operations use operands other than postfix
+      expressions, violating Rule 05-2-1 of the Motor Industry Software Reliability
+      Association (MISRA) C++ guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_02_01_AND_OR_Operands_Not_As_Postfix_Expressions
     pretty_name: R05 02 01 AND OR Operands Not As Postfix Expressions
@@ -15301,7 +15438,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The rule identifies usage of incremental and decremental operators
+      (++ and --) within C++ expressions, which may lead to unpredictable program
+      behavior due to operation sequencing issues as per the MISRA C++ guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_02_10_Using_Of_Incremental_And_Decrimental_Operators
     pretty_name: R05 02 10 Using Of Incremental And Decrimental Operators
@@ -15313,7 +15452,10 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10782
-    description: TBD
+    description: Searches for instances where special operators, such as assignment
+      '=', copy constructor, and destructor, are overloaded without certain conditions.
+      The absence of these conditions can lead to unexpected behavior and erroneous
+      results.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_02_11_Find_Special_Operator_Overloads
     pretty_name: R05 02 11 Find Special Operator Overloads
@@ -15324,7 +15466,10 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The unary minus operator is applied to an unsigned type, a violation
+      of rule 05-03-02 of the Motor Industry Software Reliability Association (MISRA)
+      guidelines for C++, thereby negating a value that was originally positive or
+      zero.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_03_02_Unary_Minus_Operator_On_Unsigned_Type
     pretty_name: R05 03 02 Unary Minus Operator On Unsigned Type
@@ -15336,7 +15481,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10753
-    description: TBD
+    description: Overloading the reference operator, &, is disallowed under MISRA
+      C++ Rule 5-3-3. This practice might introduce unexpected behaviors due to operator
+      precedence.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_03_03_Overloading_Reference_Oper
     pretty_name: R05 03 03 Overloading Reference Oper
@@ -15347,7 +15494,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Indicates the usage of the comma operator outside of a for loop or
+      in any scenario where a function-call sequence cannot be guaranteed, violating
+      the MISRA C++ 2008 Rule 5-18-1.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R05_18_01_Comma_Operator_Used
     pretty_name: R05 18 01 Comma Operator Used
@@ -15359,7 +15508,9 @@ rules:
     - ALL
     - cwe-10754
     - owasp-top-10
-    description: TBD
+    description: Assignment operators should not be used inside sub-expressions in
+      order to avoid potential ambiguity and unexpected outcomes, as per the MISRA
+      CPP guideline R06.02.01.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_02_01_Assignment_in_Sub_Expr
     pretty_name: R06 02 01 Assignment in Sub Expr
@@ -15371,7 +15522,11 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10752
-    description: TBD
+    description: "Checks for the use of the equality (==) or inequality (!=) operators\
+      \ to directly compare floating-point numbers, which can result in unreliable\
+      \ behavior due to precision errors. This violation could corrupt the program\u2019\
+      s logic. Adherence to the 'Relational or Equality Operators with Floating Type'\
+      \ rule from the MISRA C++ 2008 standard is enforced."
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_02_02_FloatingPt_Equality_Inequality_Testing
     pretty_name: R06 02 02 FloatingPt Equality Inequality Testing
@@ -15382,7 +15537,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A switch or iteration statement body that's not a compound statement
+      is present in the code, contradicting MISRA C++ Rule 6-3-1 and potentially leading
+      to unexpected behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_03_01_Not_Compound_Switch_Or_Iteration_Statement
     pretty_name: R06 03 01 Not Compound Switch Or Iteration Statement
@@ -15393,7 +15550,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The body of an 'if' or an 'else' statement is not a compound statement.
+      This can lead to visibility and maintenance issues as per MISRA C++:2008 Rule
+      6-4-1.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_01_Not_Compound_If_Or_Else
     pretty_name: R06 04 01 Not Compound If Or Else
@@ -15404,7 +15563,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: An 'if else' and 'else if' statement chain does not end with an 'else'
+      statement, violating MISRA C++ rule 06-04-02, which can lead to unexpected results
+      if none of the conditions are met.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_02_If_Else_If_Not_Ending_With_Else
     pretty_name: R06 04 02 If Else If Not Ending With Else
@@ -15415,7 +15576,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A 'case' label in a 'switch' statement is not enclosed by braces
+      ({ }), which is a violation of MISRA C++ Rule 6-4-4 and can lead to unintended
+      execution flow or variable scope issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_04_Case_Not_Enclosed_By_Compound_Switch
     pretty_name: R06 04 04 Case Not Enclosed By Compound Switch
@@ -15426,7 +15589,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Non-empty switch cases in C++ code that lack a terminating break
+      or throw statement, violating MISRA C++ Rule 6-4-5 and potentially causing unintended
+      fall-through behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_05_Non_Empty_Switch_Clause_Without_Break_or_Throw
     pretty_name: R06 04 05 Non Empty Switch Clause Without Break or Throw
@@ -15437,7 +15602,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The rule identifies when the switch control structure does not end
+      with a default label as the last clause, violating MISRA C++ Rule 6-4-6, which
+      is designed to ensure predictability when none of the cases match.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_06_Non_Default_Final_Clause_In_Switch_Statement
     pretty_name: R06 04 06 Non Default Final Clause In Switch Statement
@@ -15449,7 +15616,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10783
-    description: TBD
+    description: The rule identifies instances where a switch statement's controlling
+      expression in C++ code is of type bool, violating MISRA C++ 2008 Rule 6-4-7.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_04_07_Find_Switch_Condition_Bool
     pretty_name: R06 04 07 Find Switch Condition Bool
@@ -15460,7 +15628,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A non-floating literal constant should hold a single character and
+      no more, as dictated by MISRA C++ Rule 06-05-01. This helps avoid ambiguity
+      and potential coding errors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_01_Single_Non_Float_LC
     pretty_name: R06 05 01 Single Non Float LC
@@ -15472,7 +15642,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10755
-    description: TBD
+    description: Loop counters are subjected to modifications within the loop body,
+      in violation of MISRA C++ Rule 6-5-2, which can result in unpredictable loop
+      behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_02_Loop_Counter_Modify
     pretty_name: R06 05 02 Loop Counter Modify
@@ -15484,7 +15656,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10756
-    description: TBD
+    description: A loop counter is being modified inside a conditional or switch statement,
+      violating the MISRA C++ Rule R06-05-03, thus leading to potential control flow
+      issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_03_Change_Lc_In_St_And_Cond
     pretty_name: R06 05 03 Change Lc In St And Cond
@@ -15496,7 +15670,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10757
-    description: TBD
+    description: The modification of iteration variables inside loop bodies contradicts
+      the MISRA C++:2008 Rule 6-5-4, potentially leading to unexpected behavior and
+      difficult-to-detect bugs.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_04_Incremental_Modified
     pretty_name: R06 05 04 Incremental Modified
@@ -15508,7 +15684,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10758
-    description: TBD
+    description: Loop counter variables are modified in the body of a 'for' loop,
+      which violates rule 6-5-5 of MISRA C++, leading to potential logic errors or
+      infinite loops.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_05_Lcv_Change_In_For_Stmt
     pretty_name: R06 05 05 Lcv Change In For Stmt
@@ -15520,7 +15698,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10759
-    description: TBD
+    description: An assignment to a boolean local constant variable results in an
+      attempt to modify its immutable value, violating MISRA C++ Rule 6-5-6.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_05_06_Bool_Lcv_Change
     pretty_name: R06 05 06 Bool Lcv Change
@@ -15531,7 +15710,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The rule identifies instances where 'goto' statements are used to
+      jump back in a C++ program, which is a violation of MISRA guideline 6-6-2 and
+      can lead to unclear and hard-to-maintain code.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_06_02_Backward_Use_Of_Goto
     pretty_name: R06 06 02 Backward Use Of Goto
@@ -15543,7 +15724,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10760
-    description: TBD
+    description: The 'continue' statement is used within a 'for' loop that does not
+      contain exactly one iteration-expression, in violation of MISRA CPP R06 06 03
+      guideline. This could affect code correctness and predictability.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_06_03_Continue_In_Legal_For
     pretty_name: R06 06 03 Continue In Legal For
@@ -15554,7 +15737,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Each iteration statement (for, while, do) must only contain at most
+      one 'break' or 'goto' statement to ensure code readability and avoid logical
+      errors. This rule enforces restrictions based on MISRA C++ Rule 6-6-4.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_06_04_One_GoTo_Break_In_Iteration
     pretty_name: R06 06 04 One GoTo Break In Iteration
@@ -15565,7 +15750,10 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Checks for C++ functions not adhering to the MISRA-CPP:2008 compliance
+      statement Rule 6-6-5, which stipulates that a function must only have a single
+      point of exit at the end. Non-compliance can lead to difficult-to-read code
+      and maintenance issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R06_06_05_Single_Point_Exit_At_Function_End
     pretty_name: R06 06 05 Single Point Exit At Function End
@@ -15577,7 +15765,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10784
-    description: TBD
+    description: An object, once defined, does not have its value changed or does
+      not call a non-const function. It should be declared as 'const' to enforce its
+      read-only use, as per MISRA C++ Rule 7.1.1.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_01_01_Declare_Const_if_not_Modified
     pretty_name: R07 01 01 Declare Const if not Modified
@@ -15589,7 +15779,9 @@ rules:
     - cwe-10785
     - ALL
     - owasp-top-10
-    description: TBD
+    description: References that don't modify referred objects should be declared
+      as constant to ensure code reliability and maintainability based on MISRA C++
+      guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_01_02_Declare_Ref_Const_if_not_Modified
     pretty_name: R07 01 02 Declare Ref Const if not Modified
@@ -15601,7 +15793,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10786
-    description: TBD
+    description: Objects or functions are directly defined within the global namespace,
+      violating rule 7.3.1 of MISRA C++. This is a harmful practice as it can cause
+      name clashes and decrease the readability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_01_Definitions_in_Global_Namespace
     pretty_name: R07 03 01 Definitions in Global Namespace
@@ -15613,7 +15807,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10787
-    description: TBD
+    description: Identifies non-global main functions in C++ codebase, violating MISRA
+      C++ Rule 7-3-2 that requires all main functions to have global scope.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_02_Find_non_Global_Mains
     pretty_name: R07 03 02 Find non Global Mains
@@ -15625,7 +15820,9 @@ rules:
     - cwe-10788
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Unnamed namespaces in header files are prohibited according to the
+      MISRA C++:2008 Rule 7-3-3 to prevent unintentional linkage disparities and to
+      promote code clarity.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_03_Unnamed_NS_in_Headers
     pretty_name: R07 03 03 Unnamed NS in Headers
@@ -15637,7 +15834,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10789
-    description: TBD
+    description: Locates 'using' directives in C++ code that can lead to name clashes
+      and unpredictable behavior, violating MISRA C++ Rule 7-3-4.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_04_Find_Using_Directives
     pretty_name: R07 03 04 Find Using Directives
@@ -15649,7 +15847,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10790
-    description: TBD
+    description: 'In contravention of MISRA C++: Rule 7-3-5, the code contains multiple
+      declarations after the ''using'' directive, adding complexity and posing potential
+      ambiguity risks.'
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_05_Multiple_Declarations_After_Using
     pretty_name: R07 03 05 Multiple Declarations After Using
@@ -15661,7 +15861,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10791
-    description: TBD
+    description: Identifies instances where 'using' directives (namespace and/or type
+      aliases) are utilized within C++ header files, a violation of MISRA C++ Rule
+      7-3-6 that can hinder code maintainability and risk unexpected conflicts.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_03_06_Find_Using_in_Headers
     pretty_name: R07 03 06 Find Using in Headers
@@ -15673,7 +15875,9 @@ rules:
     - cwe-10792
     - ALL
     - owasp-top-10
-    description: TBD
+    description: An address is assigned to a pointer that points to an object going
+      out of scope, resulting in a dangling pointer, which violates the MISRA C++
+      Rule 7-5-2.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_05_02_Address_Assignment_out_of_Scope
     pretty_name: R07 05 02 Address Assignment out of Scope
@@ -15685,7 +15889,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10793
-    description: TBD
+    description: There is a return-value parameter passed by nonconst reference, violating
+      the MISRA C++:2008 Rule 7-5-3, which risks unpredictable and undefined behavior
+      in the application.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_05_03_Return_Parameter_Passed_by_Ref
     pretty_name: R07 05 03 Return Parameter Passed by Ref
@@ -15696,7 +15902,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: In C++, functions or recursive algorithms are present, violating
+      rule 7.5.4 of MISRA (Motor Industry Software Reliability Association) C++ standards,
+      which prohibit recursion to prevent stack overflow.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R07_05_04_Recursion_Exists
     pretty_name: R07 05 04 Recursion Exists
@@ -15708,7 +15916,9 @@ rules:
     - cwe-10794
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A single statement contains multiple declarators, a practice that
+      leads to more complex code and potential misunderstandings, violating MISRA-CPP:2008
+      Rule 8.0.1.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R08_00_01_Find_Multiple_Declarators
     pretty_name: R08 00 01 Find Multiple Declarators
@@ -15719,7 +15929,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A function in C++ code takes a variable number of arguments, violating
+      MISRA C++:2008 Rule 8-4-1, which can introduce indeterminacy and make code less
+      reliable and maintainable.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R08_04_01_Function_With_Variable_Number_Of_Arguments
     pretty_name: R08 04 01 Function With Variable Number Of Arguments
@@ -15730,7 +15942,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: If a function has multiple exit points, none of them should be an
+      explicit call to 'throw' or 'return' within a 'try' block or a function-try-block,
+      for adherence to the MISRA-CPP R08-04-03 guideline.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R08_04_03_Explicit_Return_Throw
     pretty_name: R08 04 03 Explicit Return Throw
@@ -15742,7 +15956,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10761
-    description: TBD
+    description: The use of a variable before it has been initialized, thus violating
+      the MISRA C++ Rule 08-05-01, which can lead to undefined behavior in the software.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R08_05_01_Uninitialized_Variable_Use
     pretty_name: R08 05 01 Uninitialized Variable Use
@@ -15753,7 +15968,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Union data types are in violation of rule 9-5-1 of the MISRA-CPP
+      guidelines, as they can lead to unpredictable behavior due to the overlapping
+      storage of multiple data variables.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R09_05_01_Use_Of_Union
     pretty_name: R09 05 01 Use Of Union
@@ -15764,7 +15981,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A violation of the MISRA C++:2008 Rule 9-6-2 occurs when a bit field
+      is declared with a type different from bool, signed int, or unsigned int, leading
+      to potential interoperability, portability or data integrity issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R09_06_02_bool_Unsigned_Signed_Bit_Field
     pretty_name: R09 06 02 bool Unsigned Signed Bit Field
@@ -15775,7 +15994,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Enums are used as bit-fields in this code, which is a violation of
+      MISRA C++ Rule 9-6-3. Enumerations should not be used in this manner as it may
+      result in unpredictable behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R09_06_03_Enum_Bit_Fields
     pretty_name: R09 06 03 Enum Bit Fields
@@ -15786,7 +16007,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: A violation of the MISRA C++ 2008 Rule 9-6-4 occurs when a bit field
+      of an integer type has a length that exceeds the number of bits in the width
+      of the type.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R09_06_04_Bit_Fields_Length
     pretty_name: R09 06 04 Bit Fields Length
@@ -15798,7 +16021,9 @@ rules:
     - ALL
     - cwe-10795
     - owasp-top-10
-    description: TBD
+    description: Highlights instances where a base class is made virtual, violating
+      the MISRA C++:2008 Rule 10-01-01, which prohibits such usage to maintain program
+      predictability and avoid unintended behaviors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R10_01_01_Find_Virtual_Base_Classes
     pretty_name: R10 01 01 Find Virtual Base Classes
@@ -15810,7 +16035,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10796
-    description: TBD
+    description: Identifies situations in C++ code where a derived class function
+      attempts to override a base class function without using the 'virtual' keyword,
+      violating MISRA C++:2008 Rule 10-3-2.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R10_03_02_Find_Override_Without_Virtual
     pretty_name: R10 03 02 Find Override Without Virtual
@@ -15822,7 +16049,9 @@ rules:
     - ALL
     - cwe-10797
     - owasp-top-10
-    description: TBD
+    description: A function previously declared with a side effect is redeclared as
+      'pure' (without side effects), in violation of MISRA C++ Rule 10-3-3, resulting
+      in possible unexpected behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R10_03_03_Redeclare_Function_as_Pure
     pretty_name: R10 03 03 Redeclare Function as Pure
@@ -15834,7 +16063,8 @@ rules:
     - cwe-10798
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A constructor that can be called with a single argument is not explicitly
+      marked as 'explicit', which could lead to unintentional implicit conversions.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R12_01_03_Find_non_Explicit_Constructor
     pretty_name: R12 01 03 Find non Explicit Constructor
@@ -15846,7 +16076,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10762
-    description: TBD
+    description: Violates MISRA C++ Rule 15-0-2, where pointers or references are
+      thrown as exceptions, increasing the risk of memory safety issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_00_02_Throw_Pointers
     pretty_name: R15 00 02 Throw Pointers
@@ -15858,7 +16089,9 @@ rules:
     - cwe-10763
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Labels from a 'goto' statement are being used inside a 'try' or 'catch'
+      block, a violation of MISRA C++:2008 Rule 15-0-3. This may lead to unpredictable
+      program flow and potential errors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_00_03_Goto_Label_Inside_TryCatch
     pretty_name: R15 00 03 Goto Label Inside TryCatch
@@ -15870,7 +16103,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10764
-    description: TBD
+    description: A null pointer is being explicitly thrown, which violates rule 15.1.2
+      of the MISRA C++ guidelines, potentially causing undefined program behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_01_02_No_Explicit_Null_Throw
     pretty_name: R15 01 02 No Explicit Null Throw
@@ -15882,7 +16116,9 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    description: TBD
+    description: An empty throw statement occurs outside a catch block in C++, violating
+      MISRA-CPP rule 15-1-3. This can cause unexpected behavior due to incorrect exception
+      propagation.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_01_03_Empty_Throw_Outside_Catch
     pretty_name: R15 01 03 Empty Throw Outside Catch
@@ -15894,7 +16130,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10766
-    description: TBD
+    description: In a C++ program, the main function lacks a catch-all exception handler.
+      This contravenes the MISRA C++:2008 Rule 15-3-2, which requires such a handler
+      to ensure unhandled exceptions do not terminate the program abruptly.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_03_02_Catch_All_In_Main
     pretty_name: R15 03 02 Catch All In Main
@@ -15906,7 +16144,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10767
-    description: TBD
+    description: The constructors and destructors of a class are accessing non-static
+      members, thereby violating the MISRA C++ Rule 15.3.3. Violations of this rule
+      pose potential risks related to unexpected object states and behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_03_03_Accessing_Non_Static_Mem_In_Ctr_Dtr
     pretty_name: R15 03 03 Accessing Non Static Mem In Ctr Dtr
@@ -15918,7 +16158,12 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10768
-    description: TBD
+    description: 'A catch-all handler is used as the final exception handler in a
+      try-catch block, contravening MISRA (Motor Industry Software Reliability Association)
+      C++ standard R15.03.07 that stipulates specific exception types should be caught
+      to maintain robust error handling.
+
+      '
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_03_07_Catch_All_Final
     pretty_name: R15 03 07 Catch All Final
@@ -15930,7 +16175,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10769
-    description: TBD
+    description: All branch paths involving a function or method should end with a
+      return statement, ensuring exception handling. Non-compliance with this rule
+      may result in unexpected program behavior in C++.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R15_05_01_Statements_Outside_TryCatch_Dtr
     pretty_name: R15 05 01 Statements Outside TryCatch Dtr
@@ -15942,7 +16189,9 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    description: TBD
+    description: All '#define' and '#undef' directives should only be used within
+      the global namespace to ensure a consistent macro environment and avoid possible
+      naming conflicts.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_02_Define_Only_in_Global_Namespace
     pretty_name: R16 00 02 Define Only in Global Namespace
@@ -15953,7 +16202,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: There's an usage of the '#undef' directive, violating MISRA C++ Rule
+      16-0-3, which states to avoid such directives to prevent potential issues with
+      symbol resolution or unexpected behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_03_Use_Of_Undef_Directive
     pretty_name: R16 00 03 Use Of Undef Directive
@@ -15965,7 +16216,8 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10771
-    description: TBD
+    description: The use of function-like macros is prohibited to prevent unforeseen
+      side effects, as part of compliance with the MISRA C++:2008 Rule 16-0-4.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_04_Function_Like_Macros_Shall_Not_Be_Defined
     pretty_name: R16 00 04 Function Like Macros Shall Not Be Defined
@@ -15977,7 +16229,8 @@ rules:
     - ALL
     - cwe-10772
     - owasp-top-10
-    description: TBD
+    description: Function-like macros must not contain any tokens other than the parameter
+      list in their definition to ensure code maintainability and reduce confusion.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_05_No_Tokens_In_Func_Like_Macro
     pretty_name: R16 00 05 No Tokens In Func Like Macro
@@ -15989,7 +16242,9 @@ rules:
     - cwe-10799
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A preprocessor directive uses a macro identifier that is not defined
+      at the time of use, violating MISRA C++:2008 Rule 16-0-7. This may result in
+      undefined behavior, causing unpredictable program output or runtime errors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_07_Undefined_Macro_Identifiers
     pretty_name: R16 00 07 Undefined Macro Identifiers
@@ -16001,7 +16256,9 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10773
-    description: TBD
+    description: A preprocessing directive is not immediately preceded by a '#' character.
+      This is a violation of MISRA C++:2008 Rule 16-0-8, potentially leading to syntax
+      errors.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_00_08_Sharp_Before_Preprocessing_Token
     pretty_name: R16 00 08 Sharp Before Preprocessing Token
@@ -16013,7 +16270,8 @@ rules:
     - cwe-10774
     - ALL
     - owasp-top-10
-    description: TBD
+    description: 'C++ functions are defined using standard forms - no macros or #define
+      compiler directives are employed, ensuring compliance with MISRA rule R16.01.01.'
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_01_01_Defined_Standart_Forms
     pretty_name: R16 01 01 Defined Standart Forms
@@ -16024,7 +16282,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Preprocessor `#if` and corresponding `#else` or `#elif` operators
+      are split between separate source files, violating MISRA C++ Rule 16-1-2 and
+      potentially compromising code integrity and readability.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_01_02_Preprocessor_If_And_Else_Operators_Reside_In_Different_Files
     pretty_name: R16 01 02 Preprocessor If And Else Operators Reside In Different
@@ -16036,7 +16296,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: C++ code violates the MISRA C++:2008 Rule 16-2-6, where the format
+      of an '#include' directive does not adhere to the proper format, resulting in
+      potential compilation issues.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_02_06_Include_Directive_In_Wrong_Format
     pretty_name: R16 02 06 Include Directive In Wrong Format
@@ -16047,7 +16309,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The '#' (pound) preprocessor operator is employed in the code, violating
+      MISRA C++ Rule 16-3-2 which prohibits the use of this operator to prevent potential
+      confusions and mistakes in macro expansions.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R16_03_02_Pound_Preprocessor_Operator_Is_Used
     pretty_name: R16 03 02 Pound Preprocessor Operator Is Used
@@ -16058,7 +16322,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The C++ Standard Library functions are redefined or undefined, breaking
+      compliance with MISRA C++ Rule 17-0-1 and potentially causing unpredictable
+      behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R17_00_01_Standard_Library_Redefined_Or_Undefined
     pretty_name: R17 00 01 Standard Library Redefined Or Undefined
@@ -16069,7 +16335,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: In C++ code, macro identifiers from Standard Library are reused,
+      violating MISRA C++ Rule 17-0-2, potentially causing naming conflicts and unpredictable
+      behavior.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R17_00_02_Standard_Library_Macros_Reuse
     pretty_name: R17 00 02 Standard Library Macros Reuse
@@ -16080,7 +16348,10 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Indicates the redefinition or override of a standard library function,
+      which breaches Rule 17-0-3 of the Motor Industry Software Reliability Association
+      (MISRA) guidelines for C++, leading to unpredictable behavior or a security
+      vulnerability.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R17_00_03_Standard_Library_Functions_Override
     pretty_name: R17 00 03 Standard Library Functions Override
@@ -16091,7 +16362,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The C-time function from the C Standard Library is used, violating
+      MISRA C++ Rule 18-0-4, which recommends the use of C++ date/time abstraction
+      from the C++ Standard Library for safety and maintainability.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R18_00_04_Ctime
     pretty_name: R18 00 04 Ctime
@@ -16102,7 +16375,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The rule targets the use of unbounded functions from the CString
+      library in C++ programming, as they can introduce potential buffer overflow
+      vulnerabilities. This adheres to the MISRA C++ Compliance rule 18-0-5.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R18_00_05_Unbounded_Functions_Of_Library_CString
     pretty_name: R18 00 05 Unbounded Functions Of Library CString
@@ -16113,7 +16388,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Dynamic heap memory allocation functions such as malloc(), realloc(),
+      calloc(), and free() are used in the code, violating MISRA C++ Rule 18-4-1.
+      This usage can risk memory leakage or illegal memory access.
     group: top10-injection
     name: CPP_MISRA_CPP_R18_04_01_Dynamic_Heap_Memory_Allocation
     pretty_name: R18 04 01 Dynamic Heap Memory Allocation
@@ -16124,7 +16401,9 @@ rules:
     - checkmarx-misra-cpp
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The C standard library function 'signal' is employed in a C++ context.
+      This usage violates rule 18-0-1 of the MISRA C++ guidelines, which advocates
+      against the inclusion of C library functions for robust and secure C++ code.
     group: top10-insecure-design
     name: CPP_MISRA_CPP_R18_07_01_Csignal
     pretty_name: R18 07 01 Csignal
@@ -16135,7 +16414,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: In compliance with MISRA C 2012 Rule 1.4, emergent features in C++
+      should not be utilized, as these may lead to unpredictable program behavior,
+      lesser portability, and/or increased vulnerability to security breaches.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R01_04_Emergent_Features_Shall_Not_Be_Used
     pretty_name: R01 04 Emergent Features Shall Not Be Used
@@ -16146,7 +16427,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Any unused, superfluous, or unreachable code within a C++ program,
+      a violation of MISRA C:2012 Rule 2.x directive, which could compromise the reliability
+      and maintainability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R02_X_Unused_Code
     pretty_name: R02 X Unused Code
@@ -16157,7 +16440,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: C++ comments that do not comply with the 'R03_X' rule from the MISRA
+      C 2012 guidelines are detected. This includes cases where C-style comments (/*...*/),
+      are used rather than the recommended C++ comments (//...), potentially obscuring
+      code readability and introducing structural hazards.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R03_X_Comments
     pretty_name: R03 X Comments
@@ -16168,7 +16454,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Only standard ASCII characters and escape sequences should be used
+      in character and string literals, as per the MISRA C 2012 guideline R04.X, in
+      order to ensure portability and avoid reliance on specific character set encoding.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R04_X_Character_Sets
     pretty_name: R04 X Character Sets
@@ -16179,7 +16467,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Identifiers which should comply with specific naming conventions
+      as stated in MISRA C 2012 Rule 5.x are not adhering to those conventions, leading
+      to possibly unclear code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R05_X_Identifiers
     pretty_name: R05 X Identifiers
@@ -16190,7 +16480,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Bits in non-integral bit fields are accessed, violating the MISRA
+      C 2012 rule 6.x, which states that bit-fields should only be defined to be of
+      type unsigned int or signed int.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R06_X_Bitfields
     pretty_name: R06 X Bitfields
@@ -16201,7 +16493,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Octal constants are prohibited as per MISRA C 2012 Rule 07.01 to
+      avoid confusion with decimal values in C++ code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R07_01_Octal_Constans_Shall_Not_Be_Used
     pretty_name: R07 01 Octal Constans Shall Not Be Used
@@ -16212,7 +16505,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Unsigned integer constants should be suffixed with "U" or "u" to
+      ensure clear representation of their unsigned nature, avoiding possible misinterpretation
+      and inappropriate type casting.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R07_02_U_Or_u_Suffix_Shall_Be_Applied_To_All_Unsigned_Type_Integers
     pretty_name: R07 02 U Or u Suffix Shall Be Applied To All Unsigned Type Integers
@@ -16223,7 +16518,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: In a constant suffix, the lowercase letter 'l' shall not be used
+      due to its potential for confusion with the numeral '1', violating MISRA C:2012
+      Rule 07.03.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R07_03_Lowercase_l_Shall_Not_Be_Used_In_A_Literal_Suffix
     pretty_name: R07 03 Lowercase l Shall Not Be Used In A Literal Suffix
@@ -16234,7 +16531,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: String literals are assigned to a pointer to non-const char, violating
+      MISRA C 2012 Rule 07.04. This may inadvertently alter string literals, causing
+      unexpected behavior or bugs.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R07_04_String_Literal_Should_Be_Assigned_To_Pointer_To_Const_Char
     pretty_name: R07 04 String Literal Should Be Assigned To Pointer To Const Char
@@ -16245,7 +16544,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Identifies C++ function prototypes that do not name the parameters,
+      violating MISRA C++ 2012 Rule 8.2, which stipulates that all parameters in function
+      prototypes should be named to indicate their usage.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_02_Function_Prototype_With_Named_Parameters
     pretty_name: R08 02 Function Prototype With Named Parameters
@@ -16256,7 +16557,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Two or more functions have been given identical names, a violation
+      of MISRA C 2012 Rule 08.03, potentially creating ambiguity and misleading the
+      compiler.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_03_Functions_Have_Same_Name
     pretty_name: R08 03 Functions Have Same Name
@@ -16267,7 +16570,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: When a function or an object is used, its compatible declaration
+      must be visible in its scope, adhering to Rule 08.04 of MISRA C 2012 to ensure
+      type safety.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_04_Compatible_Declaration_Shall_Be_Visible
     pretty_name: R08 04 Compatible Declaration Shall Be Visible
@@ -16278,7 +16583,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: External objects in C++ code should be declared only once to comply
+      with the MISRA C 2012 R08.05 rule, avoiding any confusion or errors due to multiple
+      declarations.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_05_External_Objects_Shall_Be_Declared_Once
     pretty_name: R08 05 External Objects Shall Be Declared Once
@@ -16289,7 +16596,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Ensures that each identifier with external linkage is associated
+      with exactly one definition within the entire program, in accordance with Rule
+      8.6 of MISRA C 2012 guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_06_Single_External_Definition_Per_External_Identifier
     pretty_name: R08 06 Single External Definition Per External Identifier
@@ -16300,7 +16609,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Functions and objects are defined as 'extern' while being referenced
+      only in a single file, violating MISRA C:2012 Rule 08.07, which can lead to
+      potential linkage and maintainability issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_07_Function_And_Objects_Should_Not_Use_Extern_When_Referenced_In_One_File
     pretty_name: R08 07 Function And Objects Should Not Use Extern When Referenced
@@ -16312,7 +16623,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: All internal linkage declarations must use the 'static' keyword in
+      accordance with the MISRA C 2012 Rule 08.08 to prevent potential linkage and
+      name collision issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_08_Static_Shall_Be_Used_In_All_Internal_Linkage_Declarations
     pretty_name: R08 08 Static Shall Be Used In All Internal Linkage Declarations
@@ -16323,7 +16636,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Ensures that identifiers in C++ are defined at the smallest block
+      scope possible, conforming to MISRA C 2012 Rule 08.09 which aims to improve
+      code readability and maintainability.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_09_Identifiers_Should_Be_Defined_At_Block_Scope
     pretty_name: R08 09 Identifiers Should Be Defined At Block Scope
@@ -16334,7 +16649,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: An inline function in C++ doesn't have 'static' declaration, violating
+      rule 8.10 of MISRA C 2012 standards, leading to potential clashes in function
+      names and unpredictable behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_10_Inline_Function_Shall_Be_Declared_With_Static
     pretty_name: R08 10 Inline Function Shall Be Declared With Static
@@ -16345,7 +16662,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: External array declarations must include a defined size to ensure
+      compliance with MISRA C 2012 Rule 08.11 and avoid potential runtime issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_11_Extern_Array_Shall_Be_Declared_With_Determined_Size
     pretty_name: R08 11 Extern Array Shall Be Declared With Determined Size
@@ -16356,7 +16674,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Enumerated constant values specified implicitly must be unique in
+      compliance with MISRA C 2012 Rule 8.12, to ensure clear differentiation between
+      enumeration items.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_12_Value_Implicitly_Specified_Of_Enumeration_Constant_Shall_Be_Unique
     pretty_name: R08 12 Value Implicitly Specified Of Enumeration Constant Shall Be
@@ -16368,7 +16688,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: A pointer does not point to 'const', breaking the MISRA C 2012 Rule
+      8.13 guideline, which can lead to unforeseen side effects or code vulnerabilities
+      due to accidental modification of data.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_13_Pointer_Should_Point_Const
     pretty_name: R08 13 Pointer Should Point Const
@@ -16379,7 +16701,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The rule R08.14 in the MISRA C 2012 guidelines, precisely checks
+      if the restrict type qualifier does not refer to an object with static storage
+      duration or a function parameter declared as array or function type in the C++
+      code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R08_14_Restrict_Type_Qualifier
     pretty_name: R08 14 Restrict Type Qualifier
@@ -16390,7 +16715,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: A variable's value is being overwritten without prior usage, violating
+      the MISRA C:2012 Rule 9.1 which states that every value, which is read, must
+      be set explicitly beforehand.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R09_01_Value_Not_Read_Before_Being_Set
     pretty_name: R09 01 Value Not Read Before Being Set
@@ -16401,7 +16728,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Array initializers must not contain more initializers than the dimension
+      of the array, and the provided initializer must be compatible with the declared
+      type to meet MISRA C 2012 Rules 09.02 and 09.03. Violations may result in unexpected
+      program behavior.
     group: top10-injection
     name: CPP_MISRA_C_2012_R09_02_to_03_Array_Initializer_Validation
     pretty_name: R09 02 to 03 Array Initializer Validation
@@ -16412,7 +16742,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Operands within an expression are of an inappropriate essential type,
+      violating the MISRA C 2012 Rule 10.1, which aims to ensure correct and safe
+      usage of operands in C++ code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_01_Operands_Shall_Not_Be_Of_An_Inappropriate_Essential_Type
     pretty_name: R10 01 Operands Shall Not Be Of An Inappropriate Essential Type
@@ -16423,7 +16755,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Character types should not be used inappropriately in arithmetic
+      operations to avoid unexpected results due to implicit type conversion, adhering
+      to the MISRA C 2012 Rule 10.2.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_02_Char_Type_Shall_Not_Be_Used_Inappropriately_In_Operations
     pretty_name: R10 02 Char Type Shall Not Be Used Inappropriately In Operations
@@ -16434,7 +16768,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: An expression's value is assigned to a data type with inappropriate
+      essential type, contradicting MISRA C 2012 Rule 10.3, which can lead to unexpected
+      behavior due to data loss or incorrect value interpretation.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_03_Value_Of_An_Expression_Assigned_To_Inappropriate_Essential_Type
     pretty_name: R10 03 Value Of An Expression Assigned To Inappropriate Essential
@@ -16446,7 +16782,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Binary operators that operate on a basic type should have operands
+      of the same type, as required by MISRA C 2012 Rule 10.4, to ensure type consistency
+      and prevent unexpected behavior during execution.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_04_Binary_Operator_Operands_With_Same_Type
     pretty_name: R10 04 Binary Operator Operands With Same Type
@@ -16457,7 +16795,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: A violation occurs when the value of an expression is cast to an
+      inappropriate essential type according to the MISRA C 2012 standard rule R10.05,
+      thereby increasing the risk of incorrect program behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_05_Value_Of_An_Expression_Cast_To_Inappropriate_Essential_Type
     pretty_name: R10 05 Value Of An Expression Cast To Inappropriate Essential Type
@@ -16468,7 +16808,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Verifies that C++ code adheres to MISRA C 2012 rules 10.6, 10.7,
+      and 10.8, ensuring type consistency of composite expressions to prevent integer
+      overflows and underflows.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R10_06_to_08_Composite_Expressions
     pretty_name: R10 06 to 08 Composite Expressions
@@ -16479,7 +16821,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: R11.x Pointer Type Conversions detects violations of MISRA C 2012
+      Rule 11.x, which prohibits conversions between pointer types that may lead to
+      an incompatible or unexpected type interpretation, possibly causing code behavior
+      inconsistencies.
     group: top10-vulnerable-components
     name: CPP_MISRA_C_2012_R11_X_Pointer_Type_Conversions
     pretty_name: R11 X Pointer Type Conversions
@@ -16490,7 +16835,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: An issue with operator precedence in a C++ code line occurs when
+      one expression consists of intertwined operators without the use of parentheses
+      for explicit precedence, resulting in possible ambiguity or unexpected outcomes
+      in line with the MISRA C 2012 Rule 12.1.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R12_01_Explicit_Operator_Precedence
     pretty_name: R12 01 Explicit Operator Precedence
@@ -16501,7 +16849,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The right-hand operand of a shift operator in C++ code exceeds the
+      width in bits of the essential type of the left-hand operand, violating the
+      MISRA C++ 2012 Rule 12.02, which can lead to unpredictable values or data loss.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R12_02_Right_Operand_Of_Shift_Operator_Out_Of_Range
     pretty_name: R12 02 Right Operand Of Shift Operator Out Of Range
@@ -16512,7 +16862,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Prohibits the use of the comma operator, except in functions and
+      arrays, as stated in rule R12.03 of the MISRA C 2012 guidelines to prevent ambiguous
+      or unexpected results in C++ programming.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R12_03_Comma_Operator_Shall_Not_Be_Used
     pretty_name: R12 03 Comma Operator Shall Not Be Used
@@ -16523,7 +16875,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Unsigned integer values are used in such a way that could result
+      in wrap-around, violating the MISRA C 2012 guideline R12.04 for reliable and
+      secure coding.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R12_04_Unsigned_Integer_Wrap_Around
     pretty_name: R12 04 Unsigned Integer Wrap Around
@@ -16534,7 +16888,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The 'sizeof' operator is used with an operand that is not an array
+      of type, in violation of MISRA C 2012 Rule 12.5. This may result in unintended
+      calculation of object memory size.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R12_05_Sizeof_Operand_Not_Array_Of_Type
     pretty_name: R12 05 Sizeof Operand Not Array Of Type
@@ -16545,7 +16901,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Side effects in an expression are not sequenced properly, resulting
+      in unreliable operation under the MISRA C++:2008 Rule 13.x. This could lead
+      to undefined or unpredictable behaviors.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R13_X_Side_Effects
     pretty_name: R13 X Side Effects
@@ -16556,7 +16914,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Control mechanisms in C++ programming, such as if-else and switch-case
+      statements, contain expressions that do not resolve to Boolean values as per
+      MISRA C 2012, Rule 14.x, increasing the chance of unintended program behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R14_X_Control_Statement_Expressions
     pretty_name: R14 X Control Statement Expressions
@@ -16567,7 +16927,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Enforces MISRA C:2012 rules 15.1 to 15.3, which together prohibit
+      usage of 'goto' statements for branch and iteration control, limiting its role
+      for error handling in C++.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R15_01_to_03_Goto_Usage_Constraints
     pretty_name: R15 01 to 03 Goto Usage Constraints
@@ -16578,7 +16940,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Iteration statements must have at most one break statement exiting
+      the loop, per MISRA C 2012 Rule 15.4, thus enforcing a single point of exit
+      for greater control flow clarity in C++ programming.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R15_04_Iteration_Single_Exit_Point
     pretty_name: R15 04 Iteration Single Exit Point
@@ -16589,7 +16953,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Functions should have a single exit point at the end, ensuring program
+      flow isn't disrupted and handling resources more efficiently, per MISRA C 2012
+      Rule 15.5.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R15_05_Function_Single_Exit_Point
     pretty_name: R15 05 Function Single Exit Point
@@ -16600,7 +16966,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The body of an iteration statement, selection statement, or a `catch`
+      clause in a function definition or at block scope isn't a compound statement,
+      violating MISRA C 2012 Rule 15.06. This may result in unexpected logic flow,
+      making the code hard to modify and error-prone.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R15_06_Statement_Body_Shall_Be_Compound
     pretty_name: R15 06 Statement Body Shall Be Compound
@@ -16611,7 +16980,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: This rule checks if 'if-else if' construct in C++ code complies with
+      MISRA C 2012 Rule 15.07, which states that the construct must end with an 'else'
+      clause to avoid unintended behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R15_07_If_Else_If_Constructs_Not_Ending_With_Else
     pretty_name: R15 07 If Else If Constructs Not Ending With Else
@@ -16622,7 +16993,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Switch-case constructs in C/C++ code are not adhering to MISRA 2012
+      Rule 16.X, which requires a default label to end all switch statements to avoid
+      potential issues if none of the case matches.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R16_X_Switches
     pretty_name: R16 X Switches
@@ -16633,7 +17006,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The standard header <stdarg.h> is used within the code, violating
+      Rule 17.1 of MISRA C 2012, which prohibits the use of variable argument functions.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_01_StdArg_Shall_Not_Be_Used
     pretty_name: R17 01 StdArg Shall Not Be Used
@@ -16644,7 +17018,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The code violates Rule 17.2 of MISRA C 2012 standard as it contains
+      recursion, either direct or indirect, which might lead to unpredictable program
+      behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_02_No_Recursion
     pretty_name: R17 02 No Recursion
@@ -16655,7 +17031,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: "The program uses a function that has been declared implicitly, violating\
+      \ the MISRA C 2012 Rule 17.03\u2014increasing potential for undeclared or mistyped\
+      \ function names to cause malfunction or behave unpredictably."
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_03_Function_Shall_Not_Be_Declared_Implicitly
     pretty_name: R17 03 Function Shall Not Be Declared Implicitly
@@ -16666,7 +17044,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Every non-void function must have a return statement with an expression,
+      ensuring that a return value is specified, conforming to MISRA C 2012 Rule 17.4.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_04_Non_Void_Has_Valid_Return
     pretty_name: R17 04 Non Void Has Valid Return
@@ -16677,7 +17056,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Enforces MISRA C 2012 directives 17.05 and 17.06 to ensure that a
+      function does not take an array as a parameter, but rather a pointer to its
+      first element, safeguarding critical memory portions used by the array.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_05_to_06_Functions_With_Array_Parameter
     pretty_name: R17 05 to 06 Functions With Array Parameter
@@ -16688,7 +17069,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: In compliance with MISRA C 2012 Rule 17.07, the value returned by
+      a function with a non-void return type must be utilized, preventing potential
+      logical errors or inconsistencies.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_07_Value_Returned_By_Non_Void_Function_Shall_Be_Used
     pretty_name: R17 07 Value Returned By Non Void Function Shall Be Used
@@ -16699,7 +17082,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Function parameters in the C++ language are altered or modified,
+      which violates rule 17.08 of MISRA C 2012, potentially leading to unpredictable
+      program behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R17_08_Function_Parameter_Should_Not_Be_Modified
     pretty_name: R17 08 Function Parameter Should Not Be Modified
@@ -16710,7 +17095,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Misuse of pointer arithmetic tends to violate rule 18.4 of MISRA
+      C 2012, suggesting that subtraction or addition operators should not be applied
+      to pointer values, which could lead to overflow and underflow memory bugs.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R18_04_Pointer_Arithmetic
     pretty_name: R18 04 Pointer Arithmetic
@@ -16721,7 +17108,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Declarations of pointer types used in nesting do not exceed two levels,
+      adhering to the MISRA C 2012 Rule 18.5, to prevent complexities in interpreting
+      sequences of indirections.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R18_05_Pointer_Nesting
     pretty_name: R18 05 Pointer Nesting
@@ -16732,7 +17121,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The rule ensures that the addresses of objects with automatic storage
+      duration are not copied to other objects, as per MISRA C 2012 Rule 18.06. Doing
+      so could lead to usage of an invalid address if the automatic storage has expired.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R18_06_Automatic_Storage_Addresses_Shall_Not_Be_Copied
     pretty_name: R18 06 Automatic Storage Addresses Shall Not Be Copied
@@ -16743,7 +17134,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Variable length arrays and flexible array members are prohibited,
+      adhering to guidelines R18.07 and R18.08 from MISRA-C:2012 rules, thus ensuring
+      predictability and reliability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R18_07_to_08_Variable_Length_And_Flexible_Arrays
     pretty_name: R18 07 to 08 Variable Length And Flexible Arrays
@@ -16754,7 +17147,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Identifies cases in C++ code where two pointers are used to simultaneously
+      manipulate the same memory space, a violation of rule 19.x of the MISRA C 2012
+      standard, leading to potential undefined behavior or data integrity issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R19_X_Overlapping_Storage
     pretty_name: R19 X Overlapping Storage
@@ -16765,7 +17160,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: When a '#include' directive is used in a file, it fails to respect
+      the inclusion precedence outlined by MISRA C 2012 Rule 20.1, possibly disrupting
+      the sequence of headers and leading to unpredictable results.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_01_Include_Directive_Precedence
     pretty_name: R20 01 Include Directive Precedence
@@ -16776,7 +17173,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Include file names must be a sequence of valid (ISO 646 Basic) source
+      characters, excluding NUL, and do not contain a UCN encoding a character that
+      can't appear in an ISO/IEC 646:1991 source file. This promotes code portability
+      and maintainability.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_02_Invalid_Include_Names
     pretty_name: R20 02 Invalid Include Names
@@ -16787,7 +17187,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Violates MISRA C 2012 Rule 20.3, which stipulates that the '#include'
+      directive must not use an angle-bracket form when including system library files
+      and a double-quote form when including user-defined files. Non-compliance may
+      lead to unexpected preprocessor behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_03_Includes_In_Wrong_Format
     pretty_name: R20 03 Includes In Wrong Format
@@ -16798,7 +17201,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Macro identifiers align with C++ language keyword names, which violates
+      MISRA C 2012 Rule 20.04 and can lead to confusing or misleading code.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_04_Macros_With_Keyword_Name
     pretty_name: R20 04 Macros With Keyword Name
@@ -16809,7 +17213,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The '#undef' directive is utilized in the code, violating Rule 20.5
+      of the MISRA C 2012 standard, which forbids the use of this directive in C programming
+      to avoid inconsistencies in symbol definitions.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_05_Undef_Shall_Not_Be_Used
     pretty_name: R20 05 Undef Shall Not Be Used
@@ -16820,7 +17226,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: The preprocessor concatenation operations do not comply with MISRA
+      C 2012 Rules R20.10 to R20.12, implying a risk in misinterpretation of the combined
+      tokens.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_10_to_12_Preprocessor_Concatenation_Operations
     pretty_name: R20 10 to 12 Preprocessor Concatenation Operations
@@ -16831,7 +17239,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: 'Ensures compliance with MISRA C 2012 Rule 20.13: Every preprocessor
+      directive in the code must be a valid and well-formed directive as per the standard.
+      Invalid or ill-formed directives can cause undefined behavior or compilation
+      errors.'
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_13_Valid_PreProcessor_Directives
     pretty_name: R20 13 Valid PreProcessor Directives
@@ -16842,7 +17253,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: An 'if' directive and an 'else' directive from a pair of conditional
+      inclusion preprocessor directives are not part of the same file in C++, violating
+      MISRA C 2012 Rule 20.14. This can cause inconsistent code behavior due to different
+      preprocessing conditions.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R20_14_Preprocessor_IF_Else_In_Same_File
     pretty_name: R20 14 Preprocessor IF Else In Same File
@@ -16853,7 +17267,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Checks for the usage of C Standard Library functions not permissible
+      under MISRA C:2012 rules 21.1 to 21.12, to guarantee safety, reliability, and
+      portability.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R21_01_to_12_Usage_of_C_Standard_Library
     pretty_name: R21 01 to 12 Usage of C Standard Library
@@ -16864,7 +17280,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: Checks for the use of C standard library types, as dictated by MISRA
+      C:2012 Rules 21.13 to 21.20, which pose potential code safety and reliability
+      hazards.
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R21_13_to_20_C_Standard_Library_Types
     pretty_name: R21 13 to 20 C Standard Library Types
@@ -16875,7 +17293,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c-2012
     - ALL
-    description: TBD
+    description: 'Violates directive 4.13 of MISRA C 2012 guidelines: do not rely
+      on undefined or unspecified behavior of any kind, including memory allocation
+      routines, file handling, signals, and exceptions.'
     group: top10-insecure-design
     name: CPP_MISRA_C_2012_R22_X_Resources
     pretty_name: R22 X Resources
@@ -16886,7 +17306,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Enforces the use of "/* ... */" style for multi-line comments in
+      C++ code instead of using a sequence of single line comments with "//", in accordance
+      with the MISRA C++:2008 rule set (Rule 2-2-2).
     group: top10-insecure-design
     name: CPP_MISRA_C_R02_02_CPP_Comment_Style
     pretty_name: R02 02 CPP Comment Style
@@ -16897,7 +17319,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Detects the presence of nested comments in C++ code, a violation
+      of MISRA C:2004 Rule 2.3, which may lead to misinterpretation and ambiguity
+      during code analysis.
     group: top10-insecure-design
     name: CPP_MISRA_C_R02_03_Nested_Comments
     pretty_name: R02 03 Nested Comments
@@ -16908,7 +17332,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Sections of code are commented out, violating Rule 02.04 of the MISRA
+      C guidelines, which could indicate unfinished work or obsolete logic.
     group: top10-insecure-design
     name: CPP_MISRA_C_R02_04_Code_Commented_Out
     pretty_name: R02 04 Code Commented Out
@@ -16919,7 +17344,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Code contains '#pragma' directives that are not explained with adjacent
+      comments, thereby violating MISRA C rule 03.04, which deems it necessary to
+      provide explanations for each '#pragma' usage.
     group: top10-insecure-design
     name: CPP_MISRA_C_R03_04_Not_Explained_Pragma_Usage
     pretty_name: R03 04 Not Explained Pragma Usage
@@ -16930,7 +17357,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Non-standard escape sequences are used in the program, violating
+      rule R04.01 of the MISRA C guidelines, which requires all escape sequences to
+      comply with the ISO 9899:1999 standard.
     group: top10-insecure-design
     name: CPP_MISRA_C_R04_01_Non_ISO_Escape_Sequences
     pretty_name: R04 01 Non ISO Escape Sequences
@@ -16941,7 +17370,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Trigraph sequences are used in the code, violating the MISRA C Rule
+      04.02, which discourages their usage owing to possible confusion and misinterpretation.
     group: top10-insecure-design
     name: CPP_MISRA_C_R04_02_Trigraphs
     pretty_name: R04 02 Trigraphs
@@ -16952,7 +17382,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Identifier names in a C or C++ file exceed the recommended length
+      specified by the MISRA-C coding standard, potentially leading to legibility
+      and maintainability issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_01_Identifiers_Length_Violation
     pretty_name: R05 01 Identifiers Length Violation
@@ -16963,7 +17395,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Identifiers in an inner scope are used that hide identifiers in an
+      outer scope, which may lead to confusion and errors, contradicting the MISRA
+      C rule 05.02.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_02_Identifiers_Hiding_Outer_Scope_Identifiers
     pretty_name: R05 02 Identifiers Hiding Outer Scope Identifiers
@@ -16974,7 +17408,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The same name is used for different 'typedef' entities within the
+      same codebase, violating MISRA C Rule 5.3, thus leading to potential code ambiguities.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_03_Typedef_Name_Reused
     pretty_name: R05 03 Typedef Name Reused
@@ -16985,7 +17420,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A tag name is being reused for different types within the same scope,
+      violating the MISRA C Rule 05.04, and potentially leading to type confusion.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_04_Tag_Name_Reused
     pretty_name: R05 04 Tag Name Reused
@@ -16996,7 +17432,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: An identifier with the static storage class specification appears
+      more than once within the same scope, contravening rule 05.05 of the Motor Industry
+      Software Reliability Association (MISRA) guidelines for C programming language.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_05_Identifier_With_Static_Storage_Reused
     pretty_name: R05 05 Identifier With Static Storage Reused
@@ -17007,7 +17445,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A single identifier name has been used for more than one entity within
+      a scope, violating the MISRA C Rule 5.7 and leading to possible confusion and
+      error.
     group: top10-insecure-design
     name: CPP_MISRA_C_R05_07_Identifier_Name_Reused
     pretty_name: R05 07 Identifier Name Reused
@@ -17018,7 +17458,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The use of 'plain char' type, which doesn't specify signedness, is
+      not compliant with MISRA C Rule 6.1 and may lead to unexpected behavior in C++.
+      This rule advises using 'signed char' or 'unsigned char' instead.
     group: top10-insecure-design
     name: CPP_MISRA_C_R06_01_Plain_Char_Type_Usage
     pretty_name: R06 01 Plain Char Type Usage
@@ -17029,7 +17471,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Identifies instances in C++ code where plain 'char' type is used,
+      in violation of MISRA C++ Rule 6-2-1 which recommends using 'signed' or 'unsigned'
+      qualifiers for improved portability and predictability.
     group: top10-insecure-design
     name: CPP_MISRA_C_R06_02_Not_Plain_Char_Type_Usage
     pretty_name: R06 02 Not Plain Char Type Usage
@@ -17040,7 +17484,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Basic types in C++ code like int, char, etc., are used directly instead
+      of through a typedef declaration, violating MISRA C Rule 6.3. This could lead
+      to portability issues across different platforms.
     group: top10-insecure-design
     name: CPP_MISRA_C_R06_03_Non_Typedefd_Basic_Types
     pretty_name: R06 03 Non Typedefd Basic Types
@@ -17051,7 +17497,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Bit fields should only be defined with `unsigned int` or `signed
+      int` types, helping to prevent unexpected behavior or data corruption due to
+      compiler-specific implementations.
     group: top10-insecure-design
     name: CPP_MISRA_C_R06_04_Bit_Fields_Type
     pretty_name: R06 04 Bit Fields Type
@@ -17062,7 +17510,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A bit-field declaration with a size greater than the intended bit
+      width may cause unintended results and violates MISRA C:2004 Rule 6.5.
     group: top10-insecure-design
     name: CPP_MISRA_C_R06_05_Bit_Fields_Length
     pretty_name: R06 05 Bit Fields Length
@@ -17073,7 +17522,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: An octal constant (other than zero) is being used which could lead
+      to confusion or errors, violating MISRA C rule 07.01.
     group: top10-insecure-design
     name: CPP_MISRA_C_R07_01_Non_Zero_Octal_Constant
     pretty_name: R07 01 Non Zero Octal Constant
@@ -17084,7 +17534,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The type of a standard library function is not identical in a function
+      declaration and its corresponding definition, violating MISRA-C rule 08.03 and
+      creating potential consistency issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_R08_03_Identical_Function_Decl_Def
     pretty_name: R08 03 Identical Function Decl Def
@@ -17095,7 +17547,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Objects or functions are used in a header file (.h file), conflicting
+      with MISRA C's Rule 08.05, which prohibits declaring such entities in header
+      files to prevent potential re-declaration errors and namespace pollution.
     group: top10-insecure-design
     name: CPP_MISRA_C_R08_05_Object_Function_In_Header_File
     pretty_name: R08 05 Object Function In Header File
@@ -17106,7 +17560,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Objects with block scope should not be declared in the block if they
+      are only used by a single function, as outlined in MISRA C:2004, Rule 8.7, to
+      improve code readability and maintainability.
     group: top10-insecure-design
     name: CPP_MISRA_C_R08_07_Block_Scope_Obj_If_Used_By_Single_Function
     pretty_name: R08 07 Block Scope Obj If Used By Single Function
@@ -17117,7 +17573,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: An externally linked object is declared more than once, causing redundancy
+      and potentially leading to unpredictable behavior, in violation of MISRA C rule
+      08.08.
     group: top10-insecure-design
     name: CPP_MISRA_C_R08_08_External_Objects_Declared_Once
     pretty_name: R08 08 External Objects Declared Once
@@ -17128,7 +17586,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Enum elements in C++ are not initialized following the first member
+      and all elements are not consistently initialized, contravening MISRA C rule
+      09.03 and potentially leading to invalid enum member values.
     group: top10-insecure-design
     name: CPP_MISRA_C_R09_03_Initializing_Non_First_And_Not_All_Members_In_Enum
     pretty_name: R09 03 Initializing Non First And Not All Members In Enum
@@ -17139,7 +17599,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: 'In C or C++ programming, unsigned constants must explicitly carry
+      the ''U'' suffix, as per MISRA C : Rule 10.6. This rule identifies when the
+      ''U'' suffix is not applied to an unsigned constant, which may lead to unexpected
+      behavior or type mismatches.'
     group: top10-insecure-design
     name: CPP_MISRA_C_R10_06_U_Suffix_Not_Applied_To_Unsigned_Const
     pretty_name: R10 06 U Suffix Not Applied To Unsigned Const
@@ -17150,7 +17613,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The rule checks for situations where logical '&&' and '||' operators
+      don't have primary expressions as operands, which is a violation of MISRA C
+      Rule 12.05. This could lead to unexpected behaviors due to operator precedence
+      misunderstandings.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_05_AND_OR_Operands_Not_As_Primary_Expressions
     pretty_name: R12 05 AND OR Operands Not As Primary Expressions
@@ -17161,7 +17627,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Bitwise operators are applied to signed data types in C++, violating
+      MISRA C guideline (Rule 12.07). This could lead to unpredictable behavior due
+      to sign extension.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_07_Bitwise_Operator_On_Signed_Type
     pretty_name: R12 07 Bitwise Operator On Signed Type
@@ -17172,7 +17640,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Applies the unary minus operator to an unsigned type, which, according
+      to MISRA C Rule 12.9, can result in undefined behavior due to wrapping around
+      zero.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_09_Unary_Minus_Operator_On_Unsigned_Type
     pretty_name: R12 09 Unary Minus Operator On Unsigned Type
@@ -17183,7 +17653,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The comma operator is being used in an expression. According to the
+      Motor Industry Software Reliability Association (MISRA) C rule 12.10, this is
+      not advised due to its potential to impact the order of operations and lead
+      to unexpected outcomes.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_10_Comma_Operator_Used
     pretty_name: R12 10 Comma Operator Used
@@ -17194,7 +17667,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Floating point values are treated as though they have an underlying
+      bit representation, violating MISRA C rule 12.12, which can lead to unexpected
+      results or undefined behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_12_Floating_Point_Bit_Underlying_Representation_Used
     pretty_name: R12 12 Floating Point Bit Underlying Representation Used
@@ -17205,7 +17680,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The rule indicates the usage of increment (++) and decrement (--)
+      operators, which is not compliant with MISRA C guideline 12.13 due to potential
+      unpredictability of execution order.
     group: top10-insecure-design
     name: CPP_MISRA_C_R12_13_Using_Of_Incremental_And_Decrimental_Operators
     pretty_name: R12 13 Using Of Incremental And Decrimental Operators
@@ -17216,7 +17693,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Assignment operators are used improperly within boolean expressions,
+      violating MISRA C Rule 13.01. This could lead to unpredictable software behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R13_01_Assignment_Operators_In_Boolean_Expressions
     pretty_name: R13 01 Assignment Operators In Boolean Expressions
@@ -17227,7 +17705,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Compares floating point numbers for equality or inequality, which
+      contradicts MISRA C R13.03 due to potential inaccuracies in floating point storage
+      and computation.
     group: top10-insecure-design
     name: CPP_MISRA_C_R13_03_Floating_Point_Equality_Or_Inequality
     pretty_name: R13 03 Floating Point Equality Or Inequality
@@ -17238,7 +17718,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Floating point objects are being used in for loop control structures,
+      which is a violation of MISRA C rule 13.04. This can lead to unpredictable behavior
+      due to the imprecise nature of floating point numbers.
     group: top10-insecure-design
     name: CPP_MISRA_C_R13_04_Floating_Points_Objects_In_For_Control
     pretty_name: R13 04 Floating Points Objects In For Control
@@ -17249,7 +17731,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Violates MISRA C Rule 13.06 as the loop iterator is modified in the
+      body of the loop, which may lead to unpredictable iteration behaviors.
     group: top10-insecure-design
     name: CPP_MISRA_C_R13_06_Loop_Iterator_Modified_In_Loop_Body
     pretty_name: R13 06 Loop Iterator Modified In Loop Body
@@ -17260,7 +17743,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Refers to the use of 'goto' statement in C++ which violates the MISRA
+      C 2004 Rule 14.4, deeming it as non-compliant due to potential control flow
+      disruption.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_04_Use_Of_Goto
     pretty_name: R14 04 Use Of Goto
@@ -17271,7 +17756,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The 'continue' statement is used in iteration statements, which contradicts
+      rule 14.05 of the MISRA C guidelines, recommending against its use for better
+      predictability and understandability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_05_Use_Of_Continue
     pretty_name: R14 05 Use Of Continue
@@ -17282,7 +17769,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Indicates the presence of multiple break statements within a loop
+      or iteration, which violates MISRA C Rule 14.06 and disrupts expected control
+      flow.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_06_Multiple_Breaks_In_Iteration_Statement
     pretty_name: R14 06 Multiple Breaks In Iteration Statement
@@ -17293,7 +17782,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Functions must have a single point of exit at the end, maintaining
+      only one return statement, as per the MISRA C:2012 Rule 14.7, to improve readability
+      and manageability of the code.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_07_Single_Point_Exit_At_Function_End
     pretty_name: R14 07 Single Point Exit At Function End
@@ -17304,7 +17795,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The last statement of a switch case or an iteration directive is
+      not a compound statement, which contradicts the MISRA C rule 14.08 guideline
+      and can lead to potential logical errors.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_08_Not_Compound_Switch_Or_Iteration_Statement
     pretty_name: R14 08 Not Compound Switch Or Iteration Statement
@@ -17315,7 +17808,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: An 'if' or 'else if' conditional statement, containing a non-compound
+      statement as its body, must be enclosed in braces {}. Violating this requirement
+      in the C++ language as stipulated by MISRA C standard can lead to misunderstanding
+      or error.
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_09_Not_Compound_If_Or_Else
     pretty_name: R14 09 Not Compound If Or Else
@@ -17326,7 +17822,11 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: 'An ''if'' / ''else if'' construct is not ending with an ''else''
+      clause, violating MISRA C''s Rule 14.10 and potentially leading to unanticipated
+      behavior under certain conditions.
+
+      '
     group: top10-insecure-design
     name: CPP_MISRA_C_R14_10_If_Else_If_Not_Ending_With_Else
     pretty_name: R14 10 If Else If Not Ending With Else
@@ -17337,7 +17837,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A case in a switch statement is not enclosed by braces, violating
+      the MISRA C Rule 15.1, thus possibly causing unexpected fall-through behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R15_01_Case_Not_Enclosed_By_Compound_Switch
     pretty_name: R15 01 Case Not Enclosed By Compound Switch
@@ -17348,7 +17849,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A non-empty switch clause lacks a 'break' statement. According to
+      the MISRA C Guidelines (Rule 15.2), this may lead to unintended execution of
+      adjacent switch clauses.
     group: top10-insecure-design
     name: CPP_MISRA_C_R15_02_Non_Empty_Switch_Clause_Without_Break
     pretty_name: R15 02 Non Empty Switch Clause Without Break
@@ -17359,7 +17862,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A 'switch' statement in C++ does not have a 'default' clause as the
+      last clause, violating the MISRA C Rule 15.03 and potentially leading to unexpected
+      behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R15_03_Non_Default_Final_Clause_In_Switch_Statement
     pretty_name: R15 03 Non Default Final Clause In Switch Statement
@@ -17370,7 +17875,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A switch statement doesn't include any case labels, negating its
+      purpose; as per MISRA C Rule 15.5, this renders the code non-compliant with
+      best practice.
     group: top10-insecure-design
     name: CPP_MISRA_C_R15_05_No_Cases_in_Switch_Statement
     pretty_name: R15 05 No Cases in Switch Statement
@@ -17381,7 +17888,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Functions with a variable number of arguments are used, in violation
+      of MISRA C Rule 16.01. This can lead to potential security and stability issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_01_Function_With_Variable_Number_Of_Arguments
     pretty_name: R16 01 Function With Variable Number Of Arguments
@@ -17392,7 +17900,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The rule identifies uses of recursion within C++ code, a practice
+      prohibited by the MISRA C standard due to the possible risks of stack overflow.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_02_Recursion_Exists
     pretty_name: R16 02 Recursion Exists
@@ -17403,7 +17912,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Violation of MISRA C Rule 16.3, indicating a function prototype is
+      declared without specifying parameter identifiers, which may lead to confusion
+      or mistakes during code maintenance.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_03_Function_Prototype_Without_Identifiers
     pretty_name: R16 03 Function Prototype Without Identifiers
@@ -17414,7 +17925,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The identifiers in a function prototype don't match those in its
+      function definition, violating rule R16.04 of the Motor Industry Software Reliability
+      Association (MISRA) C guidelines.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_04_Different_Identifiers_In_Function_Definition_And_Prototype
     pretty_name: R16 04 Different Identifiers In Function Definition And Prototype
@@ -17425,7 +17938,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A function prototype declaration without parameters presents ambiguity
+      and potential misuse opportunities, violating the MISRA C rule (16.05), which
+      requires clear parameter specification.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_05_Function_Prototype_Declaration_Without_Parameters
     pretty_name: R16 05 Function Prototype Declaration Without Parameters
@@ -17436,7 +17951,11 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: 'A function is invoked with a number of arguments that does not match
+      the number of parameters in its declaration, violating MISRA C rule R16.06.
+      This could cause unexpected behavior or program crashes.
+
+      '
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_06_Function_Invoke_Arg_Number_Not_Match_Function_Def_Number
     pretty_name: R16 06 Function Invoke Arg Number Not Match Function Def Number
@@ -17447,7 +17966,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Parameters of a function that are pointers to non-const should be
+      pointers to const if they are not modified, to maintain data integrity and prevent
+      unintentional changes. This rule ensures adherence to MISRA C Rule 16.07.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_07_Parameter_Pointer_To_Const_Where_Not_Modified
     pretty_name: R16 07 Parameter Pointer To Const Where Not Modified
@@ -17458,7 +17979,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Non-void functions in C++ lack an explicit return statement, violating
+      MISRA C Rule 16.08, which may cause unpredictable program behavior due to undefined
+      return values.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_08_Non_Explicit_Return_Statement_In_Non_Void_Function
     pretty_name: R16 08 Non Explicit Return Statement In Non Void Function
@@ -17469,7 +17992,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The function identifier is being used inappropriately, i.e., not
+      as a function call or pointer to function, which violates MISRA C Rule 16.09.
     group: top10-insecure-design
     name: CPP_MISRA_C_R16_09_Using_Function_Identifier_Not_Call_Or_Pointer
     pretty_name: R16 09 Using Function Identifier Not Call Or Pointer
@@ -17480,7 +18004,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The rule identifies the use of 'union' data types in C++. According
+      to MISRA C guidelines (Rule 18.4), unions should not be used due to potential
+      issues with data corruption and indeterminate values.
     group: top10-insecure-design
     name: CPP_MISRA_C_R18_04_Use_Of_Union
     pretty_name: R18 04 Use Of Union
@@ -17491,7 +18017,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A non-preprocessor command appears before a '#include' directive
+      in a file, which violates the MISRA C:2004 Rule 19.1, making the code prone
+      to unexpected behavior or errors.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_01_Non_Prepocessor_Command_Before_Include_In_File
     pretty_name: R19 01 Non Prepocessor Command Before Include In File
@@ -17502,7 +18030,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Header file names include non-standard characters, violating Rule
+      19.2 of MISRA C which states that standardized or expanded identifiers should
+      be used for header file names to avoid potential compatibility issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_02_Non_Standard_Chars_In_Header_File_Name
     pretty_name: R19 02 Non Standard Chars In Header File Name
@@ -17513,7 +18043,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The '#include' directive format does not adhere to the MISRA C 2012
+      Rule 19.3, advocating that all '#include' directives should be located in either
+      the file scope or a function scope, and never inside a block scope.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_03_Include_Directive_In_Wrong_Format
     pretty_name: R19 03 Include Directive In Wrong Format
@@ -17524,7 +18056,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The code violates MISRA C Rule 19.5 by using '#define' or '#undef'
+      directive within a function or block scope, which can cause unpredictable behavior
+      or difficulties in code maintenance.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_05_Using_Define_Or_Undef_Directive_In_Block
     pretty_name: R19 05 Using Define Or Undef Directive In Block
@@ -17535,7 +18069,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: An '#undef' directive is used within a source file, causing potential
+      discrepancies and undefined behaviour in the compiled program, a violation of
+      the MISRA C 2012 Rule 19.6.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_06_Use_Of_Undef_Derective
     pretty_name: R19 06 Use Of Undef Derective
@@ -17546,7 +18082,8 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: A C++ macro utilizes multiple '#' or '##' preprocessor operators,
+      violating MISRA-C rule 19.12 for safe and reliable code in embedded systems.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_12_Multiple_Pound_Or_Double_Pound_In_Same_Macro
     pretty_name: R19 12 Multiple Pound Or Double Pound In Same Macro
@@ -17557,7 +18094,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The C++ preprocessor operator (#) is in use, contradicting the MISRA
+      C rule 19.13, which outlaws the utilization of this operator as a measure against
+      accidental macro undefined behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_13_Pound_Preprocessor_Operator_Is_Used
     pretty_name: R19 13 Pound Preprocessor Operator Is Used
@@ -17568,7 +18107,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: In the examined C++ code, a preprocessor '#if' operator and its corresponding
+      '#else' operator are located in separate files, which is a violation of the
+      MISRA C Rule 19.17. This situation can lead to control flow confusion and inconsistent
+      conditional compilation.
     group: top10-insecure-design
     name: CPP_MISRA_C_R19_17_Preprocessor_If_And_Else_Operators_Reside_In_Different_Files
     pretty_name: R19 17 Preprocessor If And Else Operators Reside In Different Files
@@ -17579,7 +18121,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The rule indicates the use of the 'errno' indicator from the 'errno.h'
+      library in C++, which is a direct violation of the MISRA C:2012 Rule 20.5, stressing
+      against such usage due to its global accessibility from different threads, potentially
+      causing unexpected behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_05_Using_Errno_Indicator_From_Errno_H
     pretty_name: R20 05 Using Errno Indicator From Errno H
@@ -17590,7 +18135,10 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The use of 'offsetof' macro from 'stddef.h' is not compliant with
+      the Motor Industry Software Reliability Association's C coding standards (MISRA
+      C), particularly rule 20.6. The 'offsetof' macro relies on undefined behavior
+      and hence should be avoided in safety-critical systems.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_06_Using_Offsetof_Macro_From_Stddef_H
     pretty_name: R20 06 Using Offsetof Macro From Stddef H
@@ -17601,7 +18149,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The code uses setjmp/longjmp macros from <setjmp.h> which is disallowed
+      by MISRA C Rule 20.7 due to its non-deterministic flow of control. This could
+      lead to potential bugs and portability issues.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_07_Using_Setjmp_Longjmp_Macros_From_Setjmp_H
     pretty_name: R20 07 Using Setjmp Longjmp Macros From Setjmp H
@@ -17612,7 +18162,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The code includes signal handling functionality from 'signal.h',
+      a violation of the MISRA C Rule 20.08 (The signal handling facilities of <signal.h>
+      shall not be used), risking unpredictable behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_08_Using_Signal_Handling_From_Signal_H
     pretty_name: R20 08 Using Signal Handling From Signal H
@@ -17623,7 +18175,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Objects from the 'stdio.h' library are used, which is prohibited
+      by MISRA C guideline (Rule 20.9). This could introduce vulnerabilities associated
+      with standard Input/Output operations.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_09_Using_Input_Output_From_Stdio_H
     pretty_name: R20 09 Using Input Output From Stdio H
@@ -17634,7 +18188,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Functions atof, atoi, and atol from stdlib.h are used, which violates
+      Rule 20.10 from the MISRA C Guidelines encouraging use of application-specific
+      versions of these functions to handle number conversion errors better.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_10_Using_Atof_Atoi_Atol_Functions_From_Stdlib_H
     pretty_name: R20 10 Using Atof Atoi Atol Functions From Stdlib H
@@ -17645,7 +18201,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: Functions 'abort', 'exit', 'getenv', and 'system' from 'stdlib.h'
+      are used, violating MISRA C Rule 20.11 that discourages their usage due to potential
+      unpredictability in program behavior.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_11_Using_Abort_Exit_Getenv_System_Functions_From_Stdlib_H
     pretty_name: R20 11 Using Abort Exit Getenv System Functions From Stdlib H
@@ -17656,7 +18214,9 @@ rules:
     - owasp-top-10
     - checkmarx-misra-c
     - ALL
-    description: TBD
+    description: The code employs time handling functions or macros from the 'time.h'
+      header file, violating MISRA C rule 20.12, which can lead to unpredictable behavior
+      due to potential inconsistencies in system time settings.
     group: top10-insecure-design
     name: CPP_MISRA_C_R20_12_Using_Time_Handling_From_Time_H
     pretty_name: R20 12 Using Time Handling From Time H
@@ -18444,7 +19004,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The rule signifies an issue where a C# method, adorned with the AllowPartiallyTrustedCallersAttribute
+      (APTCA), invokes a method that lacks the same attribute, posing a threat to
+      privileged access security.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods
     pretty_name: Aptca Methods Call Non Aptca Methods
@@ -18481,7 +19043,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Identifies the use of deprecated methods in the C# code which could
+      result in future compatibility issues or unexpected behavior.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Deprecated_Methods
     pretty_name: Deprecated Methods
@@ -18548,7 +19111,10 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practices
     - cwe-10018
-    description: TBD
+    description: Marshal.GetLastWin32Error method is not being called immediately
+      after a Platform Invocation Services (PInvoke) call. This may result in the
+      loss of accurate error information due to overwrite by subsequent external interface
+      calls.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_GetLastWin32Error_Is_Not_Called_After_Pinvoke
     pretty_name: GetLastWin32Error Is Not Called After Pinvoke
@@ -18650,7 +19216,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Numerical literals are directly used in the code, instead of being
+      declared as constants. This makes code less readable and maintainable due to
+      lack of context or meaning attached to these numbers, known as 'Magic Numbers'.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Magic_Numbers
     pretty_name: Magic Numbers
@@ -18674,7 +19242,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Invoking the 'Equals' method with a null argument can lead to a NullReferenceException
+      if the implementation doesn't handle the null condition correctly, causing a
+      potential program crash.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_NULL_Argument_to_Equals
     pretty_name: NULL Argument to Equals
@@ -18685,7 +19255,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Static constructors in C# that aren't marked as private might lead
+      to uncontrolled instantiation, affecting program predictability and security.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Non_Private_Static_Constructors
     pretty_name: Non Private Static Constructors
@@ -18710,7 +19281,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The property PersistSecurityInfo is set to true, revealing sensitive
+      information such as a password, in a connection string after the connection
+      to the database is established.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_PersistSecurityInfo_is_True
     pretty_name: PersistSecurityInfo is True
@@ -18799,7 +19372,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Public methods, classes, or interfaces within the application's API
+      lack necessary documentation comments, leading to potential misuse or improper
+      implementation.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Undocumented_API
     pretty_name: Undocumented API
@@ -18842,7 +19417,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Public methods accept arguments without proper validation, increasing
+      the potential for harmful or unexpected behavior due to uncontrolled input.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods
     pretty_name: Unvalidated Arguments Of Public Methods
@@ -18890,7 +19466,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: In the context of C# code, pointers are declared in visible scopes,
+      leading to potential memory manipulation vulnerabilities.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Visible_Pointers
     pretty_name: Visible Pointers
@@ -20563,7 +21140,8 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-webconfig
-    description: TBD
+    description: Session state is configured with cookieless enabled in web.config,
+      leading to possible session hijacking through URL leaks.
     group: top10-broken-access-control
     name: CSharp_WebConfig_CookieLess_Session_State
     pretty_name: CookieLess Session State
@@ -20983,7 +21561,8 @@ rules:
     - owasp-top-10
     - checkmarx-mobile-best-coding-practice
     - ALL
-    description: TBD
+    description: Sensitive information stored in external storage is not encrypted,
+      leaving it vulnerable to unauthorized access or data breaches.
     group: top10-insecure-design
     name: Dart_Mobile_Best_Coding_Practice_Encrypted_Sensitive_Information_in_External_Storage
     pretty_name: Encrypted Sensitive Information in External Storage
@@ -21021,7 +21600,8 @@ rules:
     - owasp-top-10
     - checkmarx-mobile-best-coding-practice
     - ALL
-    description: TBD
+    description: WebView cache data in Dart mobile applications is not properly cleared
+      or controlled, posing a risk for sensitive information leakage.
     group: top10-insecure-design
     name: Dart_Mobile_Best_Coding_Practice_WebView_Cache_Information_Leak
     pretty_name: WebView Cache Information Leak
@@ -21625,7 +22205,9 @@ rules:
     - checkmarx-mobile-medium-threat
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Sensitive input fields in Dart mobile applications allow third-party
+      keyboards, posing a data leakage risk as these keyboards can capture and send
+      user input to remote servers.
     group: top10-broken-access-control
     name: Dart_Mobile_Medium_Threat_Third_Party_Keyboards_On_Sensitive_Field
     pretty_name: Third Party Keyboards On Sensitive Field
@@ -24000,7 +24582,9 @@ rules:
     - cwe-10711
     - owasp-top-10
     - checkmarx-low-visibility
-    description: TBD
+    description: The Spring configuration property 'defaultHtmlEscape', which prevents
+      potential cross-site scripting (XSS) vulnerabilities by encoding HTML special
+      characters, is not set to 'true'.
     group: top10-insecure-design
     name: Groovy_Low_Visibility_Spring_defaultHtmlEscape_Not_True
     pretty_name: Spring defaultHtmlEscape Not True
@@ -25083,7 +25667,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The use of the FinalizationRegistry object in JavaScript is detected,
+      which may lead to unexpected behavior or memory leaks, as this object allows
+      managed interaction with garbage collection.
     group: top10-insecure-design
     name: JavaScript_Best_Coding_Practice_Avoid_the_Use_of_FinalizationRegistry
     pretty_name: Avoid the Use of FinalizationRegistry
@@ -25094,7 +25680,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Avoid using the WeakRef JavaScript feature, as it poses risks associated
+      with unintended garbage collection leading to potential memory leaks or unexpected
+      application behaviors.
     group: top10-insecure-design
     name: JavaScript_Best_Coding_Practice_Avoid_the_Use_of_WeakRef
     pretty_name: Avoid the Use of WeakRef
@@ -25934,7 +26522,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Sensitive JavaScript fields are being populated with user-controlled
+      input without sufficient validation or sanitization, exposing potential security
+      vulnerabilities such as injection attacks.
     group: top10-broken-access-control
     name: JavaScript_Low_Visibility_Use_Of_Controlled_Input_On_Sensitive_Field
     pretty_name: Use Of Controlled Input On Sensitive Field
@@ -28077,7 +28667,9 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-android
-    description: TBD
+    description: Verifies if an Android application is properly requesting permissions.
+      The absence or misuse of permission requests can lead to unauthorized access
+      or functionality misuse.
     group: top10-broken-access-control
     name: Java_Android_General_Android_Find_Request_Permissions
     pretty_name: General Android Find Request Permissions
@@ -28937,7 +29529,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Input data in a Java application is not being normalized, increasing
+      the risk of data processing errors, security vulnerabilities, and malformed
+      input exploitation.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Input_Not_Normalized
     pretty_name: Input Not Normalized
@@ -29106,7 +29700,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Indicates the potential usage of Spring Shell libraries, posing a
+      risk of code execution vulnerability if unattended commands are exposed to the
+      user.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Potential_SpringShell
     pretty_name: Potential SpringShell
@@ -29456,7 +30052,8 @@ rules:
     - checkmarx-exploitable-path
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Identifies instances in Java code where unsafe, potentially exploitable
+      packages or classes are imported, risking security vulnerabilities.
     group: top10-injection
     name: Java_Exploitable_Path_Java_Find_Imports
     pretty_name: Java Find Imports
@@ -29467,7 +30064,9 @@ rules:
     - checkmarx-exploitable-path
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Java code where '.find()' methods are employed could introduce potential
+      Regular Expression Denial of Service (ReDoS) vulnerabilities if user-supplied
+      input is not properly sanitized.
     group: top10-injection
     name: Java_Exploitable_Path_Java_Find_Methods
     pretty_name: Java Find Methods
@@ -29994,7 +30593,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The Citrus Developer Mode, a testing tool for Java, has been enabled
+      in a production setting. This exposes sensitive information and debug data that
+      could be exploited.
     group: top10-vulnerable-components
     name: Java_Low_Visibility_Citrus_Developer_Mode_Enabled
     pretty_name: Citrus Developer Mode Enabled
@@ -31703,7 +32304,9 @@ rules:
     - checkmarx-medium-threat
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A Java deserialization filter is misconfigured, thereby increasing
+      the risk of untrusted input being deserialized, which can potentially lead to
+      arbitrary code execution.
     group: top10-security-misconfiguration
     name: Java_Medium_Threat_Misconfigured_Deserialization_Filter
     pretty_name: Misconfigured Deserialization Filter
@@ -32720,7 +33323,8 @@ rules:
     - cwe-10711
     - owasp-top-10
     - checkmarx-spring
-    description: TBD
+    description: The setting for defaultHtmlEscape in the Spring configuration is
+      not set to "true", presenting a potential cross-site scripting (XSS) vulnerability.
     group: top10-insecure-design
     name: Java_Spring_Spring_defaultHtmlEscape_Not_True
     pretty_name: Spring defaultHtmlEscape Not True
@@ -33425,7 +34029,9 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: The Aura component's attribute is defined with an 'Object' type,
+      which can lead to potential type conflicts and unexpected behaviors due to lack
+      of strong typing in Salesforce Lightning.
     group: top10-insecure-design
     name: Javascript_Lightning_Lightning_Aura_Attribute_With_Object_Type
     pretty_name: Lightning Aura Attribute With Object Type
@@ -33436,7 +34042,10 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Names for Lightning components in JavaScript must start with a lowercase
+      letter and can contain alphabets, numbers, or underscores, ensuring readability
+      and compliance with naming conventions. Invalid names complicate future code
+      maintenance.
     group: top10-insecure-design
     name: Javascript_Lightning_Lightning_Component_Bad_Naming
     pretty_name: Lightning Component Bad Naming
@@ -33463,7 +34072,8 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Lightning data retrieval in a JavaScript file does not use the '@wire'
+      decorator, leading to potential issues in data synchronization.
     group: top10-injection
     name: Javascript_Lightning_Lightning_Data_Retrieval_Without_Wire_Decorator
     pretty_name: Lightning Data Retrieval Without Wire Decorator
@@ -33474,7 +34084,9 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Dynamic href values in anchor tags within Salesforce's Lightning
+      components are identified, which might result in unsafe redirects or content
+      injection if not properly validated or sanitzed.
     group: top10-injection
     name: Javascript_Lightning_Lightning_Dynamic_Href_In_Anchor_Tag
     pretty_name: Lightning Dynamic Href In Anchor Tag
@@ -33501,7 +34113,9 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Refers to the occurrence of using Aura components in Lightning Web
+      Components (LWC), which is discouraged due to potential performance degradation
+      and maintenance challenges.
     group: top10-vulnerable-components
     name: Javascript_Lightning_Lightning_Use_of_Aura_Component
     pretty_name: Lightning Use of Aura Component
@@ -33512,7 +34126,9 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Event bubbling is improperly used in JavaScript Lightning Web Components
+      (LWC), which can lead to unintended propagation of events and cause incorrect
+      or undesired behavior in the application.
     group: top10-vulnerable-components
     name: Javascript_Lightning_Lightning_Use_of_LWC_Event_Bubbling
     pretty_name: Lightning Use of LWC Event Bubbling
@@ -33523,7 +34139,9 @@ rules:
     - checkmarx-lightning
     - owasp-top-10
     - ALL
-    description: TBD
+    description: Duplicate use of a single Apex controller method in multiple Lightning
+      components is present. This might lead to unintended functionality coupling,
+      impacting maintainability and future code modifications.
     group: top10-insecure-design
     name: Javascript_Lightning_Lightning_Use_of_Same_Controller_Method_In_Different_Components
     pretty_name: Lightning Use of Same Controller Method In Different Components
@@ -37104,7 +37722,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A local PHP variable, with the same name as a global variable, is
+      being written to, thus posing a risk of unintentional global variable overwrite.
     group: top10-insecure-design
     name: Php_Best_Coding_Practice_Possible_Global_Variable_Overwrite
     pretty_name: Possible Global Variable Overwrite
@@ -37436,7 +38055,8 @@ rules:
     - boost-hardened
     - owasp-top-10
     - checkmarx-aws-lambda
-    description: TBD
+    description: AWS credentials are exposed within Python AWS Lambda function code,
+      making them vulnerable to unauthorized access or potential compromise.
     group: top10-broken-access-control
     name: Python_AWS_Lambda_AWS_Credentials_Leak
     pretty_name: AWS Credentials Leak
@@ -37572,7 +38192,9 @@ rules:
     - checkmarx-exploitable-path
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The code searches for Python imports using an insecure method, such
+      as os.system or subprocess.Popen, making it susceptible to arbitrary code execution
+      through shell injection.
     group: top10-injection
     name: Python_Exploitable_Path_Python_Find_Imports
     pretty_name: Python Find Imports
@@ -37583,7 +38205,9 @@ rules:
     - checkmarx-exploitable-path
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The Python 'find' method is used in a way that can potentially lead
+      to exploitable path inconsistencies or traversal vulnerabilities, creating a
+      security risk for the application.
     group: top10-injection
     name: Python_Exploitable_Path_Python_Find_Methods
     pretty_name: Python Find Methods
@@ -38632,7 +39256,8 @@ rules:
     - owasp-top-10
     - cwe-10713
     - checkmarx-best-coding-practices
-    description: TBD
+    description: Setting caching to false in a production environment in a Ruby application,
+      potentially leading to performance degradation.
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Caching_False_In_Production
     pretty_name: Caching False In Production
@@ -38657,7 +39282,9 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practices
     - cwe-10714
-    description: TBD
+    description: Render paths are determined at runtime in Rails views. This practice
+      opens the door for potential unauthorized access to files when user-controlled
+      input is involved, leading to security vulnerabilities.
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Dynamic_Render_Path
     pretty_name: Dynamic Render Path
@@ -38685,7 +39312,9 @@ rules:
     - owasp-top-10
     - cwe-10715
     - checkmarx-best-coding-practices
-    description: TBD
+    description: Global variables are assigned names that lack specificity or context.
+      This makes the code difficult to understand and maintain, increasing the risk
+      of bugs.
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Global_Variables_Without_Meaningful_Name
     pretty_name: Global Variables Without Meaningful Name
@@ -38711,7 +39340,9 @@ rules:
     - owasp-top-10
     - cwe-10716
     - checkmarx-best-coding-practices
-    description: TBD
+    description: Files are being imported using relative paths, which may lead to
+      unexpected behavior if the file structure changes. Use absolute paths for stability
+      and compatibility
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Import_Relative_To_File
     pretty_name: Import Relative To File
@@ -38874,7 +39505,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The attribute of an Active Record model is not declared as accessible
+      using 'attr_accessible', allowing potential mass assignment vulnerabilities
+      in Ruby on Rails applications.
     group: top10-security-misconfiguration
     name: Ruby_Low_Visibility_Attr_accessible_Not_Set
     pretty_name: Attr accessible Not Set
@@ -39311,7 +39944,8 @@ rules:
     - checkmarx-medium-threat
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The application is utilizing default routes in Ruby, which may expose
+      it to unwanted routes and increase the surface for potential attacks.
     group: top10-insecure-design
     name: Ruby_Medium_Threat_Default_Routes
     pretty_name: Default Routes
@@ -39335,7 +39969,9 @@ rules:
     - checkmarx-medium-threat
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Involves downloading files from user-controlled sources without validating
+      or sanitizing their content or origin beforehand, presenting significant security
+      risks like malicious code execution or unauthorized data access.
     group: top10-broken-access-control
     name: Ruby_Medium_Threat_Download_Arbitrary_File
     pretty_name: Download Arbitrary File
@@ -39898,7 +40534,9 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Akka's host name verification is disabled, likely by setting the
+      'akka.ssl-config.loose.disableHostnameVerification' configuration to true, which
+      makes it vulnerable to Man-In-The-Middle (MITM) attacks.
     group: top10-software-data-integrity-failures
     name: Scala_Low_Visibility_Akka_Disabling_Hostname_Verification
     pretty_name: Akka Disabling Hostname Verification
@@ -39999,7 +40637,8 @@ rules:
     - checkmarx-low-visibility
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Code in Scala utilizes deprecated API elements, indicating potential
+      breaking changes in future updates due to obsolete functions or methods.
     group: top10-insecure-design
     name: Scala_Low_Visibility_Deprecated_API
     pretty_name: Deprecated API
@@ -40696,7 +41335,8 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practicess
     - ALL
-    description: TBD
+    description: Identifies and flags methods in Swift code that are empty, which
+      may indicate overlooked or incomplete implementation.
     group: top10-insecure-design
     name: Swift_Best_Coding_Practices_Empty_Methods
     pretty_name: Empty Methods
@@ -41662,7 +42302,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: A method in Visual Basic .NET designated with AllowPartiallyTrustedCallersAttribute
+      (APTCA) invokes a method not marked with APTCA, opening up vulnerabilities for
+      privilege escalation.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods
     pretty_name: Aptca Methods Call Non Aptca Methods
@@ -41699,7 +42341,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Code is using methods which have been marked as deprecated, indicating
+      they might not be supported in future versions and should be replaced with newer
+      alternatives.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Deprecated_Methods
     pretty_name: Deprecated Methods
@@ -41766,7 +42410,9 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practices
     - cwe-10018
-    description: TBD
+    description: Marshaled calls to unmanaged code using Platform Invocation Services
+      (PInvoke) are not followed by a call to the GetLastError function. This could
+      lead to overlooked or undetected runtime errors.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_GetLastWin32Error_Is_Not_Called_After_Pinvoke
     pretty_name: GetLastWin32Error Is Not Called After Pinvoke
@@ -41832,7 +42478,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Identifies the hard coding of numbers, referred to as "magic numbers,"
+      in Visual Basic .NET code, which can decrease maintainability and readability.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Magic_Numbers
     pretty_name: Magic Numbers
@@ -41856,7 +42503,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Passing a null argument to the 'Equals' method in Visual Basic .Net
+      might result in a NullReferenceException, causing an application crash.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_NULL_Argument_to_Equals
     pretty_name: NULL Argument to Equals
@@ -41867,7 +42515,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Non-private static constructors in VB.NET are accessible outside
+      the class, presenting an opportunity for unintended use or manipulation and
+      potential security risks.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Non_Private_Static_Constructors
     pretty_name: Non Private Static Constructors
@@ -41892,7 +42542,9 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: The 'PersistSecurityInfo' property is set to 'True' risking the exposure
+      of sensitive data such as connection string with passwords in log files or other
+      external sources.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_PersistSecurityInfo_is_True
     pretty_name: PersistSecurityInfo is True
@@ -41954,7 +42606,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Public methods in VB.NET code accept arguments without conducting
+      appropriate validation, increasing susceptibility to malicious input exploitation.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods
     pretty_name: Unvalidated Arguments Of Public Methods
@@ -41990,7 +42643,8 @@ rules:
     - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
-    description: TBD
+    description: Pointers in Visual Basic .NET are visible, posing a risk for unsafe
+      code execution due to direct memory manipulation.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Visible_Pointers
     pretty_name: Visible Pointers
@@ -43010,7 +43664,9 @@ rules:
     - owasp-top-10
     - ALL
     - checkmarx-webconfig
-    description: TBD
+    description: The session state in the web.config file of a VB.NET application
+      is configured to be cookieless, which may expose Session IDs in the URL, increasing
+      the risk of session hijacking.
     group: top10-broken-access-control
     name: VbNet_WebConfig_CookieLess_Session
     pretty_name: CookieLess Session
@@ -43228,7 +43884,9 @@ rules:
     - owasp-top-10
     - checkmarx-low-visibility
     - cwe-10710
-    description: TBD
+    description: The VBScript code uses a weak password authentication mechanism,
+      thus exposing it to security vulnerabilities like brute force attacks or credential
+      leaks.
     group: top10-id-authn-failures
     name: VbScript_Low_Visibility_Weak_Password_Authentication
     pretty_name: Weak Password Authentication
