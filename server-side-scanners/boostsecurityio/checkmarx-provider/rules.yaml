@@ -11037,7 +11037,7 @@ rules:
   ASP_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Points out the situation where a method adorned with AllowPartiallyTrustedCallersAttribute
@@ -11054,7 +11054,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -11069,7 +11069,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -11082,7 +11082,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -11097,7 +11097,7 @@ rules:
     - ALL
     - cwe-798
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
@@ -11110,7 +11110,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-581
     description: The product does not maintain equal hashcodes for equal objects.
     group: top10-insecure-design
@@ -11123,7 +11123,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-112
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product accepts XML from an untrusted source but does not validate
       the XML against the proper schema.
     group: top10-insecure-design
@@ -11133,7 +11133,7 @@ rules:
   ASP_Best_Coding_Practice_NULL_Argument_to_Equals:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Passing a null argument to the Equals method, which could potentially
@@ -11148,7 +11148,7 @@ rules:
     - ALL
     - cwe-544
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not use a standardized method for handling errors
       throughout the code, which might introduce inconsistent error handling and resultant
       weaknesses.
@@ -11159,7 +11159,7 @@ rules:
   ASP_Best_Coding_Practice_PersistSecurityInfo_is_True:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: When PersistSecurityInfo is set to True in a connection string, sensitive
@@ -11175,7 +11175,7 @@ rules:
     - ALL
     - cwe-246
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The J2EE application directly uses sockets instead of using framework
       method calls.
     group: top10-insecure-design
@@ -11188,7 +11188,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-383
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Thread management in a Web application is forbidden in some circumstances
       and is always highly error prone.
     group: top10-insecure-design
@@ -11198,7 +11198,7 @@ rules:
   ASP_Best_Coding_Practice_Unclosed_Objects:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Unclosed system resources (such as connections, files, or other types
@@ -11211,7 +11211,7 @@ rules:
   ASP_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Public methods' arguments are not validated, opening potential threats
@@ -11223,7 +11223,7 @@ rules:
   ASP_Best_Coding_Practice_Use_of_System_Output_Stream:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Direct interaction with the System output stream can potentially
@@ -11236,7 +11236,7 @@ rules:
   ASP_Best_Coding_Practice_Visible_Fields:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Fields of a class are excessively visible, leading to potential encapsulation
@@ -13283,7 +13283,7 @@ rules:
     - cwe-118
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not restrict or incorrectly restricts operations
       within the boundaries of a resource that is accessed using an index or pointer,
       such as memory or files.
@@ -13297,7 +13297,7 @@ rules:
     - cwe-118
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not restrict or incorrectly restricts operations
       within the boundaries of a resource that is accessed using an index or pointer,
       such as memory or files.
@@ -13310,7 +13310,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-788
     description: The product reads or writes to a buffer using an index or pointer
       that references a memory location after the end of the buffer.
@@ -13324,7 +13324,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-561
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains dead code, which can never be executed.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Dead_Code
@@ -13335,7 +13335,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -13349,7 +13349,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -13362,7 +13362,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: CPP_Best_Coding_Practice_Empty_Methods
@@ -13374,7 +13374,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -13387,7 +13387,7 @@ rules:
     - ALL
     - cwe-699
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Using GOTO statements is considered a poor coding practice as it
       makes the code harder to understand and maintain. The flow of the logic is less
       clear with GOTO jumps, versus the more structured control flow of if/else statements,
@@ -13404,7 +13404,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -13415,7 +13415,7 @@ rules:
   CPP_Best_Coding_Practice_Magic_Numbers:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Numeric constants (known as 'magic numbers') are used directly in
@@ -13431,7 +13431,7 @@ rules:
     - ALL
     - cwe-10712
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: C++ methods are defined without a return type, which can lead to
       undefined behavior or misinterpretation of method purpose.
     group: top10-insecure-design
@@ -13441,7 +13441,7 @@ rules:
   CPP_Best_Coding_Practice_Non_Private_Static_Constructors:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: A static constructor in C++ isn't private, which could potentially
@@ -13455,7 +13455,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-807
     description: The product uses a protection mechanism that relies on the existence
       or values of an input, but the input can be modified by an untrusted actor in
@@ -13469,7 +13469,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-563
     description: The variable's value is assigned but never used, making it a dead
       store.
@@ -13480,7 +13480,7 @@ rules:
   CPP_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Public methods in C++ code neglect to validate arguments before use,
@@ -19001,7 +19001,7 @@ rules:
   CSharp_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: The rule signifies an issue where a C# method, adorned with the AllowPartiallyTrustedCallersAttribute
@@ -19017,7 +19017,7 @@ rules:
     - ALL
     - cwe-395
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Catching NullPointerException should not be used as an alternative
       to programmatic checks to prevent dereferencing a null pointer.
     group: top10-insecure-design
@@ -19029,7 +19029,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -19040,7 +19040,7 @@ rules:
   CSharp_Best_Coding_Practice_Deprecated_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Identifies the use of deprecated methods in the C# code which could
@@ -19055,7 +19055,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -19068,7 +19068,7 @@ rules:
     - ALL
     - cwe-246
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The J2EE application directly uses sockets instead of using framework
       method calls.
     group: top10-insecure-design
@@ -19082,7 +19082,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -19097,7 +19097,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -19109,7 +19109,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-10018
     description: Marshal.GetLastWin32Error method is not being called immediately
       after a Platform Invocation Services (PInvoke) call. This may result in the
@@ -19125,7 +19125,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -19140,7 +19140,7 @@ rules:
     - ALL
     - cwe-798
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
@@ -19151,7 +19151,7 @@ rules:
   CSharp_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-778
     - ALL
     description: When a security-critical event occurs, the product either does not
@@ -19163,7 +19163,7 @@ rules:
   CSharp_Best_Coding_Practice_Insufficient_Logging_of_Exceptions:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-778
     - ALL
     description: When a security-critical event occurs, the product either does not
@@ -19175,7 +19175,7 @@ rules:
   CSharp_Best_Coding_Practice_Insufficient_Logging_of_Sensitive_Operations:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-778
     - ALL
     description: When a security-critical event occurs, the product either does not
@@ -19189,7 +19189,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-581
     description: The product does not maintain equal hashcodes for equal objects.
     group: top10-insecure-design
@@ -19202,7 +19202,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-489
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product is deployed to unauthorized actors with debugging code
       still enabled or active, which can create unintended entry points or expose
       sensitive information.
@@ -19213,7 +19213,7 @@ rules:
   CSharp_Best_Coding_Practice_Magic_Numbers:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Numerical literals are directly used in the code, instead of being
@@ -19229,7 +19229,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-112
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product accepts XML from an untrusted source but does not validate
       the XML against the proper schema.
     group: top10-insecure-design
@@ -19239,7 +19239,7 @@ rules:
   CSharp_Best_Coding_Practice_NULL_Argument_to_Equals:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Invoking the 'Equals' method with a null argument can lead to a NullReferenceException
@@ -19252,7 +19252,7 @@ rules:
   CSharp_Best_Coding_Practice_Non_Private_Static_Constructors:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Static constructors in C# that aren't marked as private might lead
@@ -19267,7 +19267,7 @@ rules:
     - ALL
     - cwe-544
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not use a standardized method for handling errors
       throughout the code, which might introduce inconsistent error handling and resultant
       weaknesses.
@@ -19278,7 +19278,7 @@ rules:
   CSharp_Best_Coding_Practice_PersistSecurityInfo_is_True:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: The property PersistSecurityInfo is set to true, revealing sensitive
@@ -19294,7 +19294,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-477
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses deprecated or obsolete functions, which suggests that
       the code has not been actively reviewed or maintained.
     group: top10-insecure-design
@@ -19306,7 +19306,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-923
     description: The product establishes a communication channel to (or from) an endpoint
       for privileged or protected operations, but it does not properly ensure that
@@ -19321,7 +19321,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-383
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Thread management in a Web application is forbidden in some circumstances
       and is always highly error prone.
     group: top10-insecure-design
@@ -19334,7 +19334,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Unchecked_Error_Condition
@@ -19345,7 +19345,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-252
     description: The product does not check the return value from a method or function,
       which can prevent it from detecting unexpected states and conditions.
@@ -19359,7 +19359,7 @@ rules:
     - ALL
     - cwe-459
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly "clean up" and remove temporary or
       supporting resources after they have been used.
     group: top10-insecure-design
@@ -19369,7 +19369,7 @@ rules:
   CSharp_Best_Coding_Practice_Undocumented_API:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Public methods, classes, or interfaces within the application's API
@@ -19386,7 +19386,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-94
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the syntax or behavior of the
@@ -19402,7 +19402,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-94
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the syntax or behavior of the
@@ -19414,7 +19414,7 @@ rules:
   CSharp_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Public methods accept arguments without proper validation, increasing
@@ -19429,7 +19429,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-457
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses a variable that has not been initialized, leading to
       unpredictable or unintended results.
     group: top10-insecure-design
@@ -19442,7 +19442,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Use_of_System_Output_Stream
@@ -19454,7 +19454,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: CSharp_Best_Coding_Practice_Using_Of_Index_Instead_Of_Key
@@ -19463,7 +19463,7 @@ rules:
   CSharp_Best_Coding_Practice_Visible_Pointers:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: In the context of C# code, pointers are declared in visible scopes,
@@ -23189,7 +23189,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Assign_Collection
@@ -23201,7 +23201,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-481
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses an operator for assignment when the intention was to
       perform a comparison.
     group: top10-insecure-design
@@ -23214,7 +23214,7 @@ rules:
     - cwe-482
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses an operator for comparison when the intention was to
       perform an assignment.
     group: top10-insecure-design
@@ -23226,7 +23226,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -23240,7 +23240,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Throwing overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
     group: top10-insecure-design
@@ -23253,7 +23253,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-477
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses deprecated or obsolete functions, which suggests that
       the code has not been actively reviewed or maintained.
     group: top10-insecure-design
@@ -23267,7 +23267,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -23282,7 +23282,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Empty_Methods
@@ -23294,7 +23294,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Explicit_Calls_To_Methods
@@ -23306,7 +23306,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Explicit_Instantiation
@@ -23318,7 +23318,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -23331,7 +23331,7 @@ rules:
     - ALL
     - cwe-699
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Using GOTO statements is considered a poor coding practice as it
       makes the code harder to understand and maintain. The flow of the logic is less
       clear with GOTO jumps, versus the more structured control flow of if/else statements,
@@ -23348,7 +23348,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Getter_Method_Could_Be_Property
@@ -23360,7 +23360,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -23375,7 +23375,7 @@ rules:
     - ALL
     - cwe-798
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
@@ -23389,7 +23389,7 @@ rules:
     - ALL
     - cwe-483
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code does not explicitly delimit a block that is intended to
       contain 2 or more statements, creating a logic error.
     group: top10-insecure-design
@@ -23401,7 +23401,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-581
     description: The product does not maintain equal hashcodes for equal objects.
     group: top10-insecure-design
@@ -23414,7 +23414,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-478
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code does not have a default case in an expression with multiple
       conditions, such as a switch statement.
     group: top10-insecure-design
@@ -23427,7 +23427,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-484
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product omits a break statement within a switch or similar construct,
       causing code associated with multiple conditions to execute. This can cause
       problems when the programmer only intended to execute code associated with one
@@ -23443,7 +23443,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-400
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly control the allocation and maintenance
       of a limited resource, thereby enabling an actor to influence the amount of
       resources consumed, eventually leading to the exhaustion of available resources.
@@ -23457,7 +23457,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-500
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: An object contains a public static field that is not marked final,
       which might allow it to be modified in unexpected ways.
     group: top10-insecure-design
@@ -23470,7 +23470,7 @@ rules:
     - cwe-584
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code has a return statement inside a finally block, which will
       cause any thrown exception in the try block to be discarded.
     group: top10-insecure-design
@@ -23483,7 +23483,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Use_Collect_Many
@@ -23495,7 +23495,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Groovy_Best_Coding_Practice_Use_Collect_Nested
@@ -23507,7 +23507,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-597
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product uses the wrong operator when comparing a string, such
       as using "==" when the .equals() method should be used instead.
     group: top10-insecure-design
@@ -25664,7 +25664,7 @@ rules:
   JavaScript_Best_Coding_Practice_Avoid_the_Use_of_FinalizationRegistry:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: The use of the FinalizationRegistry object in JavaScript is detected,
@@ -25677,7 +25677,7 @@ rules:
   JavaScript_Best_Coding_Practice_Avoid_the_Use_of_WeakRef:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Avoid using the WeakRef JavaScript feature, as it poses risks associated
@@ -25693,7 +25693,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -25707,7 +25707,7 @@ rules:
     - ALL
     - cwe-694
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product uses multiple resources that can have the same identifier,
       in a context in which unique identifiers are required.
     group: top10-insecure-design
@@ -25720,7 +25720,7 @@ rules:
     - cwe-710
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not follow certain coding rules for development,
       which can lead to resultant weaknesses or increase the severity of the associated
       vulnerabilities.
@@ -29089,7 +29089,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-284
     description: The product does not restrict or incorrectly restricts access to
       a resource from an unauthorized actor.
@@ -29103,7 +29103,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-582
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product declares an array public, final, and static, which is
       not sufficient to prevent the array's contents from being modified.
     group: top10-insecure-design
@@ -29116,7 +29116,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-481
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses an operator for assignment when the intention was to
       perform a comparison.
     group: top10-insecure-design
@@ -29129,7 +29129,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-572
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product calls a thread's run() method instead of calling start(),
       which causes the code to run in the thread of the caller instead of the callee.
     group: top10-insecure-design
@@ -29142,7 +29142,7 @@ rules:
     - ALL
     - cwe-395
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Catching NullPointerException should not be used as an alternative
       to programmatic checks to prevent dereferencing a null pointer.
     group: top10-insecure-design
@@ -29155,7 +29155,7 @@ rules:
     - cwe-482
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses an operator for comparison when the intention was to
       perform an assignment.
     group: top10-insecure-design
@@ -29168,7 +29168,7 @@ rules:
     - cwe-486
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product compares classes by name, which can cause it to use the
       wrong class when multiple classes can have the same name.
     group: top10-insecure-design
@@ -29181,7 +29181,7 @@ rules:
     - cwe-710
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not follow certain coding rules for development,
       which can lead to resultant weaknesses or increase the severity of the associated
       vulnerabilities.
@@ -29195,7 +29195,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -29208,7 +29208,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-561
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains dead code, which can never be executed.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Dead_Code
@@ -29219,7 +29219,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -29233,7 +29233,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Throwing overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
     group: top10-insecure-design
@@ -29246,7 +29246,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -29259,7 +29259,7 @@ rules:
     - ALL
     - cwe-246
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The J2EE application directly uses sockets instead of using framework
       method calls.
     group: top10-insecure-design
@@ -29272,7 +29272,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-383
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Thread management in a Web application is forbidden in some circumstances
       and is always highly error prone.
     group: top10-insecure-design
@@ -29285,7 +29285,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-829
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product imports, requires, or includes executable functionality
       (such as a library) from a source that is outside of the intended control sphere.
     group: top10-software-data-integrity-failures
@@ -29299,7 +29299,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -29314,7 +29314,7 @@ rules:
     - ALL
     - cwe-274
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not handle or incorrectly handles when it has insufficient
       privileges to perform an operation, leading to resultant weaknesses.
     group: top10-insecure-design
@@ -29327,7 +29327,7 @@ rules:
     - cwe-676
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product invokes a potentially dangerous function that could introduce
       a vulnerability if it is used incorrectly, but the function can also be used
       safely.
@@ -29341,7 +29341,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Empty_Methods
@@ -29353,7 +29353,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an empty synchronized block.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Empty_Synchronized_Block
@@ -29365,7 +29365,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -29378,7 +29378,7 @@ rules:
     - ALL
     - cwe-586
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product makes an explicit call to the finalize() method from
       outside the finalizer.
     group: top10-insecure-design
@@ -29391,7 +29391,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -29404,7 +29404,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-570
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an expression that will always evaluate to false.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Expression_is_Always_False
@@ -29416,7 +29416,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an expression that will always evaluate to true.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Expression_is_Always_True
@@ -29428,7 +29428,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-600
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The Servlet does not catch all exceptions, which may reveal sensitive
       debugging information.
     group: top10-insecure-design
@@ -29441,7 +29441,7 @@ rules:
     - ALL
     - cwe-699
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Using GOTO statements is considered a poor coding practice as it
       makes the code harder to understand and maintain. The flow of the logic is less
       clear with GOTO jumps, versus the more structured control flow of if/else statements,
@@ -29458,7 +29458,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -29473,7 +29473,7 @@ rules:
     - ALL
     - cwe-798
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
@@ -29487,7 +29487,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-665
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not initialize or incorrectly initializes a resource,
       which might leave the resource in an unexpected state when it is accessed or
       used.
@@ -29501,7 +29501,7 @@ rules:
     - ALL
     - cwe-483
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code does not explicitly delimit a block that is intended to
       contain 2 or more statements, creating a logic error.
     group: top10-insecure-design
@@ -29514,7 +29514,7 @@ rules:
     - ALL
     - cwe-681
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: When converting from one data type to another, such as long to integer,
       data can be omitted or translated in a way that produces unexpected values.
       If the resulting values are used in a sensitive context, then dangerous behaviors
@@ -29526,7 +29526,7 @@ rules:
   Java_Best_Coding_Practice_Input_Not_Normalized:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Input data in a Java application is not being normalized, increasing
@@ -29539,7 +29539,7 @@ rules:
   Java_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-778
     - ALL
     description: When a security-critical event occurs, the product either does not
@@ -29551,7 +29551,7 @@ rules:
   Java_Best_Coding_Practice_Insufficient_Logging_of_Exceptions:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-778
     - ALL
     description: When a security-critical event occurs, the product either does not
@@ -29565,7 +29565,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-581
     description: The product does not maintain equal hashcodes for equal objects.
     group: top10-insecure-design
@@ -29578,7 +29578,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-489
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product is deployed to unauthorized actors with debugging code
       still enabled or active, which can create unintended entry points or expose
       sensitive information.
@@ -29592,7 +29592,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-478
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code does not have a default case in an expression with multiple
       conditions, such as a switch statement.
     group: top10-insecure-design
@@ -29605,7 +29605,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-112
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product accepts XML from an untrusted source but does not validate
       the XML against the proper schema.
     group: top10-insecure-design
@@ -29618,7 +29618,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-579
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product stores a non-serializable object as an HttpSession attribute,
       which can hurt reliability.
     group: top10-insecure-design
@@ -29631,7 +29631,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Not_Static_Final_Logger
@@ -29644,7 +29644,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-476
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: A NULL pointer dereference occurs when the application dereferences
       a pointer that it expects to be valid, but is NULL, typically causing a crash
       or exit.
@@ -29658,7 +29658,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-484
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product omits a break statement within a switch or similar construct,
       causing code associated with multiple conditions to execute. This can cause
       problems when the programmer only intended to execute code associated with one
@@ -29673,7 +29673,7 @@ rules:
     - ALL
     - cwe-544
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not use a standardized method for handling errors
       throughout the code, which might introduce inconsistent error handling and resultant
       weaknesses.
@@ -29686,7 +29686,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-474
     description: The code uses a function that has inconsistent implementations across
       operating systems and versions.
@@ -29697,7 +29697,7 @@ rules:
   Java_Best_Coding_Practice_Potential_SpringShell:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Indicates the potential usage of Spring Shell libraries, posing a
@@ -29714,7 +29714,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-400
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly control the allocation and maintenance
       of a limited resource, thereby enabling an actor to influence the amount of
       resources consumed, eventually leading to the exhaustion of available resources.
@@ -29727,7 +29727,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-499
     description: The code contains a class with sensitive data, but the class does
       not explicitly deny serialization. The data can be accessed by serializing the
@@ -29742,7 +29742,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-500
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: An object contains a public static field that is not marked final,
       which might allow it to be modified in unexpected ways.
     group: top10-insecure-design
@@ -29755,7 +29755,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-617
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an assert() or similar statement that can be
       triggered by an attacker, which leads to an application exit or other behavior
       that is more severe than necessary.
@@ -29769,7 +29769,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-698
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The web application sends a redirect to another location, but instead
       of exiting, it executes additional code.
     group: top10-insecure-design
@@ -29781,7 +29781,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-807
     description: The product uses a protection mechanism that relies on the existence
       or values of an input, but the input can be modified by an untrusted actor in
@@ -29796,7 +29796,7 @@ rules:
     - cwe-584
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code has a return statement inside a finally block, which will
       cause any thrown exception in the try block to be discarded.
     group: top10-insecure-design
@@ -29808,7 +29808,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-923
     description: The product establishes a communication channel to (or from) an endpoint
       for privileged or protected operations, but it does not properly ensure that
@@ -29823,7 +29823,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Unchecked_Error_Condition
@@ -29834,7 +29834,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-252
     description: The product does not check the return value from a method or function,
       which can prevent it from detecting unexpected states and conditions.
@@ -29848,7 +29848,7 @@ rules:
     - ALL
     - cwe-459
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly "clean up" and remove temporary or
       supporting resources after they have been used.
     group: top10-insecure-design
@@ -29861,7 +29861,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-674
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly control the amount of recursion that
       takes place, consuming excessive resources, such as allocated memory or the
       program stack.
@@ -29875,7 +29875,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-1059
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not contain sufficient technical or engineering
       documentation (whether on paper or in electronic form) that contains descriptions
       of all the relevant software/hardware elements of the product, such as its usage,
@@ -29892,7 +29892,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-94
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the syntax or behavior of the
@@ -29908,7 +29908,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-94
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of a code segment using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the syntax or behavior of the
@@ -29922,7 +29922,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-563
     description: The variable's value is assigned but never used, making it a dead
       store.
@@ -29936,7 +29936,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-457
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses a variable that has not been initialized, leading to
       unpredictable or unintended results.
     group: top10-insecure-design
@@ -29949,7 +29949,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-492
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Inner classes are translated into classes that are accessible at
       package scope and may expose code that the programmer intended to keep private
       to attackers.
@@ -29963,7 +29963,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-477
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses deprecated or obsolete functions, which suggests that
       the code has not been actively reviewed or maintained.
     group: top10-insecure-design
@@ -29976,7 +29976,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_Use_of_System_Output_Stream
@@ -29988,7 +29988,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-382
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: A J2EE application uses System.exit(), which also shuts down its
       container.
     group: top10-insecure-design
@@ -30001,7 +30001,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-597
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product uses the wrong operator when comparing a string, such
       as using "==" when the .equals() method should be used instead.
     group: top10-insecure-design
@@ -30014,7 +30014,7 @@ rules:
     - ALL
     - cwe-580
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains a clone() method that does not call super.clone()
       to obtain the new object.
     group: top10-insecure-design
@@ -30027,7 +30027,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-583
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product violates secure coding principles for mobile code by
       declaring a finalize() method public.
     group: top10-insecure-design
@@ -30040,7 +30040,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-568
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains a finalize() method that does not call super.finalize().
     group: top10-insecure-design
     name: Java_Best_Coding_Practice_finalize_Method_Without_super_finalize
@@ -34622,7 +34622,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-400
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly control the allocation and maintenance
       of a limited resource, thereby enabling an actor to influence the amount of
       resources consumed, eventually leading to the exhaustion of available resources.
@@ -35206,7 +35206,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Lua_Best_Coding_Practice_Empty_Methods
@@ -35218,7 +35218,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-561
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains dead code, which can never be executed.
     group: top10-insecure-design
     name: ObjectiveC_Best_Coding_Practice_Dead_Code
@@ -35231,7 +35231,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -35246,7 +35246,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: ObjectiveC_Best_Coding_Practice_Empty_Methods
@@ -35258,7 +35258,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-570
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an expression that will always evaluate to false.
     group: top10-insecure-design
     name: ObjectiveC_Best_Coding_Practice_Expression_is_Always_False
@@ -35270,7 +35270,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains an expression that will always evaluate to true.
     group: top10-insecure-design
     name: ObjectiveC_Best_Coding_Practice_Expression_is_Always_True
@@ -35282,7 +35282,7 @@ rules:
     - ALL
     - cwe-483
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code does not explicitly delimit a block that is intended to
       contain 2 or more statements, creating a logic error.
     group: top10-insecure-design
@@ -36662,7 +36662,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: PLSQL_Best_Coding_Practice_Unchecked_Error_Condition
@@ -36674,7 +36674,7 @@ rules:
     - cwe-676
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product invokes a potentially dangerous function that could introduce
       a vulnerability if it is used incorrectly, but the function can also be used
       safely.
@@ -37014,7 +37014,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Perl_Best_Coding_Practice_Empty_Methods
@@ -37026,7 +37026,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -37040,7 +37040,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-665
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not initialize or incorrectly initializes a resource,
       which might leave the resource in an unexpected state when it is accessed or
       used.
@@ -37054,7 +37054,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Perl_Best_Coding_Practice_Reusing_Variable_Names_In_Subscopes
@@ -37066,7 +37066,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-477
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses deprecated or obsolete functions, which suggests that
       the code has not been actively reviewed or maintained.
     group: top10-insecure-design
@@ -37079,7 +37079,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-628
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product calls a function, procedure, or routine with arguments
       that are not correctly specified, leading to always-incorrect behavior and resultant
       weaknesses.
@@ -37652,7 +37652,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -37666,7 +37666,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -37680,7 +37680,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -37695,7 +37695,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -37708,7 +37708,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -37719,7 +37719,7 @@ rules:
   Php_Best_Coding_Practice_Possible_Global_Variable_Overwrite:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: A local PHP variable, with the same name as a global variable, is
@@ -37734,7 +37734,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: Php_Best_Coding_Practice_Unchecked_Error_Condition
@@ -37746,7 +37746,7 @@ rules:
     - ALL
     - cwe-459
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly "clean up" and remove temporary or
       supporting resources after they have been used.
     group: top10-insecure-design
@@ -37759,7 +37759,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Php_Best_Coding_Practice_Use_Of_Namespace
@@ -37771,7 +37771,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: Php_Best_Coding_Practice_Use_Of_Private_Static_Variable
@@ -37783,7 +37783,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-766
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product declares a critical variable, field, or member to be
       public when intended security policy requires it to be private.
     group: top10-insecure-design
@@ -38178,7 +38178,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -39255,7 +39255,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10713
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Setting caching to false in a production environment in a Ruby application,
       potentially leading to performance degradation.
     group: top10-insecure-design
@@ -39267,7 +39267,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -39280,7 +39280,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-10714
     description: Render paths are determined at runtime in Rails views. This practice
       opens the door for potential unauthorized access to files when user-controlled
@@ -39296,7 +39296,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -39311,7 +39311,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10715
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Global variables are assigned names that lack specificity or context.
       This makes the code difficult to understand and maintain, increasing the risk
       of bugs.
@@ -39325,7 +39325,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -39339,10 +39339,10 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-10716
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Files are being imported using relative paths, which may lead to
       unexpected behavior if the file structure changes. Use absolute paths for stability
-      and compatibility.
+      and compatibility
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Import_Relative_To_File
     pretty_name: Import Relative To File
@@ -39353,7 +39353,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: Ruby_Best_Coding_Practice_Unchecked_Error_Condition
@@ -39365,7 +39365,7 @@ rules:
     - ALL
     - cwe-459
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly "clean up" and remove temporary or
       supporting resources after they have been used.
     group: top10-insecure-design
@@ -39378,7 +39378,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-766
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product declares a critical variable, field, or member to be
       public when intended security policy requires it to be private.
     group: top10-insecure-design
@@ -40316,7 +40316,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-400
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly control the allocation and maintenance
       of a limited resource, thereby enabling an actor to influence the amount of
       resources consumed, eventually leading to the exhaustion of available resources.
@@ -41320,7 +41320,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practices
+    - checkmarx-best-coding-practicess
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -41333,7 +41333,7 @@ rules:
     categories:
     - boost-baseline
     - owasp-top-10
-    - checkmarx-best-coding-practices
+    - checkmarx-best-coding-practicess
     - ALL
     description: Identifies and flags methods in Swift code that are empty, which
       may indicate overlooked or incomplete implementation.
@@ -41347,7 +41347,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-829
-    - checkmarx-best-coding-practices
+    - checkmarx-best-coding-practicess
     description: The product imports, requires, or includes executable functionality
       (such as a library) from a source that is outside of the intended control sphere.
     group: top10-software-data-integrity-failures
@@ -42299,7 +42299,7 @@ rules:
   VbNet_Best_Coding_Practice_Aptca_Methods_Call_Non_Aptca_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: A method in Visual Basic .NET designated with AllowPartiallyTrustedCallersAttribute
@@ -42315,7 +42315,7 @@ rules:
     - ALL
     - cwe-395
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Catching NullPointerException should not be used as an alternative
       to programmatic checks to prevent dereferencing a null pointer.
     group: top10-insecure-design
@@ -42327,7 +42327,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-396
     description: Catching overly broad exceptions promotes complex error handling
       code that is more likely to contain security vulnerabilities.
@@ -42338,7 +42338,7 @@ rules:
   VbNet_Best_Coding_Practice_Deprecated_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Code is using methods which have been marked as deprecated, indicating
@@ -42354,7 +42354,7 @@ rules:
     - ALL
     - cwe-390
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product detects a specific error, but takes no actions to handle
       the error.
     group: top10-insecure-design
@@ -42367,7 +42367,7 @@ rules:
     - ALL
     - cwe-246
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The J2EE application directly uses sockets instead of using framework
       method calls.
     group: top10-insecure-design
@@ -42381,7 +42381,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-89
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product constructs all or part of an SQL command using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
       neutralizes special elements that could modify the intended SQL command when
@@ -42396,7 +42396,7 @@ rules:
     - ALL
     - cwe-493
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product has a critical public variable that is not final, which
       allows the variable to be modified to contain unexpected values.
     group: top10-insecure-design
@@ -42408,7 +42408,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-10018
     description: Marshaled calls to unmanaged code using Platform Invocation Services
       (PInvoke) are not followed by a call to the GetLastError function. This could
@@ -42423,7 +42423,7 @@ rules:
     - cwe-426
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -42438,7 +42438,7 @@ rules:
     - ALL
     - cwe-798
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
@@ -42451,7 +42451,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-581
     description: The product does not maintain equal hashcodes for equal objects.
     group: top10-insecure-design
@@ -42464,7 +42464,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-489
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product is deployed to unauthorized actors with debugging code
       still enabled or active, which can create unintended entry points or expose
       sensitive information.
@@ -42475,7 +42475,7 @@ rules:
   VbNet_Best_Coding_Practice_Magic_Numbers:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Identifies the hard coding of numbers, referred to as "magic numbers,"
@@ -42490,7 +42490,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-112
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product accepts XML from an untrusted source but does not validate
       the XML against the proper schema.
     group: top10-insecure-design
@@ -42500,7 +42500,7 @@ rules:
   VbNet_Best_Coding_Practice_NULL_Argument_to_Equals:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Passing a null argument to the 'Equals' method in Visual Basic .Net
@@ -42512,7 +42512,7 @@ rules:
   VbNet_Best_Coding_Practice_Non_Private_Static_Constructors:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Non-private static constructors in VB.NET are accessible outside
@@ -42528,7 +42528,7 @@ rules:
     - ALL
     - cwe-544
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not use a standardized method for handling errors
       throughout the code, which might introduce inconsistent error handling and resultant
       weaknesses.
@@ -42539,7 +42539,7 @@ rules:
   VbNet_Best_Coding_Practice_PersistSecurityInfo_is_True:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: The 'PersistSecurityInfo' property is set to 'True' risking the exposure
@@ -42555,7 +42555,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-383
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Thread management in a Web application is forbidden in some circumstances
       and is always highly error prone.
     group: top10-insecure-design
@@ -42568,7 +42568,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: '[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES AND CONSIDER'
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Unchecked_Error_Condition
@@ -42579,7 +42579,7 @@ rules:
     - boost-baseline
     - ALL
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - cwe-252
     description: The product does not check the return value from a method or function,
       which can prevent it from detecting unexpected states and conditions.
@@ -42593,7 +42593,7 @@ rules:
     - ALL
     - cwe-459
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The product does not properly "clean up" and remove temporary or
       supporting resources after they have been used.
     group: top10-insecure-design
@@ -42603,7 +42603,7 @@ rules:
   VbNet_Best_Coding_Practice_Unvalidated_Arguments_Of_Public_Methods:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Public methods in VB.NET code accept arguments without conducting
@@ -42618,7 +42618,7 @@ rules:
     - ALL
     - owasp-top-10
     - cwe-457
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: The code uses a variable that has not been initialized, leading to
       unpredictable or unintended results.
     group: top10-insecure-design
@@ -42631,7 +42631,7 @@ rules:
     - ALL
     - cwe-398
     - owasp-top-10
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     description: Indicates that the product has not been carefully developed or maintained.
     group: top10-insecure-design
     name: VbNet_Best_Coding_Practice_Use_of_System_Output_Stream
@@ -42640,7 +42640,7 @@ rules:
   VbNet_Best_Coding_Practice_Visible_Pointers:
     categories:
     - boost-baseline
-    - checkmarx-best-coding-practice
+    - checkmarx-best-coding-practices
     - ALL
     - owasp-top-10
     description: Pointers in Visual Basic .NET are visible, posing a risk for unsafe
