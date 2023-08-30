@@ -11579,7 +11579,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ASP_Low_Visibility_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -11592,7 +11592,7 @@ rules:
     description: Allowing a .NET application to run at potentially escalated levels
       of access to the underlying operating and file systems can be dangerous and
       result in various forms of attacks.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ASP_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -11736,7 +11736,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: ASP_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -12142,7 +12142,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Apex_Force_com_Code_Quality_Hardcoded_Messages
     pretty_name: Hardcoded Messages
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -12563,7 +12563,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Apex_Force_com_Serious_Security_Risk_Insecure_Cookie
     pretty_name: Insecure Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -14822,7 +14822,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CPP_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -18320,7 +18320,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Environment_Injection
     pretty_name: Environment Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -18333,7 +18333,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -18470,7 +18470,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Medium_Threat_Setting_Manipulation
     pretty_name: Setting Manipulation
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -18716,7 +18716,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CPP_Stored_Vulnerabilities_Stored_Environment_Injection
     pretty_name: Stored Environment Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -18756,7 +18756,7 @@ rules:
     - checkmarx-stored-vulnerabilities
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CPP_Stored_Vulnerabilities_Stored_Log_Forging
     pretty_name: Stored Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -19156,7 +19156,7 @@ rules:
     - cwe-778
     description: When a security-critical event occurs, the product either does not
       record the event or omits important details about the event when logging it.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions
     pretty_name: Insufficient Logging of Database Actions
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -19168,7 +19168,7 @@ rules:
     - cwe-778
     description: When a security-critical event occurs, the product either does not
       record the event or omits important details about the event when logging it.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Exceptions
     pretty_name: Insufficient Logging of Exceptions
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -19180,7 +19180,7 @@ rules:
     - cwe-778
     description: When a security-critical event occurs, the product either does not
       record the event or omits important details about the event when logging it.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Best_Coding_Practice_Insufficient_Logging_of_Sensitive_Operations
     pretty_name: Insufficient Logging of Sensitive Operations
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -19908,7 +19908,7 @@ rules:
     description: Allowing a .NET application to run at potentially escalated levels
       of access to the underlying operating and file systems can be dangerous and
       result in various forms of attacks.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -20110,7 +20110,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: CSharp_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -20596,7 +20596,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -20608,7 +20608,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -20635,7 +20635,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -20648,7 +20648,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_Medium_Threat_Insecure_Cookie
     pretty_name: Insecure Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -21167,7 +21167,7 @@ rules:
     - cwe-11
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_DebugEnabled
     pretty_name: DebugEnabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -21222,7 +21222,7 @@ rules:
     - checkmarx-webconfig
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -21261,7 +21261,7 @@ rules:
     - cwe-260
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_Password_in_Configuration_File
     pretty_name: Password in Configuration File
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -21274,7 +21274,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: CSharp_WebConfig_RequireSSL
     pretty_name: RequireSSL
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -22415,7 +22415,7 @@ rules:
     - checkmarx-aws-lambda
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -22766,7 +22766,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Go_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -22968,7 +22968,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Hardcoded_Password_in_Connection_String
     pretty_name: Hardcoded Password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -23009,7 +23009,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Missing_HttpOnly_Cookie
     pretty_name: Missing HttpOnly Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -23022,7 +23022,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Go_Medium_Threat_Missing_Secure_Cookie
     pretty_name: Missing Secure Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -23918,7 +23918,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_DB_Control_of_System_or_Config_Setting
     pretty_name: DB Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24260,7 +24260,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Groovy_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24273,7 +24273,7 @@ rules:
     description: The product contains code that is designed to disrupt the legitimate
       operation of the product (or its environment) when a certain time passes, or
       when a certain logical condition is met.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Groovy_Low_Visibility_Logic_Time_Bomb
     pretty_name: Logic Time Bomb
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24364,7 +24364,7 @@ rules:
     - checkmarx-low-visibility
     - cwe-315
     description: The product stores sensitive information in cleartext in a cookie.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Plaintext_Storage_in_a_Cookie
     pretty_name: Plaintext Storage in a Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24557,7 +24557,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Sensitive_Cookie_in_HTTPS_Session_Without_Secure_Attribute
     pretty_name: Sensitive Cookie in HTTPS Session Without Secure Attribute
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24764,7 +24764,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24942,7 +24942,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_External_Control_of_System_or_Config_Setting
     pretty_name: External Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24969,7 +24969,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24981,7 +24981,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -24993,7 +24993,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Groovy_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -25584,7 +25584,7 @@ rules:
     - checkmarx-aws-lambda
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -25779,7 +25779,7 @@ rules:
     - checkmarx-cordova
     description: The product uses a cross-domain policy file that includes domains
       that should not be trusted.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Cordova_Cordova_Insufficient_Domain_Whitelist
     pretty_name: Cordova Insufficient Domain Whitelist
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -26037,7 +26037,7 @@ rules:
     - checkmarx-low-visibility
     - cwe-315
     description: The product stores sensitive information in cleartext in a cookie.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Low_Visibility_Client_Cookies_Inspection
     pretty_name: Client Cookies Inspection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -26223,7 +26223,7 @@ rules:
     - checkmarx-low-visibility
     description: The product uses a cross-domain policy file that includes domains
       that should not be trusted.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Low_Visibility_Client_Overly_Permissive_Message_Posting
     pretty_name: Client Overly Permissive Message Posting
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -26973,7 +26973,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Medium_Threat_XML_External_Entities_XXE
     pretty_name: XML External Entities XXE
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -27338,7 +27338,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Server_Side_Vulnerabilities_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -27363,7 +27363,7 @@ rules:
     - cwe-532
     description: Information written to log files can be of a sensitive nature and
       give valuable guidance to an attacker or expose sensitive user information.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_Server_Side_Vulnerabilities_Information_Exposure_Through_Log_Files
     pretty_name: Information Exposure Through Log Files
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -27513,7 +27513,7 @@ rules:
     - checkmarx-server-side-vulnerabilities
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_Server_Side_Vulnerabilities_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -27926,7 +27926,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: JavaScript_Server_Side_Vulnerabilities_Unprotected_Cookie
     pretty_name: Unprotected Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -28176,7 +28176,7 @@ rules:
     - checkmarx-xs
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: JavaScript_XS_XS_Log_Injection
     pretty_name: XS Log Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -28495,7 +28495,7 @@ rules:
     - checkmarx-aws-lambda
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -29544,7 +29544,7 @@ rules:
     - cwe-778
     description: When a security-critical event occurs, the product either does not
       record the event or omits important details about the event when logging it.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Best_Coding_Practice_Insufficient_Logging_of_Database_Actions
     pretty_name: Insufficient Logging of Database Actions
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -29556,7 +29556,7 @@ rules:
     - cwe-778
     description: When a security-critical event occurs, the product either does not
       record the event or omits important details about the event when logging it.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Best_Coding_Practice_Insufficient_Logging_of_Exceptions
     pretty_name: Insufficient Logging of Exceptions
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -30704,7 +30704,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_DB_Control_of_System_or_Config_Setting
     pretty_name: DB Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31126,7 +31126,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31139,7 +31139,7 @@ rules:
     description: The product contains code that is designed to disrupt the legitimate
       operation of the product (or its environment) when a certain time passes, or
       when a certain logical condition is met.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Logic_Time_Bomb
     pretty_name: Logic Time Bomb
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31298,7 +31298,7 @@ rules:
     - checkmarx-low-visibility
     - cwe-315
     description: The product stores sensitive information in cleartext in a cookie.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Plaintext_Storage_in_a_Cookie
     pretty_name: Plaintext Storage in a Cookie
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31470,7 +31470,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Reflected_Environment_Injection
     pretty_name: Reflected Environment Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31527,7 +31527,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Sensitive_Cookie_in_HTTPS_Session_Without_Secure_Attribute
     pretty_name: Sensitive Cookie in HTTPS Session Without Secure Attribute
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31567,7 +31567,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Stored_Environment_Injection
     pretty_name: Stored Environment Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31579,7 +31579,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Java_Low_Visibility_Stored_Log_Forging
     pretty_name: Stored Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31791,7 +31791,7 @@ rules:
     - cwe-260
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Use_Of_Hardcoded_Password_In_Config
     pretty_name: Use Of Hardcoded Password In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -31844,7 +31844,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32076,7 +32076,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_External_Control_of_System_or_Config_Setting
     pretty_name: External Control of System or Config Setting
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32116,7 +32116,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32128,7 +32128,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32140,7 +32140,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32167,7 +32167,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Improper_Restriction_of_Stored_XXE_Ref
     pretty_name: Improper Restriction of Stored XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32181,7 +32181,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -32846,7 +32846,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Potential_Potential_Hardcoded_password_in_Connection_String
     pretty_name: Potential Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -33021,7 +33021,7 @@ rules:
     description: The product uses XML documents and allows their structure to be defined
       with a Document Type Definition (DTD), but it does not properly control the
       number of recursive definitions of entities.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Java_Potential_Potential_XXE_Injection
     pretty_name: Potential XXE Injection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -33976,7 +33976,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Javascript_Kony_Kony_Unsecure_Browser_Configuration
     pretty_name: Kony Unsecure Browser Configuration
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -33989,7 +33989,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Javascript_Kony_Kony_Unsecure_iOSBrowser_Configuration
     pretty_name: Kony Unsecure iOSBrowser Configuration
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -34999,7 +34999,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Kotlin_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -35570,7 +35570,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: ObjectiveC_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -36010,7 +36010,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: ObjectiveC_Medium_Threat_XML_External_Entity
     pretty_name: XML External Entity
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -36310,7 +36310,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -36353,7 +36353,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_Improper_Restriction_of_Stored_XXE_Ref
     pretty_name: Improper Restriction of Stored XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -36367,7 +36367,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: PHP_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -37295,7 +37295,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Perl_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -37451,7 +37451,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Perl_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -37934,7 +37934,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Php_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38168,7 +38168,7 @@ rules:
     - checkmarx-aws-lambda
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_AWS_Lambda_User_Based_SDK_Configurations
     pretty_name: User Based SDK Configurations
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38457,7 +38457,7 @@ rules:
     - cwe-11
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Low_Visibility_Debug_Enabled
     pretty_name: Debug Enabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38549,7 +38549,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Python_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38780,7 +38780,7 @@ rules:
     - cwe-532
     description: Information written to log files can be of a sensitive nature and
       give valuable guidance to an attacker or expose sensitive user information.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Python_Medium_Threat_Filtering_Sensitive_Logs
     pretty_name: Filtering Sensitive Logs
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38793,7 +38793,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Hardcoded_Password_in_Connection_String
     pretty_name: Hardcoded Password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38819,7 +38819,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_HttpOnlyCookies_In_Config
     pretty_name: HttpOnlyCookies In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38833,7 +38833,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Improper_Restriction_of_XXE_Ref
     pretty_name: Improper Restriction of XXE Ref
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -38872,7 +38872,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Python_Medium_Threat_Missing_Secure_In_Config
     pretty_name: Missing Secure In Config
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -39711,7 +39711,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Ruby_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -39984,7 +39984,7 @@ rules:
     - cwe-532
     description: Information written to log files can be of a sensitive nature and
       give valuable guidance to an attacker or expose sensitive user information.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: Ruby_Medium_Threat_Filtering_Sensitive_Logs
     pretty_name: Filtering Sensitive Logs
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40524,7 +40524,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Debug_Loglevel_Enabled
     pretty_name: Akka Debug Loglevel Enabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40549,7 +40549,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Encrypt_Data_Disabled
     pretty_name: Akka Encrypt Data Disabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40561,7 +40561,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Missing_Max_Age
     pretty_name: Akka Missing Max Age
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40573,7 +40573,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Serialize_Enabled
     pretty_name: Akka Serialize Enabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40585,7 +40585,7 @@ rules:
     - cwe-15
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Akka_Untrusted_Mode_Enabled
     pretty_name: Akka Untrusted Mode Enabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40750,7 +40750,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Low_Visibility_Use_of_Hard_coded_Security_Constants
     pretty_name: Use of Hard coded Security Constants
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40872,7 +40872,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_External_XML_Entities_XXE
     pretty_name: External XML Entities XXE
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40899,7 +40899,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40911,7 +40911,7 @@ rules:
     - checkmarx-medium-threat
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_HttpOnlyCookies
     pretty_name: HttpOnlyCookies
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -40951,7 +40951,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Missing_Secure_Flag
     pretty_name: Missing Secure Flag
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -41166,7 +41166,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Scala_Medium_Threat_Stored_External_XML_Entities_XXE
     pretty_name: Stored External XML Entities XXE
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -41986,7 +41986,7 @@ rules:
     description: The product processes an XML document that can contain XML entities
       with URIs that resolve to documents outside of the intended sphere of control,
       causing the product to embed incorrect documents into its output.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: Swift_Medium_Threat_XML_External_Entity
     pretty_name: XML External Entity
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -42191,7 +42191,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: VB6_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -42246,7 +42246,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VB6_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43011,7 +43011,7 @@ rules:
     description: Allowing a .NET application to run at potentially escalated levels
       of access to the underlying operating and file systems can be dangerous and
       result in various forms of attacks.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_Low_Visibility_Impersonation_Issue
     pretty_name: Impersonation Issue
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43157,7 +43157,7 @@ rules:
     - checkmarx-low-visibility
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
-    group: top10-security-logging-failures
+    group: top10-security-logging-monitoring-failures
     name: VbNet_Low_Visibility_Log_Forging
     pretty_name: Log Forging
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43419,7 +43419,7 @@ rules:
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_Medium_Threat_Hardcoded_password_in_Connection_String
     pretty_name: Hardcoded password in Connection String
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43692,7 +43692,7 @@ rules:
     - cwe-11
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_DebugEnabled
     pretty_name: DebugEnabled
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43735,7 +43735,7 @@ rules:
     - ALL
     description: The product uses a cookie to store sensitive information, but the
       cookie is not marked with the HttpOnly flag.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_HttpOnlyCookies_XSS
     pretty_name: HttpOnlyCookies XSS
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43774,7 +43774,7 @@ rules:
     - cwe-260
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_Password_In_Configuration_File
     pretty_name: Password In Configuration File
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43787,7 +43787,7 @@ rules:
     description: The Secure attribute for sensitive cookies in HTTPS sessions is not
       set, which could cause the user agent to send those cookies in plaintext over
       an HTTP session.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbNet_WebConfig_RequireSSL
     pretty_name: RequireSSL
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
@@ -43859,7 +43859,7 @@ rules:
     - checkmarx-low-visibility
     - cwe-315
     description: The product stores sensitive information in cleartext in a cookie.
-    group: top10-misconfig
+    group: top10-security-misconfiguration
     name: VbScript_Low_Visibility_Cookies_Inspection
     pretty_name: Cookies Inspection
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
