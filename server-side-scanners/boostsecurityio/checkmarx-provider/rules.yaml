@@ -11915,7 +11915,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -13427,7 +13426,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_Best_Coding_Practice_Methods_Without_ReturnType:
     categories:
-    - cwe-10712
     - owasp-top-10
     - checkmarx-best-coding-practices
     - boost-baseline
@@ -15051,7 +15049,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R00_01_03_Find_Unused_Variables:
     categories:
-    - cwe-10775
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15064,7 +15061,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R00_01_05_Find_Unused_Typedefs:
     categories:
-    - cwe-10776
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15077,7 +15073,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R00_01_10_Find_Unused_Defined_Functions:
     categories:
-    - cwe-10777
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15091,7 +15086,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R00_01_11_Find_Unused_Parameters:
     categories:
-    - cwe-10778
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15105,7 +15099,6 @@ rules:
   CPP_MISRA_CPP_R00_01_12_Find_Virtual_Unused_Parameters:
     categories:
     - owasp-top-10
-    - cwe-10779
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15129,7 +15122,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R02_05_01_Digraphs:
     categories:
-    - cwe-10750
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15208,7 +15200,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R02_10_05_Non_Member_Static_Name_Reuse:
     categories:
-    - cwe-10751
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15262,7 +15253,6 @@ rules:
   CPP_MISRA_CPP_R02_13_04_Literal_Suffix_Uppercase:
     categories:
     - owasp-top-10
-    - cwe-10780
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15275,7 +15265,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R03_01_03_Find_Arrays_Without_Size:
     categories:
-    - cwe-10781
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15447,7 +15436,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R05_02_11_Find_Special_Operator_Overloads:
     categories:
-    - cwe-10782
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15477,7 +15465,6 @@ rules:
   CPP_MISRA_CPP_R05_03_03_Overloading_Reference_Oper:
     categories:
     - owasp-top-10
-    - cwe-10753
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15503,7 +15490,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R06_02_01_Assignment_in_Sub_Expr:
     categories:
-    - cwe-10754
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15518,7 +15504,6 @@ rules:
   CPP_MISRA_CPP_R06_02_02_FloatingPt_Equality_Inequality_Testing:
     categories:
     - owasp-top-10
-    - cwe-10752
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15611,7 +15596,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R06_04_07_Find_Switch_Condition_Bool:
     categories:
-    - cwe-10783
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15637,7 +15621,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R06_05_02_Loop_Counter_Modify:
     categories:
-    - cwe-10755
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15654,7 +15637,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10756
     - checkmarx-misra-cpp
     description: A loop counter is being modified inside a conditional or switch statement,
       violating the MISRA C++ Rule R06-05-03, thus leading to potential control flow
@@ -15666,7 +15648,6 @@ rules:
   CPP_MISRA_CPP_R06_05_04_Incremental_Modified:
     categories:
     - owasp-top-10
-    - cwe-10757
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15681,7 +15662,6 @@ rules:
     categories:
     - boost-baseline
     - owasp-top-10
-    - cwe-10758
     - ALL
     - checkmarx-misra-cpp
     description: Loop counter variables are modified in the body of a 'for' loop,
@@ -15693,7 +15673,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R06_05_06_Bool_Lcv_Change:
     categories:
-    - cwe-10759
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15719,7 +15698,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R06_06_03_Continue_In_Legal_For:
     categories:
-    - cwe-10760
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15760,7 +15738,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_01_01_Declare_Const_if_not_Modified:
     categories:
-    - cwe-10784
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15774,7 +15751,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_01_02_Declare_Ref_Const_if_not_Modified:
     categories:
-    - cwe-10785
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15791,7 +15767,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10786
     - checkmarx-misra-cpp
     description: Objects or functions are directly defined within the global namespace,
       violating rule 7.3.1 of MISRA C++. This is a harmful practice as it can cause
@@ -15804,7 +15779,6 @@ rules:
     categories:
     - boost-baseline
     - owasp-top-10
-    - cwe-10787
     - ALL
     - checkmarx-misra-cpp
     description: Identifies non-global main functions in C++ codebase, violating MISRA
@@ -15815,7 +15789,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_03_03_Unnamed_NS_in_Headers:
     categories:
-    - cwe-10788
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15829,7 +15802,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_03_04_Find_Using_Directives:
     categories:
-    - cwe-10789
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15843,7 +15815,6 @@ rules:
   CPP_MISRA_CPP_R07_03_05_Multiple_Declarations_After_Using:
     categories:
     - owasp-top-10
-    - cwe-10790
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -15856,7 +15827,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_03_06_Find_Using_in_Headers:
     categories:
-    - cwe-10791
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15870,7 +15840,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R07_05_02_Address_Assignment_out_of_Scope:
     categories:
-    - cwe-10792
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -15887,7 +15856,6 @@ rules:
     - ALL
     - owasp-top-10
     - boost-baseline
-    - cwe-10793
     - checkmarx-misra-cpp
     description: There is a return-value parameter passed by nonconst reference, violating
       the MISRA C++:2008 Rule 7-5-3, which risks unpredictable and undefined behavior
@@ -15914,7 +15882,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10794
     - checkmarx-misra-cpp
     description: A single statement contains multiple declarators, a practice that
       leads to more complex code and potential misunderstandings, violating MISRA-CPP:2008
@@ -15951,7 +15918,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R08_05_01_Uninitialized_Variable_Use:
     categories:
-    - cwe-10761
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16017,7 +15983,6 @@ rules:
   CPP_MISRA_CPP_R10_01_01_Find_Virtual_Base_Classes:
     categories:
     - owasp-top-10
-    - cwe-10795
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -16030,7 +15995,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R10_03_02_Find_Override_Without_Virtual:
     categories:
-    - cwe-10796
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16044,7 +16008,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R10_03_03_Redeclare_Function_as_Pure:
     categories:
-    - cwe-10797
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16058,7 +16021,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R12_01_03_Find_non_Explicit_Constructor:
     categories:
-    - cwe-10798
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16074,7 +16036,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10762
     - checkmarx-misra-cpp
     description: Violates MISRA C++ Rule 15-0-2, where pointers or references are
       thrown as exceptions, increasing the risk of memory safety issues.
@@ -16084,7 +16045,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R15_00_03_Goto_Label_Inside_TryCatch:
     categories:
-    - cwe-10763
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16098,7 +16058,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R15_01_02_No_Explicit_Null_Throw:
     categories:
-    - cwe-10764
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16111,7 +16070,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R15_01_03_Empty_Throw_Outside_Catch:
     categories:
-    - cwe-10765
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16125,7 +16083,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R15_03_02_Catch_All_In_Main:
     categories:
-    - cwe-10766
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16142,7 +16099,6 @@ rules:
     - ALL
     - owasp-top-10
     - boost-baseline
-    - cwe-10767
     - checkmarx-misra-cpp
     description: The constructors and destructors of a class are accessing non-static
       members, thereby violating the MISRA C++ Rule 15.3.3. Violations of this rule
@@ -16153,7 +16109,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R15_03_07_Catch_All_Final:
     categories:
-    - cwe-10768
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16171,7 +16126,6 @@ rules:
   CPP_MISRA_CPP_R15_05_01_Statements_Outside_TryCatch_Dtr:
     categories:
     - owasp-top-10
-    - cwe-10769
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -16187,7 +16141,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10770
     - checkmarx-misra-cpp
     description: All '#define' and '#undef' directives should only be used within
       the global namespace to ensure a consistent macro environment and avoid possible
@@ -16212,7 +16165,6 @@ rules:
   CPP_MISRA_CPP_R16_00_04_Function_Like_Macros_Shall_Not_Be_Defined:
     categories:
     - owasp-top-10
-    - cwe-10771
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -16224,7 +16176,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   CPP_MISRA_CPP_R16_00_05_No_Tokens_In_Func_Like_Macro:
     categories:
-    - cwe-10772
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -16238,7 +16189,6 @@ rules:
   CPP_MISRA_CPP_R16_00_07_Undefined_Macro_Identifiers:
     categories:
     - owasp-top-10
-    - cwe-10799
     - boost-baseline
     - ALL
     - checkmarx-misra-cpp
@@ -16254,7 +16204,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10773
     - checkmarx-misra-cpp
     description: A preprocessing directive is not immediately preceded by a '#' character.
       This is a violation of MISRA C++:2008 Rule 16-0-8, potentially leading to syntax
@@ -16268,7 +16217,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-10774
     - checkmarx-misra-cpp
     description: 'C++ functions are defined using standard forms - no macros or #define
       compiler directives are employed, ensuring compliance with MISRA rule R16.01.01.'
@@ -18278,7 +18226,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -18451,7 +18398,6 @@ rules:
   CPP_Medium_Threat_Pointer_Subtraction_Determines_Size:
     categories:
     - checkmarx-medium-threat
-    - cwe-469
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -19107,7 +19053,6 @@ rules:
   CSharp_Best_Coding_Practice_GetLastWin32Error_Is_Not_Called_After_Pinvoke:
     categories:
     - owasp-top-10
-    - cwe-10018
     - checkmarx-best-coding-practices
     - boost-baseline
     - ALL
@@ -20553,7 +20498,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -21608,7 +21552,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Dart_Mobile_High_Risk_Resource_Updated_By_URL_Data:
     categories:
-    - cwe-939
     - boost-hardened
     - checkmarx-mobile-high-risk
     - owasp-top-10
@@ -22355,7 +22298,6 @@ rules:
   Go_AWS_Lambda_Race_Condition_Global_Scope:
     categories:
     - checkmarx-aws-lambda
-    - cwe-1108
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -22747,7 +22689,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Go_Low_Visibility_Incorrect_Reflect_Value_Comparison:
     categories:
-    - cwe-595
     - checkmarx-low-visibility
     - owasp-top-10
     - boost-baseline
@@ -24577,7 +24518,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Groovy_Low_Visibility_Spring_defaultHtmlEscape_Not_True:
     categories:
-    - cwe-10711
     - checkmarx-low-visibility
     - owasp-top-10
     - boost-baseline
@@ -24913,7 +24853,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -25985,7 +25924,6 @@ rules:
   JavaScript_High_Risk_Prototype_Pollution:
     categories:
     - boost-hardened
-    - cwe-1321
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -27465,7 +27403,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   JavaScript_Server_Side_Vulnerabilities_JWT_No_NotBefore_Validation:
     categories:
-    - cwe-304
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -28421,7 +28358,6 @@ rules:
   Java_AWS_Lambda_Race_Condition_Global_Scope:
     categories:
     - checkmarx-aws-lambda
-    - cwe-1108
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -32020,7 +31956,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -33318,7 +33253,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Java_Spring_Spring_defaultHtmlEscape_Not_True:
     categories:
-    - cwe-10711
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -36267,7 +36201,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -36906,7 +36839,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -37434,7 +37366,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -38765,7 +38696,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -39067,7 +38997,6 @@ rules:
   RPG_High_Risk_Buffer_Overrun:
     categories:
     - boost-hardened
-    - cwe-126
     - owasp-top-10
     - boost-baseline
     - ALL
@@ -39142,7 +39071,6 @@ rules:
     categories:
     - checkmarx-low-visibility
     - owasp-top-10
-    - cwe-528
     - boost-baseline
     - ALL
     description: The product generates a core dump file in a directory, archive, or
@@ -39174,7 +39102,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-427
     description: The product uses a fixed or controlled search path to find resources,
       but one or more locations in that path can be under the control of unintended
       actors.
@@ -39213,7 +39140,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -39255,7 +39181,6 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practices
     - boost-baseline
-    - cwe-10713
     description: Setting caching to false in a production environment in a Ruby application,
       potentially leading to performance degradation.
     group: top10-insecure-design
@@ -39281,7 +39206,6 @@ rules:
     - owasp-top-10
     - checkmarx-best-coding-practices
     - boost-baseline
-    - cwe-10714
     description: Render paths are determined at runtime in Rails views. This practice
       opens the door for potential unauthorized access to files when user-controlled
       input is involved, leading to security vulnerabilities.
@@ -39307,7 +39231,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Ruby_Best_Coding_Practice_Global_Variables_Without_Meaningful_Name:
     categories:
-    - cwe-10715
     - owasp-top-10
     - checkmarx-best-coding-practices
     - boost-baseline
@@ -39336,7 +39259,6 @@ rules:
   Ruby_Best_Coding_Practice_Import_Relative_To_File:
     categories:
     - owasp-top-10
-    - cwe-10716
     - checkmarx-best-coding-practices
     - boost-baseline
     - ALL
@@ -39956,7 +39878,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -40855,7 +40776,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -41370,7 +41290,6 @@ rules:
     ref: https://checkmarx.com/resource/documents/en/34965-67042-checkmarx-one.html
   Swift_High_Risk_Resource_Updated_By_URL_Data:
     categories:
-    - cwe-939
     - boost-hardened
     - owasp-top-10
     - boost-baseline
@@ -42230,7 +42149,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -42406,7 +42324,6 @@ rules:
   VbNet_Best_Coding_Practice_GetLastWin32Error_Is_Not_Called_After_Pinvoke:
     categories:
     - owasp-top-10
-    - cwe-10018
     - checkmarx-best-coding-practices
     - boost-baseline
     - ALL
@@ -43389,7 +43306,6 @@ rules:
     - owasp-top-10
     - boost-baseline
     - ALL
-    - cwe-834
     description: The product performs an iteration or loop without sufficiently limiting
       the number of times that the loop is executed.
     group: top10-insecure-design
@@ -43880,7 +43796,6 @@ rules:
   VbScript_Low_Visibility_Weak_Password_Authentication:
     categories:
     - checkmarx-low-visibility
-    - cwe-10710
     - owasp-top-10
     - boost-baseline
     - ALL
