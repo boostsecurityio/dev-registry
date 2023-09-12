@@ -1,2 +1,2 @@
-name: Snyk Connector
-namespace: boostsecurityio/snyk-connector
+name: Snyk Provider
+namespace: boostsecurityio/snyk-provider
