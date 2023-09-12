@@ -1,0 +1,47 @@
+api_version: 1.0
+
+id: boostsecurityio/semgrep-pro
+name: BoostSecurity semgrep Pro
+namespace: boostsecurityio/semgrep-pro
+scan_types:
+  - sast
+
+config:
+  support_diff_scan: true
+  require_full_repo: true
+  include_files:
+  - .semgrep/*
+
+setup:
+  - name: Validate Semgrep API Key
+    run: |
+      if [ -z "$SEMGREP_APP_TOKEN" ]; then
+        echo "Error: SEMGREP_APP_TOKEN environment variable is not set."
+        exit 1
+      fi
+  - name: Build Docker with Semgrep Pro pre-installed
+    run: |
+      export DOCKER_BUILDKIT=1
+      echo -n $SEMGREP_APP_TOKEN > ./semgrep_app_token.secret
+      echo "FROM returntocorp/semgrep:1.39.0@sha256:fd3d6ccd390677db83880d99a9f494500c003ec82177cc141f6ec37f71633a96" > Dockerfile
+      echo "RUN --mount=type=secret,id=semgrep_app_token /bin/sh -c 'SEMGREP_APP_TOKEN=\$(cat /run/secrets/semgrep_app_token) semgrep install-semgrep-pro'" >> Dockerfile
+      docker build --secret id=semgrep_app_token,src=./semgrep_app_token.secret -t semgrep-with-pro-engine:latest .
+      rm ./semgrep_app_token.secret
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: semgrep-with-pro-engine:latest
+          command: semgrep scan --pro --sarif --quiet --disable-version-check
+          workdir: /src
+          environment:
+            XDG_CONFIG_HOME: /tmp
+            HOME: /tmp
+            SEMGREP_RULES: ${SEMGREP_RULES:-auto}
+            SEMGREP_APP_TOKEN: $SEMGREP_APP_TOKEN
+      format: sarif
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-semgrep:233743f@sha256:83611487e28b8727f1f6cda0889bc50e7322ea7841064c2324d80f3aaf1c4282
+          command: process
