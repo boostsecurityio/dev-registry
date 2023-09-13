@@ -33,7 +33,7 @@ steps:
       command:
         docker:
           image: semgrep-with-pro-engine:latest
-          command: semgrep scan --pro --sarif --quiet --disable-version-check
+          command: semgrep scan --pro --sarif --quiet --disable-version-check .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
