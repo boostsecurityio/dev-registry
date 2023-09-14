@@ -441,6 +441,28 @@ rules:
     name: cicd-scm-private-forks
     pretty_name: CI/CD - SCM Private Forks
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-private-forks.html'
+  cicd-scm-limit-repo-creation:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-scm-weak-configuration
+      - boost-hardened
+    description: Check the creation of repositories is restricted.
+    group: supply-chain-scm-weak-configuration
+    name: cicd-scm-limit-repo-creation
+    pretty_name: CI/CD - SCM Repository Creation Restricted
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-repo-creation-restricted.html'
+  cicd-scm-org-verified:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-scm-weak-configuration
+      - boost-hardened
+    description: Check the SCM organization is showing as verified.
+    group: supply-chain-scm-weak-configuration
+    name: cicd-scm-org-verified
+    pretty_name: CI/CD - SCM Organization Verified
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-scm-org-verified.html'
   cicd-gl-deployment-approval:
     categories:
       - ALL
