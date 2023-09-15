@@ -447,7 +447,7 @@ rules:
       - supply-chain
       - supply-chain-scm-weak-configuration
       - boost-hardened
-    description: Check the creation of repositories is restricted.
+    description: Checks that creation of repositories is restricted in the SCM organization.
     group: supply-chain-scm-weak-configuration
     name: cicd-scm-limit-repo-creation
     pretty_name: CI/CD - SCM Repository Creation Restricted
@@ -458,7 +458,7 @@ rules:
       - supply-chain
       - supply-chain-scm-weak-configuration
       - boost-hardened
-    description: Check the SCM organization is showing as verified.
+    description: Checks the SCM organization has been verified.
     group: supply-chain-scm-weak-configuration
     name: cicd-scm-org-verified
     pretty_name: CI/CD - SCM Organization Verified
