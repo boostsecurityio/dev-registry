@@ -25,7 +25,7 @@ setup:
         BINARY_URL="${BINARY_URL}/bearer_${VERSION}_linux_amd64.tar.gz"
         SHA="${LINUX_X86_64_SHA} bearer.tar.gz"
         ;;
-      "Darwin amd64")
+      "Darwin x86_64")
         BINARY_URL="${BINARY_URL}/bearer_${VERSION}_darwin_amd64.tar.gz"
         SHA="${MACOS_AMD64_SHA} bearer.tar.gz"
         ;;
