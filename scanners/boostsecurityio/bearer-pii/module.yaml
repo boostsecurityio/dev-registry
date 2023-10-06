@@ -51,7 +51,7 @@ steps:
     command:
       run: |
         $SETUP_PATH/bearer scan --format json --report=privacy .
-    format: sarif
+    format: metadata
     post-processor:
       docker:
         image: public.ecr.aws/boostsecurityio/boost-scanner-bearer:fc69f64@sha256:bc2df1892c6fc13afc81e66c75e86a36835dd6b85282cdb9dabc12bbeca0f05a
