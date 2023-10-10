@@ -8,4 +8,4 @@ rules:
     name: forbidden-license
     group: license-violations
     pretty_name: Package with Unauthorized License
-    ref: https://nvd.nist.gov/vuln-metrics/cvss
+    ref: https://docs.boostsecurity.io/rules/index.html
