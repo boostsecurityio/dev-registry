@@ -301,6 +301,7 @@ rules:
       - supply-chain
       - supply-chain-scm-weak-configuration
       - supply-chain-cicd-weak-configuration
+      - supply-chain-cicd-severe-issues
       - boost-hardened
     description: Checks for GitHub organizations with third-party applications that
       have elevated permissions.
