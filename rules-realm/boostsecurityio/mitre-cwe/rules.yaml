@@ -3550,7 +3550,7 @@ rules:
     - owasp-top-10
     description: The product exposes sensitive information to an actor that is not
       explicitly authorized to have access to that information.
-    group: top10-broken-access-control
+    group: stored-secrets
     name: CWE-200
     pretty_name: 'CWE-200: Exposure of Sensitive Information to an Unauthorized Actor'
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -9354,7 +9354,7 @@ rules:
     description: The product contains hard-coded credentials, such as a password or
       cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
-    group: top10-id-authn-failures
+    group: stored-secrets
     name: CWE-798
     pretty_name: 'CWE-798: Use of Hard-coded Credentials'
     ref: https://cwe.mitre.org/data/definitions/798.html
