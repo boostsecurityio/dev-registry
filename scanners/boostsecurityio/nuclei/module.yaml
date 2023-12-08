@@ -15,9 +15,9 @@ steps:
           image: projectdiscovery/nuclei:latest
 #          command: -c 'nuclei -u $TARGET_URL -nm -irr -se /tmp/nuclei.sarif &>/dev/null; cat /tmp/nuclei.sarif'
           command: -c 'nuclei -u $TARGET_URL -nm -irr -se /tmp/nuclei.sarif; cat /tmp/nuclei.sarif'
-          entrypoint: sh
-          workdir: /src
+#          entrypoint: sh
+#          workdir: /src
           environment:
             TARGET_URL: ${TARGET_URL}
-            HOME: /tmp
+#            HOME: /tmp
       format: sarif
