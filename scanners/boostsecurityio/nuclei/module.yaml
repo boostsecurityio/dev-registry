@@ -3,7 +3,8 @@ api_version: 1.0
 id: boostsecurityio/nuclei
 name: nuclei
 namespace: boostsecurityio/nuclei
-
+scan_types:
+  - sast
 config:
   support_diff_scan: false
 
