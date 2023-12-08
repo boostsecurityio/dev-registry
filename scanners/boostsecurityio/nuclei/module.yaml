@@ -19,5 +19,6 @@ steps:
 #          workdir: /src
           environment:
             TARGET_URL: ${TARGET_URL}
+            XDG_CONFIG_HOME: /tmp/nuclei
 #            HOME: /tmp
       format: sarif
