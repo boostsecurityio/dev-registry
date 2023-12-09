@@ -1,6 +1,3 @@
-import:
-  - boostsecurityio/mitre-cwe
-
 rules:
   CVE-2023-2640:
     categories:
