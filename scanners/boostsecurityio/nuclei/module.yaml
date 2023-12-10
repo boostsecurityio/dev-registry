@@ -23,3 +23,7 @@ steps:
             XDG_CONFIG_HOME: /tmp/nuclei
             HOME: /tmp
       format: sarif
+      post-processor:
+        docker:
+          image: slef05/my_opa
+          workdir: /src
