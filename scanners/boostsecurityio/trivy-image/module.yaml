@@ -13,11 +13,11 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.42.1
-      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
-      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
-      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
-      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+      VERSION: 0.45.0
+      LINUX_X86_64_SHA: b9785455f711e3116c0a97b01ad6be334895143ed680a405e88a4c4c19830d5d
+      LINUX_ARM64_SHA: a192edfcef8766fa7e3e96a6a5faf50cd861371785891857471548e4af7cb60b
+      MACOS_X86_64_SHA: 997622dee1d07de0764f903b72d16ec4314daaf202d91c957137b4fd1a2f73c3
+      MACOS_ARM64_SHA: 68aa451f395fa5418f5af59ce4081ef71075c857b95a297dc61da49c6a229a45
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
