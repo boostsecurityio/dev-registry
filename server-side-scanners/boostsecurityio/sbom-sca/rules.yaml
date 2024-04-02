@@ -1,2 +1,17 @@
 import:
   - boostsecurityio/sca-cve
+
+rules:
+  dependency-with-malicious-behaviour:
+    categories:
+      - ALL
+      - boost-baseline
+      - boost-hardened
+      - supply-chain
+      - vulnerable-and-outdated-components
+      - dependency-with-malicious-behaviour
+    description: The dependency has been identified by the community to have malicious behaviour.
+    name: dependency-with-malicious-behaviour
+    group: top10-vulnerable-components
+    pretty_name: Dependency with known malicious behaviour
+    ref: https://github.com/ossf/malicious-packages/tree/main/osv/malicious
