@@ -1,0 +1,4 @@
+name: Supply Chain Scanner for GitHub
+namespace: boostsecurityio/sci
+scan_types:
+  - sci
