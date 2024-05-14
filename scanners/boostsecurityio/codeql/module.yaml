@@ -32,9 +32,9 @@ setup:
            exit 1;;
       esac
 
-      curl -fsSL -O "https://github.com/github/codeql-action/releases/download/codeql-bundle-20230524/codeql-bundle-linux64.tar.gz"
+      curl -fsSL -O "https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.17.2/codeql-bundle-linux64.tar.gz"
 
-      echo "4331b56293066197e34796f29f0a495bb2015ca2f80e1af47eea01e103be0300  codeql-bundle-linux64.tar.gz" | sha256sum --check
+      echo "0f82b9b22f9d3f9e7a9ac0f6cccc8ac30dc10cc0eff7935682223ee4ff8c156d  codeql-bundle-linux64.tar.gz" | sha256sum --check
 
       tar -xzf codeql-bundle-linux64.tar.gz
 
