@@ -50,7 +50,7 @@ steps:
         --quiet \
         --threads=0 \
         --overwrite \
-        $CODEQL_CREATE_ARGS \
+        --help \
         -- "../codeql-db"
 
   - scan:
