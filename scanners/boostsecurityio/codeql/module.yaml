@@ -50,7 +50,7 @@ steps:
         --quiet \
         --threads=0 \
         --overwrite \
-        --help \
+        --build-mode=none \
         -- "../codeql-db"
 
   - scan:
