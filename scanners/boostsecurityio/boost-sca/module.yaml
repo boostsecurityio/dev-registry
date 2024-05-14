@@ -1,0 +1,68 @@
+api_version: 1.0
+
+id: boostsecurityio/boost-sca
+name: BoostSecurity SCA
+namespace: boostsecurityio/boost-sca
+scan_types:
+  - sca
+
+config:
+  require_full_repo: true
+  support_diff_scan: true
+
+setup:
+  - name: download trivy
+    environment:
+      VERSION: 0.42.1
+      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
+      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
+      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
+      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+    run: |
+      BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
+      ARCH=$(uname -m)
+
+      case "$(uname -sm)" in
+        "Linux x86_64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-64bit.tar.gz"
+          SHA="${LINUX_X86_64_SHA} trivy.tgz"
+          ;;
+        "Linux aarch64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-ARM64.tar.gz"
+          SHA="${LINUX_ARM64_SHA} trivy.tgz"
+          ;;
+        "Darwin x86_64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-64bit.tar.gz"
+          SHA="${MACOS_X86_64_SHA} trivy.tgz"
+          ;;
+        "Darwin arm64")
+          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-ARM64.tar.gz"
+          SHA="${MACOS_ARM64_SHA} trivy.tgz"
+          ;;
+        *)
+          echo "Unsupported machine: ${OPTARG}"
+          exit 1
+          ;;
+      esac
+
+      curl -o trivy.tgz -fsSL "${BINARY_URL}"
+      echo "${SHA}" | sha256sum --check
+
+      tar --no-same-owner -zxf trivy.tgz trivy
+      rm trivy.tgz
+      chmod +x trivy
+
+steps:
+  - scan:
+      command:
+        environment:
+          TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
+        run: |
+          $SETUP_PATH/trivy fs --cache-dir=/tmp/trivy/ --format=cyclonedx --license-full --scanners vuln --quiet .
+      format: cyclonedx
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:2077b09@sha256:9acea8e0566becbbf19a51b7de326cda23d124254091f38cf5e2132f298a1301
+          command: process
+          environment:
+            PYTHONIOENCODING: utf-8
