@@ -34,11 +34,11 @@ config:
 setup:
   - name: Install OSV-Scanner
     environment:
-      VERSION: 1.7.2
-      MACOS_X86_64_SHA: 4f45e9599bf467ddaf9ff59a444c9cde6d1094d0b51e6ce265c718e0d8c71f2a
-      MACOS_ARM64_SHA: dd65874c69a21e6f8feeb1c0c9b84f0c0afb9740dc7a181fe239448c549f1eda
-      LINUX_X86_64_SHA: 8e89b8bca569c8abe3614b3ce403c6c0e8a9a555b295d9fa21628af6921e65d0
-      LINUX_ARM64_SHA: 929eade915a805c350745a76b275ed400b4e8d4c769a17be3f0084cf05197996
+      VERSION: 1.7.3
+      MACOS_X86_64_SHA: af5c7432fe17f5e3f98658a5f5407ce7e1456eb750153a47ce24a6eedd8cfb1a
+      MACOS_ARM64_SHA: e0c38f4c886036951016ea72c807ff7c9d482ba2b5a65f134182def05316c72e
+      LINUX_X86_64_SHA: ae8dc75d66ae6fbdcb7d4010d32567e37cbc3ac21aa649a65cb33e0d45cbe78a
+      LINUX_ARM64_SHA: ed527974c44eca991a6c3a9e4aa8a74199c9a7f460242342b0eccfb400ee4c16
     run: |
       BINARY_URL="https://github.com/google/osv-scanner/releases/download/v${VERSION}"
       ARCH=$(uname -m)
