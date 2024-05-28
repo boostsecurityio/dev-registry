@@ -39,14 +39,7 @@ steps:
       environment:
         CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
         CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
-      command: codeql database create \
-          "--language=java" \
-          --no-calculate-baseline \
-          --quiet \
-          --threads=0 \
-          --overwrite \
-          --build-mode=none \
-          -- "../codeql-db"
+      command: codeql database create --language=java --no-calculate-baseline --quiet --threads=0 --overwrite --build-mode=none -- "../codeql-db"
 #    run: |
 #      $SETUP_PATH/codeql/codeql database create \
 #        "--language=$CODEQL_LANGUAGE" \
