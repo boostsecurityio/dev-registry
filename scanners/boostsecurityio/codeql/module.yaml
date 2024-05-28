@@ -45,7 +45,7 @@ steps:
           --quiet \
           --threads=0 \
           --overwrite \
-          $CODEQL_CREATE_ARGS \
+          --build-mode=none \
           -- "../codeql-db"
 #    run: |
 #      $SETUP_PATH/codeql/codeql database create \
