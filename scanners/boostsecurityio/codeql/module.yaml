@@ -40,7 +40,7 @@ steps:
         CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
         CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
       command: codeql database create \
-          "--language=$CODEQL_LANGUAGE" \
+          "--language=java" \
           --no-calculate-baseline \
           --quiet \
           --threads=0 \
