@@ -34,20 +34,32 @@ setup:
 
 steps:
   - name: "Create CodeQL database"
-    command:
-      docker:
-        image: slef05/codeql:latest
-        command: codeql database create \
-          "--language=$CODEQL_LANGUAGE" \
-          --no-calculate-baseline \
-          --quiet \
-          --threads=0 \
-          --overwrite \
-          $CODEQL_CREATE_ARGS \
-          -- "../codeql-db"
-        environment:
-          CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
-          CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
+    environment:
+      CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
+      CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
+    run: |
+      $SETUP_PATH/codeql/codeql database create \
+        "--language=$CODEQL_LANGUAGE" \
+        --no-calculate-baseline \
+        --quiet \
+        --threads=0 \
+        --overwrite \
+        $CODEQL_CREATE_ARGS \
+        -- "../codeql-db"
+#    command:
+#      docker:
+#        image: slef05/codeql:latest
+#        command: codeql database create \
+#          "--language=$CODEQL_LANGUAGE" \
+#          --no-calculate-baseline \
+#          --quiet \
+#          --threads=0 \
+#          --overwrite \
+#          $CODEQL_CREATE_ARGS \
+#          -- "../codeql-db"
+#        environment:
+#          CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
+#          CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
 
   - scan:
       format: sarif
