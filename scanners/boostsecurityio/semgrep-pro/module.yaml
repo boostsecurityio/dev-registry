@@ -25,13 +25,13 @@ setup:
         exit 1
       fi
   - name: Build Docker with Semgrep Pro pre-installed
+    environment:
+      SEMGREP_IMAGE: returntocorp/semgrep:1.74.0@sha256:cffeb57efaaffe57811b7fd740e4ee6313dbfaf6b364bb5cce52a8e506d35f42
     run: |
       export DOCKER_BUILDKIT=1
-      echo -n $SEMGREP_APP_TOKEN > ./semgrep_app_token.secret
-      echo "FROM returntocorp/semgrep:1.39.0@sha256:fd3d6ccd390677db83880d99a9f494500c003ec82177cc141f6ec37f71633a96" > Dockerfile
-      echo "RUN --mount=type=secret,id=semgrep_app_token /bin/sh -c 'SEMGREP_APP_TOKEN=\$(cat /run/secrets/semgrep_app_token) semgrep install-semgrep-pro'" >> Dockerfile
-      docker build --secret id=semgrep_app_token,src=./semgrep_app_token.secret -t semgrep-with-pro-engine:latest .
-      rm ./semgrep_app_token.secret
+      echo "FROM ${SEMGREP_IMAGE}" > Dockerfile
+      echo "RUN --mount=type=secret,id=SEMGREP_APP_TOKEN /bin/sh -c 'SEMGREP_APP_TOKEN=\$(cat /run/secrets/SEMGREP_APP_TOKEN) semgrep install-semgrep-pro'" >> Dockerfile
+      docker build --secret id=SEMGREP_APP_TOKEN -t semgrep-with-pro-engine:latest .
 
 steps:
   - scan:
