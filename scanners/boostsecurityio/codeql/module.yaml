@@ -34,18 +34,28 @@ setup:
 
 steps:
   - name: "Create CodeQL database"
-    environment:
-      CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
-      CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
-    run: |
-      $SETUP_PATH/codeql/codeql database create \
-        "--language=$CODEQL_LANGUAGE" \
-        --no-calculate-baseline \
-        --quiet \
-        --threads=0 \
-        --overwrite \
-        $CODEQL_CREATE_ARGS \
-        -- "../codeql-db"
+    docker:
+      image: slef05/codeql:latest
+      environment:
+        CODEQL_LANGUAGE: ${CODEQL_LANGUAGE}
+        CODEQL_CREATE_ARGS: ${CODEQL_CREATE_ARGS:-}
+      command: codeql database create \
+          "--language=$CODEQL_LANGUAGE" \
+          --no-calculate-baseline \
+          --quiet \
+          --threads=0 \
+          --overwrite \
+          $CODEQL_CREATE_ARGS \
+          -- "../codeql-db"
+#    run: |
+#      $SETUP_PATH/codeql/codeql database create \
+#        "--language=$CODEQL_LANGUAGE" \
+#        --no-calculate-baseline \
+#        --quiet \
+#        --threads=0 \
+#        --overwrite \
+#        $CODEQL_CREATE_ARGS \
+#        -- "../codeql-db"
 #    command:
 #      docker:
 #        image: slef05/codeql:latest
