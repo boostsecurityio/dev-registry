@@ -16,8 +16,9 @@ steps:
       format: supply_chain_inventory
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:972e077@sha256:93caadb50ca242ff90abd98f35a731e9a841f59e7d7e24f3952c9071e72a4129
+          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:b929b20@sha256:04bfed0b60c0b15deb48e5d2700c93d64f26936125ab753be492d1d453203c4e
           command: inventory
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
+            PYTHONWARNINGS: ignore
