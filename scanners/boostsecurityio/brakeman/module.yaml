@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: presidentbeef/brakeman:v6.0.0.1@sha256:78add476199155ef44d77509536ab6b0819a8d2fce7e11f2da1d22aa26c5e6b4
+          image: presidentbeef/brakeman:v6.1.2.1@sha256:8b9e9734c4ed923d40c931d3a6d86d87341a431e6f38f46f6133cc885f3be2e7
           command: --format json --quiet --no-pager --no-exit-on-warn --no-exit-on-error --force .
           workdir: /src
       format: sarif
