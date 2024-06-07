@@ -53,13 +53,15 @@ setup:
 
 steps:
   - scan:
+      environment:
+        NO_COLOR: "true"
       command:
         run: |
-            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --cache-dir=/tmp/trivy/ .
+            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --no-progress --cache-dir=/tmp/trivy/ .
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:2077b09@sha256:9acea8e0566becbbf19a51b7de326cda23d124254091f38cf5e2132f298a1301
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom::4ab519c@sha256:4406a5e85ae8e05db126ff242a6bea6619cb2a016c25d0a9d609955a1dc4535b
           command: process
           environment:
             PYTHONIOENCODING: utf-8
