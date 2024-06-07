@@ -53,9 +53,9 @@ setup:
 
 steps:
   - scan:
-      environment:
-        NO_COLOR: "true"
       command:
+        environment:
+          NO_COLOR: "true"
         run: |
             $SETUP_PATH/trivy fs --format=cyclonedx --license-full --no-progress --cache-dir=/tmp/trivy/ . 2>&1
       format: cyclonedx
