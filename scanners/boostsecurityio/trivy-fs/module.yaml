@@ -77,7 +77,7 @@ steps:
           NO_COLOR: "true"
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
         run: |
-          $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} --format json --no-progress --scanners vuln .
+          $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} --format json --no-progress --scanners vuln . 2>&1
       format: sarif
       post-processor:
         docker:

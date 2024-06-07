@@ -57,7 +57,7 @@ steps:
         NO_COLOR: "true"
       command:
         run: |
-            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --no-progress --cache-dir=/tmp/trivy/ .
+            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --no-progress --cache-dir=/tmp/trivy/ . 2>&1
       format: cyclonedx
       post-processor:
         docker:
