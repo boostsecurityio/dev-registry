@@ -56,9 +56,10 @@ steps:
   - scan:
       command:
         environment:
+          NO_COLOR: "true"
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
         run: |
-          $SETUP_PATH/trivy fs --cache-dir=/tmp/trivy/ --format=cyclonedx --license-full --scanners vuln --quiet .
+          $SETUP_PATH/trivy fs --cache-dir=/tmp/trivy/ --format=cyclonedx --license-full --no-progress --scanners vuln . 2>&1
       format: cyclonedx
       post-processor:
         docker:
