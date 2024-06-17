@@ -5,6 +5,7 @@ name: BoostSecurity SCA
 namespace: boostsecurityio/boost-sca
 scan_types:
   - sca
+  - license
 
 config:
   require_full_repo: true

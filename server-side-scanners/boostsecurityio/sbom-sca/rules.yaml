@@ -1,6 +1,5 @@
 import:
   - boostsecurityio/sca-cve
-  - boostsecurityio/oss-license
 
 rules:
   dependency-with-malicious-behaviour:
