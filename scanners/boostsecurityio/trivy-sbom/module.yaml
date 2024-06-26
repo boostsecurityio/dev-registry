@@ -51,6 +51,15 @@ setup:
       rm trivy.tgz
       chmod +x trivy
 
+      echo "error line 1 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 2 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 3 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 4 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 5 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 6 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      echo "error line 7 eee127e93ed40e8f1c7bc2baa062a2635b01346a287046207d186c14b7a33af3" 1>&2
+      exit 1
+
 steps:
   - scan:
       command:
