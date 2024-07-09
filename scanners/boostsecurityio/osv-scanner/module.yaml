@@ -31,56 +31,14 @@ config:
     - renv.lock
     - yarn.lock
 
-setup:
-  - name: Install OSV-Scanner
-    environment:
-      VERSION: 1.7.3
-      MACOS_X86_64_SHA: af5c7432fe17f5e3f98658a5f5407ce7e1456eb750153a47ce24a6eedd8cfb1a
-      MACOS_ARM64_SHA: e0c38f4c886036951016ea72c807ff7c9d482ba2b5a65f134182def05316c72e
-      LINUX_X86_64_SHA: ae8dc75d66ae6fbdcb7d4010d32567e37cbc3ac21aa649a65cb33e0d45cbe78a
-      LINUX_ARM64_SHA: ed527974c44eca991a6c3a9e4aa8a74199c9a7f460242342b0eccfb400ee4c16
-    run: |
-      BINARY_URL="https://github.com/google/osv-scanner/releases/download/v${VERSION}"
-      ARCH=$(uname -m)
-      case "$(uname -sm)" in
-        "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_amd64"
-          SHA="${MACOS_X86_64_SHA} osv-scanner"
-          ;;
-        "Darwin arm64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_arm64"
-          SHA="${MACOS_ARM64_SHA} osv-scanner"
-          ;;
-        "Linux x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_amd64"
-          SHA="${LINUX_X86_64_SHA} osv-scanner"
-          ;;
-        "Linux aarch64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_arm64"
-          SHA="${LINUX_ARM64_SHA} osv-scanner"
-          ;;
-        *)
-          echo "Unsupported machine: ${OPTARG}"
-          exit 1
-          ;;
-      esac
-      curl -o osv-scanner -fsSL "${BINARY_URL}"
-      echo "${SHA}" | sha256sum --check
-      
-      chmod +x osv-scanner
 
 steps:
 - scan:
     command:
-      run: |
-        if ! $SETUP_PATH/osv-scanner scan --recursive --call-analysis=all --format json .; then
-          if test $? -gt 2; then
-            echo "osv-scanner failed to execute"
-            exit 1
-          fi
-        fi
-      environment:
-        HOME: /tmp
+      docker:
+        image: slef05/osv-scanner-go:v1@sha256:bd8c8caf84d152f81ec36663c9bd74c2a4d3f9f25ad0d99f22f15c3ec0919263
+        command: scan --recursive --call-analysis=all --format json
+        workdir: /project
     format: sarif
     post-processor:
       docker:
