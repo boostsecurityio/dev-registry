@@ -36,7 +36,7 @@ steps:
 - scan:
     command:
       docker:
-        image: slef05/osv-scanner-go:v1@sha256:bd8c8caf84d152f81ec36663c9bd74c2a4d3f9f25ad0d99f22f15c3ec0919263
+        image: slef05/osv-scanner-go:v1@sha256:sha256:1f42e3aafec4671cd409176c2694afa14c4397398e2a57dcfe50403aaf8faf9a
         command: scan --recursive --call-analysis=all --format json /project
         workdir: /project
     format: sarif
