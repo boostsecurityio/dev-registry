@@ -39,6 +39,8 @@ steps:
         image: ghcr.io/google/osv-scanner:v1.8.1@sha256:9688a213460220e85f86b988e414464ebb61982191d5231ad1c69219e2b13afd
         command: scan --recursive --call-analysis=all --format json /project
         workdir: /project
+        environment:
+          GOCACHE: /root
     format: sarif
     post-processor:
       docker:
