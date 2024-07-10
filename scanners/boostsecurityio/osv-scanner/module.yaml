@@ -36,7 +36,7 @@ steps:
 - scan:
     command:
       docker:
-        image: slef05/osv-scanner-go:v1@sha256:8a1bb06ffc1511dbaef3ede88d742d221e04f3e68e32ebe663bf43334b650b0e
+        image: slef05/osv-scanner-go:v1@sha256:60887bfca904f8beeddcb98a0e81c715eb7868d63f9c9ea2dcf30e9302905b25
         command: |
           sh -c 'cd project;if ! osv-scanner scan --recursive --call-analysis=all --format json . ; then
                    exit_code=$?
