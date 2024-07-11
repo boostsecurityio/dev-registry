@@ -54,3 +54,4 @@ steps:
           command: process --scanner osv
           environment:
               PYTHONIOENCODING: utf-8
+              BOOST_SCAN_CMD_EXEC_PATH: /project
