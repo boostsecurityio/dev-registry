@@ -31,60 +31,21 @@ config:
     - renv.lock
     - yarn.lock
 
-setup:
-  - name: Install OSV-Scanner
-    environment:
-      VERSION: 1.7.3
-      MACOS_X86_64_SHA: af5c7432fe17f5e3f98658a5f5407ce7e1456eb750153a47ce24a6eedd8cfb1a
-      MACOS_ARM64_SHA: e0c38f4c886036951016ea72c807ff7c9d482ba2b5a65f134182def05316c72e
-      LINUX_X86_64_SHA: ae8dc75d66ae6fbdcb7d4010d32567e37cbc3ac21aa649a65cb33e0d45cbe78a
-      LINUX_ARM64_SHA: ed527974c44eca991a6c3a9e4aa8a74199c9a7f460242342b0eccfb400ee4c16
-    run: |
-      BINARY_URL="https://github.com/google/osv-scanner/releases/download/v${VERSION}"
-      ARCH=$(uname -m)
-      case "$(uname -sm)" in
-        "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_amd64"
-          SHA="${MACOS_X86_64_SHA} osv-scanner"
-          ;;
-        "Darwin arm64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_arm64"
-          SHA="${MACOS_ARM64_SHA} osv-scanner"
-          ;;
-        "Linux x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_amd64"
-          SHA="${LINUX_X86_64_SHA} osv-scanner"
-          ;;
-        "Linux aarch64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_arm64"
-          SHA="${LINUX_ARM64_SHA} osv-scanner"
-          ;;
-        *)
-          echo "Unsupported machine: ${OPTARG}"
-          exit 1
-          ;;
-      esac
-      curl -o osv-scanner -fsSL "${BINARY_URL}"
-      echo "${SHA}" | sha256sum --check
-      
-      chmod +x osv-scanner
-
 steps:
 - scan:
     command:
-      run: |
-        if ! $SETUP_PATH/osv-scanner scan --recursive --call-analysis=all --format json .; then
-          if test $? -gt 2; then
-            echo "osv-scanner failed to execute"
-            exit 1
-          fi
-        fi
-      environment:
-        HOME: /tmp
+      docker:
+        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:eb33e00@sha256:9781255c0c6af6f45bd117b44f6b73368fbf73a961e1287b461552aa40412afb
+        command: |
+           -c 'osv-scanner scan --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
+        workdir: /project
     format: sarif
     post-processor:
       docker:
-          image: public.ecr.aws/boostsecurityio/boost-converter-sca:af34fec@sha256:3d3ef2564450ffb4b79a7f88a92b36137fd7ea191ac521bba257d33ac011028d
+          image: public.ecr.aws/boostsecurityio/boost-converter-sca:af34fec@sha256:d8834c4687f7c82f33a489899de15455d4bf00b8f7dabde4c035bbcd67316b14
           command: process --scanner osv
           environment:
               PYTHONIOENCODING: utf-8
+              # Need to set the BOOST_SCAN_CMD_EXEC_PATH env variable since the osv-scanner docker image
+              # doesn't deal with the absolute paths.
+              BOOST_SCAN_CMD_EXEC_PATH: /project
