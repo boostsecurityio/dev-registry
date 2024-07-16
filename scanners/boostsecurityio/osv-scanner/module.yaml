@@ -31,6 +31,11 @@ config:
     - renv.lock
     - yarn.lock
 
+setup:
+  - name: Get Values
+    run: |
+      echo "Boost Scan Path: ${BOOST_SCAN_PATH}"
+      echo "Boost EXec Path: ${BOOST_SCAN_CMD_EXEC_PATH}"
 
 steps:
 - scan:
