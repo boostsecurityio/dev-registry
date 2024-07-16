@@ -48,4 +48,4 @@ steps:
               PYTHONIOENCODING: utf-8
               # Need to set the BOOST_SCAN_CMD_EXEC_PATH env variable since the osv-scanner docker image
               # doesn't deal with the absolute paths.
-              BOOST_SCAN_CMD_EXEC_PATH: /project
+              BOOST_SCAN_CMD_EXEC_PATH: /project/${BOOST_SCAN_PATH}
