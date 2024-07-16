@@ -38,6 +38,7 @@ setup:
          BOOST_RELATIVE_TO="/project"
       else
          BOOST_RELATIVE_TO="/project/${BOOST_SCAN_PATH}"
+      fi
 
 steps:
 - scan:
