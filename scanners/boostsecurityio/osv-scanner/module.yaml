@@ -31,14 +31,6 @@ config:
     - renv.lock
     - yarn.lock
 
-setup:
-  - name: Set relative base path
-    run: |
-      if [ -z "$BOOST_SCAN_PATH" ]; then
-         export BOOST_RELATIVE_TO="/project"
-      else
-         export BOOST_RELATIVE_TO="/project/${BOOST_SCAN_PATH}"
-      fi
 
 steps:
 - scan:
@@ -57,4 +49,4 @@ steps:
               PYTHONIOENCODING: utf-8
               # Need to set the BOOST_SCAN_CMD_EXEC_PATH env variable since the osv-scanner docker image
               # doesn't deal with the absolute paths.
-              BOOST_SCAN_CMD_EXEC_PATH: ${BOOST_RELATIVE_TO}
+              BOOST_SCAN_CMD_EXEC_PATH: /project
