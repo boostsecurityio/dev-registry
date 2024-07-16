@@ -35,9 +35,9 @@ setup:
   - name: Set relative base path
     run: |
       if [ -z "$BOOST_SCAN_PATH" ]; then
-         BOOST_RELATIVE_TO="/project"
+         export BOOST_RELATIVE_TO="/project"
       else
-         BOOST_RELATIVE_TO="/project/${BOOST_SCAN_PATH}"
+         export BOOST_RELATIVE_TO="/project/${BOOST_SCAN_PATH}"
       fi
 
 steps:
