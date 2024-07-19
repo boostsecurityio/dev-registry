@@ -58,6 +58,9 @@ steps:
         environment:
           GITLEAKS_CONFIG: ${GITLEAKS_CONFIG:-}
         run: |
+          echo "${GITLEAKS_CONFIG}" >&2
+          ls -1 "${GITLEAKS_CONFIG}" >&2
+          cat "${GITLEAKS_CONFIG}" >&2
           $SETUP_PATH/gitleaks detect --no-banner --exit-code 0 --redact --report-format sarif --no-git --report-path $SETUP_PATH/gitleaks-output.sarif --source .
           cat $SETUP_PATH/gitleaks-output.sarif
 
