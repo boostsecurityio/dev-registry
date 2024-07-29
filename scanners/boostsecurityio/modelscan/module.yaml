@@ -14,6 +14,6 @@ steps:
   - scan:
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-osv:XXXX@sha256:YYYY
+          image: public.ecr.aws/boostsecurityio/boost-scanner-modelscan:a15c948@sha256:e613f5a48bc8aa81b3bdeaa3f82c14ae264fb025241bd4d8d11bec5676557c5c 
           workdir: /app
       format: sarif
