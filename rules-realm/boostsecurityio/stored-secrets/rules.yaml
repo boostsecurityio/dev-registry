@@ -1,6 +1,26 @@
 rules:
-  CWE-200-0:
-    name: CWE-200-0
+  CWE-200:
+    name: CWE-200
+    pretty_name: Exposed Secret - CWE-200
+    group: stored-secrets
+    ref: https://cwe.mitre.org/data/definitions/200.html
+    description: The repository exposes sensitive information (Cwe 200)
+      to an actor that is not explicitly authorized to have access to that information.
+
+    categories:
+    - ALL
+    - stored-secrets
+    - cwe-top-25
+    - boost-baseline
+    - boost-hardened
+    - cwe-200
+    - cwe-798
+    - cwe-522
+    - owasp-top-10
+    recommended: true
+
+  adafruit-api-key:
+    name: adafruit-api-key
     pretty_name: Exposed Secret - adafruit-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -19,8 +39,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-1:
-    name: CWE-200-1
+  adobe-client-id:
+    name: adobe-client-id
     pretty_name: Exposed Secret - adobe-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -39,8 +59,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-2:
-    name: CWE-200-2
+  adobe-client-secret:
+    name: adobe-client-secret
     pretty_name: Exposed Secret - adobe-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -59,8 +79,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-3:
-    name: CWE-200-3
+  age-secret-key:
+    name: age-secret-key
     pretty_name: Exposed Secret - age-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -79,8 +99,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-4:
-    name: CWE-200-4
+  airtable-api-key:
+    name: airtable-api-key
     pretty_name: Exposed Secret - airtable-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -99,8 +119,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-5:
-    name: CWE-200-5
+  algolia-api-key:
+    name: algolia-api-key
     pretty_name: Exposed Secret - algolia-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -119,8 +139,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-6:
-    name: CWE-200-6
+  alibaba-access-key-id:
+    name: alibaba-access-key-id
     pretty_name: Exposed Secret - alibaba-access-key-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -139,8 +159,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-7:
-    name: CWE-200-7
+  alibaba-secret-key:
+    name: alibaba-secret-key
     pretty_name: Exposed Secret - alibaba-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -159,8 +179,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-8:
-    name: CWE-200-8
+  asana-client-id:
+    name: asana-client-id
     pretty_name: Exposed Secret - asana-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -179,8 +199,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-9:
-    name: CWE-200-9
+  asana-client-secret:
+    name: asana-client-secret
     pretty_name: Exposed Secret - asana-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -199,8 +219,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-10:
-    name: CWE-200-10
+  atlassian-api-token:
+    name: atlassian-api-token
     pretty_name: Exposed Secret - atlassian-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -219,8 +239,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-11:
-    name: CWE-200-11
+  authress-service-client-access-key:
+    name: authress-service-client-access-key
     pretty_name: Exposed Secret - authress-service-client-access-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -239,8 +259,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-12:
-    name: CWE-200-12
+  aws-access-token:
+    name: aws-access-token
     pretty_name: Exposed Secret - aws-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -259,8 +279,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-13:
-    name: CWE-200-13
+  beamer-api-token:
+    name: beamer-api-token
     pretty_name: Exposed Secret - beamer-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -279,8 +299,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-14:
-    name: CWE-200-14
+  bitbucket-client-id:
+    name: bitbucket-client-id
     pretty_name: Exposed Secret - bitbucket-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -299,8 +319,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-15:
-    name: CWE-200-15
+  bitbucket-client-secret:
+    name: bitbucket-client-secret
     pretty_name: Exposed Secret - bitbucket-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -319,8 +339,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-16:
-    name: CWE-200-16
+  bittrex-access-key:
+    name: bittrex-access-key
     pretty_name: Exposed Secret - bittrex-access-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -339,8 +359,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-17:
-    name: CWE-200-17
+  bittrex-secret-key:
+    name: bittrex-secret-key
     pretty_name: Exposed Secret - bittrex-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -359,8 +379,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-18:
-    name: CWE-200-18
+  clojars-api-token:
+    name: clojars-api-token
     pretty_name: Exposed Secret - clojars-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -379,8 +399,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-19:
-    name: CWE-200-19
+  cloudflare-api-key:
+    name: cloudflare-api-key
     pretty_name: Exposed Secret - cloudflare-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -399,8 +419,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-20:
-    name: CWE-200-20
+  cloudflare-global-api-key:
+    name: cloudflare-global-api-key
     pretty_name: Exposed Secret - cloudflare-global-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -419,8 +439,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-21:
-    name: CWE-200-21
+  cloudflare-origin-ca-key:
+    name: cloudflare-origin-ca-key
     pretty_name: Exposed Secret - cloudflare-origin-ca-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -439,8 +459,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-22:
-    name: CWE-200-22
+  codecov-access-token:
+    name: codecov-access-token
     pretty_name: Exposed Secret - codecov-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -459,8 +479,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-23:
-    name: CWE-200-23
+  coinbase-access-token:
+    name: coinbase-access-token
     pretty_name: Exposed Secret - coinbase-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -479,8 +499,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-24:
-    name: CWE-200-24
+  confluent-access-token:
+    name: confluent-access-token
     pretty_name: Exposed Secret - confluent-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -499,8 +519,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-25:
-    name: CWE-200-25
+  confluent-secret-key:
+    name: confluent-secret-key
     pretty_name: Exposed Secret - confluent-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -519,8 +539,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-26:
-    name: CWE-200-26
+  contentful-delivery-api-token:
+    name: contentful-delivery-api-token
     pretty_name: Exposed Secret - contentful-delivery-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -539,8 +559,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-27:
-    name: CWE-200-27
+  databricks-api-token:
+    name: databricks-api-token
     pretty_name: Exposed Secret - databricks-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -559,8 +579,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-28:
-    name: CWE-200-28
+  datadog-access-token:
+    name: datadog-access-token
     pretty_name: Exposed Secret - datadog-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -579,8 +599,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-29:
-    name: CWE-200-29
+  defined-networking-api-token:
+    name: defined-networking-api-token
     pretty_name: Exposed Secret - defined-networking-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -599,8 +619,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-30:
-    name: CWE-200-30
+  digitalocean-access-token:
+    name: digitalocean-access-token
     pretty_name: Exposed Secret - digitalocean-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -619,8 +639,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-31:
-    name: CWE-200-31
+  digitalocean-pat:
+    name: digitalocean-pat
     pretty_name: Exposed Secret - digitalocean-pat
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -639,8 +659,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-32:
-    name: CWE-200-32
+  digitalocean-refresh-token:
+    name: digitalocean-refresh-token
     pretty_name: Exposed Secret - digitalocean-refresh-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -659,8 +679,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-33:
-    name: CWE-200-33
+  discord-api-token:
+    name: discord-api-token
     pretty_name: Exposed Secret - discord-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -679,8 +699,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-34:
-    name: CWE-200-34
+  discord-client-id:
+    name: discord-client-id
     pretty_name: Exposed Secret - discord-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -699,8 +719,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-35:
-    name: CWE-200-35
+  discord-client-secret:
+    name: discord-client-secret
     pretty_name: Exposed Secret - discord-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -719,8 +739,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-36:
-    name: CWE-200-36
+  doppler-api-token:
+    name: doppler-api-token
     pretty_name: Exposed Secret - doppler-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -739,8 +759,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-37:
-    name: CWE-200-37
+  droneci-access-token:
+    name: droneci-access-token
     pretty_name: Exposed Secret - droneci-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -759,8 +779,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-38:
-    name: CWE-200-38
+  dropbox-api-token:
+    name: dropbox-api-token
     pretty_name: Exposed Secret - dropbox-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -779,8 +799,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-39:
-    name: CWE-200-39
+  dropbox-long-lived-api-token:
+    name: dropbox-long-lived-api-token
     pretty_name: Exposed Secret - dropbox-long-lived-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -799,8 +819,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-40:
-    name: CWE-200-40
+  dropbox-short-lived-api-token:
+    name: dropbox-short-lived-api-token
     pretty_name: Exposed Secret - dropbox-short-lived-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -819,8 +839,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-41:
-    name: CWE-200-41
+  duffel-api-token:
+    name: duffel-api-token
     pretty_name: Exposed Secret - duffel-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -839,8 +859,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-42:
-    name: CWE-200-42
+  dynatrace-api-token:
+    name: dynatrace-api-token
     pretty_name: Exposed Secret - dynatrace-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -859,8 +879,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-43:
-    name: CWE-200-43
+  easypost-api-token:
+    name: easypost-api-token
     pretty_name: Exposed Secret - easypost-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -879,8 +899,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-44:
-    name: CWE-200-44
+  easypost-test-api-token:
+    name: easypost-test-api-token
     pretty_name: Exposed Secret - easypost-test-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -899,8 +919,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-45:
-    name: CWE-200-45
+  etsy-access-token:
+    name: etsy-access-token
     pretty_name: Exposed Secret - etsy-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -919,8 +939,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-46:
-    name: CWE-200-46
+  facebook-access-token:
+    name: facebook-access-token
     pretty_name: Exposed Secret - facebook-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -939,8 +959,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-47:
-    name: CWE-200-47
+  facebook-page-access-token:
+    name: facebook-page-access-token
     pretty_name: Exposed Secret - facebook-page-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -959,8 +979,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-48:
-    name: CWE-200-48
+  facebook-secret:
+    name: facebook-secret
     pretty_name: Exposed Secret - facebook-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -979,8 +999,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-49:
-    name: CWE-200-49
+  fastly-api-token:
+    name: fastly-api-token
     pretty_name: Exposed Secret - fastly-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -999,8 +1019,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-50:
-    name: CWE-200-50
+  finicity-api-token:
+    name: finicity-api-token
     pretty_name: Exposed Secret - finicity-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1019,8 +1039,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-51:
-    name: CWE-200-51
+  finicity-client-secret:
+    name: finicity-client-secret
     pretty_name: Exposed Secret - finicity-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1039,8 +1059,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-52:
-    name: CWE-200-52
+  finnhub-access-token:
+    name: finnhub-access-token
     pretty_name: Exposed Secret - finnhub-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1059,8 +1079,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-53:
-    name: CWE-200-53
+  flickr-access-token:
+    name: flickr-access-token
     pretty_name: Exposed Secret - flickr-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1079,8 +1099,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-54:
-    name: CWE-200-54
+  flutterwave-encryption-key:
+    name: flutterwave-encryption-key
     pretty_name: Exposed Secret - flutterwave-encryption-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1099,8 +1119,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-55:
-    name: CWE-200-55
+  flutterwave-public-key:
+    name: flutterwave-public-key
     pretty_name: Exposed Secret - flutterwave-public-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1119,8 +1139,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-56:
-    name: CWE-200-56
+  flutterwave-secret-key:
+    name: flutterwave-secret-key
     pretty_name: Exposed Secret - flutterwave-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1139,8 +1159,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-57:
-    name: CWE-200-57
+  frameio-api-token:
+    name: frameio-api-token
     pretty_name: Exposed Secret - frameio-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1159,8 +1179,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-58:
-    name: CWE-200-58
+  freshbooks-access-token:
+    name: freshbooks-access-token
     pretty_name: Exposed Secret - freshbooks-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1179,8 +1199,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-59:
-    name: CWE-200-59
+  gcp-api-key:
+    name: gcp-api-key
     pretty_name: Exposed Secret - gcp-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1199,8 +1219,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-60:
-    name: CWE-200-60
+  generic-api-key:
+    name: generic-api-key
     pretty_name: Exposed Secret - generic-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1219,8 +1239,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-61:
-    name: CWE-200-61
+  github-app-token:
+    name: github-app-token
     pretty_name: Exposed Secret - github-app-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1239,8 +1259,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-62:
-    name: CWE-200-62
+  github-fine-grained-pat:
+    name: github-fine-grained-pat
     pretty_name: Exposed Secret - github-fine-grained-pat
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1259,8 +1279,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-63:
-    name: CWE-200-63
+  github-oauth:
+    name: github-oauth
     pretty_name: Exposed Secret - github-oauth
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1279,8 +1299,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-64:
-    name: CWE-200-64
+  github-pat:
+    name: github-pat
     pretty_name: Exposed Secret - github-pat
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1299,8 +1319,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-65:
-    name: CWE-200-65
+  github-refresh-token:
+    name: github-refresh-token
     pretty_name: Exposed Secret - github-refresh-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1319,8 +1339,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-66:
-    name: CWE-200-66
+  gitlab-pat:
+    name: gitlab-pat
     pretty_name: Exposed Secret - gitlab-pat
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1339,8 +1359,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-67:
-    name: CWE-200-67
+  gitlab-ptt:
+    name: gitlab-ptt
     pretty_name: Exposed Secret - gitlab-ptt
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1359,8 +1379,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-68:
-    name: CWE-200-68
+  gitlab-rrt:
+    name: gitlab-rrt
     pretty_name: Exposed Secret - gitlab-rrt
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1379,8 +1399,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-69:
-    name: CWE-200-69
+  gitter-access-token:
+    name: gitter-access-token
     pretty_name: Exposed Secret - gitter-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1399,8 +1419,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-70:
-    name: CWE-200-70
+  gocardless-api-token:
+    name: gocardless-api-token
     pretty_name: Exposed Secret - gocardless-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1419,8 +1439,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-71:
-    name: CWE-200-71
+  grafana-api-key:
+    name: grafana-api-key
     pretty_name: Exposed Secret - grafana-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1439,8 +1459,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-72:
-    name: CWE-200-72
+  grafana-cloud-api-token:
+    name: grafana-cloud-api-token
     pretty_name: Exposed Secret - grafana-cloud-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1459,8 +1479,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-73:
-    name: CWE-200-73
+  grafana-service-account-token:
+    name: grafana-service-account-token
     pretty_name: Exposed Secret - grafana-service-account-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1479,8 +1499,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-74:
-    name: CWE-200-74
+  harness-api-key:
+    name: harness-api-key
     pretty_name: Exposed Secret - harness-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1499,8 +1519,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-75:
-    name: CWE-200-75
+  hashicorp-tf-api-token:
+    name: hashicorp-tf-api-token
     pretty_name: Exposed Secret - hashicorp-tf-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1519,8 +1539,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-76:
-    name: CWE-200-76
+  hashicorp-tf-password:
+    name: hashicorp-tf-password
     pretty_name: Exposed Secret - hashicorp-tf-password
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1539,8 +1559,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-77:
-    name: CWE-200-77
+  heroku-api-key:
+    name: heroku-api-key
     pretty_name: Exposed Secret - heroku-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1559,8 +1579,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-78:
-    name: CWE-200-78
+  hubspot-api-key:
+    name: hubspot-api-key
     pretty_name: Exposed Secret - hubspot-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1579,8 +1599,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-79:
-    name: CWE-200-79
+  huggingface-access-token:
+    name: huggingface-access-token
     pretty_name: Exposed Secret - huggingface-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1599,8 +1619,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-80:
-    name: CWE-200-80
+  huggingface-organization-api-token:
+    name: huggingface-organization-api-token
     pretty_name: Exposed Secret - huggingface-organization-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1619,8 +1639,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-81:
-    name: CWE-200-81
+  infracost-api-token:
+    name: infracost-api-token
     pretty_name: Exposed Secret - infracost-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1639,8 +1659,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-82:
-    name: CWE-200-82
+  intercom-api-key:
+    name: intercom-api-key
     pretty_name: Exposed Secret - intercom-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1659,8 +1679,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-83:
-    name: CWE-200-83
+  intra42-client-secret:
+    name: intra42-client-secret
     pretty_name: Exposed Secret - intra42-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1679,8 +1699,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-84:
-    name: CWE-200-84
+  jfrog-api-key:
+    name: jfrog-api-key
     pretty_name: Exposed Secret - jfrog-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1699,8 +1719,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-85:
-    name: CWE-200-85
+  jfrog-identity-token:
+    name: jfrog-identity-token
     pretty_name: Exposed Secret - jfrog-identity-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1719,8 +1739,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-86:
-    name: CWE-200-86
+  jwt:
+    name: jwt
     pretty_name: Exposed Secret - jwt
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1739,8 +1759,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-87:
-    name: CWE-200-87
+  jwt-base64:
+    name: jwt-base64
     pretty_name: Exposed Secret - jwt-base64
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1759,8 +1779,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-88:
-    name: CWE-200-88
+  kraken-access-token:
+    name: kraken-access-token
     pretty_name: Exposed Secret - kraken-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1779,8 +1799,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-89:
-    name: CWE-200-89
+  kucoin-access-token:
+    name: kucoin-access-token
     pretty_name: Exposed Secret - kucoin-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1799,8 +1819,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-90:
-    name: CWE-200-90
+  kucoin-secret-key:
+    name: kucoin-secret-key
     pretty_name: Exposed Secret - kucoin-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1819,8 +1839,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-91:
-    name: CWE-200-91
+  launchdarkly-access-token:
+    name: launchdarkly-access-token
     pretty_name: Exposed Secret - launchdarkly-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1839,8 +1859,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-92:
-    name: CWE-200-92
+  linear-api-key:
+    name: linear-api-key
     pretty_name: Exposed Secret - linear-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1859,8 +1879,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-93:
-    name: CWE-200-93
+  linear-client-secret:
+    name: linear-client-secret
     pretty_name: Exposed Secret - linear-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1879,8 +1899,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-94:
-    name: CWE-200-94
+  linkedin-client-id:
+    name: linkedin-client-id
     pretty_name: Exposed Secret - linkedin-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1899,8 +1919,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-95:
-    name: CWE-200-95
+  linkedin-client-secret:
+    name: linkedin-client-secret
     pretty_name: Exposed Secret - linkedin-client-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1919,8 +1939,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-96:
-    name: CWE-200-96
+  lob-api-key:
+    name: lob-api-key
     pretty_name: Exposed Secret - lob-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1939,8 +1959,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-97:
-    name: CWE-200-97
+  lob-pub-api-key:
+    name: lob-pub-api-key
     pretty_name: Exposed Secret - lob-pub-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1959,8 +1979,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-98:
-    name: CWE-200-98
+  mailchimp-api-key:
+    name: mailchimp-api-key
     pretty_name: Exposed Secret - mailchimp-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1979,8 +1999,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-99:
-    name: CWE-200-99
+  mailgun-private-api-token:
+    name: mailgun-private-api-token
     pretty_name: Exposed Secret - mailgun-private-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -1999,8 +2019,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-100:
-    name: CWE-200-100
+  mailgun-pub-key:
+    name: mailgun-pub-key
     pretty_name: Exposed Secret - mailgun-pub-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2019,8 +2039,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-101:
-    name: CWE-200-101
+  mailgun-signing-key:
+    name: mailgun-signing-key
     pretty_name: Exposed Secret - mailgun-signing-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2039,8 +2059,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-102:
-    name: CWE-200-102
+  mapbox-api-token:
+    name: mapbox-api-token
     pretty_name: Exposed Secret - mapbox-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2059,8 +2079,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-103:
-    name: CWE-200-103
+  mattermost-access-token:
+    name: mattermost-access-token
     pretty_name: Exposed Secret - mattermost-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2079,8 +2099,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-104:
-    name: CWE-200-104
+  messagebird-api-token:
+    name: messagebird-api-token
     pretty_name: Exposed Secret - messagebird-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2099,8 +2119,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-105:
-    name: CWE-200-105
+  messagebird-client-id:
+    name: messagebird-client-id
     pretty_name: Exposed Secret - messagebird-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2119,8 +2139,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-106:
-    name: CWE-200-106
+  microsoft-teams-webhook:
+    name: microsoft-teams-webhook
     pretty_name: Exposed Secret - microsoft-teams-webhook
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2139,8 +2159,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-107:
-    name: CWE-200-107
+  netlify-access-token:
+    name: netlify-access-token
     pretty_name: Exposed Secret - netlify-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2159,8 +2179,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-108:
-    name: CWE-200-108
+  new-relic-browser-api-token:
+    name: new-relic-browser-api-token
     pretty_name: Exposed Secret - new-relic-browser-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2179,8 +2199,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-109:
-    name: CWE-200-109
+  new-relic-insert-key:
+    name: new-relic-insert-key
     pretty_name: Exposed Secret - new-relic-insert-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2199,8 +2219,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-110:
-    name: CWE-200-110
+  new-relic-user-api-id:
+    name: new-relic-user-api-id
     pretty_name: Exposed Secret - new-relic-user-api-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2219,8 +2239,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-111:
-    name: CWE-200-111
+  new-relic-user-api-key:
+    name: new-relic-user-api-key
     pretty_name: Exposed Secret - new-relic-user-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2239,8 +2259,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-112:
-    name: CWE-200-112
+  npm-access-token:
+    name: npm-access-token
     pretty_name: Exposed Secret - npm-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2259,8 +2279,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-113:
-    name: CWE-200-113
+  nytimes-access-token:
+    name: nytimes-access-token
     pretty_name: Exposed Secret - nytimes-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2279,8 +2299,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-114:
-    name: CWE-200-114
+  okta-access-token:
+    name: okta-access-token
     pretty_name: Exposed Secret - okta-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2299,8 +2319,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-115:
-    name: CWE-200-115
+  openai-api-key:
+    name: openai-api-key
     pretty_name: Exposed Secret - openai-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2319,8 +2339,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-116:
-    name: CWE-200-116
+  plaid-api-token:
+    name: plaid-api-token
     pretty_name: Exposed Secret - plaid-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2339,8 +2359,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-117:
-    name: CWE-200-117
+  plaid-client-id:
+    name: plaid-client-id
     pretty_name: Exposed Secret - plaid-client-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2359,8 +2379,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-118:
-    name: CWE-200-118
+  plaid-secret-key:
+    name: plaid-secret-key
     pretty_name: Exposed Secret - plaid-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2379,8 +2399,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-119:
-    name: CWE-200-119
+  planetscale-api-token:
+    name: planetscale-api-token
     pretty_name: Exposed Secret - planetscale-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2399,8 +2419,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-120:
-    name: CWE-200-120
+  planetscale-oauth-token:
+    name: planetscale-oauth-token
     pretty_name: Exposed Secret - planetscale-oauth-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2419,8 +2439,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-121:
-    name: CWE-200-121
+  planetscale-password:
+    name: planetscale-password
     pretty_name: Exposed Secret - planetscale-password
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2439,8 +2459,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-122:
-    name: CWE-200-122
+  postman-api-token:
+    name: postman-api-token
     pretty_name: Exposed Secret - postman-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2459,8 +2479,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-123:
-    name: CWE-200-123
+  prefect-api-token:
+    name: prefect-api-token
     pretty_name: Exposed Secret - prefect-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2479,8 +2499,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-124:
-    name: CWE-200-124
+  private-key:
+    name: private-key
     pretty_name: Exposed Secret - private-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2499,8 +2519,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-125:
-    name: CWE-200-125
+  pulumi-api-token:
+    name: pulumi-api-token
     pretty_name: Exposed Secret - pulumi-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2519,8 +2539,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-126:
-    name: CWE-200-126
+  pypi-upload-token:
+    name: pypi-upload-token
     pretty_name: Exposed Secret - pypi-upload-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2539,8 +2559,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-127:
-    name: CWE-200-127
+  rapidapi-access-token:
+    name: rapidapi-access-token
     pretty_name: Exposed Secret - rapidapi-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2559,8 +2579,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-128:
-    name: CWE-200-128
+  readme-api-token:
+    name: readme-api-token
     pretty_name: Exposed Secret - readme-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2579,8 +2599,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-129:
-    name: CWE-200-129
+  rubygems-api-token:
+    name: rubygems-api-token
     pretty_name: Exposed Secret - rubygems-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2599,8 +2619,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-130:
-    name: CWE-200-130
+  scalingo-api-token:
+    name: scalingo-api-token
     pretty_name: Exposed Secret - scalingo-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2619,8 +2639,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-131:
-    name: CWE-200-131
+  sendbird-access-id:
+    name: sendbird-access-id
     pretty_name: Exposed Secret - sendbird-access-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2639,8 +2659,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-132:
-    name: CWE-200-132
+  sendbird-access-token:
+    name: sendbird-access-token
     pretty_name: Exposed Secret - sendbird-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2659,8 +2679,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-133:
-    name: CWE-200-133
+  sendgrid-api-token:
+    name: sendgrid-api-token
     pretty_name: Exposed Secret - sendgrid-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2679,8 +2699,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-134:
-    name: CWE-200-134
+  sendinblue-api-token:
+    name: sendinblue-api-token
     pretty_name: Exposed Secret - sendinblue-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2699,8 +2719,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-135:
-    name: CWE-200-135
+  sentry-access-token:
+    name: sentry-access-token
     pretty_name: Exposed Secret - sentry-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2719,8 +2739,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-136:
-    name: CWE-200-136
+  shippo-api-token:
+    name: shippo-api-token
     pretty_name: Exposed Secret - shippo-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2739,8 +2759,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-137:
-    name: CWE-200-137
+  shopify-access-token:
+    name: shopify-access-token
     pretty_name: Exposed Secret - shopify-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2759,8 +2779,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-138:
-    name: CWE-200-138
+  shopify-custom-access-token:
+    name: shopify-custom-access-token
     pretty_name: Exposed Secret - shopify-custom-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2779,8 +2799,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-139:
-    name: CWE-200-139
+  shopify-private-app-access-token:
+    name: shopify-private-app-access-token
     pretty_name: Exposed Secret - shopify-private-app-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2799,8 +2819,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-140:
-    name: CWE-200-140
+  shopify-shared-secret:
+    name: shopify-shared-secret
     pretty_name: Exposed Secret - shopify-shared-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2819,8 +2839,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-141:
-    name: CWE-200-141
+  sidekiq-secret:
+    name: sidekiq-secret
     pretty_name: Exposed Secret - sidekiq-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2839,8 +2859,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-142:
-    name: CWE-200-142
+  sidekiq-sensitive-url:
+    name: sidekiq-sensitive-url
     pretty_name: Exposed Secret - sidekiq-sensitive-url
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2859,8 +2879,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-143:
-    name: CWE-200-143
+  slack-app-token:
+    name: slack-app-token
     pretty_name: Exposed Secret - slack-app-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2879,8 +2899,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-144:
-    name: CWE-200-144
+  slack-bot-token:
+    name: slack-bot-token
     pretty_name: Exposed Secret - slack-bot-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2899,8 +2919,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-145:
-    name: CWE-200-145
+  slack-config-access-token:
+    name: slack-config-access-token
     pretty_name: Exposed Secret - slack-config-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2919,8 +2939,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-146:
-    name: CWE-200-146
+  slack-config-refresh-token:
+    name: slack-config-refresh-token
     pretty_name: Exposed Secret - slack-config-refresh-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2939,8 +2959,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-147:
-    name: CWE-200-147
+  slack-legacy-bot-token:
+    name: slack-legacy-bot-token
     pretty_name: Exposed Secret - slack-legacy-bot-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2959,8 +2979,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-148:
-    name: CWE-200-148
+  slack-legacy-token:
+    name: slack-legacy-token
     pretty_name: Exposed Secret - slack-legacy-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2979,8 +2999,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-149:
-    name: CWE-200-149
+  slack-legacy-workspace-token:
+    name: slack-legacy-workspace-token
     pretty_name: Exposed Secret - slack-legacy-workspace-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -2999,8 +3019,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-150:
-    name: CWE-200-150
+  slack-user-token:
+    name: slack-user-token
     pretty_name: Exposed Secret - slack-user-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3019,8 +3039,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-151:
-    name: CWE-200-151
+  slack-webhook-url:
+    name: slack-webhook-url
     pretty_name: Exposed Secret - slack-webhook-url
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3039,8 +3059,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-152:
-    name: CWE-200-152
+  snyk-api-token:
+    name: snyk-api-token
     pretty_name: Exposed Secret - snyk-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3059,8 +3079,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-153:
-    name: CWE-200-153
+  square-access-token:
+    name: square-access-token
     pretty_name: Exposed Secret - square-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3079,8 +3099,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-154:
-    name: CWE-200-154
+  squarespace-access-token:
+    name: squarespace-access-token
     pretty_name: Exposed Secret - squarespace-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3099,8 +3119,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-155:
-    name: CWE-200-155
+  stripe-access-token:
+    name: stripe-access-token
     pretty_name: Exposed Secret - stripe-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3119,8 +3139,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-156:
-    name: CWE-200-156
+  sumologic-access-id:
+    name: sumologic-access-id
     pretty_name: Exposed Secret - sumologic-access-id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3139,8 +3159,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-157:
-    name: CWE-200-157
+  sumologic-access-token:
+    name: sumologic-access-token
     pretty_name: Exposed Secret - sumologic-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3159,8 +3179,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-158:
-    name: CWE-200-158
+  telegram-bot-api-token:
+    name: telegram-bot-api-token
     pretty_name: Exposed Secret - telegram-bot-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3179,8 +3199,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-159:
-    name: CWE-200-159
+  travisci-access-token:
+    name: travisci-access-token
     pretty_name: Exposed Secret - travisci-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3199,8 +3219,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-160:
-    name: CWE-200-160
+  twilio-api-key:
+    name: twilio-api-key
     pretty_name: Exposed Secret - twilio-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3219,8 +3239,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-161:
-    name: CWE-200-161
+  twitch-api-token:
+    name: twitch-api-token
     pretty_name: Exposed Secret - twitch-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3239,8 +3259,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-162:
-    name: CWE-200-162
+  twitter-access-secret:
+    name: twitter-access-secret
     pretty_name: Exposed Secret - twitter-access-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3259,8 +3279,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-163:
-    name: CWE-200-163
+  twitter-access-token:
+    name: twitter-access-token
     pretty_name: Exposed Secret - twitter-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3279,8 +3299,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-164:
-    name: CWE-200-164
+  twitter-api-key:
+    name: twitter-api-key
     pretty_name: Exposed Secret - twitter-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3299,8 +3319,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-165:
-    name: CWE-200-165
+  twitter-api-secret:
+    name: twitter-api-secret
     pretty_name: Exposed Secret - twitter-api-secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3319,8 +3339,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-166:
-    name: CWE-200-166
+  twitter-bearer-token:
+    name: twitter-bearer-token
     pretty_name: Exposed Secret - twitter-bearer-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3339,8 +3359,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-167:
-    name: CWE-200-167
+  typeform-api-token:
+    name: typeform-api-token
     pretty_name: Exposed Secret - typeform-api-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3359,8 +3379,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-168:
-    name: CWE-200-168
+  vault-batch-token:
+    name: vault-batch-token
     pretty_name: Exposed Secret - vault-batch-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3379,8 +3399,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-169:
-    name: CWE-200-169
+  vault-service-token:
+    name: vault-service-token
     pretty_name: Exposed Secret - vault-service-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3399,8 +3419,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-170:
-    name: CWE-200-170
+  yandex-access-token:
+    name: yandex-access-token
     pretty_name: Exposed Secret - yandex-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3419,8 +3439,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-171:
-    name: CWE-200-171
+  yandex-api-key:
+    name: yandex-api-key
     pretty_name: Exposed Secret - yandex-api-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3439,8 +3459,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-172:
-    name: CWE-200-172
+  yandex-aws-access-token:
+    name: yandex-aws-access-token
     pretty_name: Exposed Secret - yandex-aws-access-token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
@@ -3459,8 +3479,8 @@ rules:
     - owasp-top-10
     recommended: true
 
-  CWE-200-173:
-    name: CWE-200-173
+  zendesk-secret-key:
+    name: zendesk-secret-key
     pretty_name: Exposed Secret - zendesk-secret-key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
