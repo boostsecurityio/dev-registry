@@ -1,12 +1,11 @@
 rules:
   CWE-200:
     name: CWE-200
-    pretty_name: Exposed Secret - CWE-200
+    pretty_name: CWE-200 - Exposure of Sensitive Information to an Unauthorized Actor
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Cwe 200)
-      to an actor that is not explicitly authorized to have access to that information.
-
+    description: The repository exposes sensitive information to an actor that is
+      not explicitly authorized to have access to that information.
     categories:
     - ALL
     - stored-secrets
