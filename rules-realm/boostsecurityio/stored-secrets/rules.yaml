@@ -23,7 +23,7 @@ rules:
     pretty_name: Exposed Secret - Adafruit API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Adafruit Api Key)
+    description: The repository exposes sensitive information (Adafruit API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -40,7 +40,7 @@ rules:
 
   adobe-client-id:
     name: adobe-client-id
-    pretty_name: Exposed Secret - Adobe Client ID
+    pretty_name: Exposed Secret - Adobe Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Adobe Client Id)
@@ -103,7 +103,7 @@ rules:
     pretty_name: Exposed Secret - Airtable API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Airtable Api Key)
+    description: The repository exposes sensitive information (Airtable API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -123,7 +123,7 @@ rules:
     pretty_name: Exposed Secret - Algolia API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Algolia Api Key)
+    description: The repository exposes sensitive information (Algolia API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -140,7 +140,7 @@ rules:
 
   alibaba-access-key-id:
     name: alibaba-access-key-id
-    pretty_name: Exposed Secret - Alibaba Access Key ID
+    pretty_name: Exposed Secret - Alibaba Access Key Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Alibaba Access Key Id)
@@ -180,7 +180,7 @@ rules:
 
   asana-client-id:
     name: asana-client-id
-    pretty_name: Exposed Secret - Asana Client ID
+    pretty_name: Exposed Secret - Asana Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Asana Client Id)
@@ -223,7 +223,7 @@ rules:
     pretty_name: Exposed Secret - Atlassian API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Atlassian Api Token)
+    description: The repository exposes sensitive information (Atlassian API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -283,7 +283,7 @@ rules:
     pretty_name: Exposed Secret - Beamer API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Beamer Api Token)
+    description: The repository exposes sensitive information (Beamer API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -300,7 +300,7 @@ rules:
 
   bitbucket-client-id:
     name: bitbucket-client-id
-    pretty_name: Exposed Secret - Bitbucket Client ID
+    pretty_name: Exposed Secret - Bitbucket Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Bitbucket Client Id)
@@ -383,7 +383,7 @@ rules:
     pretty_name: Exposed Secret - Clojars API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Clojars Api Token)
+    description: The repository exposes sensitive information (Clojars API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -403,7 +403,7 @@ rules:
     pretty_name: Exposed Secret - Cloudflare API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Cloudflare Api Key)
+    description: The repository exposes sensitive information (Cloudflare API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -423,7 +423,7 @@ rules:
     pretty_name: Exposed Secret - Cloudflare API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Cloudflare Global Api Key)
+    description: The repository exposes sensitive information (Cloudflare Global API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -543,7 +543,7 @@ rules:
     pretty_name: Exposed Secret - Contentful Delivery API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Contentful Delivery Api Token)
+    description: The repository exposes sensitive information (Contentful Delivery API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -563,7 +563,7 @@ rules:
     pretty_name: Exposed Secret - Databricks API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Databricks Api Token)
+    description: The repository exposes sensitive information (Databricks API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -603,7 +603,7 @@ rules:
     pretty_name: Exposed Secret - Defined Networking API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Defined Networking Api Token)
+    description: The repository exposes sensitive information (Defined Networking API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -623,7 +623,7 @@ rules:
     pretty_name: Exposed Secret - DigitalOcean Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Digitalocean Access Token)
+    description: The repository exposes sensitive information (DigitalOcean Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -643,7 +643,7 @@ rules:
     pretty_name: Exposed Secret - DigitalOcean Personal Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Digitalocean Pat)
+    description: The repository exposes sensitive information (DigitalOcean Personal Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -663,7 +663,7 @@ rules:
     pretty_name: Exposed Secret - DigitalOcean Refresh Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Digitalocean Refresh Token)
+    description: The repository exposes sensitive information (DigitalOcean Refresh Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -683,7 +683,7 @@ rules:
     pretty_name: Exposed Secret - Discord API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Discord Api Token)
+    description: The repository exposes sensitive information (Discord API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -700,7 +700,7 @@ rules:
 
   discord-client-id:
     name: discord-client-id
-    pretty_name: Exposed Secret - Discord Client ID
+    pretty_name: Exposed Secret - Discord Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Discord Client Id)
@@ -743,7 +743,7 @@ rules:
     pretty_name: Exposed Secret - Doppler API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Doppler Api Token)
+    description: The repository exposes sensitive information (Doppler API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -763,7 +763,7 @@ rules:
     pretty_name: Exposed Secret - Drone CI Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Droneci Access Token)
+    description: The repository exposes sensitive information (Drone CI Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -783,7 +783,7 @@ rules:
     pretty_name: Exposed Secret - Dropbox API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Dropbox Api Token)
+    description: The repository exposes sensitive information (Dropbox API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -803,7 +803,7 @@ rules:
     pretty_name: Exposed Secret - Dropbox Long Lived API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Dropbox Long Lived Api Token)
+    description: The repository exposes sensitive information (Dropbox Long Lived API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -823,7 +823,7 @@ rules:
     pretty_name: Exposed Secret - Dropbox Short Lived API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Dropbox Short Lived Api Token)
+    description: The repository exposes sensitive information (Dropbox Short Lived API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -843,7 +843,7 @@ rules:
     pretty_name: Exposed Secret - Duffel API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Duffel Api Token)
+    description: The repository exposes sensitive information (Duffel API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -863,7 +863,7 @@ rules:
     pretty_name: Exposed Secret - Dynatrace API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Dynatrace Api Token)
+    description: The repository exposes sensitive information (Dynatrace API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -883,7 +883,7 @@ rules:
     pretty_name: Exposed Secret - EasyPost API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Easypost Api Token)
+    description: The repository exposes sensitive information (EasyPost API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -903,7 +903,7 @@ rules:
     pretty_name: Exposed Secret - EasyPost Test API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Easypost Test Api Token)
+    description: The repository exposes sensitive information (EasyPost Test API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1003,7 +1003,7 @@ rules:
     pretty_name: Exposed Secret - Fastly API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Fastly Api Token)
+    description: The repository exposes sensitive information (Fastly API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1023,7 +1023,7 @@ rules:
     pretty_name: Exposed Secret - Finicity API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Finicity Api Token)
+    description: The repository exposes sensitive information (Finicity API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1163,7 +1163,7 @@ rules:
     pretty_name: Exposed Secret - Frame.io API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Frameio Api Token)
+    description: The repository exposes sensitive information (Frame.io API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1183,7 +1183,7 @@ rules:
     pretty_name: Exposed Secret - FreshBooks Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Freshbooks Access Token)
+    description: The repository exposes sensitive information (FreshBooks Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1203,7 +1203,7 @@ rules:
     pretty_name: Exposed Secret - GCP API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Gcp Api Key)
+    description: The repository exposes sensitive information (GCP API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1223,7 +1223,7 @@ rules:
     pretty_name: Exposed Secret - Generic API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Generic Api Key)
+    description: The repository exposes sensitive information (Generic API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1243,7 +1243,7 @@ rules:
     pretty_name: Exposed Secret - GitHub App Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Github App Token)
+    description: The repository exposes sensitive information (GitHub App Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1263,7 +1263,7 @@ rules:
     pretty_name: Exposed Secret - GitHub Fine Grained Personal Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Github Fine Grained Pat)
+    description: The repository exposes sensitive information (GitHub Fine Grained Personal Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1283,7 +1283,7 @@ rules:
     pretty_name: Exposed Secret - GitHub OAuth Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Github Oauth)
+    description: The repository exposes sensitive information (GitHub OAuth)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1303,7 +1303,7 @@ rules:
     pretty_name: Exposed Secret - GitHub Personal Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Github Pat)
+    description: The repository exposes sensitive information (GitHub Personal Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1323,7 +1323,7 @@ rules:
     pretty_name: Exposed Secret - GitHub Refresh Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Github Refresh Token)
+    description: The repository exposes sensitive information (GitHub Refresh Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1343,7 +1343,7 @@ rules:
     pretty_name: Exposed Secret - GitLab Personal Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Gitlab Pat)
+    description: The repository exposes sensitive information (GitLab Personal Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1363,7 +1363,7 @@ rules:
     pretty_name: Exposed Secret - GitLab Trigger Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Gitlab Ptt)
+    description: The repository exposes sensitive information (GitLab Trigger Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1383,7 +1383,7 @@ rules:
     pretty_name: Exposed Secret - GitLab Runner Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Gitlab Rrt)
+    description: The repository exposes sensitive information (GitLab Runner Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1423,7 +1423,7 @@ rules:
     pretty_name: Exposed Secret - GoCardless API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Gocardless Api Token)
+    description: The repository exposes sensitive information (GoCardless API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1443,7 +1443,7 @@ rules:
     pretty_name: Exposed Secret - Grafana API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Grafana Api Key)
+    description: The repository exposes sensitive information (Grafana API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1463,7 +1463,7 @@ rules:
     pretty_name: Exposed Secret - Grafana Cloud API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Grafana Cloud Api Token)
+    description: The repository exposes sensitive information (Grafana Cloud API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1503,7 +1503,7 @@ rules:
     pretty_name: Exposed Secret - Harness API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Harness Api Key)
+    description: The repository exposes sensitive information (Harness API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1523,7 +1523,7 @@ rules:
     pretty_name: Exposed Secret - Hashicorp Terraform API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Hashicorp Tf Api Token)
+    description: The repository exposes sensitive information (Hashicorp Terraform API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1543,7 +1543,7 @@ rules:
     pretty_name: Exposed Secret - Hashicorp Terraform Password
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Hashicorp Tf Password)
+    description: The repository exposes sensitive information (Hashicorp Terraform Password)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1563,7 +1563,7 @@ rules:
     pretty_name: Exposed Secret - Heroku API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Heroku Api Key)
+    description: The repository exposes sensitive information (Heroku API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1583,7 +1583,7 @@ rules:
     pretty_name: Exposed Secret - HubSpot API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Hubspot Api Key)
+    description: The repository exposes sensitive information (HubSpot API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1603,7 +1603,7 @@ rules:
     pretty_name: Exposed Secret - Hugging Face Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Huggingface Access Token)
+    description: The repository exposes sensitive information (Hugging Face Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1623,7 +1623,7 @@ rules:
     pretty_name: Exposed Secret - Hugging Face Organization API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Huggingface Organization Api Token)
+    description: The repository exposes sensitive information (Hugging Face Organization API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1643,7 +1643,7 @@ rules:
     pretty_name: Exposed Secret - Infracost API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Infracost Api Token)
+    description: The repository exposes sensitive information (Infracost API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1663,7 +1663,7 @@ rules:
     pretty_name: Exposed Secret - Intercom API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Intercom Api Key)
+    description: The repository exposes sensitive information (Intercom API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1683,7 +1683,7 @@ rules:
     pretty_name: Exposed Secret - Intra.42 Client Secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Intra42 Client Secret)
+    description: The repository exposes sensitive information (Intra.42 Client Secret)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1703,7 +1703,7 @@ rules:
     pretty_name: Exposed Secret - JFrog API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Jfrog Api Key)
+    description: The repository exposes sensitive information (JFrog API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1723,7 +1723,7 @@ rules:
     pretty_name: Exposed Secret - JFrog Identity Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Jfrog Identity Token)
+    description: The repository exposes sensitive information (JFrog Identity Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1743,7 +1743,7 @@ rules:
     pretty_name: Exposed Secret - JWT Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Jwt)
+    description: The repository exposes sensitive information (JWT Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1763,7 +1763,7 @@ rules:
     pretty_name: Exposed Secret - JWT Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Jwt Base64)
+    description: The repository exposes sensitive information (JWT Base64 Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1803,7 +1803,7 @@ rules:
     pretty_name: Exposed Secret - KuCoin Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Kucoin Access Token)
+    description: The repository exposes sensitive information (KuCoin Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1823,7 +1823,7 @@ rules:
     pretty_name: Exposed Secret - KuCoin Secret Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Kucoin Secret Key)
+    description: The repository exposes sensitive information (KuCoin Secret Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1843,7 +1843,7 @@ rules:
     pretty_name: Exposed Secret - LaunchDarkly Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Launchdarkly Access Token)
+    description: The repository exposes sensitive information (LaunchDarkly Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1863,7 +1863,7 @@ rules:
     pretty_name: Exposed Secret - Linear API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Linear Api Key)
+    description: The repository exposes sensitive information (Linear API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1900,10 +1900,10 @@ rules:
 
   linkedin-client-id:
     name: linkedin-client-id
-    pretty_name: Exposed Secret - LinkedIn Client ID
+    pretty_name: Exposed Secret - LinkedIn Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Linkedin Client Id)
+    description: The repository exposes sensitive information (LinkedIn Client Id)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1923,7 +1923,7 @@ rules:
     pretty_name: Exposed Secret - LinkedIn Client Secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Linkedin Client Secret)
+    description: The repository exposes sensitive information (LinkedIn Client Secret)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1943,7 +1943,7 @@ rules:
     pretty_name: Exposed Secret - Lob API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Lob Api Key)
+    description: The repository exposes sensitive information (Lob API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1960,10 +1960,10 @@ rules:
 
   lob-pub-api-key:
     name: lob-pub-api-key
-    pretty_name: Exposed Secret - Lob Public API Key
+    pretty_name: Exposed Secret - Lob API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Lob Pub Api Key)
+    description: The repository exposes sensitive information (Lob Public API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -1983,7 +1983,7 @@ rules:
     pretty_name: Exposed Secret - Mailchimp API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Mailchimp Api Key)
+    description: The repository exposes sensitive information (Mailchimp API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2000,10 +2000,10 @@ rules:
 
   mailgun-private-api-token:
     name: mailgun-private-api-token
-    pretty_name: Exposed Secret - Mailgun Private API Token
+    pretty_name: Exposed Secret - Mailgun API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Mailgun Private Api Token)
+    description: The repository exposes sensitive information (Mailgun Private API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2020,10 +2020,10 @@ rules:
 
   mailgun-pub-key:
     name: mailgun-pub-key
-    pretty_name: Exposed Secret - Mailgun Public Key
+    pretty_name: Exposed Secret - Mailgun Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Mailgun Pub Key)
+    description: The repository exposes sensitive information (Mailgun Public Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2040,7 +2040,7 @@ rules:
 
   mailgun-signing-key:
     name: mailgun-signing-key
-    pretty_name: Exposed Secret - Mailgun signing Key
+    pretty_name: Exposed Secret - Mailgun Signing Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Mailgun Signing Key)
@@ -2063,7 +2063,7 @@ rules:
     pretty_name: Exposed Secret - Mapbox API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Mapbox Api Token)
+    description: The repository exposes sensitive information (Mapbox API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2103,7 +2103,7 @@ rules:
     pretty_name: Exposed Secret - MessageBird API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Messagebird Api Token)
+    description: The repository exposes sensitive information (MessageBird API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2120,10 +2120,10 @@ rules:
 
   messagebird-client-id:
     name: messagebird-client-id
-    pretty_name: Exposed Secret - MessageBird Client ID
+    pretty_name: Exposed Secret - MessageBird Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Messagebird Client Id)
+    description: The repository exposes sensitive information (MessageBird Client Id)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2183,7 +2183,7 @@ rules:
     pretty_name: Exposed Secret - New Relic API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (New Relic Browser Api Token)
+    description: The repository exposes sensitive information (New Relic Browser API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2220,10 +2220,10 @@ rules:
 
   new-relic-user-api-id:
     name: new-relic-user-api-id
-    pretty_name: Exposed Secret - New Relic User API ID
+    pretty_name: Exposed Secret - New Relic User API Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (New Relic User Api Id)
+    description: The repository exposes sensitive information (New Relic User API Id)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2243,7 +2243,7 @@ rules:
     pretty_name: Exposed Secret - New Relic API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (New Relic User Api Key)
+    description: The repository exposes sensitive information (New Relic User API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2260,7 +2260,7 @@ rules:
 
   npm-access-token:
     name: npm-access-token
-    pretty_name: Exposed Secret - npm Access Token
+    pretty_name: Exposed Secret - Npm Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Npm Access Token)
@@ -2283,7 +2283,7 @@ rules:
     pretty_name: Exposed Secret - The New York Times Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Nytimes Access Token)
+    description: The repository exposes sensitive information (The New York Times Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2323,7 +2323,7 @@ rules:
     pretty_name: Exposed Secret - OpenAI API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Openai Api Key)
+    description: The repository exposes sensitive information (OpenAI API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2343,7 +2343,7 @@ rules:
     pretty_name: Exposed Secret - Plaid API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Plaid Api Token)
+    description: The repository exposes sensitive information (Plaid API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2360,7 +2360,7 @@ rules:
 
   plaid-client-id:
     name: plaid-client-id
-    pretty_name: Exposed Secret - Plaid Client ID
+    pretty_name: Exposed Secret - Plaid Client Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Plaid Client Id)
@@ -2403,7 +2403,7 @@ rules:
     pretty_name: Exposed Secret - PlanetScale API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Planetscale Api Token)
+    description: The repository exposes sensitive information (PlanetScale API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2423,7 +2423,7 @@ rules:
     pretty_name: Exposed Secret - PlanetScale OAuth Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Planetscale Oauth Token)
+    description: The repository exposes sensitive information (PlanetScale OAuth Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2443,7 +2443,7 @@ rules:
     pretty_name: Exposed Secret - PlanetScale Password
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Planetscale Password)
+    description: The repository exposes sensitive information (PlanetScale Password)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2463,7 +2463,7 @@ rules:
     pretty_name: Exposed Secret - Postman API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Postman Api Token)
+    description: The repository exposes sensitive information (Postman API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2483,7 +2483,7 @@ rules:
     pretty_name: Exposed Secret - Prefect API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Prefect Api Token)
+    description: The repository exposes sensitive information (Prefect API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2523,7 +2523,7 @@ rules:
     pretty_name: Exposed Secret - Pulumi API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Pulumi Api Token)
+    description: The repository exposes sensitive information (Pulumi API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2543,7 +2543,7 @@ rules:
     pretty_name: Exposed Secret - PyPI Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Pypi Upload Token)
+    description: The repository exposes sensitive information (PyPI Upload Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2563,7 +2563,7 @@ rules:
     pretty_name: Exposed Secret - Rapid API Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Rapidapi Access Token)
+    description: The repository exposes sensitive information (Rapid API Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2583,7 +2583,7 @@ rules:
     pretty_name: Exposed Secret - Readme API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Readme Api Token)
+    description: The repository exposes sensitive information (Readme API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2603,7 +2603,7 @@ rules:
     pretty_name: Exposed Secret - RubyGems API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Rubygems Api Token)
+    description: The repository exposes sensitive information (RubyGems API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2623,7 +2623,7 @@ rules:
     pretty_name: Exposed Secret - Scalingo API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Scalingo Api Token)
+    description: The repository exposes sensitive information (Scalingo API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2640,7 +2640,7 @@ rules:
 
   sendbird-access-id:
     name: sendbird-access-id
-    pretty_name: Exposed Secret - Sendbird Access ID
+    pretty_name: Exposed Secret - Sendbird Access Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
     description: The repository exposes sensitive information (Sendbird Access Id)
@@ -2683,7 +2683,7 @@ rules:
     pretty_name: Exposed Secret - SendGrid API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Sendgrid Api Token)
+    description: The repository exposes sensitive information (SendGrid API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2703,7 +2703,7 @@ rules:
     pretty_name: Exposed Secret - Sendinblue API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Sendinblue Api Token)
+    description: The repository exposes sensitive information (Sendinblue API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2743,7 +2743,7 @@ rules:
     pretty_name: Exposed Secret - Shippo API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Shippo Api Token)
+    description: The repository exposes sensitive information (Shippo API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -2863,7 +2863,7 @@ rules:
     pretty_name: Exposed Secret - Sidekiq Sensitive URL
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Sidekiq Sensitive Url)
+    description: The repository exposes sensitive information (Sidekiq Sensitive URL)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3043,7 +3043,7 @@ rules:
     pretty_name: Exposed Secret - Slack Webhook URL
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Slack Webhook Url)
+    description: The repository exposes sensitive information (Slack Webhook URL)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3063,7 +3063,7 @@ rules:
     pretty_name: Exposed Secret - Snyk API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Snyk Api Token)
+    description: The repository exposes sensitive information (Snyk API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3140,10 +3140,10 @@ rules:
 
   sumologic-access-id:
     name: sumologic-access-id
-    pretty_name: Exposed Secret - Sumo Logic Access ID
+    pretty_name: Exposed Secret - Sumo Logic Access Id
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Sumologic Access Id)
+    description: The repository exposes sensitive information (Sumo Logic Access Id)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3163,7 +3163,7 @@ rules:
     pretty_name: Exposed Secret - Sumo Logic Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Sumologic Access Token)
+    description: The repository exposes sensitive information (Sumo Logic Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3183,7 +3183,7 @@ rules:
     pretty_name: Exposed Secret - Telegram API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Telegram Bot Api Token)
+    description: The repository exposes sensitive information (Telegram Bot API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3203,7 +3203,7 @@ rules:
     pretty_name: Exposed Secret - Travis CI Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Travisci Access Token)
+    description: The repository exposes sensitive information (Travis CI Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3223,7 +3223,7 @@ rules:
     pretty_name: Exposed Secret - Twilio API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Twilio Api Key)
+    description: The repository exposes sensitive information (Twilio API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3243,7 +3243,7 @@ rules:
     pretty_name: Exposed Secret - Twitch API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Twitch Api Token)
+    description: The repository exposes sensitive information (Twitch API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3303,7 +3303,7 @@ rules:
     pretty_name: Exposed Secret - Twitter API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Twitter Api Key)
+    description: The repository exposes sensitive information (Twitter API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3323,7 +3323,7 @@ rules:
     pretty_name: Exposed Secret - Twitter API Secret
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Twitter Api Secret)
+    description: The repository exposes sensitive information (Twitter API Secret)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3363,7 +3363,7 @@ rules:
     pretty_name: Exposed Secret - Typeform API Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Typeform Api Token)
+    description: The repository exposes sensitive information (Typeform API Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3443,7 +3443,7 @@ rules:
     pretty_name: Exposed Secret - Yandex API Key
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Yandex Api Key)
+    description: The repository exposes sensitive information (Yandex API Key)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
@@ -3463,7 +3463,7 @@ rules:
     pretty_name: Exposed Secret - Yandex Access Token
     group: stored-secrets
     ref: https://cwe.mitre.org/data/definitions/200.html
-    description: The repository exposes sensitive information (Yandex Aws Access Token)
+    description: The repository exposes sensitive information (Yandex AWS Access Token)
       to an actor that is not explicitly authorized to have access to that information.
 
     categories:
