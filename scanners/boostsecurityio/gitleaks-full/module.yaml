@@ -63,6 +63,11 @@ steps:
           cat $SETUP_PATH/gitleaks-output.sarif
 
       post-processor:
-        docker:
-          command: process --git-scan
-          image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:005aa11@sha256:605f7ac26f64a1ec766f0023a09fbca95146546ea2abae5d32ffe62e180fda79
+        - docker:
+            command: process --git-scan
+            image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:ff4afb9@sha256:340366c142d2b3673c306ceb46a4e5d3d24bdf0e9a6c772a0404728390d07342
+        - docker:
+            command: process
+            image: public.ecr.aws/boostsecurityio/boost-scanner-keyscope:9c5fa4f@sha256:278c59d3fc3d6404da448688f25c8584f740225b5277a4b8d50ed8776c6b07e0
+            environment:
+              VALIDATE_SECRET: ${BOOST_VALIDATE_SECRET:-}
