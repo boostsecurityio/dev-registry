@@ -66,7 +66,7 @@ steps:
         docker:
           image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:98a7dba@sha256:4a884b0dc8232bb85327a72bfe84c60cb56d0c8d663601a4c140d057552d7ee8
           command: process
-          workdir: /app/
+          workdir: /code
           environment:
             PYTHONIOENCODING: utf-8
             DOCKERFILE_PATH: ${BOOST_DOCKERFILE_PATH:-}
