@@ -69,4 +69,4 @@ steps:
             command: process
             image: public.ecr.aws/boostsecurityio/boost-scanner-keyscope:6524873@sha256:f9310e1e1856d75c217d828350f9be0bfbde0c374cbaad5d00a2438965611281
             environment:
-              VALIDATE_SECRET: ${BOOST_VALIDATE_SECRET:-}
+              VALIDATE_SECRET: ${GITLEAKS_VALIDATE_SECRETS:-}
