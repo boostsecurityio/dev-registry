@@ -16,7 +16,7 @@ steps:
       format: metadata
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:78d14c5@sha256:e0664d56df4f2ce7bb8b6569cf88f0b52234a07823bb59576e5a46370931d333
+          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:7704de1@sha256:bc554abe4a0e290cb1ca890ec4956c2cad94e3b286d65fe1f8f18b498a500947
           command: scan
           workdir: /src
           environment:
