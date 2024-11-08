@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/modelscan
-name: BoostSecurity Modelscan
+name: Modelscan
 namespace: boostsecurityio/modelscan
 scan_types:
   - sast

@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/checkov-tf-plan
-name: BoostSecurity Checkov TF Plan
+name: Checkov TF Plan
 namespace: boostsecurityio/checkov-tf-plan
 scan_types:
   - iac

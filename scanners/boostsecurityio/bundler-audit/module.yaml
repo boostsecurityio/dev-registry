@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/bundler-audit
-name: BoostSecurity bundler-audit
+name: Bundler-audit
 namespace: boostsecurityio/bundler-audit
 scan_types:
   - sca

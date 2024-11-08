@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/gitleaks
-name: BoostSecurity Gitleaks
+name: Gitleaks
 namespace: boostsecurityio/gitleaks
 scan_types:
   - secrets

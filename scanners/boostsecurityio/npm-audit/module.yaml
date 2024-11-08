@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/npm-audit
-name: BoostSecurity npm-audit
+name: Npm-audit
 namespace: boostsecurityio/npm-audit
 scan_types:
   - sca
