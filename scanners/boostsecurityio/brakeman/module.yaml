@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/brakeman
-name: BoostSecurity Brakeman
+name: Brakeman
 namespace: boostsecurityio/brakeman
 scan_types:
   - sast

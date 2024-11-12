@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-fs
-name: BoostSecurity Trivy (Filesystem scanning)
+name: Trivy (Filesystem scanning)
 namespace: boostsecurityio/trivy-fs
 scan_types:
   - sca

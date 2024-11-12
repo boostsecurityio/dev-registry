@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/semgrep-pro
-name: BoostSecurity semgrep Pro
+name: Semgrep Pro
 namespace: boostsecurityio/semgrep-pro
 scan_types:
   - sast

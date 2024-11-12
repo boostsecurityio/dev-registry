@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/gosec
-name: BoostSecurity gosec
+name: gosec
 namespace: boostsecurityio/gosec
 scan_types:
   - sast

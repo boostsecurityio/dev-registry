@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/codeql
-name: BoostSecurity CodeQL
+name: CodeQL
 namespace: boostsecurityio/codeql
 scan_types:
   - sast
