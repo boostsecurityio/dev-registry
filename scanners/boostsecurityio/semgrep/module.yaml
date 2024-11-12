@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/semgrep
-name: Ssemgrep
+name: Semgrep
 namespace: boostsecurityio/semgrep
 scan_types:
   - sast
