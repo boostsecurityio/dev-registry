@@ -111,7 +111,7 @@ rules:
       go.sum).
     group: supply-chain-missing-artifact-integrity-verification
     name: cicd-unpinned-dependencies
-    pretty_name: CI/CD - Using unpinned dependencies
+    pretty_name: CI/CD - Missing Lockfile resulting in unpinned dependencies
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-unpinned-dependencies.html'
     recommended: true
   cicd-gha-workflow-dispatch-inputs:
