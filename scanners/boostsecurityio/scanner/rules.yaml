@@ -105,10 +105,12 @@ rules:
     - supply-chain-missing-artifact-integrity-verification
     - boost-baseline
     - boost-hardened
-    description: Checks for dependency management manifests (ex. package.json, Gemfile,
-      pyproject.toml, Pipfile, go.mod, etc.),without a corresponding cryptographic
-      dependency lock file (ex. package-lock.json, Gemfile.lock, poetry.lock, Pipfile.lock,
-      go.sum).
+    description: Verifies the presence of dependency management manifests (e.g., 
+      package.json, Gemfile, pyproject.toml, Pipfile, go.mod, etc.) without an 
+      accompanying lockfile that cryptographically pins dependencies (e.g., 
+      package-lock.json, Gemfile.lock, poetry.lock, Pipfile.lock, go.sum). 
+      The absence of a lockfile increases the risk of dependency drift, 
+      potentially introducing security vulnerabilities or compatibility issues into the project.
     group: supply-chain-missing-artifact-integrity-verification
     name: cicd-unpinned-dependencies
     pretty_name: CI/CD - Missing Lockfile resulting in unpinned dependencies
