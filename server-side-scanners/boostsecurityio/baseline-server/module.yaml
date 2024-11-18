@@ -1,3 +1,8 @@
 name: BoostSecurity Scanner (Server)
 namespace: boostsecurityio/baseline-server
 group: boostsecurityio/groups/baseline
+scan_types:
+  - cicd
+  - license
+  - sca
+  - sci
