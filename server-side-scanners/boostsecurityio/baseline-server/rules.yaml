@@ -1,0 +1,8 @@
+import:
+  - boostsecurityio/cicd
+  - boostsecurityio/oss-license
+  - boostsecurityio/sbom-sca
+  - boostsecurityio/sci
+  - boostsecurityio/sci-sca
+
+rules: {}

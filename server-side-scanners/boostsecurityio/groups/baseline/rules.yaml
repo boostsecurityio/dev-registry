@@ -1,0 +1,5 @@
+import:
+  - boostsecurityio/baseline
+  - boostsecurityio/baseline-server
+
+rules: {}
