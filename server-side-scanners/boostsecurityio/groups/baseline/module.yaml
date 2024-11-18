@@ -1,4 +1,5 @@
 name: BoostSecurity Scanner
-namespace: boostsecurityio/baseline
+id: boostsecurityio/groups/baseline
+namespace: boostsecurityio/groups/baseline
 scan_types:
   - supply-chain
