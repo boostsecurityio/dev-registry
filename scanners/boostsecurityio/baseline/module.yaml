@@ -3,10 +3,11 @@ api_version: 1.0
 
 id: boostsecurityio/scanner
 name: BoostSecurity Scanner
-namespace: boostsecurityio/scanner
-group: baseline
+namespace: boostsecurityio/baseline
+group: boostsecurityio/groups/baseline
 
 
 includes:
+  - boostsecurityio/composition
   - boostsecurityio/scanner
   - boostsecurityio/supply-chain-inventory
