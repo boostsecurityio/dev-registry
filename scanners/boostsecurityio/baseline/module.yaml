@@ -1,0 +1,12 @@
+api_version: 1.0
+
+
+id: boostsecurityio/scanner
+name: BoostSecurity Scanner
+namespace: boostsecurityio/scanner
+group: baseline
+
+
+includes:
+  - boostsecurityio/scanner
+  - boostsecurityio/supply-chain-inventory
