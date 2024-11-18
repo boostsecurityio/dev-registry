@@ -1,10 +1,10 @@
 api_version: 1.0
 
 
-id: boostsecurityio/scanner
+group: boostsecurityio/groups/baseline
+id: boostsecurityio/baseline
 name: BoostSecurity Scanner
 namespace: boostsecurityio/baseline
-group: boostsecurityio/groups/baseline
 
 
 includes:
