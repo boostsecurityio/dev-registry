@@ -6,6 +6,9 @@ id: boostsecurityio/scanner
 name: BoostSecurity Scanner
 namespace: boostsecurityio/scanner
 
+config:
+  support_diff_scan: true
+
 scan_types:
   - sast
   - cicd
