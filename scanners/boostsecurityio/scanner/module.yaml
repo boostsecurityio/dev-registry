@@ -1,24 +1,23 @@
 api_version: 1.0
 
 
+group: boostsecurityio/scanner
 id: boostsecurityio/scanner
 name: BoostSecurity Scanner
 namespace: boostsecurityio/scanner
-scan_types:
-  - sast
-  - cicd
-
 
 config:
   support_diff_scan: true
 
+scan_types:
+  - sast
+  - cicd
+  - metadata
+  - sca
+  - sci
+  - license
 
-steps:
-    - scan:
-        command:
-          docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-native:44a65bf@sha256:cefdba826edb2138b6d219d7ff398181158caac3755e6542171ba6d8c06e594f
-            command: scanner scan
-            workdir: /src
-          name: scanner
-        format: sarif
+includes:
+  - boostsecurityio/baseline
+  - boostsecurityio/composition
+  - boostsecurityio/supply-chain-inventory
