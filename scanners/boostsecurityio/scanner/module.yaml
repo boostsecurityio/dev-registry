@@ -1,7 +1,7 @@
 api_version: 1.0
 
 
-group: boostsecurityio/groups/scanner
+group: boostsecurityio/scanner
 id: boostsecurityio/scanner
 name: BoostSecurity Scanner
 namespace: boostsecurityio/scanner
