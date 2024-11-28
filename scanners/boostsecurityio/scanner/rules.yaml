@@ -1,5 +1,4 @@
 import:
-  - boostsecurityio/baseline
   - boostsecurityio/cicd
   - boostsecurityio/composition
   - boostsecurityio/oss-license
@@ -7,3 +6,135 @@ import:
   - boostsecurityio/sci
   - boostsecurityio/sci-sca
   - boostsecurityio/supply-chain-inventory
+
+rules:
+  cert-expired:
+    categories:
+      - ALL
+      - cloud-weak-configuration
+    description: Checks for expired X509 certificates.
+    group: cloud-weak-configuration
+    name: cert-expired
+    pretty_name: Cert Expired
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-expired.html'
+  cert-expires-soon:
+    categories:
+      - ALL
+      - cloud-weak-configuration
+    description: Checks for X509 certificates that will expire in a configured number
+      of days.
+    group: cloud-weak-configuration
+    name: cert-expires-soon
+    pretty_name: Cert Expires Soon
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-expires-soon.html'
+  cert-insecure-signing-algorithm:
+    categories:
+      - ALL
+      - cloud-weak-configuration
+      - boost-baseline
+      - boost-hardened
+    description: Checks for X509 certificates with insecure signing algorithms.
+    group: cloud-weak-configuration
+    name: cert-insecure-signing-algorithm
+    pretty_name: Cert Insecure Signing Algorithm
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-insecure-signing-algorithm.html'
+    recommended: true
+  cert-insufficient-key-length:
+    categories:
+      - ALL
+      - cloud-weak-configuration
+      - boost-baseline
+      - boost-hardened
+    description: Checks for X509 certificates with insecure key lengths.
+    group: cloud-weak-configuration
+    name: cert-insufficient-key-length
+    pretty_name: Cert Insufficient Key Length
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/x509-cert-insufficient-key-length.html'
+    recommended: true
+  cicd-binary-artifacts-stored-in-scm:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-missing-artifact-integrity-verification
+      - boost-baseline
+      - boost-hardened
+    description: Checks for binary / executable artifacts (ex. *.jar, *.class, *.so,
+      etc.) stored in the Git repository.Generally, such binary artifacts should not
+      be committed to Git and should be built with reproducible build system from
+      source.
+    group: supply-chain-missing-artifact-integrity-verification
+    name: cicd-binary-artifacts-stored-in-scm
+    pretty_name: CI/CD - Binary artifacts stored in SCM
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-binary-artifacts-stored-in-scm.html'
+    recommended: true
+  cicd-circleci-unversioned-orb:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-cicd-weak-configuration
+      - boost-baseline
+      - boost-hardened
+    description: Checks for CircleCI workflows using unversioned Orbs.
+    group: supply-chain-cicd-weak-configuration
+    name: cicd-circleci-unversioned-orb
+    pretty_name: CI/CD - CircleCI Unversionned Orb
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-circleci-unversioned-orb.html'
+    recommended: true
+  cicd-circleci-shell-injection:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-cicd-vulnerable-pipeline
+      - boost-baseline
+      - boost-hardened
+    description: Checks for CircleCI workflows where pipeline variables are used in shell commands.
+    group: supply-chain-cicd-vulnerable-pipeline
+    name: cicd-circleci-shell-injection
+    pretty_name: CI/CD - CircleCI Shell Injection
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-circleci-shell-injection.html'
+    recommended: true
+  cicd-gha-unsecure-commands:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-cicd-weak-configuration
+      - supply-chain-cicd-severe-issues
+      - boost-baseline
+      - boost-hardened
+    description: Checks for GitHub Acton workflows that enables deprecated unsecure commands.
+    group: supply-chain-cicd-weak-configuration
+    name: cicd-gha-unsecure-commands
+    pretty_name: CI/CD - GitHub Action Unsecure Commands
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-unsecure-commands.html'
+    recommended: true
+  cicd-unpinned-dependencies:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-missing-artifact-integrity-verification
+      - boost-baseline
+      - boost-hardened
+    description: Verifies the presence of dependency management manifests (e.g.,
+      package.json, Gemfile, pyproject.toml, Pipfile, go.mod, etc.) without an
+      accompanying lockfile that cryptographically pins dependencies (e.g.,
+      package-lock.json, Gemfile.lock, poetry.lock, Pipfile.lock, go.sum).
+      The absence of a lockfile increases the risk of dependency drift,
+      potentially introducing security vulnerabilities or compatibility issues into the project.
+    group: supply-chain-missing-artifact-integrity-verification
+    name: cicd-unpinned-dependencies
+    pretty_name: CI/CD - Missing Lockfile resulting in unpinned dependencies
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-unpinned-dependencies.html'
+    recommended: true
+  cicd-gha-workflow-dispatch-inputs:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-cicd-weak-configuration
+      - boost-baseline
+      - boost-hardened
+    description: Checks for GitHub Action workflows defines workflow_dispatch inputs.
+    group: supply-chain-cicd-weak-configuration
+    name: cicd-gha-workflow-dispatch-inputs
+    pretty_name: CI/CD - GitHub Action uses inputs
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-workflow-dispatch-inputs.html'
+    recommended: true
