@@ -20,5 +20,8 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:ec4f3d2@sha256:8fdf1b3eb4fb7ade9fe618e586a0d4f8d6fe316d390a1c28ead8812e7a388e93
+          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:72d5f80@sha256:786f15fb33b57a26a72edbfcc4d2e9a32952a0d16186633f9d3d5ebbae9816da
           command: process
+          workdir: /src
+          environment:
+            BOOST_TF_TAGS_POLICY: $BOOST_TF_TAGS_POLICY
