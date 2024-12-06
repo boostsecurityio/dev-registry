@@ -9,6 +9,7 @@ scan_types:
 
 config:
   support_diff_scan: false
+  support_mono_repo: false
   require_full_repo: true
 
 steps:
