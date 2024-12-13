@@ -16,7 +16,7 @@ steps:
       format: supply_chain_inventory
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:62fc162@sha256:3d832e751c3829a380bfa060e1397377cf50698299d522581c55571db41d7baf
+          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:f03875d@sha256:7207a1d103288c6db3d510d54fa64188e7616f966826cbf0116eaee23dcec8ee
           command: inventory
           workdir: /src
           environment:
