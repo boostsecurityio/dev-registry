@@ -24,21 +24,13 @@ setup:
         echo "Error: SEMGREP_APP_TOKEN environment variable is not set."
         exit 1
       fi
-  - name: Build Docker with Semgrep Pro pre-installed
-    environment:
-      SEMGREP_IMAGE: returntocorp/semgrep:1.74.0@sha256:cffeb57efaaffe57811b7fd740e4ee6313dbfaf6b364bb5cce52a8e506d35f42
-    run: |
-      export DOCKER_BUILDKIT=1
-      echo "FROM ${SEMGREP_IMAGE}" > Dockerfile
-      echo "RUN --mount=type=secret,id=SEMGREP_APP_TOKEN /bin/sh -c 'SEMGREP_APP_TOKEN=\$(cat /run/secrets/SEMGREP_APP_TOKEN) semgrep install-semgrep-pro'" >> Dockerfile
-      docker build --secret id=SEMGREP_APP_TOKEN -t semgrep-with-pro-engine:latest .
 
 steps:
   - scan:
       command:
         docker:
-          image: semgrep-with-pro-engine:latest
-          command: semgrep scan --pro --sarif --quiet --disable-version-check .
+          image: returntocorp/semgrep:1.103.0@sha256:3978a2b4e6c2cbd4eee04b0f05d5ca4a82e6526dc89e01a5dcbb941cedafb393
+          command: semgrep scan --pro --pro-intrafile --sarif --quiet --disable-version-check .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp

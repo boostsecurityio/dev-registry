@@ -22,8 +22,8 @@ steps:
   - scan:
       command:
         docker:
-          image: returntocorp/semgrep:1.74.0@sha256:cffeb57efaaffe57811b7fd740e4ee6313dbfaf6b364bb5cce52a8e506d35f42
-          command: semgrep scan --sarif --quiet --disable-version-check .
+          image: returntocorp/semgrep:1.103.0@sha256:3978a2b4e6c2cbd4eee04b0f05d5ca4a82e6526dc89e01a5dcbb941cedafb393
+          command: semgrep scan --oss-only --sarif --quiet --disable-version-check .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
