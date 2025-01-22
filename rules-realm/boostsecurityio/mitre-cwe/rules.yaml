@@ -3547,7 +3547,6 @@ rules:
     categories:
     - ALL
     - cwe-200
-    - stored-secrets
     - boost-hardened
     - owasp-top-10
     description: The product exposes sensitive information to an actor that is not
