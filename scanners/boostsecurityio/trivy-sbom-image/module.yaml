@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-sbom-image
-name: BoostSecurity Trivy (Image SBOM)
+name: Trivy (Image SBOM)
 namespace: boostsecurityio/trivy-sbom-image
 scan_types:
   - sbom
@@ -12,11 +12,11 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.42.1
-      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
-      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
-      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
-      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+      VERSION: 0.57.0
+      LINUX_X86_64_SHA: cf08a8cd861e5192631fc03bb21efde27c1d93e4407ab70bab32e572bafcbf07
+      LINUX_ARM64_SHA: 29012fdb5ba18da506d1c8b6f389c2ec9d113db965c254971f35267ebb45dd64
+      MACOS_X86_64_SHA: e7955b6d38d8125d4aa8936e6af51b0de2b0e0840b4feb90b44002bf7f47bf13
+      MACOS_ARM64_SHA: 61230c8a56e463e8eba2bf922bc688b7bd40352187e1f725c79861b0801437f0
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
@@ -56,12 +56,14 @@ steps:
       command:
         environment:
           IMAGE_NAME: ${BOOST_IMAGE_NAME}
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
         run: |
             $SETUP_PATH/trivy image ${TRIVY_ADDITIONAL_ARGS} --format cyclonedx --license-full ${BOOST_IMAGE_NAME}
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:2077b09@sha256:9acea8e0566becbbf19a51b7de326cda23d124254091f38cf5e2132f298a1301
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:9b693ef@sha256:249ee707158424d8bd333198e1512ca295fe30c6fff2d2b1adff9e8f914b42cb
           command: process
           environment:
             PYTHONIOENCODING: utf-8

@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-fs
-name: BoostSecurity Trivy (Filesystem scanning)
+name: Trivy (Filesystem scanning)
 namespace: boostsecurityio/trivy-fs
 scan_types:
   - sca
@@ -31,11 +31,11 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.42.1
-      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
-      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
-      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
-      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+      VERSION: 0.57.0
+      LINUX_X86_64_SHA: cf08a8cd861e5192631fc03bb21efde27c1d93e4407ab70bab32e572bafcbf07
+      LINUX_ARM64_SHA: 29012fdb5ba18da506d1c8b6f389c2ec9d113db965c254971f35267ebb45dd64
+      MACOS_X86_64_SHA: e7955b6d38d8125d4aa8936e6af51b0de2b0e0840b4feb90b44002bf7f47bf13
+      MACOS_ARM64_SHA: 61230c8a56e463e8eba2bf922bc688b7bd40352187e1f725c79861b0801437f0
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
@@ -74,13 +74,16 @@ steps:
   - scan:
       command:
         environment:
+          NO_COLOR: "true"
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
         run: |
-          $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} --format json --scanners vuln --quiet .
+          $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} --format json --no-progress --scanners vuln . 2>&1
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:60f6c43@sha256:b6832610688ddf8e0a7b14339aefdc8dbccd33b842cc9d192b73e770acf6f7fe
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:2925e6e@sha256:0f116f3ae1ccb36cbef4e73d44dde8d376b756b2486757576322a468fa98bdb9
           command: process
           environment:
             PYTHONIOENCODING: utf-8

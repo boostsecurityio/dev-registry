@@ -1,0 +1,22 @@
+api_version: 1.0
+
+id: boostsecurityio/modelscan
+name: Modelscan
+namespace: boostsecurityio/modelscan
+scan_types:
+  - sast
+
+config:
+  require_full_repo: true
+  support_diff_scan: false
+
+steps:
+  - scan:
+      command:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-modelscan:60dd857@sha256:031f93b1ef85c416502c6e632d05ea60a82414fcb70884d1526747230fb56a57
+          command: scan
+          workdir: /src
+          environment:
+            XDG_CONFIG_HOME: /tmp
+      format: sarif

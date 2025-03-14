@@ -9,6 +9,7 @@ scan_types:
 
 config:
   support_diff_scan: false
+  support_mono_repo: false
   require_full_repo: true
 
 steps:
@@ -16,7 +17,7 @@ steps:
       format: metadata
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:12f2ddb@sha256:b04845a4fa90b2542867e2cceeffb117991c8d65a8fbe369e285e1cb0c808e1f
+          image: public.ecr.aws/boostsecurityio/boost-scanner-composition:7d13d0e@sha256:eb4b18beb1834a59a66092bc263d32808dbf9f14290938388950f3ca70c1ffa9
           command: scan
           workdir: /src
           environment:

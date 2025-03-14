@@ -1,0 +1,4 @@
+name: BoostSecurity SCA from SCI
+namespace: boostsecurityio/sci-sca
+scan_types:
+  - sca
