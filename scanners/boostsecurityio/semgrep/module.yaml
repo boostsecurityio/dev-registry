@@ -14,21 +14,21 @@ config:
 setup:
   - name: Config
     environment:
-      SEMGREP_RULES: ${SEMGREP_RULES:-auto}
+      SEMGREP_RULES: ${SEMGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
     run: |
-      echo "SEMGREP_RULES: '$SEMGREP_RULES'"
+      echo "SEMGREP_RULES set to: '$SEMGREP_RULES'"
 
 steps:
   - scan:
       command:
         docker:
           image: returntocorp/semgrep:1.103.0@sha256:3978a2b4e6c2cbd4eee04b0f05d5ca4a82e6526dc89e01a5dcbb941cedafb393
-          command: semgrep scan --oss-only --sarif --quiet --disable-version-check .
+          command: semgrep scan --oss-only --sarif --quiet --disable-version-check --metrics=off .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
             HOME: /tmp
-            SEMGREP_RULES: ${SEMGREP_RULES:-auto}
+            SEMGREP_RULES: ${SEMGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
       format: sarif
       post-processor:
         docker:
