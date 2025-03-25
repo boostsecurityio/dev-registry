@@ -11945,7 +11945,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_1
-    pretty_name: K - Do not admit containers wishing to share the host process ID
+    pretty_name: K8s - Do not admit containers wishing to share the host process ID
       namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -11957,7 +11957,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_10
-    pretty_name: K - CPU requests should be set
+    pretty_name: K8s - CPU requests should be set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_100:
     categories:
@@ -11968,7 +11968,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_100
-    pretty_name: K - Ensure that the --tls-cert-file and --tls-private-key-file arguments
+    pretty_name: K8s - Ensure that the --tls-cert-file and --tls-private-key-file arguments
       are set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -11981,7 +11981,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_102
-    pretty_name: K - Ensure that the --etcd-cafile argument is set as appropriate
+    pretty_name: K8s - Ensure that the --etcd-cafile argument is set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_104:
@@ -11993,7 +11993,7 @@ rules:
     description: Check for unencrypted Kubernetes resources.
     group: cloud-unencrypted-resources
     name: CKV_K8S_104
-    pretty_name: K - Ensure that encryption providers are appropriately configured
+    pretty_name: K8s - Ensure that encryption providers are appropriately configured
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_105:
@@ -12005,7 +12005,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_105
-    pretty_name: K - Ensure that the API Server only makes use of Strong Cryptographic
+    pretty_name: K8s - Ensure that the API Server only makes use of Strong Cryptographic
       Ciphers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12018,7 +12018,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_106
-    pretty_name: K - Ensure that the --terminated-pod-gc-threshold argument is set
+    pretty_name: K8s - Ensure that the --terminated-pod-gc-threshold argument is set
       as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12031,7 +12031,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_107
-    pretty_name: K - Ensure that the --profiling argument is set to false
+    pretty_name: K8s - Ensure that the --profiling argument is set to false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_108:
@@ -12043,7 +12043,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_108
-    pretty_name: K - Ensure that the --use-service-account-credentials argument is
+    pretty_name: K8s - Ensure that the --use-service-account-credentials argument is
       set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12055,7 +12055,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_11
-    pretty_name: K - CPU Limits should be set
+    pretty_name: K8s - CPU Limits should be set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_110:
     categories:
@@ -12066,7 +12066,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_110
-    pretty_name: K - Ensure that the --service-account-private-key-file argument is
+    pretty_name: K8s - Ensure that the --service-account-private-key-file argument is
       set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12079,7 +12079,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_111
-    pretty_name: K - Ensure that the --root-ca-file argument is set as appropriate
+    pretty_name: K8s - Ensure that the --root-ca-file argument is set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_112:
@@ -12091,7 +12091,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_112
-    pretty_name: K - Ensure that the RotateKubeletServerCertificate argument is set
+    pretty_name: K8s - Ensure that the RotateKubeletServerCertificate argument is set
       to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12104,7 +12104,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_113
-    pretty_name: K - Ensure that the --bind-address argument is set to 127.0.0.1
+    pretty_name: K8s - Ensure that the --bind-address argument is set to 127.0.0.1
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_114:
@@ -12116,7 +12116,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_114
-    pretty_name: K - Ensure that the --profiling argument is set to false
+    pretty_name: K8s - Ensure that the --profiling argument is set to false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_115:
@@ -12128,7 +12128,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_115
-    pretty_name: K - Ensure that the --bind-address argument is set to 127.0.0.1
+    pretty_name: K8s - Ensure that the --bind-address argument is set to 127.0.0.1
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_116:
@@ -12140,7 +12140,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_116
-    pretty_name: K - Ensure that the --cert-file and --key-file arguments are set
+    pretty_name: K8s - Ensure that the --cert-file and --key-file arguments are set
       as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12153,7 +12153,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_117
-    pretty_name: K - Ensure that the --client-cert-auth argument is set to true
+    pretty_name: K8s - Ensure that the --client-cert-auth argument is set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_118:
@@ -12165,7 +12165,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_118
-    pretty_name: K - Ensure that the --auto-tls argument is not set to true
+    pretty_name: K8s - Ensure that the --auto-tls argument is not set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_119:
@@ -12177,7 +12177,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_119
-    pretty_name: K - Ensure that the --peer-cert-file and --peer-key-file arguments
+    pretty_name: K8s - Ensure that the --peer-cert-file and --peer-key-file arguments
       are set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12189,7 +12189,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_12
-    pretty_name: K - Memory Limits should be set
+    pretty_name: K8s - Memory Limits should be set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_121:
     categories:
@@ -12200,7 +12200,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_121
-    pretty_name: K - Ensure that the --peer-client-cert-auth argument is set to true
+    pretty_name: K8s - Ensure that the --peer-client-cert-auth argument is set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_13:
@@ -12211,7 +12211,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_13
-    pretty_name: K - Memory requests should be set
+    pretty_name: K8s - Memory requests should be set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_138:
     categories:
@@ -12222,7 +12222,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_138
-    pretty_name: K - Ensure that the --anonymous-auth argument is set to false
+    pretty_name: K8s - Ensure that the --anonymous-auth argument is set to false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_139:
@@ -12234,7 +12234,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_139
-    pretty_name: K - Ensure that the --authorization-mode argument is not set to AlwaysAllow
+    pretty_name: K8s - Ensure that the --authorization-mode argument is not set to AlwaysAllow
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_14:
@@ -12245,7 +12245,7 @@ rules:
     description: Check for weak Kubernetes configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_K8S_14
-    pretty_name: K - Image Tag should be fixed - not latest or blank
+    pretty_name: K8s - Image Tag should be fixed - not latest or blank
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_140:
@@ -12257,7 +12257,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_140
-    pretty_name: K - Ensure that the --client-ca-file argument is set as appropriate
+    pretty_name: K8s - Ensure that the --client-ca-file argument is set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_141:
@@ -12269,7 +12269,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_141
-    pretty_name: K - Ensure that the --read-only-port argument is set to 0
+    pretty_name: K8s - Ensure that the --read-only-port argument is set to 0
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_143:
@@ -12281,7 +12281,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_143
-    pretty_name: K - Ensure that the --streaming-connection-idle-timeout argument
+    pretty_name: K8s - Ensure that the --streaming-connection-idle-timeout argument
       is not set to 0
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12294,7 +12294,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_144
-    pretty_name: K - Ensure that the --protect-kernel-defaults argument is set to
+    pretty_name: K8s - Ensure that the --protect-kernel-defaults argument is set to
       true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12307,7 +12307,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_145
-    pretty_name: K - Ensure that the --make-iptables-util-chains argument is set to
+    pretty_name: K8s - Ensure that the --make-iptables-util-chains argument is set to
       true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12320,7 +12320,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_146
-    pretty_name: K - Ensure that the --hostname-override argument is not set
+    pretty_name: K8s - Ensure that the --hostname-override argument is not set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_147:
@@ -12332,7 +12332,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_147
-    pretty_name: K - Ensure that the --event-qps argument is set to 0 or a level which
+    pretty_name: K8s - Ensure that the --event-qps argument is set to 0 or a level which
       ensures appropriate event capture
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12345,7 +12345,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_148
-    pretty_name: K - Ensure that the --tls-cert-file and --tls-private-key-file arguments
+    pretty_name: K8s - Ensure that the --tls-cert-file and --tls-private-key-file arguments
       are set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12358,7 +12358,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_149
-    pretty_name: K - Ensure that the --rotate-certificates argument is not set to
+    pretty_name: K8s - Ensure that the --rotate-certificates argument is not set to
       false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12370,7 +12370,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_15
-    pretty_name: K - Image Pull Policy should be Always
+    pretty_name: K8s - Image Pull Policy should be Always
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_151:
     categories:
@@ -12381,7 +12381,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_151
-    pretty_name: K - Ensure that the Kubelet only makes use of Strong Cryptographic
+    pretty_name: K8s - Ensure that the Kubelet only makes use of Strong Cryptographic
       Ciphers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12394,7 +12394,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_152
-    pretty_name: K - Prevent NGINX Ingress annotation snippets which contain LUA code
+    pretty_name: K8s - Prevent NGINX Ingress annotation snippets which contain LUA code
       execution. See CVE-2021-25742
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12407,7 +12407,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_153
-    pretty_name: K - Prevent All NGINX Ingress annotation snippets. See CVE-2021-25742
+    pretty_name: K8s - Prevent All NGINX Ingress annotation snippets. See CVE-2021-25742
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_154:
@@ -12419,7 +12419,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_154
-    pretty_name: K - Prevent NGINX Ingress annotation snippets which contain alias
+    pretty_name: K8s - Prevent NGINX Ingress annotation snippets which contain alias
       statements See CVE-2021-25742
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12432,7 +12432,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_155
-    pretty_name: K - Minimize ClusterRoles that grant control over validating or mutating
+    pretty_name: K8s - Minimize ClusterRoles that grant control over validating or mutating
       admission webhook configurations
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12445,7 +12445,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_156
-    pretty_name: K - Minimize ClusterRoles that grant permissions to approve CertificateSigningRequests
+    pretty_name: K8s - Minimize ClusterRoles that grant permissions to approve CertificateSigningRequests
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_157:
@@ -12457,7 +12457,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_157
-    pretty_name: K - Minimize Roles and ClusterRoles that grant permissions to bind
+    pretty_name: K8s - Minimize Roles and ClusterRoles that grant permissions to bind
       RoleBindings or ClusterRoleBindings
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12470,7 +12470,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_158
-    pretty_name: K - Minimize Roles and ClusterRoles that grant permissions to escalate
+    pretty_name: K8s - Minimize Roles and ClusterRoles that grant permissions to escalate
       Roles or ClusterRoles
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12483,7 +12483,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_16
-    pretty_name: K - Do not admit privileged containers
+    pretty_name: K8s - Do not admit privileged containers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_17:
@@ -12495,7 +12495,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_17
-    pretty_name: K - Do not admit containers wishing to share the host process ID
+    pretty_name: K8s - Do not admit containers wishing to share the host process ID
       namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12508,7 +12508,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_18
-    pretty_name: K - Do not admit containers wishing to share the host IPC namespace
+    pretty_name: K8s - Do not admit containers wishing to share the host IPC namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_19:
@@ -12520,7 +12520,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_19
-    pretty_name: K - Do not admit containers wishing to share the host network namespace
+    pretty_name: K8s - Do not admit containers wishing to share the host network namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_2:
@@ -12532,7 +12532,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_2
-    pretty_name: K - Do not admit privileged containers
+    pretty_name: K8s - Do not admit privileged containers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_20:
@@ -12544,7 +12544,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_20
-    pretty_name: K - Containers should not run with allowPrivilegeEscalation
+    pretty_name: K8s - Containers should not run with allowPrivilegeEscalation
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_21:
@@ -12555,7 +12555,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_21
-    pretty_name: K - The default namespace should not be used
+    pretty_name: K8s - The default namespace should not be used
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_22:
     categories:
@@ -12564,7 +12564,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_22
-    pretty_name: K - Use read-only filesystem for containers where possible
+    pretty_name: K8s - Use read-only filesystem for containers where possible
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_23:
     categories:
@@ -12574,7 +12574,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_23
-    pretty_name: K - Minimize the admission of root containers
+    pretty_name: K8s - Minimize the admission of root containers
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_24:
     categories:
@@ -12585,7 +12585,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_24
-    pretty_name: K - Do not allow containers with added capability
+    pretty_name: K8s - Do not allow containers with added capability
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_25:
@@ -12597,7 +12597,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_25
-    pretty_name: K - Minimize the admission of containers with added capability
+    pretty_name: K8s - Minimize the admission of containers with added capability
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_26:
@@ -12609,7 +12609,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_26
-    pretty_name: K - Do not specify hostPort unless absolutely necessary
+    pretty_name: K8s - Do not specify hostPort unless absolutely necessary
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_27:
@@ -12621,7 +12621,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_27
-    pretty_name: K - Do not expose the docker daemon socket to containers
+    pretty_name: K8s - Do not expose the docker daemon socket to containers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_28:
@@ -12633,7 +12633,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_28
-    pretty_name: K - Minimize the admission of containers with the NET_RAW capability
+    pretty_name: K8s - Minimize the admission of containers with the NET_RAW capability
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_29:
@@ -12644,7 +12644,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_29
-    pretty_name: K - Apply security context to your pods and containers
+    pretty_name: K8s - Apply security context to your pods and containers
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_3:
     categories:
@@ -12655,7 +12655,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_3
-    pretty_name: K - Do not admit containers wishing to share the host IPC namespace
+    pretty_name: K8s - Do not admit containers wishing to share the host IPC namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_30:
@@ -12666,7 +12666,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_30
-    pretty_name: K - Apply security context to your pods and containers
+    pretty_name: K8s - Apply security context to your pods and containers
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_31:
     categories:
@@ -12676,7 +12676,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_31
-    pretty_name: K - Ensure that the seccomp profile is set to docker/default or runtime/default
+    pretty_name: K8s - Ensure that the seccomp profile is set to docker/default or runtime/default
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_32:
     categories:
@@ -12686,7 +12686,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_32
-    pretty_name: K - Ensure default seccomp profile set to docker/default or runtime/default
+    pretty_name: K8s - Ensure default seccomp profile set to docker/default or runtime/default
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_33:
     categories:
@@ -12697,7 +12697,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_33
-    pretty_name: K - Ensure the Kubernetes dashboard is not deployed
+    pretty_name: K8s - Ensure the Kubernetes dashboard is not deployed
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_34:
@@ -12709,7 +12709,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_34
-    pretty_name: K - Ensure that Tiller (Helm v2) is not deployed
+    pretty_name: K8s - Ensure that Tiller (Helm v2) is not deployed
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_35:
@@ -12719,7 +12719,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_35
-    pretty_name: K - Prefer using secrets as files over secrets as environment variables
+    pretty_name: K8s - Prefer using secrets as files over secrets as environment variables
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_36:
     categories:
@@ -12730,7 +12730,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_36
-    pretty_name: K - Minimise the admission of containers with capabilities assigned
+    pretty_name: K8s - Minimise the admission of containers with capabilities assigned
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_37:
@@ -12742,7 +12742,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_37
-    pretty_name: K - Minimise the admission of containers with capabilities assigned
+    pretty_name: K8s - Minimise the admission of containers with capabilities assigned
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_38:
@@ -12753,7 +12753,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_38
-    pretty_name: K - Ensure that Service Account Tokens are only mounted where necessary
+    pretty_name: K8s - Ensure that Service Account Tokens are only mounted where necessary
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_39:
@@ -12765,7 +12765,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_39
-    pretty_name: K - Do not use the CAP_SYS_ADMIN linux capability
+    pretty_name: K8s - Do not use the CAP_SYS_ADMIN linux capability
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_4:
@@ -12777,7 +12777,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_4
-    pretty_name: K - Do not admit containers wishing to share the host network namespace
+    pretty_name: K8s - Do not admit containers wishing to share the host network namespace
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_40:
@@ -12788,7 +12788,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_40
-    pretty_name: K - Containers should run as a high UID to avoid host conflict
+    pretty_name: K8s - Containers should run as a high UID to avoid host conflict
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_41:
     categories:
@@ -12799,7 +12799,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_41
-    pretty_name: K - Ensure that default service accounts are not actively used
+    pretty_name: K8s - Ensure that default service accounts are not actively used
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_42:
@@ -12811,7 +12811,7 @@ rules:
     description: Check for weak Kubernetes permissions.
     group: cloud-insecure-iam
     name: CKV_K8S_42
-    pretty_name: K - Ensure that default service accounts are not actively used
+    pretty_name: K8s - Ensure that default service accounts are not actively used
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_43:
@@ -12822,7 +12822,7 @@ rules:
     description: Check for weak Kubernetes configurations.
     group: supply-chain-cicd-weak-configuration
     name: CKV_K8S_43
-    pretty_name: K - Image should use digest
+    pretty_name: K8s - Image should use digest
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_44:
     categories:
@@ -12833,7 +12833,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_44
-    pretty_name: K - Ensure that the Tiller Service (Helm v2) is deleted
+    pretty_name: K8s - Ensure that the Tiller Service (Helm v2) is deleted
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_45:
@@ -12845,7 +12845,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_45
-    pretty_name: K - Ensure the Tiller Deployment (Helm V2) is not accessible from
+    pretty_name: K8s - Ensure the Tiller Deployment (Helm V2) is not accessible from
       within the cluster
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12858,7 +12858,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_49
-    pretty_name: K - Minimize wildcard use in Roles and ClusterRoles
+    pretty_name: K8s - Minimize wildcard use in Roles and ClusterRoles
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_5:
@@ -12870,7 +12870,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_5
-    pretty_name: K - Containers should not run with allowPrivilegeEscalation
+    pretty_name: K8s - Containers should not run with allowPrivilegeEscalation
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_6:
@@ -12882,7 +12882,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_6
-    pretty_name: K - Do not admit root containers
+    pretty_name: K8s - Do not admit root containers
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_68:
@@ -12894,7 +12894,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_68
-    pretty_name: K - Ensure that the --anonymous-auth argument is set to false
+    pretty_name: K8s - Ensure that the --anonymous-auth argument is set to false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_69:
@@ -12906,7 +12906,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_69
-    pretty_name: K - Ensure that the --basic-auth-file argument is not set
+    pretty_name: K8s - Ensure that the --basic-auth-file argument is not set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_7:
@@ -12918,7 +12918,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_7
-    pretty_name: K - Do not admit containers with the NET_RAW capability
+    pretty_name: K8s - Do not admit containers with the NET_RAW capability
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_70:
@@ -12930,7 +12930,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_70
-    pretty_name: K - Ensure that the --token-auth-file argument is not set
+    pretty_name: K8s - Ensure that the --token-auth-file argument is not set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_71:
@@ -12942,7 +12942,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_71
-    pretty_name: K - Ensure that the --kubelet-https argument is set to true
+    pretty_name: K8s - Ensure that the --kubelet-https argument is set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_72:
@@ -12954,7 +12954,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_72
-    pretty_name: K - Ensure that the --kubelet-client-certificate and --kubelet-client-key
+    pretty_name: K8s - Ensure that the --kubelet-client-certificate and --kubelet-client-key
       arguments are set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12967,7 +12967,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_73
-    pretty_name: K - Ensure that the --kubelet-certificate-authority argument is set
+    pretty_name: K8s - Ensure that the --kubelet-certificate-authority argument is set
       as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -12980,7 +12980,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_74
-    pretty_name: K - Ensure that the --authorization-mode argument is not set to AlwaysAllow
+    pretty_name: K8s - Ensure that the --authorization-mode argument is not set to AlwaysAllow
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_75:
@@ -12992,7 +12992,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_75
-    pretty_name: K - Ensure that the --authorization-mode argument includes Node
+    pretty_name: K8s - Ensure that the --authorization-mode argument includes Node
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_77:
@@ -13004,7 +13004,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_77
-    pretty_name: K - Ensure that the --authorization-mode argument includes RBAC
+    pretty_name: K8s - Ensure that the --authorization-mode argument includes RBAC
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_78:
@@ -13014,7 +13014,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_78
-    pretty_name: K - Ensure that the admission control plugin EventRateLimit is set
+    pretty_name: K8s - Ensure that the admission control plugin EventRateLimit is set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_79:
     categories:
@@ -13025,7 +13025,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_79
-    pretty_name: K - Ensure that the admission control plugin AlwaysAdmit is not set
+    pretty_name: K8s - Ensure that the admission control plugin AlwaysAdmit is not set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_8:
@@ -13036,7 +13036,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_8
-    pretty_name: K - Liveness Probe Should be Configured
+    pretty_name: K8s - Liveness Probe Should be Configured
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_80:
@@ -13047,7 +13047,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_80
-    pretty_name: K - Ensure that the admission control plugin AlwaysPullImages is
+    pretty_name: K8s - Ensure that the admission control plugin AlwaysPullImages is
       set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_81:
@@ -13058,7 +13058,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_81
-    pretty_name: K - Ensure that the admission control plugin SecurityContextDeny
+    pretty_name: K8s - Ensure that the admission control plugin SecurityContextDeny
       is set if PodSecurityPolicy is not used
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_82:
@@ -13069,7 +13069,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_82
-    pretty_name: K - Ensure that the admission control plugin ServiceAccount is set
+    pretty_name: K8s - Ensure that the admission control plugin ServiceAccount is set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_83:
     categories:
@@ -13079,7 +13079,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_83
-    pretty_name: K - Ensure that the admission control plugin NamespaceLifecycle is
+    pretty_name: K8s - Ensure that the admission control plugin NamespaceLifecycle is
       set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_84:
@@ -13090,7 +13090,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_84
-    pretty_name: K - Ensure that the admission control plugin PodSecurityPolicy is
+    pretty_name: K8s - Ensure that the admission control plugin PodSecurityPolicy is
       set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_85:
@@ -13101,7 +13101,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_85
-    pretty_name: K - Ensure that the admission control plugin NodeRestriction is set
+    pretty_name: K8s - Ensure that the admission control plugin NodeRestriction is set
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_86:
     categories:
@@ -13112,7 +13112,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_86
-    pretty_name: K - Ensure that the --insecure-bind-address argument is not set
+    pretty_name: K8s - Ensure that the --insecure-bind-address argument is not set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_88:
@@ -13124,7 +13124,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_88
-    pretty_name: K - Ensure that the --insecure-port argument is set to 0
+    pretty_name: K8s - Ensure that the --insecure-port argument is set to 0
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_89:
@@ -13136,7 +13136,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_89
-    pretty_name: K - Ensure that the --secure-port argument is not set to 0
+    pretty_name: K8s - Ensure that the --secure-port argument is not set to 0
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_9:
@@ -13147,7 +13147,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_9
-    pretty_name: K - Readiness Probe Should be Configured
+    pretty_name: K8s - Readiness Probe Should be Configured
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_90:
@@ -13159,7 +13159,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_90
-    pretty_name: K - Ensure that the --profiling argument is set to false
+    pretty_name: K8s - Ensure that the --profiling argument is set to false
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_91:
@@ -13171,7 +13171,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_91
-    pretty_name: K - Ensure that the --audit-log-path argument is set
+    pretty_name: K8s - Ensure that the --audit-log-path argument is set
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_92:
@@ -13183,7 +13183,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_92
-    pretty_name: K - Ensure that the --audit-log-maxage argument is set to 30 or as
+    pretty_name: K8s - Ensure that the --audit-log-maxage argument is set to 30 or as
       appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -13196,7 +13196,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_93
-    pretty_name: K - Ensure that the --audit-log-maxbackup argument is set to 10 or
+    pretty_name: K8s - Ensure that the --audit-log-maxbackup argument is set to 10 or
       as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -13209,7 +13209,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_94
-    pretty_name: K - Ensure that the --audit-log-maxsize argument is set to 100 or
+    pretty_name: K8s - Ensure that the --audit-log-maxsize argument is set to 100 or
       as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -13222,7 +13222,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_95
-    pretty_name: K - Ensure that the --request-timeout argument is set as appropriate
+    pretty_name: K8s - Ensure that the --request-timeout argument is set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_96:
@@ -13234,7 +13234,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_96
-    pretty_name: K - Ensure that the --service-account-lookup argument is set to true
+    pretty_name: K8s - Ensure that the --service-account-lookup argument is set to true
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_K8S_97:
@@ -13246,7 +13246,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_97
-    pretty_name: K - Ensure that the --service-account-key-file argument is set as
+    pretty_name: K8s - Ensure that the --service-account-key-file argument is set as
       appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
@@ -13259,7 +13259,7 @@ rules:
     description: Check for misconfigurations in Kubernetes resources.
     group: cloud-weak-configuration
     name: CKV_K8S_99
-    pretty_name: K - Ensure that the --etcd-certfile and --etcd-keyfile arguments
+    pretty_name: K8s - Ensure that the --etcd-certfile and --etcd-keyfile arguments
       are set as appropriate
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
