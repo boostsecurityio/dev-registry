@@ -17,10 +17,9 @@ setup:
       SEMGREP_RULES: ${SEMGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
     run: |
       echo "SEMGREP_RULES set to: '$SEMGREP_RULES'"
-      # For every rule in SEMGREP_RULES, ensure it starts with http:// or https://
       for rule in $SEMGREP_RULES; do
-        if [[ "$rule" != http://* && "$rule" != https://* ]]; then
-          echo "Semgrep Community Rules cannot be used. Provide a URL to rules file or leave blank for Boost curated rules."
+        if [[ "$rule" != .semgrep/* && "$rule" != http://* && "$rule" != https://* ]]; then
+          echo "Semgrep Community Rules cannot be used. Provide a URL or relative path to rules file or leave blank for Boost curated rules."
           exit 1
         fi
       done
