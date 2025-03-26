@@ -29,7 +29,7 @@ steps:
   - scan:
       command:
         docker:
-          image: returntocorp/semgrep:1.103.0@sha256:3978a2b4e6c2cbd4eee04b0f05d5ca4a82e6526dc89e01a5dcbb941cedafb393
+          image: returntocorp/semgrep:1.114.0@sha256:0cd75960cfec2215ff734a4f6379bbbb6edb82de0c24593dd0a70ec65e9860a9
           command: semgrep scan --pro-intrafile --sarif --quiet --disable-version-check .
           workdir: /src
           environment:
