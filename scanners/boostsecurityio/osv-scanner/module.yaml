@@ -36,9 +36,9 @@ steps:
 - scan:
     command:
       docker:
-        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:eb33e00@sha256:9781255c0c6af6f45bd117b44f6b73368fbf73a961e1287b461552aa40412afb
+        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:7f9783f@sha256:d6b587a128cfc4941f59aba09d40a2737ba0f367ef4d9deae052c27b084f7712
         command: |
-           -c 'osv-scanner scan --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
+           -c 'osv-scanner scan source --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
         workdir: /project
     format: sarif
     post-processor:
@@ -51,4 +51,4 @@ steps:
           export BOOST_SCAN_CMD_EXEC_PATH="/project/${BOOST_SCAN_PATH}"
         fi
         export PYTHONIOENCODING="utf-8"
-        docker run -i -e BOOST_SCAN_CMD_EXEC_PATH="$BOOST_SCAN_CMD_EXEC_PATH" -e PYTHONIOENCODING="utf-8" public.ecr.aws/boostsecurityio/boost-converter-sca:da02e81@sha256:b4bfb813e16426ba49c43356a3524aac2289b69db1228ced3cbc8dcdad704a39 process --scanner osv
+        docker run -i -e BOOST_SCAN_CMD_EXEC_PATH="$BOOST_SCAN_CMD_EXEC_PATH" -e PYTHONIOENCODING="utf-8" public.ecr.aws/boostsecurityio/boost-converter-sca:cf5e556@sha256:e0ca7ed943b9dd9e1d02406cee5659fa6aaa9bf4dc93cb8cc75bb83ad9f1b139 process --scanner osv
