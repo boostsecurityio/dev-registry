@@ -65,7 +65,7 @@ steps:
       post-processor:
         - docker:
             command: process --git-scan
-            image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:b4c06bc@sha256:afde10397ddf8bbeae0d009e50a6157b57843eb2c06744474d9073bcef9dba34
+            image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:b4c06bc@sha256:a465c1e02c720c5aea3178ce97a31d73a82b7f8e4460478a055e7ef615832768
         - docker:
             command: process --gitleaks-full
             image: public.ecr.aws/boostsecurityio/boost-scanner-keyscope:458e3dd@sha256:6b611b085271e2c8ed15590f536fd4a29221a11752ef7525bbb60be9ad241902
