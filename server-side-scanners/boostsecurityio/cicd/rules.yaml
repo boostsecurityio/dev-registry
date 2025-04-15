@@ -495,14 +495,11 @@ rules:
       - supply-chain-cicd-weak-configuration
       - boost-baseline
       - boost-hardened
-    description: The webhook for this organization/project is missing or has been disabled. 
-      This webhook is essential for notifying the security scanning service about new code commits. 
-      Without it, code changes will not be automatically scanned for vulnerabilities, 
-      potentially allowing insecure code to enter the codebase undetected. 
-      This could be due to an accidental misconfiguration or a deliberate attempt by a 
-      malicious actor to bypass security checks, 
-      investigation is recommended to restore proper webhook functionality and 
-      verify the integrity of recent commits.
+    description: The webhook for this organization/project is missing or disabled. 
+      It is essential for notifying the security scanning service about new commits. 
+      Without it, code changes will not be auto-scanned for vulnerabilities, potentially allowing insecure code into the codebase. 
+      This might be due to accidental misconfiguration or a deliberate bypass. 
+      Investigation is recommended to restore webhook functionality and verify recent commits.
     group: supply-chain-cicd-weak-configuration
     name: cicd-webhooks-misconfiguration
     pretty_name: CI/CD - Webhook Misconfiguration Detected
