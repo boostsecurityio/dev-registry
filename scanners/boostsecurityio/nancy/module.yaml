@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/nancy
-name: BoostSecurity nancy
+name: Nancy
 namespace: boostsecurityio/nancy
 scan_types:
   - sca
@@ -18,7 +18,10 @@ config:
 setup:
   - name: Install Nancy
     environment:
-      VERSION: v1.0.41
+      VERSION: v1.0.46
+      LINUX_X86_64_SHA: 467c47c75677411074fcc44e392e616dac90c23d5991ddbc7cd2186057d8c2cf
+      LINUX_ARM64_SHA: 9ba37dabeb5d50c23c531eb962067916ebd886ddcf5b807021eaaf554a94b5ce
+      MACOS_ARM64_SHA: db841b68fb34978b5bf543af79707cf47b624df6bc7592506bfb1f66179fe36d
     run: |
       BASE_URL="https://github.com/sonatype-nexus-community/nancy/releases/download/$VERSION/"
       ARCH=$(uname -m)
@@ -26,15 +29,15 @@ setup:
       case "$(uname -sm)" in
         "Linux x86_64")
           FILENAME="nancy-$VERSION-linux-amd64"
-          SHA="bdc52763ee923f380d0fbf9782ede2fef36898587bcaf57d4e0c5413a97bc170"
+          SHA="${LINUX_X86_64_SHA}"
           ;;
         "Linux aarch64")
           FILENAME="nancy-$VERSION-linux-arm64"
-          SHA="ccee36315c34b5edc0dc41d1fd9bb3ffda16d596159ecdd11813a6067f8bffda"
+          SHA="${LINUX_ARM64_SHA}"
           ;;
         "Darwin arm64")
-          FILENAME="nancy-$VERSION-darwin-amd64"
-          SHA="69cd8bfea92497ea3a0d9fe245507a9ef37234971457e912505d3aac858ef00f"
+          FILENAME="nancy-$VERSION-darwin-arm64"
+          SHA="${MACOS_ARM64_SHA}"
           ;;
         *)
           echo "Unsupported machine: ${OPTARG}"

@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-image
-name: BoostSecurity Trivy (Image scanning)
+name: Trivy (Image scanning)
 namespace: boostsecurityio/trivy-image
 scan_types:
   - sca_container
@@ -13,11 +13,11 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.42.1
-      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
-      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
-      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
-      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+      VERSION: 0.61.0
+      LINUX_X86_64_SHA: 31af7049380abcdc422094638cc33364593f0ccc89c955dd69d27aca288ae79c
+      LINUX_ARM64_SHA: d18a9ec7d408d541182e7f3165cdaa934fd05f586e4f22ce547ed1f1640e8c3f
+      MACOS_X86_64_SHA: 7454cd0d31dec55498baa2fbec9c4034c23ab52df45bb256c29297f2099129f8
+      MACOS_ARM64_SHA: 9ad04f68b7823109b93d3c6b4e069d932348bf2847e4ccd197787f87f346138e
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
@@ -58,13 +58,17 @@ steps:
         environment:
           IMAGE_NAME: ${BOOST_IMAGE_NAME}
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
         run: |
             $SETUP_PATH/trivy image ${TRIVY_ADDITIONAL_ARGS} --format json --scanners vuln \
               --quiet ${BOOST_IMAGE_NAME}
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:b870d4f@sha256:0c80eea0daa00c214ea8179563261376730af8151e5feef29c9a40decdf2e73d
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:2925e6e@sha256:0f116f3ae1ccb36cbef4e73d44dde8d376b756b2486757576322a468fa98bdb9
           command: process
+          workdir: /code
           environment:
             PYTHONIOENCODING: utf-8
+            DOCKERFILE_PATH: ${BOOST_DOCKERFILE_PATH:-}

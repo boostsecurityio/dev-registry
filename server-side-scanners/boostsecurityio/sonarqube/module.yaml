@@ -1,4 +1,4 @@
-name: BoostSecurity SonarQube
+name: SonarQube
 namespace: boostsecurityio/sonarqube
 scan_types:
   - sast

@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/checkov-tf-plan
-name: BoostSecurity Checkov TF Plan
+name: Checkov TF Plan
 namespace: boostsecurityio/checkov-tf-plan
 scan_types:
   - iac
@@ -20,5 +20,8 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:d72b4bd@sha256:c9b2ca5609b84093fe845e47149906e9d60d41152b54579f57f5336995db428e
+          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:72d5f80@sha256:786f15fb33b57a26a72edbfcc4d2e9a32952a0d16186633f9d3d5ebbae9816da
           command: process
+          workdir: /src
+          environment:
+            BOOST_TF_TAGS_POLICY: $BOOST_TF_TAGS_POLICY

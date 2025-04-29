@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/checkov
-name: BoostSecurity Checkov
+name: Checkov
 namespace: boostsecurityio/checkov
 scan_types:
   - iac
@@ -20,5 +20,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:d72b4bd@sha256:c9b2ca5609b84093fe845e47149906e9d60d41152b54579f57f5336995db428e
+          image: public.ecr.aws/boostsecurityio/boost-scanner-checkov:ec4f3d2@sha256:8fdf1b3eb4fb7ade9fe618e586a0d4f8d6fe316d390a1c28ead8812e7a388e93
           command: process

@@ -1,9 +1,9 @@
 api_version: 1.0
 
 
-id: scanner
-name: BoostSecurity Native Scanner
-namespace: default
+id: boostsecurityio/baseline
+name: BoostSecurity Scanner
+namespace: boostsecurityio/baseline
 scan_types:
   - sast
   - cicd
@@ -17,7 +17,7 @@ steps:
     - scan:
         command:
           docker:
-            image: public.ecr.aws/boostsecurityio/boost-scanner-native:58e0d1b@sha256:ed224411176e404240dc5e412e397447b23b991aa3e4a8025198933696d8de02
+            image: public.ecr.aws/boostsecurityio/boost-scanner-native:712aad7@sha256:a98544097bf7b3fbdb85eb78f15b1a0a989808ec42125172fa1511c9ff538372
             command: scanner scan
             workdir: /src
           name: scanner

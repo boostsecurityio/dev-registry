@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/trivy-sbom
-name: BoostSecurity Trivy (FS SBOM)
+name: Trivy (FS SBOM)
 namespace: boostsecurityio/trivy-sbom
 scan_types:
   - sbom
@@ -12,11 +12,11 @@ config:
 setup:
   - name: download trivy
     environment:
-      VERSION: 0.42.1
-      LINUX_X86_64_SHA: 305a4c6dbde3abac8e103376021e82c464478f829442e39a0fd980a77946bb22
-      LINUX_ARM64_SHA: cad74fc7c0a6a96ad0721987acda2e529b0b77db754c67e65bec8667b50d9ca5
-      MACOS_X86_64_SHA: a13af5f4d04b10ba181b12cc86f8735e441ab8eca7b6d23692b5061ae767411e
-      MACOS_ARM64_SHA: cebe7abc5d427f7bdedb506c2ae9b33259812ec5a779901b34efbac41bba572a
+      VERSION: 0.61.0
+      LINUX_X86_64_SHA: 31af7049380abcdc422094638cc33364593f0ccc89c955dd69d27aca288ae79c
+      LINUX_ARM64_SHA: d18a9ec7d408d541182e7f3165cdaa934fd05f586e4f22ce547ed1f1640e8c3f
+      MACOS_X86_64_SHA: 7454cd0d31dec55498baa2fbec9c4034c23ab52df45bb256c29297f2099129f8
+      MACOS_ARM64_SHA: 9ad04f68b7823109b93d3c6b4e069d932348bf2847e4ccd197787f87f346138e
     run: |
       BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
       ARCH=$(uname -m)
@@ -54,12 +54,16 @@ setup:
 steps:
   - scan:
       command:
+        environment:
+          NO_COLOR: "true"
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
         run: |
-            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --cache-dir=/tmp/trivy/ .
+            $SETUP_PATH/trivy fs --format=cyclonedx --license-full --no-progress --scanners vuln --cache-dir=/tmp/trivy/ . 2>&1
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:2077b09@sha256:9acea8e0566becbbf19a51b7de326cda23d124254091f38cf5e2132f298a1301
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:9b693ef@sha256:249ee707158424d8bd333198e1512ca295fe30c6fff2d2b1adff9e8f914b42cb
           command: process
           environment:
             PYTHONIOENCODING: utf-8

@@ -2,7 +2,7 @@ api_version: 1.0
 
 
 id: boostsecurityio/osv-scanner
-name: BoostSecurity osv-scanner
+name: OSV-Scanner
 namespace: boostsecurityio/osv-scanner
 scan_types:
   - sca
@@ -31,60 +31,24 @@ config:
     - renv.lock
     - yarn.lock
 
-setup:
-  - name: Install OSV-Scanner
-    environment:
-      VERSION: 1.7.3
-      MACOS_X86_64_SHA: af5c7432fe17f5e3f98658a5f5407ce7e1456eb750153a47ce24a6eedd8cfb1a
-      MACOS_ARM64_SHA: e0c38f4c886036951016ea72c807ff7c9d482ba2b5a65f134182def05316c72e
-      LINUX_X86_64_SHA: ae8dc75d66ae6fbdcb7d4010d32567e37cbc3ac21aa649a65cb33e0d45cbe78a
-      LINUX_ARM64_SHA: ed527974c44eca991a6c3a9e4aa8a74199c9a7f460242342b0eccfb400ee4c16
-    run: |
-      BINARY_URL="https://github.com/google/osv-scanner/releases/download/v${VERSION}"
-      ARCH=$(uname -m)
-      case "$(uname -sm)" in
-        "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_amd64"
-          SHA="${MACOS_X86_64_SHA} osv-scanner"
-          ;;
-        "Darwin arm64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_darwin_arm64"
-          SHA="${MACOS_ARM64_SHA} osv-scanner"
-          ;;
-        "Linux x86_64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_amd64"
-          SHA="${LINUX_X86_64_SHA} osv-scanner"
-          ;;
-        "Linux aarch64")
-          BINARY_URL="${BINARY_URL}/osv-scanner_linux_arm64"
-          SHA="${LINUX_ARM64_SHA} osv-scanner"
-          ;;
-        *)
-          echo "Unsupported machine: ${OPTARG}"
-          exit 1
-          ;;
-      esac
-      curl -o osv-scanner -fsSL "${BINARY_URL}"
-      echo "${SHA}" | sha256sum --check
-      
-      chmod +x osv-scanner
 
 steps:
 - scan:
     command:
-      run: |
-        if ! $SETUP_PATH/osv-scanner scan --recursive --call-analysis=all --format json .; then
-          if test $? -gt 2; then
-            echo "osv-scanner failed to execute"
-            exit 1
-          fi
-        fi
-      environment:
-        HOME: /tmp
+      docker:
+        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:2778df1@sha256:73af9ca6458c5dd11dfc61dfa919a9b597f08946622f18628e26696c6e1565ce
+        command: |
+           -c 'osv-scanner scan source --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
+        workdir: /project
     format: sarif
     post-processor:
-      docker:
-          image: public.ecr.aws/boostsecurityio/boost-converter-sca:3fd32ff@sha256:f21a1539e5ed32f2cb97ee7048ec9ca825b491bfbfd86d1ac6f324cc04b5e9f4
-          command: process --scanner osv
-          environment:
-              PYTHONIOENCODING: utf-8
+      run: |
+        if [ -z "$BOOST_SCAN_PATH" ]; then
+          # set since osv-scanner generates absolute paths instead of relative
+          export BOOST_SCAN_CMD_EXEC_PATH="/project"
+        else
+          # set the path prefix for the case of monorepo
+          export BOOST_SCAN_CMD_EXEC_PATH="/project/${BOOST_SCAN_PATH}"
+        fi
+        export PYTHONIOENCODING="utf-8"
+        docker run -i -e BOOST_SCAN_CMD_EXEC_PATH="$BOOST_SCAN_CMD_EXEC_PATH" -e PYTHONIOENCODING="utf-8" public.ecr.aws/boostsecurityio/boost-converter-sca:fe417cd@sha256:95e68d6b39ca8b4e3e7f9269daa6f3ccfae3e40f6e93e3d068139ab975d0355d process --scanner osv

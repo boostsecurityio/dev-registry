@@ -1,7 +1,7 @@
 api_version: 1.0
 
 id: boostsecurityio/gitleaks
-name: BoostSecurity Gitleaks
+name: Gitleaks
 namespace: boostsecurityio/gitleaks
 scan_types:
   - secrets
@@ -12,11 +12,11 @@ config:
 setup:
 - name: Download Gitleaks
   environment:
-    VERSION: 8.18.2
-    LINUX_X86_64_SHA: 6298c9235dfc9278c14b28afd9b7fa4e6f4a289cb1974bd27949fc1e9122bdee
-    LINUX_ARM64_SHA: 4df25683f95b9e1dbb8cc71dac74d10067b8aba221e7f991e01cafa05bcbd030
-    MACOS_ARM64_SHA: 7be53fa77d7ec10cb8a7085d6ebcf375d55dd4c71f2cf6e7e6bf11554847a095
-    MACOS_X86_64_SHA: b2dc4f853128062856273d422e2f29791a036641c1655feb83192078970fbfc0
+    VERSION: 8.24.0
+    LINUX_X86_64_SHA: cb49b7de5ee986510fe8666ca0273a6cc15eb82571f2f14832c9e8920751f3a4
+    LINUX_ARM64_SHA: 3755cc9b81f2466ad308f722a064ca04df27f59d551396183efe07978fef8fcb
+    MACOS_ARM64_SHA: a3d281867df087ded8c2f9afd35d61ff923a25e64caa127b720991ee433d763b
+    MACOS_X86_64_SHA: bd9ed3294c086f10dcc5fc25de57d44ba940c19c1a5a3d5f1cfeb10b9dff005e
   run: |
     BINARY_URL="https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}"
     ARCH=$(uname -m)
@@ -58,10 +58,14 @@ steps:
         environment:
           GITLEAKS_CONFIG: ${GITLEAKS_CONFIG:-}
         run: |
-          $SETUP_PATH/gitleaks detect --no-banner --exit-code 0 --redact --report-format sarif --no-git --report-path $SETUP_PATH/gitleaks-output.sarif --source .
+          $SETUP_PATH/gitleaks dir --no-banner --exit-code 0 --report-format sarif --report-path $SETUP_PATH/gitleaks-output.sarif -l error .
           cat $SETUP_PATH/gitleaks-output.sarif
-
       post-processor:
-        docker:
-          command: process
-          image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:005aa11@sha256:605f7ac26f64a1ec766f0023a09fbca95146546ea2abae5d32ffe62e180fda79
+        - docker:
+            command: process
+            image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:2fd5ac5@sha256:ce3c3d85a812c31aa4aa1c30ead38768498de5138e957fb05d602f47d6f736e8
+        - docker:
+            command: process
+            image: public.ecr.aws/boostsecurityio/boost-scanner-keyscope:458e3dd@sha256:6b611b085271e2c8ed15590f536fd4a29221a11752ef7525bbb60be9ad241902
+            environment:
+              VALIDATE_SECRET: ${GITLEAKS_VALIDATE_SECRETS:-}
