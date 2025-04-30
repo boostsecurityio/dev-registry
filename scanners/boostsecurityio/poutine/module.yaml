@@ -15,6 +15,7 @@ steps:
       command:
         docker:
           image: public.ecr.aws/boostsecurityio/boost-scanner-poutine:0d9767e@sha256:1f3ca616dcdde9e984d758dd1e78e73f834e6e1e12d07c4364a3d7d9b64918f9
-          command: 'poutine analyze_local . --format sarif'
+          command: |
+            -c "poutine analyze_local . --format sarif"
           workdir: /src
       format: sarif
