@@ -14,8 +14,6 @@ steps:
   - scan:
       command:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-poutine:f76592a@sha256:77ae9b7a923dced2741ba9bb19f143bc20986454bfa30dece39ef723c5f98bf5
-          command: | 
-              -c 'git config --global --add safe.directory /src'
+          image: public.ecr.aws/boostsecurityio/boost-scanner-poutine:0d9767e@sha256:1f3ca616dcdde9e984d758dd1e78e73f834e6e1e12d07c4364a3d7
           workdir: /src
       format: sarif
