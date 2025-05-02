@@ -10,23 +10,45 @@ config:
   require_full_repo: true
   support_diff_scan: true
   include_files:
-    - buildscript-gradle.lockfile
-    - Cargo.lock
-    - composer.lock
+    # C/C++ https://trivy.dev/v0.61/docs/coverage/language/c/
     - conan.lock
-    - Gemfile.lock
-    - go.mod
-    - gradle.lockfile
-    - mix.lock
-    - package-lock.json
-    - packages.lock.json
-    - Pipfile.lock
-    - pnpm-lock.yaml
-    - poetry.lock
-    - pom.xml
+    # Dart https://trivy.dev/v0.61/docs/coverage/language/dart/
     - pubspec.lock
-    - requirements.txt
+    # Dotnet https://trivy.dev/v0.61/docs/coverage/language/dotnet/
+    - "*.deps.json"
+    - packages.config
+    - "*Packages.props"
+    - packages.lock.json
+    # Elixir https://trivy.dev/v0.61/docs/coverage/language/elixir/
+    - mix.lock
+    # Go https://trivy.dev/v0.61/docs/coverage/language/golang/
+    - go.mod
+    # Java https://trivy.dev/v0.61/docs/coverage/language/java/
+    - "*gradle.lockfile"
+    - pom.xml
+    - "*.sbt.lock"
+    # NodeJs https://trivy.dev/v0.61/docs/coverage/language/nodejs/
+    - package-lock.json
     - yarn.lock
+    - pnpm-lock.yaml
+    # Php https://trivy.dev/v0.61/docs/coverage/language/php/
+    - composer.lock
+    - installed.json
+    # Python https://trivy.dev/v0.61/docs/coverage/language/python/
+    - Pipfile.lock
+    - requirements.txt
+    - poetry.lock
+    - uv.lock
+    # Ruby https://trivy.dev/v0.61/docs/coverage/language/ruby/
+    - Gemfile.lock
+    - .gemspec
+    # RUST https://trivy.dev/v0.61/docs/coverage/language/rust/
+    - Cargo.lock
+    # Swift https://trivy.dev/v0.61/docs/coverage/language/swift/
+    - Package.resolved
+    - Podfile.lock
+    # Julia https://trivy.dev/v0.61/docs/coverage/language/julia/
+    - Manifest.toml
 
 setup:
   - name: download trivy
