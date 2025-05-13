@@ -52,7 +52,7 @@ setup:
     chmod +x gitleaks
 - name: Copy Boost Gitleaks Rules
   run: |
-      cp /tmp/boost-cli*/registry/scanners/boostsecurityio/gitleaks/boost.toml $SETUP_PATH/
+      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/gitleaks/boost.toml $SETUP_PATH/
 
 steps:
   - scan:
