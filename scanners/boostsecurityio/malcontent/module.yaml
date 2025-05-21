@@ -19,5 +19,5 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-malcontent:f9648b0@sha256:38e2c536e627762253c9cb3d5e55fba77d0ed439c084e251cccb26e3008c5b73
+          image: public.ecr.aws/boostsecurityio/boost-scanner-malcontent:0a559cb@sha256:dc4d24ab8bd8f0e90e9c789cb3700065491232563e9451a9829443
           command: process
