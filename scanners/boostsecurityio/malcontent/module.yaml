@@ -8,16 +8,17 @@ scan_types:
 
 config:
   support_diff_scan: true
+  require_full_repo: true
 
 steps:
   - scan:
       command:
         docker:
           image: cgr.dev/chainguard/malcontent:latest
-          command: --format=json --min-risk=medium analyze .
+          command: --format=json --min-risk=high analyze .
           workdir: /src
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-malcontent:0a559cb@sha256:dc4d24ab8bd8f0e90e9c789cb3700065491232563e9451a9829443ab123e915e
+          image: public.ecr.aws/boostsecurityio/boost-scanner-malcontent:cbbe409@sha256:8e0e0b25e8302c5c64fe34abe398802afacc1a00f93248e62f7757c8bb45af98
           command: process
