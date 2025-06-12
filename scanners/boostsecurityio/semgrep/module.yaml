@@ -33,7 +33,7 @@ steps:
   - scan:
       command:
         docker:
-          image: returntocorp/semgrep:1.114.0@sha256:0cd75960cfec2215ff734a4f6379bbbb6edb82de0c24593dd0a70ec65e9860a9
+          image: registry.gitlab.com/boostsecurityio/registry/returntocorp/semgrep:1.114.0@sha256:c94ece62a4c8df8e0a1df41003a0a65fb1a3f2f466f9946d420e666cdd785f81
           command: semgrep scan --oss-only --sarif --quiet --disable-version-check --metrics=off .
           workdir: /src
           environment:

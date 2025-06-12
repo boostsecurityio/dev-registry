@@ -16,7 +16,7 @@ steps:
   - scan:
       command:
         docker:
-          image: node:22-alpine3.21@sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd
+          image: registry.gitlab.com/boostsecurityio/registry/node:22-alpine3.21@sha256:a73e7081874832dc455788ba110e31d1278f2352c043e4191f34093d4d7da60e
           command: |
             sh -c 'npm audit --json $NPM_AUDIT_ARGS || true'
           workdir: /src

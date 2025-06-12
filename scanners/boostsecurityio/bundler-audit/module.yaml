@@ -18,7 +18,7 @@ steps:
   - scan:
       command:
         docker:
-          image: ruby:3.1.2@sha256:933ec5cdaeae085292f00f69fd923f680f9d5a82959db74687cbbbd403b85a19
+          image: registry.gitlab.com/boostsecurityio/registry/ruby:3.1.2@sha256:a10fa0b3c38af7197acf73e958194e5f86d7080182371b63234080a9ac1e8bc2
           command: |
             bash -c 'touch Gemfile &&
                      gem install --silent bundler-audit -v "0.9.1" &&

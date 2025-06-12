@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: bridgecrew/checkov:3.2.108@sha256:e9aff6a7de5ec7b0434809a5955e639ccb3a5d48e6e8327059a5555c2003440a
+          image: registry.gitlab.com/boostsecurityio/registry/bridgecrew/checkov:3.2.108@sha256:d397486494006416dc0bfcb9ed32dda556804401859b6d910143886c5e7b6e11
           command: --directory . --output json --soft-fail --quiet --skip-download
           workdir: /src
       format: sarif

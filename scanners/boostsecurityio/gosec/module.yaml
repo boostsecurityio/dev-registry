@@ -16,7 +16,7 @@ steps:
   - scan:
       command:
         docker:
-          image: securego/gosec:2.20.0@sha256:484c5a420c9bff73e365de264d86cbb279f332a07d9b31a0b8e1ad6e79fc3701
+          image: registry.gitlab.com/boostsecurityio/registry/securego/gosec:2.20.0@sha256:8015b08ccaf2eb2dd780afc5b37653428f03f8c45234d09cf173be5855d07f7c
           command: -fmt sarif -no-fail -track-suppressions ./...
           workdir: /app
           environment:

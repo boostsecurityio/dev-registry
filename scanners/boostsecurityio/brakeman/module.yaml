@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: presidentbeef/brakeman:v7.0.0@sha256:e16d4d0a8a8b5ee2c5f5f7e25b3d25b81573aa49c973d1e39276848dffe9836d
+          image: registry.gitlab.com/boostsecurityio/registry/presidentbeef/brakeman:v7.0.0@sha256:2360e2a11e4e1bc30bfdd48e35d0a6f000633220a2fff625cf76bad4bf1f29cd
           command: --format json --quiet --no-pager --no-exit-on-warn --no-exit-on-error --force .
           workdir: /src
       format: sarif
