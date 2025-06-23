@@ -92,6 +92,15 @@ setup:
       chmod +x trivy
 
 steps:
+  - run: |
+      while IFS= read -r line; do
+        if [ "$(find . -name "$line" | wc -l)" != "0" ]
+        then
+          exit 0
+        fi
+      done < $SETUP_PATH/../../registry/scanners/boostsecurityio/trivy-fs/filelist.txt
+      >&2 echo "Scan misconfiguration: None of the supported languages file detected."
+      exit 1 
   - scan:
       command:
         environment:
