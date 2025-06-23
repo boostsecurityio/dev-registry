@@ -51,6 +51,10 @@ config:
     - Manifest.toml
 
 setup:
+  - name: Utility scripts
+    run: |
+      mkdir -p $SETUP_PATH/pre-scan-checks/
+      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/trivy-fs/prescan_checks.sh $SETUP_PATH/pre-scan-checks/trivy
   - name: download trivy
     environment:
       VERSION: 0.61.0
@@ -93,17 +97,7 @@ setup:
       chmod +x trivy
 
 steps:
-  - run: |
-      while IFS= read -r line; do
-        if [ "$(find . -name "$line" | wc -l)" != "0" ]
-        then
-          exit 0
-        fi
-      done < $SETUP_PATH/../../registry/scanners/boostsecurityio/trivy-fs/filelist.txt
-      >&2 echo "Scan misconfiguration:"
-      >&2 echo "  Trivy did not scan because no supported lockfiles were detected."
-      >&2 echo "  See documentation list of supported file types: https://trivy.dev/v0.61/docs/coverage/language/"
-      exit 1 
+  - run: $SETUP_PATH/pre-scan-checks/trivy
   - scan:
       command:
         environment:

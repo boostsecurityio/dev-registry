@@ -52,16 +52,14 @@ config:
     # Custom lockfile http://google.github.io/osv-scanner/supported-languages-and-lockfiles/#custom-lockfiles
     - osv-scanner.json
 
+setup:
+  - name: Utility scripts
+    run: |
+      mkdir -p $SETUP_PATH/pre-scan-checks/
+      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/osv-scanner/prescan_checks.sh $SETUP_PATH/pre-scan-checks/osv-scanner
+
 steps:
-- run: |
-    while IFS= read -r line; do
-      if [ "$(find . -name "$line" | wc -l)" != "0" ]
-      then
-        exit 0
-      fi
-    done < $SETUP_PATH/../../registry/scanners/boostsecurityio/osv-scanner/filelist.txt
-    >&2 echo "Scan misconfiguration: None of the supported languages file detected."
-    exit 1 
+- run: $SETUP_PATH/pre-scan-checks/osv-scanner
 - scan:
     command:
       docker:

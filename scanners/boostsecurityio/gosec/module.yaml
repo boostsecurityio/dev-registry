@@ -12,14 +12,14 @@ config:
   require_full_repo: true
   support_diff_scan: true
 
+setup:
+  - name: Utility scripts
+    run: |
+      mkdir -p $SETUP_PATH/pre-scan-checks/
+      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/gosec/prescan_checks.sh $SETUP_PATH/pre-scan-checks/gosec
+
 steps:
-  - run: |
-      if [ "$(find . -name "*.go" | wc -l)" != "0" ]
-      then
-        exit 0
-      fi
-      >&2 echo "Scan misconfiguration: Gosec only work for repositories with go code."
-      exit 1 
+  - run: $SETUP_PATH/pre-scan-checks/gosec
   - scan:
       command:
         docker:
