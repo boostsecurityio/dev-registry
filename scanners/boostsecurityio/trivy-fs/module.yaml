@@ -101,9 +101,8 @@ steps:
         fi
       done < $SETUP_PATH/../../registry/scanners/boostsecurityio/trivy-fs/filelist.txt
       >&2 echo "Scan misconfiguration:"
-      >&2 echo -e "\t Trivy did not scan because no supported lockfiles were detected."
-      >&2 echo -e "\t See documentation list of supported file types."
-      >&2 echo -e "\t https://trivy.dev/v0.61/docs/coverage/language/"
+      >&2 echo "  Trivy did not scan because no supported lockfiles were detected."
+      >&2 echo "  See documentation list of supported file types: https://trivy.dev/v0.61/docs/coverage/language/"
       exit 1 
   - scan:
       command:
