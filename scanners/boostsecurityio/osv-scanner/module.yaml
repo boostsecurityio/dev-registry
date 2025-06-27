@@ -52,7 +52,14 @@ config:
     # Custom lockfile http://google.github.io/osv-scanner/supported-languages-and-lockfiles/#custom-lockfiles
     - osv-scanner.json
 
+setup:
+  - name: Utility scripts
+    run: |
+      mkdir -p $SETUP_PATH/pre-scan-checks/
+      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/osv-scanner/prescan_checks.sh $SETUP_PATH/pre-scan-checks/osv-scanner
+
 steps:
+- run: $SETUP_PATH/pre-scan-checks/osv-scanner
 - scan:
     command:
       docker:
