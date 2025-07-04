@@ -38,7 +38,7 @@ for rule in $SEMGREP_RULES; do
     case "$rule" in
       .semgrep/*)
         # Local rules are allowed
-        cp -R $local_rules_dst/.semgrep/* .semgrep || true
+        cp -R -f $local_rules_dst/.semgrep/* .semgrep || true
         ;;
       http://*|https://*)
         fetch_remote $rule
