@@ -38,7 +38,18 @@ for rule in $SEMGREP_RULES; do
     case "$rule" in
       .semgrep/*)
         # Local rules are allowed
-        cp -R -f $local_rules_dst/.semgrep/* .semgrep || true
+        if [ "$rule" == ".semgrep/*" ]
+        then
+          # 
+          cp -R -f $local_rules_dst/.semgrep/* .semgrep || true
+        else
+          if [ ! -f "$local_rules_dst/$rule" ]  && [ ! -d  "$local_rules_dst/$rule" ]
+          then
+            >&2 echo "Semgrep custom rules validation failed."
+            >&2 echo " The specific file or directory does not exist in the code repository: $rule."
+          fi
+          cp -R -f "$local_rules_dst/$rule" .semgrep || true
+        fi
         ;;
       http://*|https://*)
         fetch_remote $rule
@@ -46,6 +57,7 @@ for rule in $SEMGREP_RULES; do
       boost/sast/rules/semgrep@*)
         # Boost
         version=$(echo "$rule" | cut -d '@' -f 2)
+        # $version is not sanitized since one can provide any URL in the boost config
         fetch_remote "https://assets.build.boostsecurity.io/semgrep-rules/$version/all-sast-rules.yml"
         ;;
       *)
@@ -59,3 +71,9 @@ for rule in $SEMGREP_RULES; do
 done
 
 rm -rf $local_rules_dst
+
+if [ "$(find .semgrep -regex '.*\.ya?ml' | wc -l)" == "0" ]
+then
+  >&2 echo "Semgrep custom rules validation failed for $SEMGREP_RULES."
+  >&2 echo "  Missing yaml configuration files"
+fi
