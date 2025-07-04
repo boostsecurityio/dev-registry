@@ -8,6 +8,7 @@ mkdir -p .semgrep
 
 fetch_remote() {
     file_name="${1##*/}"
+    file_name=$(echo $file_name | cut -d '#' -f 1 | cut -d '?' -f 1)
     file_extension="${file_name##*.}"
     if [ "$file_extension" != "yaml" ] && [ "$file_extension" != "yml" ]
     then
