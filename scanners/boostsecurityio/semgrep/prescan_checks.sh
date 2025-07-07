@@ -13,7 +13,7 @@ fetch_remote() {
     if [ "$file_extension" != "yaml" ] && [ "$file_extension" != "yml" ]
     then
         >&2 echo "Semgrep custom rules validation failed."
-        >&2 echo " The provided URL do not point to a yaml file: $1."
+        >&2 echo " The provided URL does not point to a YAML file: $1."
         rm -rf $local_rules_dst
         exit 1
     fi
