@@ -47,6 +47,7 @@ for rule in $SEMGREP_RULES; do
           then
             >&2 echo "Semgrep custom rules validation failed."
             >&2 echo " The specific file or directory does not exist in the code repository: $rule."
+            exit 1
           fi
           cp -R -f "$local_rules_dst/$rule" .semgrep || true
         fi
