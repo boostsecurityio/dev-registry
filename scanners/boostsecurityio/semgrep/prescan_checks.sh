@@ -76,4 +76,5 @@ if [ "$(find .semgrep -regex '.*\.ya?ml' | wc -l)" == "0" ]
 then
   >&2 echo "Semgrep custom rules validation failed for $SEMGREP_RULES."
   >&2 echo "  Missing yaml configuration files"
+  exit 1
 fi
