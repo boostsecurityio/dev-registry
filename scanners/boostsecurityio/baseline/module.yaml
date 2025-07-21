@@ -11,7 +11,31 @@ scan_types:
 
 config:
   support_diff_scan: true
-
+  include_files:
+    - *.crx
+    - *.deb
+    - *.dex
+    - *.dey
+    - *.elf
+    - *.o
+    - *.so
+    - *.iso
+    - *.class
+    - *.jar
+    - *.bundle
+    - *.dylib
+    - *.lib
+    - *.msi
+    - *.dll
+    - *.drv
+    - *.efi
+    - *.exe
+    - *.ocx
+    - *.pyc
+    - *.pyo
+    - *.par
+    - *.rpm
+    - *.whl
 
 steps:
     - scan:
