@@ -1,0 +1,30 @@
+rules:
+  injection:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - supply-chain-cicd-severe-issues
+    description: The pipeline contains an injection into bash or JavaScript with an expression that can contain user input. Prefer placing the expression in an environment variable instead of interpolating it directly into a script.
+    name: injection
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Serialized AI model with malicious behavior
+    ref: https://boostsecurityio.github.io/poutine/rules/injection/
+    recommended: true
+  untrusted_checkout_exec:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - supply-chain-cicd-severe-issues
+    description: The workflow appears to checkout untrusted code from a fork and uses a command that is known to allow code execution.
+    name: untrusted_checkout_exec
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Arbitrary Code Execution from Untrusted Code Changes
+    ref: https://boostsecurityio.github.io/poutine/rules/untrusted_checkout_exec/
+    recommended: true
+
