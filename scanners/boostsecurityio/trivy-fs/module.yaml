@@ -9,6 +9,7 @@ scan_types:
 config:
   require_full_repo: true
   support_diff_scan: true
+  support_incremental: true
   include_files:
     # C/C++ https://trivy.dev/v0.61/docs/coverage/language/c/
     - conan.lock
