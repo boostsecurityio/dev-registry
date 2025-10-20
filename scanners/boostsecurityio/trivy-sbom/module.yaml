@@ -8,114 +8,94 @@ scan_types:
 
 config:
   support_diff_scan: false
-  include_files:
-    # C/C++ https://trivy.dev/v0.61/docs/coverage/language/c/
-    - conan.lock
-    # Dart https://trivy.dev/v0.61/docs/coverage/language/dart/
-    - pubspec.lock
-    # Dotnet https://trivy.dev/v0.61/docs/coverage/language/dotnet/
-    - "*.deps.json"
-    - packages.config
-    - "*Packages.props"
-    - packages.lock.json
-    # Elixir https://trivy.dev/v0.61/docs/coverage/language/elixir/
-    - mix.lock
-    # Go https://trivy.dev/v0.61/docs/coverage/language/golang/
-    - go.mod
-    # Java https://trivy.dev/v0.61/docs/coverage/language/java/
-    - "*gradle.lockfile"
-    - pom.xml
-    - "*.sbt.lock"
-    # NodeJs https://trivy.dev/v0.61/docs/coverage/language/nodejs/
-    - package-lock.json
-    - yarn.lock
-    - pnpm-lock.yaml
-    # Php https://trivy.dev/v0.61/docs/coverage/language/php/
-    - composer.lock
-    - installed.json
-    # Python https://trivy.dev/v0.61/docs/coverage/language/python/
-    - Pipfile.lock
-    - requirements.txt
-    - poetry.lock
-    - uv.lock
-    # Ruby https://trivy.dev/v0.61/docs/coverage/language/ruby/
-    - Gemfile.lock
-    - .gemspec
-    # RUST https://trivy.dev/v0.61/docs/coverage/language/rust/
-    - Cargo.lock
-    # Swift https://trivy.dev/v0.61/docs/coverage/language/swift/
-    - Package.resolved
-    - Podfile.lock
-    # Julia https://trivy.dev/v0.61/docs/coverage/language/julia/
-    - Manifest.toml
 
 setup:
-  - name: Utility scripts
+  - name: Verify dotnet installed
     run: |
-      mkdir -p $SETUP_PATH/pre-scan-checks/
-      cp $SETUP_PATH/../../registry/scanners/boostsecurityio/trivy-fs/prescan_checks.sh $SETUP_PATH/pre-scan-checks/trivy
-  - name: download trivy
-    environment:
-      VERSION: 0.67.0
-      LINUX_X86_64_SHA: 5b10e9bba00a508b0f3bcb98e78f1039f7eee26b57c9266961a415642a9208ab
-      LINUX_ARM64_SHA: 0f3ac33954dd918cad708bdf06731b4aa8cc14b12e879932b4ceef2f22640a9e
-      MACOS_X86_64_SHA: ae8a13d8c3abf7f7e7981ac1a5f5ec094d68835f2aac67da102d4ba36e820c3c
-      MACOS_ARM64_SHA: feea8727b501f654683774fe0f98a9c1a128c7d8bcd7c942a8e6f6d05b33bd4b
-    run: |
-      BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
-      ARCH=$(uname -m)
-
-      case "$(uname -sm)" in
-        "Linux x86_64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-64bit.tar.gz"
-          SHA="${LINUX_X86_64_SHA} trivy.tgz"
-          ;;
-        "Linux aarch64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-ARM64.tar.gz"
-          SHA="${LINUX_ARM64_SHA} trivy.tgz"
-          ;;
-        "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-64bit.tar.gz"
-          SHA="${MACOS_X86_64_SHA} trivy.tgz"
-          ;;
-        "Darwin arm64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-ARM64.tar.gz"
-          SHA="${MACOS_ARM64_SHA} trivy.tgz"
-          ;;
-        *)
-          echo "Unsupported machine: ${OPTARG}"
-          exit 1
-          ;;
-      esac
-
-      curl -o trivy.tgz -fsSL "${BINARY_URL}"
-      echo "${SHA}" | sha256sum --check
-
-      tar --no-same-owner -zxf trivy.tgz trivy
-      rm trivy.tgz
-      chmod +x trivy
+      mkdir -p $SETUP_PATH/scan-tools
+      if ! dotnet --version ; then
+        echo "dotnet is not installed, the scanner cannot run."
+        exit 1
+      fi
+      dotnet tool install CycloneDX --version 5.5.0 --tool-path $SETUP_PATH/scan-tools/.dotnet-tools
+      if [ $? -ne 0 ]; then
+        echo "Failed to install CycloneDX"
+        exit 1
+      fi
+      if ! "$SETUP_PATH/scan-tools/.dotnet-tools/dotnet-CycloneDX" --version >/dev/null 2>&1; then
+        echo "CycloneDX did not install or run correctly"
+        exit 1
+      fi
 
 steps:
-  - run: $SETUP_PATH/pre-scan-checks/trivy
   - scan:
       command:
-        environment:
-          NO_COLOR: "true"
-          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
-          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
-        run: >
-          $SETUP_PATH/trivy fs
-          --format=cyclonedx
-          --license-full
-          --no-progress
-          --scanners vuln
-          --cache-dir=/tmp/trivy/
-          --skip-version-check 
-          . 2>&1
+        run: |
+          TEMP_SOLN_FILE="temp"
+          SCAN_TARGET=$TEMP_SOLN_FILE".sln"
+          
+          # Find all .csproj files (excluding test directories)
+          ALL_PROJECTS=$(find . -maxdepth 5 -name "*.csproj" -type f)
+          
+          if [ -z "$ALL_PROJECTS" ]; then
+              echo "{}"
+              exit 0
+          fi
+          
+          # Test each project - only include ones that restore successfully
+          # This filters out template projects or any broken projects
+          VALID_PROJECTS_FILE=$(mktemp)
+          
+          while IFS= read -r proj; do
+              if [ -n "$proj" ] && dotnet restore "$proj" --ignore-failed-sources --no-cache >/dev/null 2>&1; then
+                  echo "$proj" >> "$VALID_PROJECTS_FILE"
+              fi
+          done <<EOF
+          $ALL_PROJECTS
+          EOF
+          
+          PROJECT_LIST=$(cat "$VALID_PROJECTS_FILE")
+          rm -f "$VALID_PROJECTS_FILE"
+
+          
+          if [ -z "$PROJECT_LIST" ]; then
+              echo "No projects found."
+              exit 1
+          fi
+          
+          # Create temporary solution to merge all projects
+          dotnet new sln -n $TEMP_SOLN_FILE --force >/dev/null 2>&1 || true
+          
+          # Add all found .csproj files to the solution
+          echo "$PROJECT_LIST" | while IFS= read -r proj; do
+              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" >/dev/null 2>&1 || true
+          done
+                    
+          # Restore packages while ignoring errors.
+          if [ -n "$SCAN_TARGET" ]; then
+              dotnet restore "$SCAN_TARGET" --ignore-failed-sources --no-cache >/dev/null 2>&1 || true
+          fi
+          
+          # Generate SBOM to temporary directory
+          OUTPUT_DIR="temp_sbom_output"
+          rm -rf "$OUTPUT_DIR"  || true
+          
+          if [ -n "$SCAN_TARGET" ] && $SETUP_PATH/scan-tools/.dotnet-tools/dotnet-CycloneDX "$SCAN_TARGET" \
+              --disable-package-restore \
+              --output "$OUTPUT_DIR" \
+              --output-format json \
+             >/dev/null 2>&1; then
+          
+              if [ -f "$OUTPUT_DIR/bom.json" ]; then
+                  cat "$OUTPUT_DIR/bom.json"
+              else
+                  echo "SBOM result missing."
+                  exit 1
+              fi
+          else
+              echo "CycloneDX failed to generate SBOM."
+              exit 1
+          fi
+
       format: cyclonedx
-      post-processor:
-        docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:9b693ef@sha256:249ee707158424d8bd333198e1512ca295fe30c6fff2d2b1adff9e8f914b42cb
-          command: process
-          environment:
-            PYTHONIOENCODING: utf-8
+
