@@ -12,11 +12,11 @@ config:
 setup:
 - name: Download Gitleaks
   environment:
-    VERSION: 8.24.0
-    LINUX_X86_64_SHA: cb49b7de5ee986510fe8666ca0273a6cc15eb82571f2f14832c9e8920751f3a4
-    LINUX_ARM64_SHA: 3755cc9b81f2466ad308f722a064ca04df27f59d551396183efe07978fef8fcb
-    MACOS_ARM64_SHA: a3d281867df087ded8c2f9afd35d61ff923a25e64caa127b720991ee433d763b
-    MACOS_X86_64_SHA: bd9ed3294c086f10dcc5fc25de57d44ba940c19c1a5a3d5f1cfeb10b9dff005e
+    VERSION: 8.28.0
+    LINUX_X86_64_SHA: a65b5253807a68ac0cafa4414031fd740aeb55f54fb7e55f386acb52e6a840eb
+    LINUX_ARM64_SHA: eff65261156100e5d94a6b3dec313d532fddfe19ae1590bf7a2b4f2699128356
+    MACOS_ARM64_SHA: d942f3ad147250c9edbaab3fed9e482f98d3b59ba10ae97b8d75647e3ade492c
+    MACOS_X86_64_SHA: edf5a507008b0d2ef4959575772772770586409c1f6f74dabf19cbe7ec341ced
   run: |
     BINARY_URL="https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}"
     ARCH=$(uname -m)
