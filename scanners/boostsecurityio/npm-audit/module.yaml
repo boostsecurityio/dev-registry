@@ -38,3 +38,4 @@ steps:
               process --scanner npm-audit
             environment:
                 PYTHONIOENCODING: utf-8
+            workdir: /src
