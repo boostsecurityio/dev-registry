@@ -61,7 +61,9 @@ steps:
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
         run: |
-            $SETUP_PATH/trivy image ${TRIVY_ADDITIONAL_ARGS} --format json --scanners vuln \
+            $SETUP_PATH/trivy image ${TRIVY_ADDITIONAL_ARGS} --format json \
+              --scanners vuln \
+              --skip-version-check \ 
               --quiet ${BOOST_IMAGE_NAME}
       format: sarif
       post-processor:
