@@ -28,7 +28,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-converter-sca:6e4b6c1@sha256:417c90b672b016b01dac84a4cf24d3a042503b6ddcfd1ba22ebd24d229f78883
+            image: public.ecr.aws/boostsecurityio/boost-converter-sca:eeb51da@sha256:d407b67666b200602c5900c62330f82a565cd80757315b362df1ec9976c0f8ac
             command: |
               process --scanner safety
             environment:
