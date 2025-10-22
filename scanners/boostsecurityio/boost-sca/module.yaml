@@ -111,7 +111,7 @@ steps:
             --format=cyclonedx \
             --license-full \
             --no-progress \
-            --scanners vuln 
+            --scanners vuln \
             --skip-version-check . 2>&1
       format: cyclonedx
       post-processor:
