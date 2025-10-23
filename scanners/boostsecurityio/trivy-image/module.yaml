@@ -71,7 +71,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:2925e6e@sha256:0f116f3ae1ccb36cbef4e73d44dde8d376b756b2486757576322a468fa98bdb9
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:fba2c2b@sha256:42514869cb1ad36e13bd51e55523de6a767104094ec9e99391de89835a388dfd
           command: process
           workdir: /code
           environment:
