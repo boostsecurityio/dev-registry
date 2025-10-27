@@ -12,7 +12,7 @@ rules:
     description: The pipeline contains an injection into bash or JavaScript with an expression that can contain user input. Prefer placing the expression in an environment variable instead of interpolating it directly into a script.
     name: injection
     group: supply-chain-cicd-vulnerable-pipeline
-    pretty_name: Serialized AI model with malicious behavior
+    pretty_name: Injection with Arbitrary External Contributor Input
     ref: https://boostsecurityio.github.io/poutine/rules/injection/
     recommended: true
   untrusted_checkout_exec:
