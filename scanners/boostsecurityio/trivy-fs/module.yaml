@@ -4,6 +4,7 @@ id: boostsecurityio/trivy-fs
 name: Trivy (Filesystem scanning)
 namespace: boostsecurityio/trivy-fs
 scan_types:
+  - secrets
   - sca
 
 config:

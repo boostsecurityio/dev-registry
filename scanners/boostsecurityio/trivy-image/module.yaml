@@ -4,6 +4,7 @@ id: boostsecurityio/trivy-image
 name: Trivy (Image scanning)
 namespace: boostsecurityio/trivy-image
 scan_types:
+  - secrets
   - sca_container
 
 config:
