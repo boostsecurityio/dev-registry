@@ -4,6 +4,7 @@ id: boostsecurityio/trivy-fs
 name: Trivy (Filesystem scanning)
 namespace: boostsecurityio/trivy-fs
 scan_types:
+  - secrets
   - sca
 
 config:
@@ -106,18 +107,19 @@ steps:
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
+          TRIVY_SCANNERS: vuln,secret
         run: >
           $SETUP_PATH/trivy fs 
           ${TRIVY_ADDITIONAL_ARGS} 
           --format json
           --no-progress
-          --scanners vuln
+          --scanners ${TRIVY_SCANNERS}
           --skip-version-check 
           . 2>&1
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:fba2c2b@sha256:42514869cb1ad36e13bd51e55523de6a767104094ec9e99391de89835a388dfd
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:b990ceb@sha256:d4871661744790add629604c85b396458e54cec780ac881a5c3e4fa9fd1dde22
           command: process
           environment:
             PYTHONIOENCODING: utf-8
