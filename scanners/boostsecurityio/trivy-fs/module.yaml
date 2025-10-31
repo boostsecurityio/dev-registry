@@ -119,7 +119,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:bd6764a@sha256:003d6e55018c4aa334f8c6975cba67886471530fedfd131a612dd7a0d8f96552
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy:b990ceb@sha256:d4871661744790add629604c85b396458e54cec780ac881a5c3e4fa9fd1dde22
           command: process
           environment:
             PYTHONIOENCODING: utf-8
