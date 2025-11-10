@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@896d1c81789c873e881e3a7217fdc5426f2f023b
+        uses: martin-boost-dev/boostsec-registry-test-action@c8224449e7ba8cf62250938904b57bcfa89626a7
         with:
           provider: github
           provider-config: |
