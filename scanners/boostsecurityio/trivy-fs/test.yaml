@@ -1,0 +1,10 @@
+version: 1.0
+tests:
+  - name: "Source code scan"
+    type: "source-code"
+    source:
+      url: "https://github.com/martin-boost-dev/boost-poc-registry-testing-trivy"
+      ref: "main"
+    scan_paths:
+      - "rclone"
+      - "osv-scanner"
