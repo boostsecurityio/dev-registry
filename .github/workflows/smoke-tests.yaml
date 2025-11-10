@@ -17,7 +17,7 @@ jobs:
           provider: github
           provider-config: |
             {
-              "token": "${{ secrets.GITHUB_TOKEN }}",
+              "token": "${{ secrets.BOOST_GITHUB_TEST_RUNNER }}",
               "owner": "martin-boost-dev",
               "repo": "boostsec-registry-test-runner",
               "workflow_id": "test-scanner.yml"
