@@ -1,5 +1,8 @@
 name: Smoke Tests
 
+env:
+  ACTION: martin-boost-dev/boostsec-registry-test-action@ae4ca8bcb5d76bd0c14cef22aece7493da7ba423
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -8,24 +11,46 @@ on:
 jobs:
   github-action:
     name: Github Actions
-    uses: ./.github/workflows/smoke-test-runner.yaml
-    with:
-      provider: github
-      provider-config: |
-        {
-          "token": "${{ secrets.BOOST_GITHUB_TEST_RUNNER }}",
-          "owner": "martin-boost-dev",
-          "repo": "boostsec-registry-test-runner",
-          "workflow_id": "test-scanner.yml"
-        }
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: ${{ env.ACTION }}
+        with:
+          provider: github
+          provider-config: |
+            {
+              "token": "${{ secrets.BOOST_GITHUB_TEST_RUNNER }}",
+              "owner": "martin-boost-dev",
+              "repo": "boostsec-registry-test-runner",
+              "workflow_id": "test-scanner.yml"
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
 
   gitlab-action:
     name: Gitlab-ci
-    uses: ./.github/workflows/smoke-test-runner.yaml
-    with:
-      provider: gitlab
-      provider-config: |
-        {
-          "token": "${{ secrets.BOOST_GITLAB_TEST_RUNNER }}",
-          "project_id": "boostsecurityio/martin/boostsec-registry-test-runner"
-        }
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: ${{ env.ACTION }}
+        with:
+          provider: gitlab
+          provider-config: |
+            {
+              "token": "${{ secrets.BOOST_GITLAB_TEST_RUNNER }}",
+              "project_id": "boostsecurityio/martin/boostsec-registry-test-runner",
+              "repo": "boostsec-registry-test-runner",
+              "workflow_id": "test-scanner.yml"
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
