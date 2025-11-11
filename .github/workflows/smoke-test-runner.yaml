@@ -1,0 +1,29 @@
+name: Smoke Test Runner (Reusable)
+
+on:
+  workflow_call:
+    inputs:
+      provider:
+        required: true
+        type: string
+      provider-config:
+        required: true
+        type: string
+
+jobs:
+  run-test:
+    name: Run Test (${{ inputs.provider }})
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@ae4ca8bcb5d76bd0c14cef22aece7493da7ba423
+        with:
+          provider: ${{ inputs.provider }}
+          provider-config: ${{ inputs.provider-config }}
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
