@@ -43,7 +43,7 @@ jobs:
           provider: gitlab
           provider-config: |
             {
-              "token": "${{ secrets.BOOST_GITLAB_PIPELINE_TRIGGER_TOKEN }}",
+              "token": "${{ secrets.BOOST_GITLAB_PROJECT_TOKEN }}",
               "project_id": "boostsecurityio/martin/boostsec-registry-test-runner",
               "repo": "boostsec-registry-test-runner",
               "workflow_id": "test-scanner.yml"
