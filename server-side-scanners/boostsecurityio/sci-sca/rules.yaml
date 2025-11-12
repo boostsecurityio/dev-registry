@@ -16,3 +16,14 @@ rules:
     pretty_name: Use of Unsafe AI model
     ref: https://huggingface.co/docs/hub/en/security-pickle
     recommended: true
+  forbidden-component:
+    categories:
+      - ALL
+      - boost-baseline
+      - use-of-forbidden-component
+    description: Project with Unauthorized Component
+    name: forbidden-component
+    group: component-violations
+    pretty_name: Project with Unauthorized Component
+    ref: https://docs.boostsecurity.io/rules/index.html 
+    recommended: true
