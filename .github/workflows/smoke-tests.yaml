@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@57526914026866f168fae20933f672dbfa46f471
+        uses: martin-boost-dev/boostsec-registry-test-action@df82403a273b294747554d33ed9b4253302be72c
         with:
           provider: github
           provider-config: |
@@ -38,15 +38,13 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@57526914026866f168fae20933f672dbfa46f471
+        uses: martin-boost-dev/boostsec-registry-test-action@df82403a273b294747554d33ed9b4253302be72c
         with:
           provider: gitlab
           provider-config: |
             {
               "token": "${{ secrets.BOOST_GITLAB_PROJECT_TOKEN }}",
-              "project_id": "boostsecurityio/martin/boostsec-registry-test-runner",
-              "repo": "boostsec-registry-test-runner",
-              "workflow_id": "test-scanner.yml"
+              "project_id": "boostsecurityio/martin/boostsec-registry-test-runner"
             }
           registry-path: "."
           base-ref: "main"
