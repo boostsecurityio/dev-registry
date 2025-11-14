@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@c97605f4009795b5311cfb6046f83ea5808c16ac
+        uses: martin-boost-dev/boostsec-registry-test-action@55087f599b0a78907e72d136a88534941a697d1d
         with:
           provider: github
           provider-config: |
@@ -38,7 +38,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@c97605f4009795b5311cfb6046f83ea5808c16ac
+        uses: martin-boost-dev/boostsec-registry-test-action@55087f599b0a78907e72d136a88534941a697d1d
         with:
           provider: gitlab
           provider-config: |
@@ -59,7 +59,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@c97605f4009795b5311cfb6046f83ea5808c16ac
+        uses: martin-boost-dev/boostsec-registry-test-action@55087f599b0a78907e72d136a88534941a697d1d
         with:
           provider: azure
           provider-config: |
@@ -68,6 +68,30 @@ jobs:
               "organization": "boostsecurityio",
               "project": "Martin",
               "pipeline_id": 51
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
+
+  bitbucket:
+    name: Bitbucket Pipelines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@55087f599b0a78907e72d136a88534941a697d1d
+        with:
+          provider: azure
+          provider-config: |
+            {
+              "username": "${{ secrets.BOOST_BITBUCKET_USERNAME }}",
+              "api_token": "${{ secrets.BOOST_BITBUCKET_API_TOKEN }}",
+              "workspace": "boostsecurityio",
+              "repo_slug": "boostsec-registry-test-runner",
+              "branch": "main"
             }
           registry-path: "."
           base-ref: "main"
