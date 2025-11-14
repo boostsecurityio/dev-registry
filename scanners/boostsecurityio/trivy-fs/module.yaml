@@ -4,7 +4,6 @@ id: boostsecurityio/trivy-fs
 name: Trivy (Filesystem scanning)
 namespace: boostsecurityio/trivy-fs
 scan_types:
-  - secrets
   - sca
 
 config:
@@ -107,7 +106,7 @@ steps:
           TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS---ignore-unfixed}
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
-          TRIVY_SCANNERS: vuln,secret
+          TRIVY_SCANNERS: vuln
         run: >
           $SETUP_PATH/trivy fs 
           ${TRIVY_ADDITIONAL_ARGS} 
