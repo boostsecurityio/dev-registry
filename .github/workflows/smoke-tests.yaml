@@ -84,7 +84,7 @@ jobs:
       - name: Run Tests
         uses: martin-boost-dev/boostsec-registry-test-action@55087f599b0a78907e72d136a88534941a697d1d
         with:
-          provider: azure
+          provider: bitbucket
           provider-config: |
             {
               "username": "${{ secrets.BOOST_BITBUCKET_USERNAME }}",
