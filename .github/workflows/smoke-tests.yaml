@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@2eb400e3e507010af68031b67bfcec7e3bb43d3f
+        uses: martin-boost-dev/boostsec-registry-test-action@2411decf159ad637098e7c75c54d5bec995f666d
         with:
           provider: github
           provider-config: |
@@ -38,7 +38,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@2eb400e3e507010af68031b67bfcec7e3bb43d3f
+        uses: martin-boost-dev/boostsec-registry-test-action@2411decf159ad637098e7c75c54d5bec995f666d
         with:
           provider: gitlab
           provider-config: |
@@ -59,7 +59,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@2eb400e3e507010af68031b67bfcec7e3bb43d3f
+        uses: martin-boost-dev/boostsec-registry-test-action@2411decf159ad637098e7c75c54d5bec995f666d
         with:
           provider: azure
           provider-config: |
@@ -82,7 +82,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: martin-boost-dev/boostsec-registry-test-action@2eb400e3e507010af68031b67bfcec7e3bb43d3f
+        uses: martin-boost-dev/boostsec-registry-test-action@2411decf159ad637098e7c75c54d5bec995f666d
         with:
           provider: bitbucket
           provider-config: |
