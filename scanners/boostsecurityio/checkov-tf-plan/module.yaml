@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: bridgecrew/checkov:3.2.108@sha256:e9aff6a7de5ec7b0434809a5955e639ccb3a5d48e6e8327059a5555c2003440a
+          image: bridgecrew/checkov:3.2.490@sha256:23120e7037ee12fa696da7905e2a80a4b13189e294ec0fd1f85b2b56f6e3c3d8
           command: --file ./boost.tfplan.json --output json --soft-fail --compact --skip-download --framework terraform_plan
           workdir: /src
       format: sarif
