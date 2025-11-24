@@ -1,3 +1,2 @@
 import:
   - boostsecurityio/sca-cve
-  - boostsecurityio/stored-secrets
