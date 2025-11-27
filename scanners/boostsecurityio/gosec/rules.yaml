@@ -138,7 +138,7 @@ rules:
     - boost-hardened
     group: top10-insecure-design
     name: G602
-    pretty_name: "G602: Slice access out of bounds"
+    pretty_name: 'G602: Slice access out of bounds'
     description: The software does not restrict or incorrectly restricts operations
       within the boundaries of a resource that is accessed using an index or pointer.
     ref: https://cwe.mitre.org/data/definitions/118.html
@@ -246,7 +246,6 @@ rules:
     categories:
     - ALL
     - cwe-295
-    - cwe-top-25
     - owasp-top-10
     - boost-baseline
     - boost-hardened
@@ -262,6 +261,7 @@ rules:
     - cwe-310
     - boost-baseline
     - boost-hardened
+    - owasp-top-10
     group: top10-crypto-failures
     name: G403
     pretty_name: 'G403: Ensure minimum RSA key length of 2048 bits'

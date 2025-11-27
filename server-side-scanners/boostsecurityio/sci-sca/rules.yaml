@@ -1,16 +1,13 @@
-import:
-  - boostsecurityio/sca-cve
-
 rules:
   use-of-unsafe-ai-model:
     categories:
-      - ALL
-      - boost-baseline
-      - boost-hardened
-      - supply-chain
-      - owasp-top-10
-      - unsafe-ai-component
-    description: An Unsafe AI model is being loaded. There are dangerous arbitrary code execution attacks that can be perpetrated when you load an unsafe AI model.
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - unsafe-ai-component
+    description: An Unsafe AI model is being loaded. There are dangerous arbitrary
+      code execution attacks that can be perpetrated when you load an unsafe AI model.
     name: use-of-unsafe-ai-model
     group: top10-vulnerable-components
     pretty_name: Use of Unsafe AI model
@@ -18,12 +15,12 @@ rules:
     recommended: true
   forbidden-component:
     categories:
-      - ALL
-      - boost-baseline
-      - use-of-forbidden-component
+    - ALL
+    - boost-baseline
+    - use-of-forbidden-component
     description: Project with Unauthorized Component
     name: forbidden-component
     group: component-violations
     pretty_name: Project with Unauthorized Component
-    ref: https://docs.boostsecurity.io/rules/index.html 
+    ref: https://docs.boostsecurity.io/rules/index.html
     recommended: true

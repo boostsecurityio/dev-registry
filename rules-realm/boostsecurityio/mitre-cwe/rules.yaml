@@ -38,6 +38,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application does not restrict or incorrectly restricts frame
       objects or UI layers that belong to another application or domain, which can
       lead to user confusion about which interface the user is interacting with.
@@ -825,6 +826,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Debugging messages help attackers learn about the system and plan
       a form of attack.
     group: top10-security-misconfiguration
@@ -899,6 +901,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product or code uses machine-dependent functionality, but it
       does not sufficiently encapsulate or isolate this functionality from the rest
       of the code.
@@ -1155,6 +1158,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product receives data from an HTTP agent/component (e.g., web
       server, proxy, browser, etc.), but it does not neutralize or incorrectly neutralizes
       CR and LF characters before the data is included in outgoing HTTP headers.
@@ -1215,6 +1219,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not neutralize or incorrectly neutralizes output
       that is written to logs.
     group: top10-security-logging-monitoring-failures
@@ -1225,6 +1230,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not use, or incorrectly uses, an input validation
       framework that is provided by the source language or an independent library.
     group: top10-insecure-design
@@ -1235,6 +1241,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The ASP.NET application does not use, or incorrectly uses, the model
       validation framework.
     group: top10-security-misconfiguration
@@ -1245,6 +1252,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product performs CPU computations using algorithms that are not
       as efficient as they could be for the needs of the developer, i.e., the computations
       can be optimized further.
@@ -2327,6 +2335,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Storing a plaintext password in a configuration file allows anyone
       who can read the file access to the password-protected resource making them
       an easy target for attackers.
@@ -2791,6 +2800,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product receives input from an upstream component, but it does
       not neutralize or incorrectly neutralizes special elements that could be interpreted
       as control elements or syntactic markers when they are sent to a downstream
@@ -2947,10 +2957,9 @@ rules:
     - ALL
     - boost-baseline
     - boost-hardened
-    - owasp-top-10
-    description: The product uses externally-provided data to build prompts provided 
-      to large language models (LLMs), but the way these prompts are constructed causes 
-      the LLM to fail to distinguish between user-supplied inputs and developer provided 
+    description: The product uses externally-provided data to build prompts provided
+      to large language models (LLMs), but the way these prompts are constructed causes
+      the LLM to fail to distinguish between user-supplied inputs and developer provided
       system directives.
     group: top10-injection
     name: CWE-1427
@@ -3037,6 +3046,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: One or more system settings or configuration elements can be externally
       controlled by a user.
     group: top10-security-misconfiguration
@@ -3381,6 +3391,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product implements a protection mechanism that relies on a list
       of inputs (or properties of inputs) that are explicitly allowed by policy because
       the inputs are assumed to be safe, but the list is too permissive - that is,
@@ -3393,6 +3404,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product implements a protection mechanism that relies on a list
       of inputs (or properties of inputs) that are not allowed by policy or otherwise
       require other action to neutralize before additional processing takes place,
@@ -3447,6 +3459,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - cwe-top-25
     description: The product performs a calculation that can produce an integer overflow
       or wraparound, when the logic assumes that the resulting value will always be
       larger than the original value. This can introduce other weaknesses when the
@@ -3573,6 +3586,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The code transmits data to another actor, but a portion of the data
       includes sensitive information that should not be accessible to that actor.
     group: top10-broken-access-control
@@ -3662,6 +3676,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product generates an error message that includes sensitive information
       about its environment, users, or associated data.
     group: top10-insecure-design
@@ -3707,6 +3722,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product's intended functionality exposes information to certain
       actors in accordance with the developer's security policy, but this information
       is regarded as sensitive according to the intended security policies of other
@@ -3741,6 +3757,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive data under the web document root with
       insufficient access control, which might make it accessible to untrusted parties.
     group: top10-broken-access-control
@@ -3800,6 +3817,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not record or display information that would be
       important for identifying the source or nature of an attack, or determining
       if an action is safe.
@@ -3854,6 +3872,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses external input to construct a pathname that should
       be within a restricted directory, but it does not properly neutralize sequences
       such as ".." that can resolve to a location that is outside of that directory.
@@ -3918,6 +3937,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not handle or incorrectly handles when the number
       of parameters, fields, or arguments with the same name exceeds the expected
       amount.
@@ -4106,6 +4126,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Storing a password in plaintext may result in a system compromise.
     group: top10-insecure-design
     name: CWE-256
@@ -4115,6 +4136,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The storage of passwords in a recoverable format makes them subject
       to password reuse attacks by malicious users. In fact, it should be noted that
       recoverable encrypted passwords provide no significant benefit over plaintext
@@ -4162,6 +4184,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores a password in a configuration file that might
       be accessible to actors who do not know the password.
     group: top10-security-misconfiguration
@@ -4172,6 +4195,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Obscuring a password with a trivial encoding does not protect the
       password.
     group: top10-crypto-failures
@@ -4202,6 +4226,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A product incorrectly assigns a privilege to a particular actor,
       creating an unintended sphere of control for that actor.
     group: top10-insecure-design
@@ -4363,6 +4388,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not handle or incorrectly handles when it has insufficient
       privileges to access resources or functionality as specified by their permissions.
       This may cause it to follow unexpected code paths that may leave the product
@@ -4454,6 +4480,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A product requires authentication, but the product has an alternate
       path or channel that does not require authentication.
     group: top10-id-authn-failures
@@ -4487,6 +4514,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: This attack-focused weakness is caused by incorrectly implemented
       authentication schemes that are subject to spoofing attacks.
     group: top10-id-authn-failures
@@ -4516,6 +4544,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A capture-replay flaw exists when the design of the product makes
       it possible for a malicious user to sniff network traffic and bypass authentication
       by replaying it to the server in question to the same effect as the original
@@ -4541,6 +4570,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not follow, or incorrectly follows, the chain of
       trust for a certificate back to a trusted root certificate, resulting in incorrect
       trust of any resource that is associated with that certificate.
@@ -4597,6 +4627,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not adequately verify the identity of actors at
       both ends of a communication channel, or does not adequately ensure the integrity
       of the channel, in a way that allows the channel to be accessed or influenced
@@ -4619,6 +4650,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The authentication scheme or implementation uses key data elements
       that are assumed to be immutable, but can be controlled or modified by the attacker.
     group: top10-id-authn-failures
@@ -4639,6 +4671,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product implements an authentication technique, but it skips
       a step that weakens the technique.
     group: top10-id-authn-failures
@@ -4673,6 +4706,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not implement sufficient measures to prevent multiple
       failed authentication attempts within a short time frame, making it more susceptible
       to brute force attacks.
@@ -4732,6 +4766,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive information in cleartext within a resource
       that might be accessible to another control sphere.
     group: top10-insecure-design
@@ -4742,6 +4777,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive information in cleartext in a file,
       or on disk.
     group: top10-insecure-design
@@ -4761,6 +4797,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive information in cleartext in a cookie.
     group: top10-security-misconfiguration
     name: CWE-315
@@ -4770,6 +4807,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive information in cleartext in memory.
     group: top10-insecure-design
     name: CWE-316
@@ -4824,6 +4862,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The use of a hard-coded cryptographic key significantly increases
       the possibility that encrypted data may be recovered.
     group: top10-crypto-failures
@@ -4834,6 +4873,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product performs a key exchange with an actor without verifying
       the identity of that actor.
     group: top10-crypto-failures
@@ -4844,6 +4884,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Nonces should be used for the present occasion and only once.
     group: top10-crypto-failures
     name: CWE-323
@@ -4853,6 +4894,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a cryptographic key or password past its expiration
       date, which diminishes its safety significantly by increasing the timing window
       for cracking attacks against that key.
@@ -4864,6 +4906,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not implement a required step in a cryptographic
       algorithm, resulting in weaker encryption than advertised by the algorithm.
     group: top10-crypto-failures
@@ -4919,6 +4962,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product generates and uses a predictable initialization Vector
       (IV) with Cipher Block Chaining (CBC) Mode, which causes algorithms to be susceptible
       to dictionary attacks when they are encrypted under the same key.
@@ -4942,6 +4986,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses insufficiently random numbers or values in a security
       context that depends on unpredictable numbers.
     group: top10-crypto-failures
@@ -4952,6 +4997,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses an algorithm or scheme that produces insufficient
       entropy, leaving patterns or clusters of values that are more likely to occur
       than others.
@@ -4993,6 +5039,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a Pseudo-Random Number Generator (PRNG) but does
       not correctly manage seeds.
     group: top10-crypto-failures
@@ -5004,6 +5051,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A Pseudo-Random Number Generator (PRNG) uses the same seed each time
       the product is initialized.
     group: top10-crypto-failures
@@ -5014,6 +5062,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A Pseudo-Random Number Generator (PRNG) is initialized from a predictable
       seed, such as the process ID or system time.
     group: top10-crypto-failures
@@ -5059,6 +5108,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a scheme that generates numbers or identifiers that
       are more predictable than required.
     group: top10-crypto-failures
@@ -5135,6 +5185,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not verify, or incorrectly verifies, the cryptographic
       signature for data.
     group: top10-crypto-failures
@@ -5167,6 +5218,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses external input to construct a pathname that should
       be within a restricted directory, but it does not properly neutralize '.../...//'
       (doubled triple dot slash) sequences that can resolve to a location that is
@@ -5217,6 +5269,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a transmission protocol that does not include a
       mechanism for verifying the integrity of the data during transmission, such
       as a checksum.
@@ -5272,6 +5325,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly prevent a person's private, personal
       information from being accessed by actors who either (1) are not explicitly
       authorized to access the information or (2) do not have the implicit consent
@@ -5306,6 +5360,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - cwe-top-25
     description: The product contains a code sequence that can run concurrently with
       other code, and the code sequence requires temporary, exclusive access to a
       shared resource, but a timing window exists in which the shared resource can
@@ -5439,6 +5494,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Creating and using insecure temporary files can leave application
       and system data vulnerable to attack.
     group: top10-broken-access-control
@@ -5503,6 +5559,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Authenticating a user, or otherwise establishing a new user session,
       without invalidating any existing session identifier gives an attacker the opportunity
       to steal authenticated sessions.
@@ -5662,6 +5719,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product makes resources available to untrusted parties when those
       resources are only intended to be accessed by the product.
     group: top10-broken-access-control
@@ -5815,6 +5873,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - cwe-top-25
     description: Referencing memory after it has been freed can cause a program to
       crash, use unexpected values, or execute code.
     group: top10-insecure-design
@@ -5825,6 +5884,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a primary channel for administration or restricted
       functionality, but it does not properly protect the channel.
     group: top10-insecure-design
@@ -5888,6 +5948,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application does not adequately enforce appropriate authorization
       on all restricted URLs, scripts, or files.
     group: top10-broken-access-control
@@ -5898,6 +5959,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product searches for critical resources using an externally-supplied
       search path that can point to resources that are not under the product's direct
       control.
@@ -5943,6 +6005,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The wrong "handler" is assigned to process an object.
     group: top10-insecure-design
     name: CWE-430
@@ -6062,6 +6125,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product receives a request, message, or directive from an upstream
       component, but the product does not sufficiently preserve the original source
       of the request before forwarding the request to an external actor that is outside
@@ -6076,6 +6140,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product acts as an intermediary HTTP agent (such as a proxy or
       firewall) in the data flow between two entities such as a client and server,
       but it does not interpret malformed HTTP requests or responses in ways that
@@ -6152,6 +6217,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The user interface (UI) does not properly represent critical information
       to the user, allowing the information - or its source - to be obscured or spoofed.
       This is often a component in phishing attacks.
@@ -6347,6 +6413,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly protect an assumed-immutable element
       from being modified by an attacker.
     group: top10-injection
@@ -6357,6 +6424,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application does not sufficiently verify inputs that are
       assumed to be immutable but are actually externally controllable, such as hidden
       form fields.
@@ -6399,6 +6467,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - cwe-top-25
     description: A NULL pointer dereference occurs when the application dereferences
       a pointer that it expects to be valid, but is NULL, typically causing a crash
       or exit.
@@ -6625,6 +6694,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly prevent sensitive system-level information
       from being accessed by unauthorized actors who do not have the same level of
       access to the underlying system as the product does.
@@ -6691,6 +6761,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product mixes trusted and untrusted data in the same data structure
       or structured message.
     group: top10-insecure-design
@@ -6837,6 +6908,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Allowing a .NET application to run at potentially escalated levels
       of access to the underlying operating and file systems can be dangerous and
       result in various forms of attacks.
@@ -6848,6 +6920,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not require that users should have strong passwords,
       which makes it easier for attackers to compromise user accounts.
     group: top10-id-authn-failures
@@ -6873,6 +6946,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Login pages do not use adequate measures to protect the user name
       and password while they are in transit from the client to the server.
     group: top10-crypto-failures
@@ -6893,6 +6967,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application does not use an appropriate caching policy that
       specifies the extent to which each web page and associated form fields should
       be cached.
@@ -6904,6 +6979,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses an environment variable to store unencrypted sensitive
       information.
     group: top10-security-misconfiguration
@@ -6983,6 +7059,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Information written to log files can be of a sensitive nature and
       give valuable guidance to an attacker or expose sensitive user information.
     group: top10-security-logging-monitoring-failures
@@ -7016,6 +7093,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: In many cases, an attacker can leverage the conditions that cause
       unhandled exception errors in order to gain unauthorized access to the system.
     group: top10-security-misconfiguration
@@ -7026,6 +7104,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product places sensitive information into files or directories
       that are accessible to actors who are allowed to have access to the files, but
       not to the sensitive information.
@@ -7038,6 +7117,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application uses persistent cookies, but the cookies contain
       sensitive information.
     group: top10-insecure-design
@@ -7060,6 +7140,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Source code on a web server or repository often contains sensitive
       information and should generally not be accessible to users.
     group: top10-broken-access-control
@@ -7070,6 +7151,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: If an include file source is accessible, the file can contain usernames
       and passwords, as well as sensitive information pertaining to the application
       and system.
@@ -7113,6 +7195,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses hard-coded constants instead of symbolic names for
       security-critical values, which increases the likelihood of mistakes during
       code maintenance or security policy change.
@@ -7124,6 +7207,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A directory listing is inappropriately exposed, yielding potentially
       sensitive information to attackers.
     group: top10-broken-access-control
@@ -7178,6 +7262,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product makes files or directories accessible to unauthorized
       actors, even though they should not be.
     group: top10-broken-access-control
@@ -7290,6 +7375,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: Using Hibernate to execute a dynamic SQL statement built with user-controlled
       input can allow an attacker to modify the statement's meaning or to execute
       arbitrary SQL commands.
@@ -7314,6 +7400,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a database table that includes records that should
       not be accessible to an actor, but it executes a SQL statement with a primary
       key that can be controlled by that actor.
@@ -7448,6 +7535,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores a non-serializable object as an HttpSession attribute,
       which can hurt reliability.
     group: top10-insecure-design
@@ -7569,6 +7657,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product attempts to access a file based on the filename, but
       it does not properly prevent that filename from identifying a link or shortcut
       that resolves to an unintended resource.
@@ -7643,6 +7732,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The web application uses the HTTP GET method to process a request
       and includes sensitive information in the query string of that request.
     group: top10-insecure-design
@@ -7696,6 +7786,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product is composed of a server that relies on the client to
       implement a mechanism that is intended to protect the server.
     group: top10-insecure-design
@@ -7781,6 +7872,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses an externally controlled name or reference that
       resolves to a resource that is outside of the intended control sphere.
     group: top10-injection
@@ -7819,6 +7911,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: According to WASC, "Insufficient Session Expiration is when a web
       site permits an attacker to reuse old session credentials or session IDs for
       authorization."
@@ -7912,6 +8005,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: When setting a new password for a user, the product does not require
       knowledge of the original password, or using another form of authentication.
     group: top10-id-authn-failures
@@ -8042,6 +8136,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The system's authorization functionality does not prevent one user
       from gaining access to another user's data or record by modifying the key value
       identifying the data.
@@ -8065,6 +8160,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product contains a mechanism for users to recover or change their
       passwords without knowing the original password, but the mechanism is weak.
     group: top10-id-authn-failures
@@ -8086,6 +8182,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores security-critical state information about its
       users, or the product itself, in a location that is accessible to unauthorized
       actors.
@@ -8097,6 +8194,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses external input to dynamically construct an XPath
       expression used to retrieve data from an XML database, but it does not neutralize
       or incorrectly neutralizes that input. This allows an attacker to control the
@@ -8110,6 +8208,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not neutralize or incorrectly neutralizes web scripting
       syntax in HTTP headers that can be used by web browser components that can process
       raw headers, such as Flash.
@@ -8133,6 +8232,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product allows a file to be uploaded, but it relies on the file
       name or extension of the file to determine the appropriate behaviors. This could
       be used by attackers to cause the file to be misclassified and processed in
@@ -8192,6 +8292,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The server contains a protection mechanism that assumes that any
       URI that is accessed using HTTP GET will not cause a state change to the associated
       resource. This might allow attackers to bypass intended access restrictions
@@ -8205,6 +8306,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The Web services architecture may require exposing a Web Service
       Definition Language (WSDL) file that contains information on the publicly accessible
       services and how callers of these services should interact with them (e.g. what
@@ -8217,6 +8319,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses external input to dynamically construct an XQuery
       expression used to retrieve data from an XML database, but it does not neutralize
       or incorrectly neutralizes that input. This allows an attacker to control the
@@ -8230,6 +8333,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly compartmentalize or isolate functionality,
       processes, or resources that require different privilege levels, rights, or
       permissions.
@@ -8264,6 +8368,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a protection mechanism whose strength depends heavily
       on its obscurity, such that knowledge of its algorithms or key data is sufficient
       to defeat the mechanism.
@@ -8275,6 +8380,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product violates well-established principles for secure design.
     group: top10-insecure-design
     name: CWE-657
@@ -8360,6 +8466,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product exposes a resource to the wrong control sphere, providing
       unintended actors with inappropriate access to the resource.
     group: top10-broken-access-control
@@ -8774,6 +8881,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product allows user input to control or influence paths or file
       names that are used in filesystem operations.
     group: top10-insecure-design
@@ -8835,6 +8943,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not adequately filter user-controlled input for
       special elements with control implications.
     group: top10-injection
@@ -8867,6 +8976,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not return custom error pages to the user, possibly
       exposing sensitive information.
     group: top10-security-misconfiguration
@@ -8877,6 +8987,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: A protocol or its implementation supports interaction between multiple
       actors and allows those actors to negotiate which algorithm should be used as
       a protection mechanism such as encryption or authentication, but it does not
@@ -8902,6 +9013,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a one-way cryptographic hash against an input that
       should not be reversible, such as a password, but the product does not also
       use a salt as part of the input.
@@ -8923,6 +9035,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a one-way cryptographic hash against an input that
       should not be reversible, such as a password, but the product uses a predictable
       salt as part of the input.
@@ -9101,6 +9214,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses XML documents and allows their structure to be defined
       with a Document Type Definition (DTD), but it does not properly control the
       number of recursive definitions of entities.
@@ -9165,6 +9279,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses the RSA algorithm but does not incorporate Optimal
       Asymmetric Encryption Padding (OAEP), which might weaken the encryption.
     group: top10-crypto-failures
@@ -9206,6 +9321,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a protection mechanism that relies on the existence
       or values of a cookie, but it does not properly ensure that the cookie is valid
       for the associated user.
@@ -9240,6 +9356,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - cwe-top-25
     description: The product writes data past the end, or before the beginning, of
       the intended buffer.
     group: top10-insecure-design
@@ -9394,6 +9511,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly limit the number or frequency of interactions
       that it has with an actor, such as the number of incoming requests.
     group: top10-insecure-design
@@ -9416,6 +9534,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product receives input from an upstream component, but it does
       not neutralize or incorrectly neutralizes special characters such as "<", ">",
       and "&" that could be interpreted as web-scripting elements when they are sent
@@ -9461,6 +9580,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a protection mechanism that relies on the existence
       or values of an input, but the input can be modified by an untrusted actor in
       a way that bypasses the protection mechanism.
@@ -9588,6 +9708,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product imports, requires, or includes executable functionality
       (such as a library) from a source that is outside of the intended control sphere.
     group: top10-software-data-integrity-failures
@@ -9598,6 +9719,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not neutralize or incorrectly neutralizes "javascript:"
       or other URIs from dangerous attributes within tags, such as onmouseover, onload,
       onerror, or style.
@@ -9610,6 +9732,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product includes web functionality (such as a web widget) from
       another domain, which causes it to operate within the domain of the product,
       potentially granting total access and control of the product to the untrusted
@@ -9726,6 +9849,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product supports a session in which more than one behavior must
       be performed by an actor, but it does not properly ensure that the actor performs
       the behaviors in the required sequence.
@@ -9793,6 +9917,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product performs an authorization check when an actor attempts
       to access a resource or perform an action, but it does not correctly perform
       the check. This allows attackers to bypass intended access restrictions.
@@ -9804,6 +9929,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not neutralize or incorrectly neutralizes user-controlled
       input for alternate script syntax.
     group: top10-injection
@@ -9814,6 +9940,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product constructs a string for a command to be executed by a
       separate component in another control sphere, but it does not properly delimit
       the intended arguments, options, or switches within that command string.
@@ -9889,6 +10016,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product does not properly neutralize special elements that are
       used in XML, allowing attackers to modify the syntax, content, or commands of
       the XML before it is processed by an end system.
@@ -9968,6 +10096,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product generates a hash for a password, but it uses a scheme
       that does not provide a sufficient level of computational effort that would
       make password cracking attacks infeasible or expensive.
@@ -9979,6 +10108,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product constructs all or part of an expression language (EL)
       statement in a framework such as a Java Server Page (JSP) using externally-influenced
       input from an upstream component, but it does not neutralize or incorrectly
@@ -10008,10 +10138,8 @@ rules:
   CWE-919:
     categories:
     - ALL
-    - cwe-top-25
     - boost-baseline
     - boost-hardened
-    - owasp-top-10
     group: top10-insecure-design
     name: CWE-919
     pretty_name: CWE-919 - Weaknesses in Mobile Applications
@@ -10044,6 +10172,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product stores sensitive information without properly limiting
       read or write access by unauthorized actors.
     group: top10-broken-access-control
@@ -10100,6 +10229,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The Android application uses an implicit intent for transmitting
       sensitive data to other applications.
     group: top10-insecure-design
@@ -10110,6 +10240,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses CRLF (carriage return line feeds) as a special element,
       e.g. to separate lines or records, but it does not neutralize or incorrectly
       neutralizes CRLF sequences from inputs.
@@ -10148,6 +10279,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product establishes a communication channel to handle an incoming
       request that has been initiated by an actor, but it does not properly verify
       that the request is coming from the expected origin.
@@ -10170,6 +10302,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product uses a cross-domain policy file that includes domains
       that should not be trusted.
     group: top10-security-misconfiguration
@@ -10227,6 +10360,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product generates a web page, but does not neutralize or incorrectly
       neutralizes user-controllable input that could be interpreted as a server-side
       include (SSI) directive.
@@ -10239,6 +10373,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The PHP application receives input from an upstream component, but
       it does not restrict or incorrectly restricts the input before its usage in
       "require," "include," or similar functions.
@@ -10251,6 +10386,7 @@ rules:
     categories:
     - ALL
     - boost-hardened
+    - owasp-top-10
     description: The product receives input from an upstream component, but it does
       not restrict or incorrectly restricts the input before it is used as an identifier
       for a resource that may be outside the intended sphere of control.
@@ -10258,13 +10394,3 @@ rules:
     name: CWE-99
     pretty_name: 'CWE-99: Improper Control of Resource Identifiers (''Resource Injection'')'
     ref: https://cwe.mitre.org/data/definitions/99.html
-default:
-  CWE-UNKNOWN:
-    categories:
-    - ALL
-    - boost-hardened
-    group: top10-insecure-design
-    name: CWE-UNKNOWN
-    pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
-    description: The original rule could not be map to a CWE rule
-    ref: https://cwe.mitre.org/data/index.html
