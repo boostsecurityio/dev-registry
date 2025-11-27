@@ -31,9 +31,9 @@ for dirpath, _, filenames in os.walk(root_dir):
             for rule_key, rule in rules.items():
                 categories = rule["categories"]
                 for cwe_list_name, cwes_list in cwes_lists.items():
-                    if (
+                    if cwe_list_name not in categories and (
                         any(cwe in cwes_list for cwe in categories)
-                        and cwe_list_name not in categories
+                        or rule["name"].lower() in cwes_list
                     ):
                         # Add the missing category to the list of categories
                         categories.append(cwe_list_name)
@@ -41,6 +41,16 @@ for dirpath, _, filenames in os.walk(root_dir):
 
                         print(
                             f'Added "{cwe_list_name}" category to rule {rule_key} in {rules_file}'
+                        )
+                    elif cwe_list_name in categories and (
+                        rule["name"].lower() not in cwes_list and
+                        all(cwe not in cwes_list for cwe in categories)
+                    ):
+                        categories.remove(cwe_list_name)
+                        changed = True
+
+                        print(
+                            f'Removed "{cwe_list_name}" category to rule {rule_key} in {rules_file}'
                         )
 
             if not changed:
