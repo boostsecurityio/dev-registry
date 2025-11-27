@@ -10394,3 +10394,13 @@ rules:
     name: CWE-99
     pretty_name: 'CWE-99: Improper Control of Resource Identifiers (''Resource Injection'')'
     ref: https://cwe.mitre.org/data/definitions/99.html
+default:
+  CWE-UNKNOWN:
+    categories:
+    - ALL
+    - boost-hardened
+    group: top10-insecure-design
+    name: CWE-UNKNOWN
+    pretty_name: CWE-UNKNOWN - Original rule did not map to a known CWE rule
+    description: The original rule could not be map to a CWE rule
+    ref: https://cwe.mitre.org/data/index.html

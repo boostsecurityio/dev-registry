@@ -25,6 +25,7 @@ for dirpath, _, filenames in os.walk(root_dir):
             rules_file = os.path.join(dirpath, filename)
             changed = False
             with open(rules_file, "r") as f:
+                rules_def = yaml.safe_load(f)
                 rules = yaml.safe_load(f).get("rules", {})
 
             # Validate and fix the categories of each rule
@@ -57,5 +58,6 @@ for dirpath, _, filenames in os.walk(root_dir):
                 continue
 
             # Save the updated rules back to the YAML file
+            rules_def["rules"] = rules
             with open(rules_file, "w") as f:
-                yaml.safe_dump({"rules": rules}, f, sort_keys=False)
+                yaml.safe_dump(rules_def, f, sort_keys=False)
