@@ -1,0 +1,98 @@
+name: Smoke Tests
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: ['scanners/**']
+
+jobs:
+  github-action:
+    name: Github Actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@987118ea9f07ca0225f2ad0df77da78ea498aec2
+        with:
+          provider: github
+          provider-config: |
+            {
+              "token": "${{ secrets.BOOST_GITHUB_TEST_RUNNER }}",
+              "owner": "martin-boost-dev",
+              "repo": "boostsec-registry-test-runner",
+              "workflow_id": "test-scanner.yml"
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
+
+  gitlab-action:
+    name: Gitlab-ci
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@987118ea9f07ca0225f2ad0df77da78ea498aec2
+        with:
+          provider: gitlab
+          provider-config: |
+            {
+              "token": "${{ secrets.BOOST_GITLAB_PROJECT_TOKEN }}",
+              "project_id": "boostsecurityio/martin/boostsec-registry-test-runner"
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
+
+  azure-devops:
+    name: Azure DevOps
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@987118ea9f07ca0225f2ad0df77da78ea498aec2
+        with:
+          provider: azure
+          provider-config: |
+            {
+              "token": "${{ secrets.BOOST_AZURE_DEVOPS_PAT }}",
+              "organization": "boostsecurityio",
+              "project": "Martin",
+              "pipeline_id": 51
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
+
+  bitbucket:
+    name: Bitbucket Pipelines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: martin-boost-dev/boostsec-registry-test-action@987118ea9f07ca0225f2ad0df77da78ea498aec2
+        with:
+          provider: bitbucket
+          provider-config: |
+            {
+              "username": "${{ secrets.BOOST_BITBUCKET_USERNAME }}",
+              "api_token": "${{ secrets.BOOST_BITBUCKET_API_TOKEN }}",
+              "workspace": "boostsecurityio",
+              "repo_slug": "boostsec-registry-test-runner",
+              "branch": "main"
+            }
+          registry-path: "."
+          base-ref: "main"
+          head-ref: "${{ github.head_ref }}"
