@@ -52,8 +52,8 @@ Navigate to the scanner registry repository (GitHub):
   run: |
     response=$(curl -s -X POST "https://gitlab.com/oauth/token" \
       -d "grant_type=client_credentials" \
-      -d "client_id=${{ secrets.GITLAB_CLIENT_ID }}" \
-      -d "client_secret=${{ secrets.GITLAB_CLIENT_SECRET }}")
+      -d "client_id=${{ secrets.BOOST_SCAN_RUNNER_GITLAB_CLIENT_ID }}" \
+      -d "client_secret=${{ secrets.BOOST_SCAN_RUNNER_GITLAB_CLIENT_SECRET }}")
 
     token=$(echo "$response" | jq -r '.access_token')
     echo "token=$token" >> $GITHUB_OUTPUT
