@@ -14948,3 +14948,1000 @@ rules:
     pretty_name: YC - Ensure KMS symmetric key is rotated.
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV2_AWS_68:
+    categories:
+    - ALL
+    - cloud-insecure-iam
+    - boost-baseline
+    - boost-hardened
+    description: Check for weak Aws permissions.
+    group: cloud-insecure-iam
+    name: CKV2_AWS_68
+    pretty_name: AWS - Ensure SageMaker notebook instance IAM policy is not overly permissive
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_69:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Aws resources.
+    group: cloud-unencrypted-resources
+    name: CKV2_AWS_69
+    pretty_name: AWS - Ensure AWS RDS database instance configured with encryption in transit
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_70:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_70
+    pretty_name: AWS - Ensure API gateway method has authorization or API key set
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_71:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_71
+    pretty_name: AWS - Ensure AWS ACM Certificate domain name does not include wildcards
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_72:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_72
+    pretty_name: AWS - Ensure AWS CloudFront origin protocol policy enforces HTTPS-only
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_73:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Aws resources.
+    group: cloud-unencrypted-resources
+    name: CKV2_AWS_73
+    pretty_name: AWS - Ensure AWS SQS uses CMK not AWS default keys for encryption
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_74:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_74
+    pretty_name: AWS - Ensure AWS Load Balancers use strong ciphers
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_75:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_75
+    pretty_name: AWS - Ensure no open CORS policy
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_76:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_76
+    pretty_name: AWS - Ensure AWS ALB attached WAFv2 WebACL is configured with AMR for Log4j Vulnerability
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_77:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_77
+    pretty_name: AWS - Ensure AWS API Gateway Rest API attached WAFv2 WebACL is configured with AMR for Log4j Vulnerability
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AWS_78:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Aws resources.
+    group: cloud-weak-configuration
+    name: CKV2_AWS_78
+    pretty_name: AWS - Ensure AWS AppSync attached WAFv2 WebACL is configured with AMR for Log4j Vulnerability
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_49:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_49
+    pretty_name: AZURE - Ensure that Azure Machine learning workspace is not configured with overly permissive network access
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_50:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Azure resources.
+    group: cloud-resources-public-access
+    name: CKV2_AZURE_50
+    pretty_name: AZURE - Ensure Azure Storage Account storing Machine Learning workspace high business impact data is not publicly accessible
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_51:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_51
+    pretty_name: AZURE - Ensure Synapse SQL Pool has a security alert policy
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_52:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_52
+    pretty_name: AZURE - Ensure Synapse SQL Pool has vulnerability assessment attached
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_53:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_53
+    pretty_name: AZURE - Ensure Azure Synapse Workspace has extended audit logs
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_54:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_54
+    pretty_name: AZURE - Ensure log monitoring is enabled for Synapse SQL Pool
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_55:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_55
+    pretty_name: AZURE - Ensure Azure Spring Cloud app end-to-end TLS is enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_56:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_56
+    pretty_name: AZURE - Ensure Azure MySQL Flexible Server is configured with private endpoint
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_AZURE_57:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV2_AZURE_57
+    pretty_name: AZURE - Ensure PostgreSQL Flexible Server is configured with private endpoint
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_GCP_37:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Gcp resources.
+    group: cloud-weak-configuration
+    name: CKV2_GCP_37
+    pretty_name: GCP - Ensure GCP compute regional forwarding rule does not use HTTP proxies with EXTERNAL load balancing scheme
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV2_GCP_38:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Gcp resources.
+    group: cloud-weak-configuration
+    name: CKV2_GCP_38
+    pretty_name: GCP - Ensure GCP compute global forwarding rule does not use HTTP proxies with EXTERNAL load balancing scheme
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_367:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_367
+    pretty_name: AWS - Ensure Amazon Sagemaker Data Quality Job uses KMS to encrypt model artifacts
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_368:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_368
+    pretty_name: AWS - Ensure Amazon Sagemaker Data Quality Job uses KMS to encrypt data on attached storage volume
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_369:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_369
+    pretty_name: AWS - Ensure Amazon Sagemaker Data Quality Job encrypts all communications between instances used for monitoring jobs
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_370:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_370
+    pretty_name: AWS - Ensure Amazon SageMaker model uses network isolation
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_371:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_371
+    pretty_name: AWS - Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_372:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_372
+    pretty_name: AWS - Ensure Amazon SageMaker Flow Definition uses KMS for output configurations
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_373:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_373
+    pretty_name: AWS - Ensure Bedrock Agent is encrypted with a CMK
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_374:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_374
+    pretty_name: AWS - Ensure AWS CloudFront web distribution has geo restriction enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_375:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_375
+    pretty_name: AWS - Ensure AWS S3 bucket does not have global view ACL permissions enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_376:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_376
+    pretty_name: AWS - Ensure AWS Elastic Load Balancer listener uses TLS/SSL
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_377:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_377
+    pretty_name: AWS - Ensure Route 53 domains have transfer lock protection
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_378:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_378
+    pretty_name: AWS - Ensure AWS Load Balancer doesn't use HTTP protocol
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_379:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_379
+    pretty_name: AWS - Ensure AWS S3 bucket is configured with secure data transport policy
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_380:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_380
+    pretty_name: AWS - Ensure AWS Transfer Server uses latest Security Policy
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_381:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted AWS resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AWS_381
+    pretty_name: AWS - Make sure that aws_codegurureviewer_repository_association has a CMK
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_382:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_382
+    pretty_name: AWS - Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_383:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_383
+    pretty_name: AWS - Ensure AWS Bedrock agent is associated with Bedrock guardrails
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_384:
+    categories:
+    - ALL
+    - cloud-weak-secrets-management
+    - boost-hardened
+    description: Check for weak AWS secrets management.
+    group: cloud-weak-secrets-management
+    name: CKV_AWS_384
+    pretty_name: AWS - Ensure no hard-coded secrets exist in Parameter Store values
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_385:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_385
+    pretty_name: AWS - Ensure AWS SNS topic policies do not allow cross-account access
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_386:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in AWS resources.
+    group: cloud-weak-configuration
+    name: CKV_AWS_386
+    pretty_name: AWS - Reduce potential for WhoAMI cloud image name confusion attack
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_387:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_387
+    pretty_name: AWS - Ensure SQS policy does not allow public access through wildcards
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_388:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_388
+    pretty_name: AWS - Ensure AWS Aurora PostgreSQL is not exposed to local file read vulnerability
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_389:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_389
+    pretty_name: AWS - Ensure AWS Auto Scaling group launch configuration doesn't have public IP address assignment enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_390:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_390
+    pretty_name: AWS - Ensure AWS EMR block public access setting is enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_391:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_391
+    pretty_name: AWS - Avoid AWS Redshift cluster with commonly used master username and public access setting enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AWS_392:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible AWS resources.
+    group: cloud-resources-public-access
+    name: CKV_AWS_392
+    pretty_name: AWS - Ensure AWS S3 access point block public access setting is enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_236:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_236
+    pretty_name: AZURE - Ensure that Cognitive Services accounts disable local authentication
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_238:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_238
+    pretty_name: AZURE - Ensure that all Azure Cognitive Services accounts are configured with a managed identity
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_239:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Azure resources.
+    group: cloud-resources-public-access
+    name: CKV_AZURE_239
+    pretty_name: AZURE - Ensure Azure Synapse Workspace administrator login password is not exposed
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_240:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Azure resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AZURE_240
+    pretty_name: AZURE - Ensure Azure Synapse Workspace is encrypted with a CMK
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_241:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Azure resources.
+    group: cloud-unencrypted-resources
+    name: CKV_AZURE_241
+    pretty_name: AZURE - Ensure Synapse SQL pools are encrypted
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_242:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_242
+    pretty_name: AZURE - Ensure isolated compute is enabled for Synapse Spark pools
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_243:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_243
+    pretty_name: AZURE - Ensure Azure Machine learning workspace is configured with private endpoint
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_244:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_244
+    pretty_name: AZURE - Avoid the use of local users for Azure Storage unless necessary
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_245:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_245
+    pretty_name: AZURE - Ensure that Azure Container group is deployed into virtual network
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_246:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_246
+    pretty_name: AZURE - Ensure Azure AKS cluster HTTP application routing is disabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_247:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_247
+    pretty_name: AZURE - Ensure that Azure Cognitive Services account hosted with OpenAI is configured with data loss prevention
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_248:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Azure resources.
+    group: cloud-resources-public-access
+    name: CKV_AZURE_248
+    pretty_name: AZURE - Ensure that if Azure Batch account public network access in case 'enabled' then its account access must be 'deny'
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_249:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_249
+    pretty_name: AZURE - Ensure Azure GitHub Actions OIDC trust policy is configured securely
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_250:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Azure resources.
+    group: cloud-weak-configuration
+    name: CKV_AZURE_250
+    pretty_name: AZURE - Ensure Storage Sync Service is not configured with overly permissive network access
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_AZURE_251:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Azure resources.
+    group: cloud-resources-public-access
+    name: CKV_AZURE_251
+    pretty_name: AZURE - Ensure Azure Virtual Machine disks are configured without public network access
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_GCP_125:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in GCP resources.
+    group: cloud-weak-configuration
+    name: CKV_GCP_125
+    pretty_name: GCP - Ensure GCP GitHub Actions OIDC trust policy is configured securely
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_GCP_126:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in GCP resources.
+    group: cloud-weak-configuration
+    name: CKV_GCP_126
+    pretty_name: GCP - Ensure Vertex AI Notebook instances are launched with Shielded VM enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_GCP_127:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in GCP resources.
+    group: cloud-weak-configuration
+    name: CKV_GCP_127
+    pretty_name: GCP - Ensure Integrity Monitoring for Shielded Vertex AI Notebook Instances is Enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_K8S_159:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in K8S resources.
+    group: cloud-weak-configuration
+    name: CKV_K8S_159
+    pretty_name: K8S - Do not admit privileged containers
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_OCI_23:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Oci resources.
+    group: cloud-weak-configuration
+    name: CKV_OCI_23
+    pretty_name: OCI - Ensure OCI Data Catalog is configured without overly permissive network access
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_1:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Tc resources.
+    group: cloud-unencrypted-resources
+    name: CKV_TC_1
+    pretty_name: TC - Ensure Tencent Cloud CBS is encrypted
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_10:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_10
+    pretty_name: TC - Ensure Tencent Cloud MySQL instances intranet ports are not set to the default 3306
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_11:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_11
+    pretty_name: TC - Ensure Tencent Cloud CLB has a logging ID and topic
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_12:
+    categories:
+    - ALL
+    - cloud-unencrypted-resources
+    - boost-baseline
+    - boost-hardened
+    description: Check for unencrypted Tc resources.
+    group: cloud-unencrypted-resources
+    name: CKV_TC_12
+    pretty_name: TC - Ensure Tencent Cloud CLBs use modern, encrypted protocols
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_13:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_13
+    pretty_name: TC - Ensure Tencent Cloud CVM user data does not contain sensitive information
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_14:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_14
+    pretty_name: TC - Ensure Tencent Cloud VPC flow logs are enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_2:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Tc resources.
+    group: cloud-resources-public-access
+    name: CKV_TC_2
+    pretty_name: TC - Ensure Tencent Cloud CVM instance does not allocate a public IP
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_3:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_3
+    pretty_name: TC - Ensure Tencent Cloud CVM monitor service is enabled
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_4:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_4
+    pretty_name: TC - Ensure Tencent Cloud CVM instances do not use the default security group 
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_5:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_5
+    pretty_name: TC - Ensure Tencent Cloud CVM instances do not use the default VPC
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_6:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_6
+    pretty_name: TC - Ensure Tencent Cloud TKE clusters enable log agent
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_7:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Tc resources.
+    group: cloud-resources-public-access
+    name: CKV_TC_7
+    pretty_name: TC - Ensure Tencent Cloud TKE cluster is not assigned a public IP address
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_8:
+    categories:
+    - ALL
+    - cloud-weak-configuration
+    - boost-hardened
+    description: Check for misconfigurations in Tc resources.
+    group: cloud-weak-configuration
+    name: CKV_TC_8
+    pretty_name: TC - Ensure Tencent Cloud VPC security group rules do not accept all traffic
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
+  CKV_TC_9:
+    categories:
+    - ALL
+    - cloud-resources-public-access
+    - boost-hardened
+    description: Check for publicly accessible Tc resources.
+    group: cloud-resources-public-access
+    name: CKV_TC_9
+    pretty_name: TC - Ensure Tencent Cloud mysql instances do not enable access from public networks
+    recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+
