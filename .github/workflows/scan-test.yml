@@ -1,4 +1,4 @@
-name: Smoke Tests
+name: Scan Tests
 
 on:
   pull_request:
@@ -35,4 +35,4 @@ jobs:
               "ref": "BST-17994-productize-test-runner"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.head_ref }}"
+          base-ref: "${{ github.base_ref }}"
