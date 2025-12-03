@@ -6,6 +6,38 @@ on:
     paths: ['scanners/**']
 
 jobs:
+  bitbucket-action:
+    name: Bitbucket Pipelines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Bitbucket OAuth Token
+        id: bitbucket-token
+        run: |
+          response=$(curl -s -X POST \
+            "https://bitbucket.org/site/oauth2/access_token" \
+            -u "${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_ID }}:${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_SECRET }}" \
+            -d "grant_type=client_credentials")
+          
+          token=$(echo "$response" | jq -r '.access_token')
+          echo "token=$token" >> $GITHUB_OUTPUT
+          echo "::add-mask::$token"
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: boostsecurityio/scan-test-action@2410d5ae4661d6dbe63a744b037aae9db7bd066e
+        with:
+          provider: bitbucket
+          provider-config: |
+            {
+              "token": "${{ steps.bitbucket-token.outputs.token }}",
+              "workspace": "boostsecurityio",
+              "repo_slug": "scan-test-runner-bitbucket-pipelines"
+            }
+          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
+          base-ref: "${{ github.base_ref }}"
+
   github-action:
     name: Github Actions
     runs-on: ubuntu-latest
