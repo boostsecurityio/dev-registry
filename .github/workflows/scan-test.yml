@@ -16,8 +16,8 @@ jobs:
         with:
           app-id: ${{ secrets.BOOST_SCAN_RUNNER_GITHUB_APP_ID }}
           private-key: ${{ secrets.BOOST_SCAN_RUNNER_GITHUB_APP_PRIVATE_KEY }}
-          owner: your-org
-          repositories: test-runner-github
+          owner: boostsecurityio
+          repositories: scan-test-runner-gitbub-actions
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
@@ -31,7 +31,8 @@ jobs:
               "token": "${{ steps.github-token.outputs.token }}",
               "owner": "boostsecurityio",
               "repo": "scan-test-runner-gitbub-actions",
-              "workflow_id": "test-scanner.yml"
+              "workflow_id": "test-scanner.yml",
+              "ref": "BST-17994-productize-test-runner"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.head_ref }}"
