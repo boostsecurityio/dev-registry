@@ -84,7 +84,7 @@ jobs:
             {
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
-              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci",
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.head_ref }}"
