@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@03526a5475206e034c62f3e2b8abafb9e8e15e85
+        uses: boostsecurityio/scan-test-action@ea4c4345e90758bc38c3d440ace6a47d3362801f
         with:
           provider: github-actions
           provider-config: |
@@ -32,7 +32,6 @@ jobs:
               "owner": "boostsecurityio",
               "repo": "scan-test-runner-gitbub-actions",
               "workflow_id": "test-scanner.yml",
-              "ref": "BST-17994-productize-test-runner"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
