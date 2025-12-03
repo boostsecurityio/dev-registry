@@ -8,12 +8,12 @@ Migration from long-lived user tokens to short-lived OAuth2/OIDC tokens across a
 
 ## Authentication Solution
 
-| Platform         | Auth Method               | Token Lifetime | User-Independent |
-|------------------|---------------------------|----------------|------------------|
-| **GitHub**       | GitHub App                | 1 hour         | ✅                |
-| **GitLab**       | OAuth2 Application        | 2 hours        | ✅                |
-| **Azure DevOps** | OIDC (Federated Identity) | ~1 hour        | ✅                |
-| **Bitbucket**    | OAuth2 Consumer           | 2 hours        | ✅                |
+| Platform         | Auth Method                          | Token Lifetime        | User-Independent |
+|------------------|--------------------------------------|-----------------------|------------------|
+| **GitHub**       | GitHub App                           | 1 hour                | ✅                |
+| **GitLab**       | Trigger Token + Read Token (2-token) | Trigger: ∞, Read: 1yr | ⚠️ Read token    |
+| **Azure DevOps** | OIDC (Federated Identity)            | ~1 hour               | ✅                |
+| **Bitbucket**    | OAuth2 Consumer                      | 2 hours               | ✅                |
 
 ### Architecture Flow
 
@@ -25,7 +25,7 @@ GitHub Actions Workflow Triggered
 ┌────────────────────────────────────┐
 │  Token Generation (in GH Actions)  │
 │  - GitHub: Official Action         │
-│  - GitLab: OAuth2 API call         │
+│  - GitLab: Stored tokens (2-token) │
 │  - Azure: OIDC (no secrets)        │
 │  - Bitbucket: OAuth2 API call      │
 └────────────────────────────────────┘
@@ -38,6 +38,17 @@ Trigger test pipelines on each platform
          ↓
 Tokens expire automatically
 ```
+
+### GitLab Two-Token Approach
+
+GitLab does not support OAuth2 client credentials flow. We use two purpose-specific tokens:
+
+| Token                      | Purpose           | Scope                           |
+|----------------------------|-------------------|---------------------------------|
+| **Pipeline Trigger Token** | Trigger pipelines | Can only trigger, no API access |
+| **Project Access Token**   | Poll status       | `read_api` only, Guest role     |
+
+This provides least-privilege access - neither token alone can both trigger and read.
 
 ### Key Security Improvements
 
@@ -61,6 +72,8 @@ Tokens expire automatically
 
 **OIDC for GitHub API** - OIDC is for external services authenticating to GitHub, not for GitHub Actions triggering other GitHub workflows; GitHub Apps are the correct solution.
 
+**GitLab OAuth2 Client Credentials** - GitLab does not support OAuth2 client credentials flow for machine-to-machine authentication; two-token approach (trigger + read) provides equivalent security with least-privilege separation.
+
 ---
 
 ## Implementation Requirements
@@ -68,23 +81,23 @@ Tokens expire automatically
 ### One-Time Setup (per platform)
 
 1. **GitHub**: Register GitHub App with `contents: read`, `actions: write` permissions
-2. **GitLab**: Create OAuth2 Application with `api` scope
+2. **GitLab**: Create Pipeline Trigger Token + Project Access Token (`read_api`, Guest role)
 3. **Azure DevOps**: Register Microsoft Entra ID application, add federated credential for GitHub Actions OIDC, grant Build (Read & Execute) to Azure DevOps project
 4. **Bitbucket**: Create OAuth2 Consumer with `pipeline`, `pipeline:write`, `repository` scopes
 
 ### Secrets Configuration
 
-Store client credentials in GitHub Actions repository secrets:
-- `GH_APP_ID`, `GH_APP_PRIVATE_KEY`
-- `GITLAB_CLIENT_ID`, `GITLAB_CLIENT_SECRET`
-- `AZURE_TENANT_ID`, `AZURE_CLIENT_ID` (no client secret - uses OIDC; no subscription needed for Azure DevOps API)
-- `BITBUCKET_CLIENT_ID`, `BITBUCKET_CLIENT_SECRET`
+Store credentials in GitHub Actions repository secrets:
+- `BOOST_SCAN_RUNNER_GITHUB_APP_ID`, `BOOST_SCAN_RUNNER_GITHUB_APP_PRIVATE_KEY`
+- `BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN`, `BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN`
+- `BOOST_SCAN_RUNNER_ADO_TENANT_ID`, `BOOST_SCAN_RUNNER_ADO_CLIENT_ID` (no client secret - uses OIDC)
+- `BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_ID`, `BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_SECRET`
 
 ### Code Changes
 
 - **GitHub Actions workflow**: Add token generation steps (GitHub App action, OAuth API calls, azure/login with OIDC)
 - **GitHub Actions permissions**: Add `id-token: write` permission for Azure OIDC
-- **test-action CLI**: Accept `--{platform}-token` arguments instead of client credentials
+- **test-action CLI**: Accept `--{platform}-token` arguments (GitLab: `--gitlab-trigger-token`, `--gitlab-read-token`)
 - **Providers**: Use provided tokens directly instead of generating them
 
 ---

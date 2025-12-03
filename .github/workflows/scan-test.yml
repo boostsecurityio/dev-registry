@@ -93,7 +93,8 @@ jobs:
           provider: gitlab-ci
           provider-config: |
             {
-              "token": "${{ steps.github-token.outputs.token }}",
+              "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
+              "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
               "project_id": "boostsecurityio/martin/boostsec-registry-test-runner",
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
