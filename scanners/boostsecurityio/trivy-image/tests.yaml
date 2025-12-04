@@ -6,5 +6,5 @@ tests:
       url: "https://github.com/martin-boost-dev/boost-poc-registry-testing-trivy"
       ref: "main"
     scan_paths:
-      - "osv-scanner"
       - "rclone"
+      - "osv-scanner"

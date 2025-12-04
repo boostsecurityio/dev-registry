@@ -98,8 +98,8 @@ jobs:
       - name: Azure Login (OIDC)
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          client-id: ${{ secrets.BOOST_SCAN_RUNNER_ADO_CLIENT_ID }}
+          tenant-id: ${{ secrets.BOOST_SCAN_RUNNER_ADO_TENANT_ID }}
           allow-no-subscriptions: true
 
       - name: Get Azure DevOps Token
