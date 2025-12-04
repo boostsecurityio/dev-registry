@@ -87,4 +87,4 @@ jobs:
               "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.head_ref }}"
+          base-ref: "${{ github.base_ref }}"
