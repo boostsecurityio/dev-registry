@@ -34,7 +34,7 @@ jobs:
       - name: Run Tests
         uses: boostsecurityio/scan-test-action@53e2f687ab93ac5d150b88abd7341b72f6fbf384
         with:
-          provider: github-actions
+          provider: azure-devops
           provider-config: |
             {
               "token": "${{ steps.azure-token.outputs.token }}",
