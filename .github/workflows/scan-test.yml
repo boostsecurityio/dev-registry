@@ -67,3 +67,24 @@ jobs:
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
+
+  gitlab-ci:
+    name: Gitlab-CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+      - name: Run Tests
+        uses: boostsecurityio/scan-test-action@53e2f687ab93ac5d150b88abd7341b72f6fbf384
+        with:
+          provider: gitlab-ci
+          provider-config: |
+            {
+              "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
+              "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
+            }
+          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
+          base-ref: "${{ github.base_ref }}"
