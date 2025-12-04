@@ -155,17 +155,6 @@ rules:
     description: The software performs a calculation that can produce an integer overflow
       or wraparound.
     ref: https://cwe.mitre.org/data/definitions/190.html
-  G113:
-    categories:
-    - ALL
-    - cwe-704
-    - boost-hardened
-    group: top10-insecure-design
-    name: G113
-    pretty_name: 'G113: Usage of Rat.SetString in math/big with an overflow (CVE-2022-23772)'
-    description: The software performs a calculation that can produce an integer overflow
-      or wraparound.
-    ref: https://cwe.mitre.org/data/definitions/704.html
   G102:
     categories:
     - ALL
@@ -291,7 +280,7 @@ rules:
     - owasp-top-10
     group: top10-crypto-failures
     name: G401
-    pretty_name: 'G401: Detect the usage of DES, RC4, MD5 or SHA1'
+    pretty_name: 'G401: Detect the usage of MD5 or SHA1'
     description: The software stores or transmits sensitive data using an encryption
       scheme that is theoretically sound, but is not strong enough for the level of
       protection required.
@@ -465,4 +454,89 @@ rules:
       or cryptographic key, which it uses for its own inbound authentication, outbound
       communication to external components, or encryption of internal data.
     ref: https://cwe.mitre.org/data/definitions/798.html
+    recommended: true
+  G115:
+    categories:
+    - ALL
+    - cwe-190
+    - boost-baseline
+    - boost-hardened
+    - cwe-top-25
+    group: top10-insecure-design
+    name: G115
+    pretty_name: 'G115: Type conversion which leads to integer overflow'
+    description: The software performs a calculation that can produce an integer overflow
+      or wraparound when the logic assumes that the resulting value will always be
+      larger than the original value.
+    ref: https://cwe.mitre.org/data/definitions/190.html
+    recommended: true
+  G405:
+    categories:
+    - ALL
+    - cwe-327
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: G405
+    pretty_name: 'G405: Detect the usage of DES or RC4'
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary
+      risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+    recommended: true
+  G406:
+    categories:
+    - ALL
+    - cwe-327
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: G406
+    pretty_name: 'G406: Detect the usage of deprecated MD4 or RIPEMD160'
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary
+      risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+    recommended: true
+  G407:
+    categories:
+    - ALL
+    - cwe-329
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: G407
+    pretty_name: 'G407: Use of hardcoded IV/nonce for encryption'
+    description: The use of a non-random initialization vector (IV) or nonce can lead
+      to predictable ciphertext, compromising confidentiality.
+    ref: https://cwe.mitre.org/data/definitions/329.html
+    recommended: true
+  G506:
+    categories:
+    - ALL
+    - cwe-327
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: G506
+    pretty_name: 'G506: Import blocklist: golang.org/x/crypto/md4'
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary
+      risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
+    recommended: true
+  G507:
+    categories:
+    - ALL
+    - cwe-327
+    - boost-baseline
+    - boost-hardened
+    - owasp-top-10
+    group: top10-crypto-failures
+    name: G507
+    pretty_name: 'G507: Import blocklist: golang.org/x/crypto/ripemd160'
+    description: The use of a broken or risky cryptographic algorithm is an unnecessary
+      risk that may result in the exposure of sensitive information.
+    ref: https://cwe.mitre.org/data/definitions/327.html
     recommended: true
