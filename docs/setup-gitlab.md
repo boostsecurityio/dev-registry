@@ -32,6 +32,8 @@ GitLab does not support OAuth2 client credentials flow. Instead, we use a **two-
 
 5. Copy the **trigger token** - it's only shown once!
 
+6. Ensure the ** CI/CD > Variables > Minimum role to use pipeline variables ** is set to **Developer** 
+
 ---
 
 ## 3. Create Project Access Token (for polling)
