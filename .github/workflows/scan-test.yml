@@ -3,7 +3,6 @@ name: Scan Tests
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    paths: ['scanners/**']
 
 permissions:
   id-token: write  # Required for OIDC
@@ -32,7 +31,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@2a784e92451e9ba1561ca749ba630b7621adfcbf
+        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
           provider: azure-devops
           provider-config: |
@@ -44,6 +43,7 @@ jobs:
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
   bitbucket-action:
     name: Bitbucket Pipelines
     runs-on: ubuntu-latest
@@ -64,7 +64,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@2a784e92451e9ba1561ca749ba630b7621adfcbf
+        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
           provider: bitbucket
           provider-config: |
@@ -75,6 +75,7 @@ jobs:
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
 
   github-action:
     name: Github Actions
@@ -93,7 +94,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@2a784e92451e9ba1561ca749ba630b7621adfcbf
+        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
           provider: github-actions
           provider-config: |
@@ -105,6 +106,7 @@ jobs:
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
 
   gitlab-ci:
     name: Gitlab-CI
@@ -115,7 +117,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@2a784e92451e9ba1561ca749ba630b7621adfcbf
+        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
           provider: gitlab-ci
           provider-config: |
@@ -126,3 +128,4 @@ jobs:
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
