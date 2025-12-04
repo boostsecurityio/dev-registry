@@ -5,6 +5,9 @@ on:
     types: [opened, synchronize, reopened]
     paths: ['scanners/**']
 
+permissions:
+  id-token: write  # Required for OIDC
+
 jobs:
   azure-devops-pipelines:
     name: Azure DevOps Pipelines
