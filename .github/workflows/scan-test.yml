@@ -77,7 +77,7 @@ jobs:
         with:
           fetch-depth: 0  # Need full history to detect changes
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@2410d5ae4661d6dbe63a744b037aae9db7bd066e
+        uses: boostsecurityio/scan-test-action@53e2f687ab93ac5d150b88abd7341b72f6fbf384
         with:
           provider: gitlab-ci
           provider-config: |
