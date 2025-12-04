@@ -58,7 +58,7 @@ Navigate to the scanner registry repository (GitHub):
   run: |
     response=$(curl -s -X POST \
       "https://bitbucket.org/site/oauth2/access_token" \
-      -u "${{ secrets.BITBUCKET_CLIENT_ID }}:${{ secrets.BITBUCKET_CLIENT_SECRET }}" \
+      -u "${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_ID }}:${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_SECRET }}" \
       -d "grant_type=client_credentials")
 
     token=$(echo "$response" | jq -r '.access_token')
