@@ -1,0 +1,7 @@
+version: "1.0"
+tests:
+  - name: "pnpm"
+    type: "source-code"
+    source:
+      url: "https://github.com/pnpm/pnpm.git"
+      ref: "main"
