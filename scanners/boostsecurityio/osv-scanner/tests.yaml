@@ -1,0 +1,57 @@
+version: "1.0"
+tests:
+  - name: "gitleaks"
+    type: "source-code"
+    source:
+      url: "https://github.com/gitleaks/gitleaks.git"
+      ref: "v8.15.2"
+  - name: "osv-scanner"
+    type: "source-code"
+    source:
+      url: "https://github.com/google/osv-scanner.git"
+      ref: "v1.0.2"
+  - name: "rclone"
+    type: "source-code"
+    source:
+      url: "https://github.com/rclone/rclone.git"
+      ref: "v1.62.2"
+  - name: "kubeaudit"
+    type: "source-code"
+    source:
+      url: "https://github.com/Shopify/kubeaudit.git"
+      ref: "v0.18.0"
+  - name: "vaultwarden"
+    type: "source-code"
+    source:
+      url: "https://github.com/dani-garcia/vaultwarden.git"
+      ref: "1.30.5"
+  - name: "opencv"
+    type: "source-code"
+    source:
+      url: "https://github.com/opencv/opencv.git"
+      ref: "4.9.0"
+  - name: "docusaurus"
+    type: "source-code"
+    source:
+      url: "https://github.com/facebook/docusaurus.git"
+      ref: "3.2.1"
+  - name: "nomulus"
+    type: "source-code"
+    source:
+      url: "https://github.com/google/nomulus.git"
+      ref: "nomulus-20240501-RC00"
+  - name: "mastodon"
+    type: "source-code"
+    source:
+      url: "https://github.com/mastodon/mastodon.git"
+      ref: "v4.2.8"
+  - name: "openvino"
+    type: "source-code"
+    source:
+      url: "https://github.com/openvinotoolkit/openvino.git"
+      ref: "2024.1.0"
+  - name: "langchain"
+    type: "source-code"
+    source:
+      url: "https://github.com/langchain-ai/langchain.git"
+      ref: "langchain==0.1.17"

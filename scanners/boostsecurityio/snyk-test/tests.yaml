@@ -1,0 +1,22 @@
+version: "1.0"
+tests:
+  - name: "gitleaks"
+    type: "source-code"
+    source:
+      url: "https://github.com/gitleaks/gitleaks.git"
+      ref: "v8.15.2"
+  - name: "osv-scanner"
+    type: "source-code"
+    source:
+      url: "https://github.com/google/osv-scanner.git"
+      ref: "v1.0.2"
+  - name: "rclone"
+    type: "source-code"
+    source:
+      url: "https://github.com/rclone/rclone.git"
+      ref: "v1.62.2"
+  - name: "kubeaudit"
+    type: "source-code"
+    source:
+      url: "https://github.com/Shopify/kubeaudit.git"
+      ref: "v0.18.0"
