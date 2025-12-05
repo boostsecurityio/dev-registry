@@ -1,7 +1,14 @@
+# NOTE: Updates to this workflow should be done on the scanner-registry repository
+# (not a fork) to validate the test harness is healthy. PRs from forks use the
+# workflow from main via pull_request_target, while same-repo PRs use the workflow
+# from the PR branch via pull_request.
+
 name: Scan Tests
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
+  pull_request_target:
     types: [opened, synchronize, reopened]
 
 permissions:
@@ -11,6 +18,10 @@ jobs:
   azure-devops-pipelines:
     name: Azure DevOps Pipelines
     runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Azure Login (OIDC)
         uses: azure/login@v2
@@ -30,6 +41,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
         uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
@@ -47,6 +59,10 @@ jobs:
   bitbucket-action:
     name: Bitbucket Pipelines
     runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Generate Bitbucket OAuth Token
         id: bitbucket-token
@@ -63,6 +79,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
         uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
@@ -80,6 +97,10 @@ jobs:
   github-action:
     name: Github Actions
     runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Generate GitHub App Token
         id: github-token
@@ -93,6 +114,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
         uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
@@ -111,11 +133,16 @@ jobs:
   gitlab-ci:
     name: Gitlab-CI
     runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
         uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
         with:
