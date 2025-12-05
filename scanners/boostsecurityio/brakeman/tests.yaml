@@ -1,0 +1,22 @@
+version: "1.0"
+tests:
+  - name: "railsgoat"
+    type: "source-code"
+    source:
+      url: "https://github.com/OWASP/railsgoat.git"
+      ref: "master"
+  - name: "postal"
+    type: "source-code"
+    source:
+      url: "https://github.com/postalserver/postal.git"
+      ref: "2.1.1"
+  - name: "govwifi-admin"
+    type: "source-code"
+    source:
+      url: "https://github.com/alphagov/govwifi-admin.git"
+      ref: "9d067eb8c3d30e8a418cba6fe5c0d27cdaef7e4d"
+  - name: "diaspora"
+    type: "source-code"
+    source:
+      url: "https://github.com/diaspora/diaspora.git"
+      ref: "v0.7.18.1"
