@@ -19,7 +19,7 @@ tests:
     type: "source-code"
     source:
       url: "https://github.com/NeuraLegion/brokencrystals.git"
-      ref: "master"
+      ref: "stable"
   - name: "vulnnodeapp"
     type: "source-code"
     source:
