@@ -20,7 +20,7 @@ tests:
     source:
       url: "https://github.com/google/nomulus.git"
       ref: "nomulus-20240501-RC00"
-  - name: "openvino"  # Pythong
+  - name: "openvino"  # Python
     type: "source-code"
     source:
       url: "https://github.com/openvinotoolkit/openvino.git"
