@@ -1,7 +1,7 @@
 version: "1.0"
 tests:
-  - name: "pnpm"
+  - name: "docusaurus"
     type: "source-code"
     source:
-      url: "https://github.com/pnpm/pnpm.git"
-      ref: "main"
+      url: "https://github.com/facebook/docusaurus.git"
+      ref: "v3.2.1"
