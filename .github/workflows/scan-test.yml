@@ -43,7 +43,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
+        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
         with:
           provider: azure-devops
           provider-config: |
@@ -81,7 +81,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
+        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
         with:
           provider: bitbucket
           provider-config: |
@@ -116,7 +116,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
+        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
         with:
           provider: github-actions
           provider-config: |
@@ -144,7 +144,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@b61411c3651a93be06e3f31490ff6a94e901ae00
+        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
         with:
           provider: gitlab-ci
           provider-config: |
