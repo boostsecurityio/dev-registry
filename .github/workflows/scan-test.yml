@@ -51,7 +51,7 @@ jobs:
               "token": "${{ steps.azure-token.outputs.token }}",
               "organization": "BoostSecurity",
               "project": "cicd-tools",
-              "pipeline_id": 1
+              "pipeline_id": 2
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -88,7 +88,8 @@ jobs:
             {
               "token": "${{ steps.bitbucket-token.outputs.token }}",
               "workspace": "boostsecurityio",
-              "repo_slug": "scan-test-runner-bitbucket-pipelines"
+              "repo_slug": "scan-test-runner-bitbucket-pipelines",
+              "branch": "BST-18082/simplify-scan-path-contract"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -124,7 +125,8 @@ jobs:
               "token": "${{ steps.github-token.outputs.token }}",
               "owner": "boostsecurityio",
               "repo": "scan-test-runner-gitbub-actions",
-              "workflow_id": "test-scanner.yml"
+              "workflow_id": "test-scanner.yml",
+              "ref": "BST-18082-simplify-test-matrix"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -151,7 +153,8 @@ jobs:
             {
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
-              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci",
+              "ref": "BST-18082-nullable-scan-path"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
