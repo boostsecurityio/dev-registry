@@ -43,7 +43,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
+        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
         with:
           provider: azure-devops
           provider-config: |
@@ -51,7 +51,7 @@ jobs:
               "token": "${{ steps.azure-token.outputs.token }}",
               "organization": "BoostSecurity",
               "project": "cicd-tools",
-              "pipeline_id": 2
+              "pipeline_id": 1
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -81,15 +81,14 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
+        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
         with:
           provider: bitbucket
           provider-config: |
             {
               "token": "${{ steps.bitbucket-token.outputs.token }}",
               "workspace": "boostsecurityio",
-              "repo_slug": "scan-test-runner-bitbucket-pipelines",
-              "branch": "BST-18082/simplify-scan-path-contract"
+              "repo_slug": "scan-test-runner-bitbucket-pipelines"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -117,7 +116,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
+        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
         with:
           provider: github-actions
           provider-config: |
@@ -125,8 +124,7 @@ jobs:
               "token": "${{ steps.github-token.outputs.token }}",
               "owner": "boostsecurityio",
               "repo": "scan-test-runner-gitbub-actions",
-              "workflow_id": "test-scanner.yml",
-              "ref": "BST-18082-simplify-test-matrix"
+              "workflow_id": "test-scanner.yml"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -146,15 +144,14 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ebe5323e71300fd38fd935b4a3d1ce065aee9bd5
+        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
         with:
           provider: gitlab-ci
           provider-config: |
             {
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
-              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci",
-              "ref": "BST-18082-nullable-scan-path"
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
