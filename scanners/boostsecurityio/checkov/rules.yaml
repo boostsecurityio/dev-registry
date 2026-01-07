@@ -885,16 +885,6 @@ rules:
     pretty_name: AZURE - Ensure that PostgreSQL server enables customer-managed key
       for encryption
     ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV2_AZURE_18:
-    categories:
-    - ALL
-    - cloud-unencrypted-resources
-    description: Check for unencrypted Azure resources.
-    group: cloud-unencrypted-resources
-    name: CKV2_AZURE_18
-    pretty_name: AZURE - Ensure that Storage Accounts use customer-managed key for
-      encryption
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV2_AZURE_19:
     categories:
     - ALL
@@ -3154,19 +3144,6 @@ rules:
       provided by AWS Certificate Manager
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_AWS_128:
-    categories:
-    - ALL
-    - cloud-insecure-iam
-    - boost-baseline
-    - boost-hardened
-    description: Check for weak AWS permissions.
-    group: cloud-insecure-iam
-    name: CKV_AWS_128
-    pretty_name: AWS - Ensure that an Amazon RDS Clusters have AWS Identity and Access
-      Management (IAM) authentication enabled
-    recommended: true
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AWS_129:
     categories:
     - ALL
@@ -3856,16 +3833,6 @@ rules:
     group: cloud-unencrypted-resources
     name: CKV_AWS_187
     pretty_name: AWS - Ensure Sagemaker domain is encrypted by KMS using a customer
-      managed Key (CMK)
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_AWS_188:
-    categories:
-    - ALL
-    - cloud-unencrypted-resources
-    description: Check for unencrypted AWS resources.
-    group: cloud-unencrypted-resources
-    name: CKV_AWS_188
-    pretty_name: AWS - Ensure RedShift Cluster is encrypted by KMS using a customer
       managed Key (CMK)
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AWS_189:
@@ -5267,18 +5234,6 @@ rules:
     group: cloud-unencrypted-resources
     name: CKV_AWS_298
     pretty_name: AWS - Ensure DMS S3 uses Customer Managed Key (CMK)
-    recommended: true
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_AWS_299:
-    categories:
-    - ALL
-    - cloud-unencrypted-resources
-    - boost-baseline
-    - boost-hardened
-    description: Check for unencrypted AWS resources.
-    group: cloud-unencrypted-resources
-    name: CKV_AWS_299
-    pretty_name: AWS - Ensure DMS S3 defines in-transit encryption
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AWS_3:
@@ -7045,6 +7000,16 @@ rules:
     name: CKV_AZUREPIPELINES_3
     pretty_name: AZUREPIPELINES - Ensure set variable is not marked as a secret
     recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_AZUREPIPELINES_5:
+    categories:
+    - ALL
+    - supply-chain-cicd-weak-configuration
+    - boost-hardened
+    description: Check for weak Azure Pipelines configurations.
+    group: supply-chain-cicd-weak-configuration
+    name: CKV_AZUREPIPELINES_5
+    pretty_name: AZUREPIPELINES - Detecting image usages in azure pipelines workflows
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AZURE_1:
     categories:
@@ -9353,18 +9318,6 @@ rules:
     pretty_name: AZURE - Ensure AKS has an API Server Authorized IP Ranges enabled
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_AZURE_60:
-    categories:
-    - ALL
-    - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
-    description: Check for misconfigurations in Azure resources.
-    group: cloud-weak-configuration
-    name: CKV_AZURE_60
-    pretty_name: AZURE - Ensure that storage account enables secure transfer
-    recommended: true
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_AZURE_61:
     categories:
     - ALL
@@ -9962,6 +9915,16 @@ rules:
     pretty_name: CIRCLECIPIPELINES - Suspicious use of curl in run task
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_CIRCLECIPIPELINES_8:
+    categories:
+    - ALL
+    - supply-chain-cicd-vulnerable-pipeline
+    - boost-hardened
+    description: Check for vulnerable CircleCI pipelines.
+    group: supply-chain-cicd-vulnerable-pipeline
+    name: CKV_CIRCLECIPIPELINES_8
+    pretty_name: CIRCLECIPIPELINES - Detecting image usages in circleci pipelines
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_DIO_1:
     categories:
     - ALL
@@ -10545,18 +10508,6 @@ rules:
     group: cloud-resources-public-access
     name: CKV_GCP_18
     pretty_name: GCP - Ensure GKE Control Plane is not public
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_GCP_19:
-    categories:
-    - ALL
-    - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
-    description: Check for misconfigurations in Google Cloud resources.
-    group: cloud-weak-configuration
-    name: CKV_GCP_19
-    pretty_name: GCP - Ensure GKE basic auth is disabled
-    recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_GCP_2:
     categories:
@@ -11152,18 +11103,6 @@ rules:
     name: CKV_GCP_66
     pretty_name: GCP - Ensure use of Binary Authorization
     ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_GCP_67:
-    categories:
-    - ALL
-    - cloud-weak-configuration
-    - boost-baseline
-    - boost-hardened
-    description: Check for misconfigurations in Google Cloud resources.
-    group: cloud-weak-configuration
-    name: CKV_GCP_67
-    pretty_name: GCP - Ensure legacy Compute Engine instance metadata APIs are Disabled
-    recommended: true
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_GCP_68:
     categories:
     - ALL
@@ -11661,6 +11600,166 @@ rules:
     name: CKV_GITHUB_10
     pretty_name: GITHUB - Ensure branch protection rules are enforced on administrators
     recommended: true
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_11:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_11
+    pretty_name: GITHUB - Ensure GitHub branch protection dismisses stale review on new commit
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_12:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_12
+    pretty_name: GITHUB - Ensure GitHub branch protection restricts who can dismiss PR reviews
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_13:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_13
+    pretty_name: GITHUB - Ensure GitHub branch protection requires CODEOWNER reviews
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_14:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_14
+    pretty_name: GITHUB - Ensure all checks have passed before the merge of new code
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_15:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_15
+    pretty_name: GITHUB - Ensure inactive branches are reviewed and removed periodically
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_16:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_16
+    pretty_name: GITHUB - Ensure GitHub branch protection requires conversation resolution
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_17:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_17
+    pretty_name: GITHUB - Ensure GitHub branch protection requires push restrictions
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_18:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_18
+    pretty_name: GITHUB - Ensure GitHub branch protection rules does not allow deletions
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_19:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_19
+    pretty_name: GITHUB - Ensure any change to code receives approval of two strongly authenticated users
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_20:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_20
+    pretty_name: GITHUB - Ensure open git branches are up to date before they can be merged into codebase
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_21:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_21
+    pretty_name: GITHUB - Ensure public repository creation is limited to specific members
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_22:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_22
+    pretty_name: GITHUB - Ensure private repository creation is limited to specific members
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_23:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_23
+    pretty_name: GITHUB - Ensure internal repository creation is limited to specific members
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_26:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_26
+    pretty_name: GITHUB - Ensure minimum admins are set for the organization
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_27:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_27
+    pretty_name: GITHUB - Ensure strict base permissions are set for repositories
+    ref: https://www.checkov.io/5.Policy%20Index/all.html
+  CKV_GITHUB_28:
+    categories:
+    - ALL
+    - supply-chain-scm-weak-configuration
+    - boost-hardened
+    description: Check for weak GitHub configurations.
+    group: supply-chain-scm-weak-configuration
+    name: CKV_GITHUB_28
+    pretty_name: GITHUB - Ensure an organization's identity is confirmed with a Verified badge
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_GITHUB_2:
     categories:
@@ -14390,18 +14489,6 @@ rules:
     group: stored-secrets
     name: CKV_SECRET_1
     pretty_name: SECRET - Artifactory Credentials
-    recommended: true
-    ref: https://www.checkov.io/5.Policy%20Index/all.html
-  CKV_SECRET_10:
-    categories:
-    - ALL
-    - stored-secrets
-    - boost-baseline
-    - boost-hardened
-    description: Check for secrets stored in configuration.
-    group: stored-secrets
-    name: CKV_SECRET_10
-    pretty_name: SECRET - Secret Keyword
     recommended: true
     ref: https://www.checkov.io/5.Policy%20Index/all.html
   CKV_SECRET_11:
