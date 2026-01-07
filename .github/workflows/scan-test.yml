@@ -124,8 +124,7 @@ jobs:
               "token": "${{ steps.github-token.outputs.token }}",
               "owner": "boostsecurityio",
               "repo": "scan-test-runner-gitbub-actions",
-              "workflow_id": "test-scanner.yml",
-              "ref": "BST-17994-fix-main-branch-detection"
+              "workflow_id": "test-scanner.yml"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"

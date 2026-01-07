@@ -5,3 +5,8 @@ tests:
     source:
       url: "https://github.com/hounddogai/hounddog-test-healthcare-app.git"
       ref: "main"
+  - name: "sones"
+    type: "source-code"
+    source:
+      url: "https://github.com/sones/sones.git"
+      ref: "master"
