@@ -4,4 +4,4 @@ tests:
     type: "source-code"
     source:
       url: "https://github.com/facebook/docusaurus.git"
-      ref: "v3.2.1"
+      ref: "main"
