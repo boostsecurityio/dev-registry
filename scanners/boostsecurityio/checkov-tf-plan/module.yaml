@@ -24,4 +24,4 @@ steps:
           command: process
           workdir: /src
           environment:
-            BOOST_TF_TAGS_POLICY: $BOOST_TF_TAGS_POLICY
+            BOOST_TF_TAGS_POLICY: ${BOOST_TF_TAGS_POLICY:-{}}

@@ -1,0 +1,25 @@
+version: "1.0"
+tests:
+  - name: "aws-security-violations"
+    type: "source-code"
+    source:
+      url: "https://github.com/boost-sandbox/checkov-tf-plan-testing.git"
+      ref: "main"
+    scan_paths:
+      - "aws-security-violations"
+
+  - name: "aws-compliant"
+    type: "source-code"
+    source:
+      url: "https://github.com/boost-sandbox/checkov-tf-plan-testing.git"
+      ref: "main"
+    scan_paths:
+      - "aws-compliant"
+
+  - name: "gcp-storage"
+    type: "source-code"
+    source:
+      url: "https://github.com/boost-sandbox/checkov-tf-plan-testing.git"
+      ref: "main"
+    scan_paths:
+      - "gcp-storage"
