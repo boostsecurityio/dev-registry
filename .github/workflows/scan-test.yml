@@ -130,29 +130,29 @@ jobs:
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
 
-  # gitlab-ci:
-  #   name: Gitlab-CI
-  #   runs-on: ubuntu-latest
-  #   # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
-  #   if: |
-  #     (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
-  #     (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
-  #   steps:
-  #     - name: Checkout scanner registry
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0  # Need full history to detect changes
-  #         ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
-  #     - name: Run Tests
-  #       uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
-  #       with:
-  #         provider: gitlab-ci
-  #         provider-config: |
-  #           {
-  #             "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
-  #             "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
-  #             "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
-  #           }
-  #         registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-  #         base-ref: "${{ github.base_ref }}"
-  #         fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+  gitlab-ci:
+    name: Gitlab-CI
+    runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
+    steps:
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+      - name: Run Tests
+        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
+        with:
+          provider: gitlab-ci
+          provider-config: |
+            {
+              "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
+              "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
+            }
+          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
+          base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
