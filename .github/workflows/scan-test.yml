@@ -43,7 +43,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
+        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
         with:
           provider: azure-devops
           provider-config: |
@@ -56,43 +56,43 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
-  # bitbucket-action:
-  #   name: Bitbucket Pipelines
-  #   runs-on: ubuntu-latest
-  #   # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
-  #   if: |
-  #     (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
-  #     (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
-  #   steps:
-  #     - name: Generate Bitbucket OAuth Token
-  #       id: bitbucket-token
-  #       run: |
-  #         response=$(curl -s -X POST \
-  #           "https://bitbucket.org/site/oauth2/access_token" \
-  #           -u "${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_ID }}:${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_SECRET }}" \
-  #           -d "grant_type=client_credentials")
+  bitbucket-action:
+    name: Bitbucket Pipelines
+    runs-on: ubuntu-latest
+    # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
+    steps:
+      - name: Generate Bitbucket OAuth Token
+        id: bitbucket-token
+        run: |
+          response=$(curl -s -X POST \
+            "https://bitbucket.org/site/oauth2/access_token" \
+            -u "${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_ID }}:${{ secrets.BOOST_SCAN_RUNNER_BITBUCKET_CLIENT_SECRET }}" \
+            -d "grant_type=client_credentials")
           
-  #         token=$(echo "$response" | jq -r '.access_token')
-  #         echo "token=$token" >> $GITHUB_OUTPUT
-  #         echo "::add-mask::$token"
-  #     - name: Checkout scanner registry
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0  # Need full history to detect changes
-  #         ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
-  #     - name: Run Tests
-  #       uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
-  #       with:
-  #         provider: bitbucket
-  #         provider-config: |
-  #           {
-  #             "token": "${{ steps.bitbucket-token.outputs.token }}",
-  #             "workspace": "boostsecurityio",
-  #             "repo_slug": "scan-test-runner-bitbucket-pipelines"
-  #           }
-  #         registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-  #         base-ref: "${{ github.base_ref }}"
-  #         fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+          token=$(echo "$response" | jq -r '.access_token')
+          echo "token=$token" >> $GITHUB_OUTPUT
+          echo "::add-mask::$token"
+      - name: Checkout scanner registry
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history to detect changes
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+      - name: Run Tests
+        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
+        with:
+          provider: bitbucket
+          provider-config: |
+            {
+              "token": "${{ steps.bitbucket-token.outputs.token }}",
+              "workspace": "boostsecurityio",
+              "repo_slug": "scan-test-runner-bitbucket-pipelines"
+            }
+          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
+          base-ref: "${{ github.base_ref }}"
+          fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
 
   github-action:
     name: Github Actions
@@ -116,7 +116,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@a4d5ef9fcfc24917230a89279bc2802737cfa16e
+        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
         with:
           provider: github-actions
           provider-config: |
@@ -144,7 +144,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@39ab2771d9415eee79a168327ce7a355a5deae1f
+        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
         with:
           provider: gitlab-ci
           provider-config: |
