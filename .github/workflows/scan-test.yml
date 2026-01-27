@@ -43,7 +43,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
+        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
         with:
           provider: azure-devops
           provider-config: |
@@ -56,6 +56,7 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+          allowed-env-prefixes: "CODEQL_, BOOST_"
   bitbucket-action:
     name: Bitbucket Pipelines
     runs-on: ubuntu-latest
@@ -81,7 +82,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
+        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
         with:
           provider: bitbucket
           provider-config: |
@@ -93,6 +94,7 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+          allowed-env-prefixes: "CODEQL_, BOOST_"
 
   github-action:
     name: Github Actions
@@ -116,7 +118,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
+        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
         with:
           provider: github-actions
           provider-config: |
@@ -129,6 +131,7 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+          allowed-env-prefixes: "CODEQL_, BOOST_"
 
   gitlab-ci:
     name: Gitlab-CI
@@ -144,7 +147,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@6d92f96bc497466a27aba9d5a845f2dd24950fbc
+        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
         with:
           provider: gitlab-ci
           provider-config: |
@@ -156,3 +159,4 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
+          allowed-env-prefixes: "CODEQL_, BOOST_"
