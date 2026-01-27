@@ -31,18 +31,17 @@ tests:
 
 ## Fields Reference
 
-| Field                  | Required | Description                                              |
-|------------------------|----------|----------------------------------------------------------|
-| `version`              | Yes      | Schema version (currently "1.0")                         |
-| `allowed_env_prefixes` | No       | List of allowed environment variable name prefixes       |
-| `tests`                | Yes      | List of test specifications                              |
-| `tests[].name`         | Yes      | Human-readable test name                                 |
-| `tests[].type`         | Yes      | Either `source-code` or `container-image`                |
-| `tests[].source.url`   | Yes      | Git repository URL (HTTPS)                               |
-| `tests[].source.ref`   | Yes      | Git reference (branch, tag, or commit SHA)               |
-| `tests[].scan_paths`   | No       | Paths to scan (default: `["."]`)                         |
-| `tests[].timeout`      | No       | Test timeout (default: `5m`)                             |
-| `tests[].env`          | No       | Environment variables to pass to the test runner         |
+| Field                | Required | Description                                              |
+|----------------------|----------|----------------------------------------------------------|
+| `version`            | Yes      | Schema version (currently "1.0")                         |
+| `tests`              | Yes      | List of test specifications                              |
+| `tests[].name`       | Yes      | Human-readable test name                                 |
+| `tests[].type`       | Yes      | Either `source-code` or `container-image`                |
+| `tests[].source.url` | Yes      | Git repository URL (HTTPS)                               |
+| `tests[].source.ref` | Yes      | Git reference (branch, tag, or commit SHA)               |
+| `tests[].scan_paths` | No       | Paths to scan (default: `["."]`)                         |
+| `tests[].timeout`    | No       | Test timeout (default: `5m`)                             |
+| `tests[].env`        | No       | Environment variables to pass to the test runner         |
 
 ## Test Types
 
@@ -90,20 +89,16 @@ Use `scan_paths` to test multiple directories within a repository. Each path cre
 
 Some scanners require environment variables to configure their behavior. Use the `env` field to pass these variables to the test runner.
 
-### Security Model
+### Allowed Prefixes
 
-For security reasons, you must explicitly declare which environment variable prefixes are allowed using the `allowed_env_prefixes` field at the root level. Only environment variables matching these prefixes can be used in tests.
+For security reasons, environment variable names must match a prefix from the allowed list configured in the test workflow. The allowed prefixes are defined via the `allowed-env-prefixes` input in the test action configuration.
 
-- If `allowed_env_prefixes` is not defined, no environment variables can be used
-- Environment variables not matching any allowed prefix will be rejected at validation time
-- This allowlist is intentionally visible and reviewable in PRs
+If you need to use a new environment variable prefix, it must be added to the workflow's `allowed-env-prefixes` input. Environment variables that don't match any allowed prefix will be rejected at validation time.
 
 ### Example
 
 ```yaml
 version: "1.0"
-allowed_env_prefixes:
-  - "CODEQL_"
 tests:
   - name: "CodeQL JavaScript scan"
     type: "source-code"
@@ -112,12 +107,6 @@ tests:
       ref: "v15.0.0"
     env:
       CODEQL_LANGUAGE: "javascript"
-```
-
-In this example, only environment variables starting with `CODEQL_` are permitted. Attempting to use `PATH: "/usr/bin"` would fail validation with the error:
-
-```
-Environment variable 'PATH' does not match any allowed prefix: ['CODEQL_']
 ```
 
 ## Best Practices
@@ -142,8 +131,6 @@ A complete `tests.yaml` for a security scanner with environment variables:
 
 ```yaml
 version: "1.0"
-allowed_env_prefixes:
-  - "SCANNER_"
 tests:
   - name: "OWASP NodeGoat - Known vulnerabilities"
     type: "source-code"
