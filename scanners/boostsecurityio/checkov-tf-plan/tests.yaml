@@ -1,6 +1,4 @@
 version: "1.0"
-allowed_env_prefixes:
-  - "CODEQL_"
 tests:
   - name: "boost sandbox"
     type: "source-code"
