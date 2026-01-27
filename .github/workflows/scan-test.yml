@@ -43,7 +43,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
+        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
         with:
           provider: azure-devops
           provider-config: |
@@ -82,7 +82,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
+        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
         with:
           provider: bitbucket
           provider-config: |
@@ -90,7 +90,6 @@ jobs:
               "token": "${{ steps.bitbucket-token.outputs.token }}",
               "workspace": "boostsecurityio",
               "repo_slug": "scan-test-runner-bitbucket-pipelines",
-              "branch": "add-codeql-test"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -119,7 +118,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
+        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
         with:
           provider: github-actions
           provider-config: |
@@ -148,7 +147,7 @@ jobs:
           fetch-depth: 0  # Need full history to detect changes
           ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@e5c509cada2ec262744bf44a08a305d2a4050260
+        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
         with:
           provider: gitlab-ci
           provider-config: |
@@ -156,7 +155,6 @@ jobs:
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
               "project_id": "boostsecurityio/scan-test-runner-gitlab-ci",
-              "ref": "add-code-ql-test-case"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
