@@ -56,7 +56,7 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
-          allowed-env-prefixes: "CODEQL_, BOOST_"
+          allowed-env-prefixes: "CODEQL_,BOOST_"
   bitbucket-action:
     name: Bitbucket Pipelines
     runs-on: ubuntu-latest
@@ -89,13 +89,13 @@ jobs:
             {
               "token": "${{ steps.bitbucket-token.outputs.token }}",
               "workspace": "boostsecurityio",
-              "repo_slug": "scan-test-runner-bitbucket-pipelines"
+              "repo_slug": "scan-test-runner-bitbucket-pipelines",
               "branch": "add-codeql-test"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
-          allowed-env-prefixes: "CODEQL_, BOOST_"
+          allowed-env-prefixes: "CODEQL_,BOOST_"
 
   github-action:
     name: Github Actions
@@ -132,7 +132,7 @@ jobs:
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
-          allowed-env-prefixes: "CODEQL_, BOOST_"
+          allowed-env-prefixes: "CODEQL_,BOOST_"
 
   gitlab-ci:
     name: Gitlab-CI
@@ -155,10 +155,10 @@ jobs:
             {
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
-              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
+              "project_id": "boostsecurityio/scan-test-runner-gitlab-ci",
               "ref": "add-code-ql-test-case"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
-          allowed-env-prefixes: "CODEQL_, BOOST_"
+          allowed-env-prefixes: "CODEQL_,BOOST_"
