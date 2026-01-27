@@ -90,6 +90,7 @@ jobs:
               "token": "${{ steps.bitbucket-token.outputs.token }}",
               "workspace": "boostsecurityio",
               "repo_slug": "scan-test-runner-bitbucket-pipelines"
+              "branch": "add-codeql-test"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
@@ -155,6 +156,7 @@ jobs:
               "trigger_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_TRIGGER_TOKEN }}",
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
               "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
+              "ref": "add-code-ql-test-case"
             }
           registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           base-ref: "${{ github.base_ref }}"
