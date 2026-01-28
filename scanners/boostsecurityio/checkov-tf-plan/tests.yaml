@@ -7,6 +7,8 @@ tests:
       ref: "main"
     scan_paths:
       - "aws-security-violations"
+    env:
+      BOOST_TF_TAGS_POLICY: '{"version":"v1.0.0","enforcement_policy":"lax","supported_resources":["aws_s3_bucket"],"remediation_message":"For more information, please check our wiki...","required_tags":["Environment","Team"],"allowed_tag_values":{"Environment":["production"],"Team":["security"]}}'
 
   - name: "aws-compliant"
     type: "source-code"
@@ -15,6 +17,8 @@ tests:
       ref: "main"
     scan_paths:
       - "aws-compliant"
+    env:
+      BOOST_TF_TAGS_POLICY: '{"version":"v1.0.0","enforcement_policy":"lax","supported_resources":["aws_s3_bucket"],"remediation_message":"For more information, please check our wiki...","required_tags":["Environment","Team"],"allowed_tag_values":{"Environment":["production"],"Team":["security"]}}'
 
   - name: "gcp-storage"
     type: "source-code"
@@ -23,13 +27,5 @@ tests:
       ref: "main"
     scan_paths:
       - "gcp-storage"
-
-  - name: "boost sandbox"
-    type: "source-code"
-    source:
-      url: "https://github.com/boost-sandbox/checkov-tf-plan-testing"
-      ref: "main"
-    scan_paths:
-      - "aws-security-violations"
     env:
       BOOST_TF_TAGS_POLICY: '{"version":"v1.0.0","enforcement_policy":"lax","supported_resources":["aws_s3_bucket"],"remediation_message":"For more information, please check our wiki...","required_tags":["Environment","Team"],"allowed_tag_values":{"Environment":["production"],"Team":["security"]}}'
