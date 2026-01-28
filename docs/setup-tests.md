@@ -31,16 +31,17 @@ tests:
 
 ## Fields Reference
 
-| Field                | Required | Description                                |
-|----------------------|----------|--------------------------------------------|
-| `version`            | Yes      | Schema version (currently "1.0")           |
-| `tests`              | Yes      | List of test specifications                |
-| `tests[].name`       | Yes      | Human-readable test name                   |
-| `tests[].type`       | Yes      | Either `source-code` or `container-image`  |
-| `tests[].source.url` | Yes      | Git repository URL (HTTPS)                 |
-| `tests[].source.ref` | Yes      | Git reference (branch, tag, or commit SHA) |
-| `tests[].scan_paths` | No       | Paths to scan (default: `["."]`)           |
-| `tests[].timeout`    | No       | Test timeout (default: `5m`)               |
+| Field                | Required | Description                                              |
+|----------------------|----------|----------------------------------------------------------|
+| `version`            | Yes      | Schema version (currently "1.0")                         |
+| `tests`              | Yes      | List of test specifications                              |
+| `tests[].name`       | Yes      | Human-readable test name                                 |
+| `tests[].type`       | Yes      | Either `source-code` or `container-image`                |
+| `tests[].source.url` | Yes      | Git repository URL (HTTPS)                               |
+| `tests[].source.ref` | Yes      | Git reference (branch, tag, or commit SHA)               |
+| `tests[].scan_paths` | No       | Paths to scan (default: `["."]`)                         |
+| `tests[].timeout`    | No       | Test timeout (default: `5m`)                             |
+| `tests[].env`        | No       | Environment variables to pass to the test runner         |
 
 ## Test Types
 
@@ -84,6 +85,30 @@ Use `scan_paths` to test multiple directories within a repository. Each path cre
     - "libs/common"
 ```
 
+## Environment Variables
+
+Some scanners require environment variables to configure their behavior. Use the `env` field to pass these variables to the test runner.
+
+### Allowed Prefixes
+
+For security reasons, environment variable names must match a prefix from the allowed list configured in the test workflow. The allowed prefixes are defined via the `allowed-env-prefixes` input in the test action configuration.
+
+If you need to use a new environment variable prefix, it must be added to the workflow's `allowed-env-prefixes` input. Environment variables that don't match any allowed prefix will be rejected at validation time.
+
+### Example
+
+```yaml
+version: "1.0"
+tests:
+  - name: "CodeQL JavaScript scan"
+    type: "source-code"
+    source:
+      url: "https://github.com/juice-shop/juice-shop.git"
+      ref: "v15.0.0"
+    env:
+      CODEQL_LANGUAGE: "javascript"
+```
+
 ## Best Practices
 
 1. **Use stable references**: Prefer tags or commit SHAs over branches for reproducible tests
@@ -102,7 +127,7 @@ The test system:
 
 ## Example
 
-A complete `tests.yaml` for a security scanner:
+A complete `tests.yaml` for a security scanner with environment variables:
 
 ```yaml
 version: "1.0"
@@ -119,6 +144,8 @@ tests:
       url: "https://github.com/WebGoat/WebGoat.git"
       ref: "v2023.8"
     timeout: "10m"
+    env:
+      SCANNER_LANGUAGE: "java"
 
   - name: "Clean project - No findings expected"
     type: "source-code"
