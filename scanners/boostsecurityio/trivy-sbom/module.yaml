@@ -108,7 +108,6 @@ steps:
           --format=cyclonedx
           --license-full
           --no-progress
-          --scanners vuln
           --cache-dir=/tmp/trivy/
           --skip-version-check 
           . 2>&1
