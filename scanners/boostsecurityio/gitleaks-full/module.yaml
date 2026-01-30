@@ -66,9 +66,11 @@ steps:
           $SETUP_PATH/gitleaks git --no-banner --exit-code 0 --report-format sarif --report-path $SETUP_PATH/gitleaks-output.sarif -l error .
           cat $SETUP_PATH/gitleaks-output.sarif
       post-processor:
-        - docker:
-            command: process --git-scan
-            image: public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:2f0cbcc@sha256:02b26b5624cb9d325cbc74a9f41f9c7b61757e15e20b13e25664cb734c9c6be3
+        - run: |-
+            mkdir -p /shared/boost_results
+            cat /dev/stdin > /tmp/raw_results.sarif
+            docker run -i --rm public.ecr.aws/boostsecurityio/boost-scanner-gitleaks:2f0cbcc@sha256:02b26b5624cb9d325cbc74a9f41f9c7b61757e15e20b13e25664cb734c9c6be3 process < /tmp/raw_results.sarif > /shared/boost_results/results.sarif
+            cat /shared/boost_results/results.sarif
         - docker:
             command: process --gitleaks-full
             image: public.ecr.aws/boostsecurityio/boost-scanner-keyscope:458e3dd@sha256:6b611b085271e2c8ed15590f536fd4a29221a11752ef7525bbb60be9ad241902
