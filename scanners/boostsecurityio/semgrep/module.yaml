@@ -14,10 +14,10 @@ config:
 setup:
   - name: Validate rules
     environment:
-      SEMGREP_RULES: ${SEMGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
+      OPENGREP_RULES: ${OPENGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
     run: |
-      echo "SEMGREP_RULES set to: '$SEMGREP_RULES'"
-      for rule in $SEMGREP_RULES; do
+      echo "OPENGREP_RULES set to: '$OPENGREP_RULES'"
+      for rule in $OPENGREP_RULES; do
         case "$rule" in
           .semgrep/*|http://*|https://*)
             # valid rule token; do nothing
@@ -33,13 +33,13 @@ steps:
   - scan:
       command:
         docker:
-          image: returntocorp/semgrep:1.139.0@sha256:e1e0cde346c758f755e1bd28fd0ea43cde9d523b59a040611a6bdde2f84bb3dd
-          command: semgrep scan --oss-only --sarif --quiet --disable-version-check --metrics=off --no-git-ignore .
+          image: 1mdev/opengrep:1.15.1
+          command: opengrep scan --oss-only --sarif --quiet --disable-version-check --metrics=off --no-git-ignore .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
             HOME: /tmp
-            SEMGREP_RULES: ${SEMGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
+            OPENGREP_RULES: ${OPENGREP_RULES:-https://assets.build.boostsecurity.io/semgrep-rules/stable/all-sast-rules.yml}
       format: sarif
       post-processor:
         docker:
