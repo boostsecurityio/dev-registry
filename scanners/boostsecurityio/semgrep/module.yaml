@@ -34,7 +34,7 @@ steps:
       command:
         docker:
           image: 1mdev/opengrep:1.15.1
-          command: opengrep scan --oss-only --sarif --quiet --disable-version-check --metrics=off --no-git-ignore .
+          command: opengrep scan --oss-only --sarif --quiet --disable-version-check --no-git-ignore .
           workdir: /src
           environment:
             XDG_CONFIG_HOME: /tmp
