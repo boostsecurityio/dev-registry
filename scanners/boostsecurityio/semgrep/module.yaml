@@ -19,7 +19,7 @@ setup:
       echo "SEMGREP_RULES set to: '$SEMGREP_RULES'"
       for rule in $SEMGREP_RULES; do
         case "$rule" in
-          .semgrep/*|http://*|https://*)
+          .semgrep/*|*/.semgrep/*|http://*|https://*)
             # valid rule token; do nothing
             ;;
           *)
