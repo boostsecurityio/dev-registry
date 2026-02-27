@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: bridgecrew/checkov:3.2.495@sha256:4c2c3b67f09867ef2843a03d8ba82adf712eb93ea3584c1708c24ed584f6da17
+          image: bridgecrew/checkov:3.2.355@sha256:085744c6527b508f28f7a93aa3aa4c6b7fc4d87c43b0dc75e5303936a0737c68
           command: --directory . --output json --soft-fail --quiet --skip-download --skip-framework secrets
           workdir: /src
       format: sarif
