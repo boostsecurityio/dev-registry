@@ -31,5 +31,5 @@ rules:
     name: end-of-life-not-maintained
     group: top10-vulnerable-components
     pretty_name: The Package Reached End of Life (EOL).
-    ref: https://docs.boostsecurity.io/rules/index.html
+    ref: https://docs.boostsecurity.io/user-guide/reference-guides/scanners/rules/boost-scanner.html#sca-from-sbom
     recommended: true
