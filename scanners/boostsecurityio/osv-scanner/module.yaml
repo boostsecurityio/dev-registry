@@ -63,7 +63,7 @@ steps:
 - scan:
     command:
       docker:
-        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:2778df1@sha256:73af9ca6458c5dd11dfc61dfa919a9b597f08946622f18628e26696c6e1565ce
+        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:fa98e47@sha256:38b7f647c46874d60fe4b59c32214b5e90d29a31b079129e249981911ecefcdd
         command: |
            -c 'osv-scanner scan source --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
         workdir: /project
