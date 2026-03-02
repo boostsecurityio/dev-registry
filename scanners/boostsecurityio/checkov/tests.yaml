@@ -1,0 +1,7 @@
+version: "1.0"
+tests:
+  - name: "terragoat"
+    type: "source-code"
+    source:
+      url: "https://github.com/bridgecrewio/terragoat.git"
+      ref: "main"

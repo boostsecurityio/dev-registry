@@ -1,0 +1,7 @@
+version: "1.0"
+tests:
+  - name: "caulking"
+    type: "source-code"
+    source:
+      url: "https://github.com/cloud-gov/caulking.git"
+      ref: "main"
