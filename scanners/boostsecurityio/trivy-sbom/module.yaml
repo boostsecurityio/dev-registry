@@ -68,7 +68,7 @@ steps:
           
           # Add all found .csproj files to the solution
           echo "$PROJECT_LIST" | while IFS= read -r proj; do
-              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" >/dev/null 2>&1 || true
+              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj"  || true
           done
                     
           # Restore packages while ignoring errors.
@@ -84,7 +84,7 @@ steps:
               --disable-package-restore \
               --output "$OUTPUT_DIR" \
               --output-format json \
-             >/dev/null 2>&1; then
+             ; then
           
               if [ -f "$OUTPUT_DIR/bom.json" ]; then
                   cat "$OUTPUT_DIR/bom.json"
