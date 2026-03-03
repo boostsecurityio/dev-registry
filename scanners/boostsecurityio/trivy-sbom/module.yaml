@@ -64,11 +64,11 @@ steps:
           fi
           
           # Create temporary solution to merge all projects
-          dotnet new sln -n $TEMP_SOLN_FILE --force --format sln
+          dotnet new sln -n $TEMP_SOLN_FILE --force --format sln > /dev/null 2>&1 || true
           
           # Add all found .csproj files to the solution
           echo "$PROJECT_LIST" | while IFS= read -r proj; do
-              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" 
+              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" >/dev/null 2>&1 || true
           done
                     
           # Restore packages while ignoring errors.
