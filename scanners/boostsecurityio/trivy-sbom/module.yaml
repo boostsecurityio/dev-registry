@@ -64,7 +64,7 @@ steps:
           fi
           
           # Create temporary solution to merge all projects
-          dotnet new sln -n $TEMP_SOLN_FILE --force 
+          dotnet new sln -n $TEMP_SOLN_FILE --force --format sln
           
           # Add all found .csproj files to the solution
           echo "$PROJECT_LIST" | while IFS= read -r proj; do
