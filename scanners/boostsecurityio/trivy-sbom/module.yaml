@@ -64,16 +64,16 @@ steps:
           fi
           
           # Create temporary solution to merge all projects
-          dotnet new sln -n $TEMP_SOLN_FILE --force --format sln > /dev/null 2>&1 || true
+          dotnet new sln -n $TEMP_SOLN_FILE --force --format sln 
           
           # Add all found .csproj files to the solution
           echo "$PROJECT_LIST" | while IFS= read -r proj; do
-              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" >/dev/null 2>&1 || true
+              [ -n "$proj" ] && dotnet sln $SCAN_TARGET add "$proj" 
           done
                     
           # Restore packages while ignoring errors.
           if [ -n "$SCAN_TARGET" ]; then
-              dotnet restore "$SCAN_TARGET" --ignore-failed-sources --no-cache >/dev/null 2>&1 || true
+              dotnet restore "$SCAN_TARGET" --ignore-failed-sources --no-cache 
           fi
           
           # Generate SBOM to temporary directory
