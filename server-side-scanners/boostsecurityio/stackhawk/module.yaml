@@ -1,0 +1,4 @@
+name: StackHawk
+namespace: boostsecurityio/stackhawk
+scan_types:
+  - dast
