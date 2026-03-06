@@ -8,5 +8,5 @@ rules:
     name: forbidden-license
     group: license-violations
     pretty_name: Package with Unauthorized License
-    ref: https://docs.boostsecurity.io/rules/index.html
+    ref: https://docs.boostsecurity.io/user-guide/reference-guides/scanners/rules/boost-scanner.html#open-source-software
     recommended: true
