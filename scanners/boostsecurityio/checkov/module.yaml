@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: bridgecrew/checkov:3.2.495@sha256:4c2c3b67f09867ef2843a03d8ba82adf712eb93ea3584c1708c24ed584f6da17
+          image: ghcr.io/scott-boost-dev-org/scott-checkov@sha256:5d6d5b833ef8c93643a29f3c22104067f1e4d98dfb814f15991ad503446c7e07
           command: --directory . --output json --soft-fail --quiet --skip-download --skip-framework secrets
           workdir: /src
       format: sarif
