@@ -11,6 +11,7 @@ pom.xml
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+bun.lock
 deps.json
 packages.config
 packages.lock.json
@@ -19,8 +20,10 @@ Pipfile.lock
 poetry.lock
 requirements.txt
 pdm.lock
+pylock.toml
 uv.lock
 renv.lock
 Gemfile.lock
+gems.locked
 Cargo.lock
 osv-scanner.json
