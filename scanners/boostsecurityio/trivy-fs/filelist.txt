@@ -12,7 +12,6 @@ pom.xml
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-bun.lock
 composer.lock
 installed.json
 Pipfile.lock
