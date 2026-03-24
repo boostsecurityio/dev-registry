@@ -18,6 +18,8 @@ jobs:
   azure-devops-pipelines:
     name: Azure DevOps Pipelines
     runs-on: ubuntu-latest
+    # Require a reviewer to allow the workflow to run when coming from a fork
+    environment: ${{ github.event_name == 'pull_request_target' && 'scan-test' || '' }}
     # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
     if: |
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
@@ -40,10 +42,12 @@ jobs:
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
+          # Checkout the pull request's code to read the new tests.yaml
           fetch-depth: 0  # Need full history to detect changes
-          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
+        uses: boostsecurityio/scan-test-action@05297ee358226347a9f4989716ffeb7ba1dedc4f
         with:
           provider: azure-devops
           provider-config: |
@@ -53,13 +57,18 @@ jobs:
               "project": "cicd-tools",
               "pipeline_id": 1
             }
-          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.base_ref }}"
+          # Target the pull request's code to read the new module.yaml
+          # WARNING: This runs arbitrary code in pre-scan checks, it MUST be blocked by an environment to manually allow workflow to run.
+          registry-repo: ${{ github.event.pull_request.head.repo.full_name }}
+          registry-ref: ${{ github.event.pull_request.head.sha }}
+          base-ref: ${{ github.event.pull_request.base.sha }}
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
           allowed-env-prefixes: "CODEQL_,BOOST_"
   bitbucket-action:
     name: Bitbucket Pipelines
     runs-on: ubuntu-latest
+    # Require a reviewer to allow the workflow to run when coming from a fork
+    environment: ${{ github.event_name == 'pull_request_target' && 'scan-test' || '' }}
     # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
     if: |
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
@@ -79,10 +88,12 @@ jobs:
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
+          # Checkout the pull request's code to read the new tests.yaml
           fetch-depth: 0  # Need full history to detect changes
-          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
+        uses: boostsecurityio/scan-test-action@05297ee358226347a9f4989716ffeb7ba1dedc4f
         with:
           provider: bitbucket
           provider-config: |
@@ -91,14 +102,19 @@ jobs:
               "workspace": "boostsecurityio",
               "repo_slug": "scan-test-runner-bitbucket-pipelines"
             }
-          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.base_ref }}"
+          # Target the pull request's code to read the new module.yaml
+          # WARNING: This runs arbitrary code in pre-scan checks, it MUST be blocked by an environment to manually allow workflow to run.
+          registry-repo: ${{ github.event.pull_request.head.repo.full_name }}
+          registry-ref: ${{ github.event.pull_request.head.sha }}
+          base-ref: ${{ github.event.pull_request.base.sha }}
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
           allowed-env-prefixes: "CODEQL_,BOOST_"
 
   github-action:
     name: Github Actions
     runs-on: ubuntu-latest
+    # Require a reviewer to allow the workflow to run when coming from a fork
+    environment: ${{ github.event_name == 'pull_request_target' && 'scan-test' || '' }}
     # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
     if: |
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
@@ -115,10 +131,12 @@ jobs:
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
+          # Checkout the pull request's code to read the new tests.yaml
           fetch-depth: 0  # Need full history to detect changes
-          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
+        uses: boostsecurityio/scan-test-action@05297ee358226347a9f4989716ffeb7ba1dedc4f
         with:
           provider: github-actions
           provider-config: |
@@ -128,14 +146,19 @@ jobs:
               "repo": "scan-test-runner-gitbub-actions",
               "workflow_id": "test-scanner.yml"
             }
-          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.base_ref }}"
+          # Target the pull request's code to read the new module.yaml
+          # WARNING: This runs arbitrary code in pre-scan checks, it MUST be blocked by an environment to manually allow workflow to run.
+          registry-repo: ${{ github.event.pull_request.head.repo.full_name }}
+          registry-ref: ${{ github.event.pull_request.head.sha }}
+          base-ref: ${{ github.event.pull_request.base.sha }}
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
           allowed-env-prefixes: "CODEQL_,BOOST_"
 
   gitlab-ci:
     name: Gitlab-CI
     runs-on: ubuntu-latest
+    # Require a reviewer to allow the workflow to run when coming from a fork
+    environment: ${{ github.event_name == 'pull_request_target' && 'scan-test' || '' }}
     # Run on pull_request for same-repo PRs, pull_request_target for fork PRs
     if: |
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
@@ -144,10 +167,12 @@ jobs:
       - name: Checkout scanner registry
         uses: actions/checkout@v4
         with:
+          # Checkout the pull request's code to read the new tests.yaml
           fetch-depth: 0  # Need full history to detect changes
-          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Run Tests
-        uses: boostsecurityio/scan-test-action@ea842b96e9b6cff51a3740c8aca3148790008773
+        uses: boostsecurityio/scan-test-action@05297ee358226347a9f4989716ffeb7ba1dedc4f
         with:
           provider: gitlab-ci
           provider-config: |
@@ -156,7 +181,10 @@ jobs:
               "api_token": "${{ secrets.BOOST_SCAN_RUNNER_GITLAB_READ_TOKEN }}",
               "project_id": "boostsecurityio/scan-test-runner-gitlab-ci"
             }
-          registry-repo: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
-          base-ref: "${{ github.base_ref }}"
+          # Target the pull request's code to read the new module.yaml
+          # WARNING: This runs arbitrary code in pre-scan checks, it MUST be blocked by an environment to manually allow workflow to run.
+          registry-repo: ${{ github.event.pull_request.head.repo.full_name }}
+          registry-ref: ${{ github.event.pull_request.head.sha }}
+          base-ref: ${{ github.event.pull_request.base.sha }}
           fallback-scanners: "boostsecurityio/trivy-fs,boostsecurityio/trivy-image"
           allowed-env-prefixes: "CODEQL_,BOOST_"
