@@ -11,37 +11,36 @@ config:
   support_diff_scan: true
   support_incremental: true
   include_files:
-    # C/C++ https://trivy.dev/v0.69/docs/coverage/language/c/
+    # C/C++ https://trivy.dev/v0.61/docs/coverage/language/c/
     - conan.lock
-    # Dart https://trivy.dev/v0.69/docs/coverage/language/dart/
+    # Dart https://trivy.dev/v0.61/docs/coverage/language/dart/
     - pubspec.lock
-    # Dotnet https://trivy.dev/v0.69/docs/coverage/language/dotnet/
+    # Dotnet https://trivy.dev/v0.61/docs/coverage/language/dotnet/
     - "*.deps.json"
     - packages.config
     - "*Packages.props"
     - packages.lock.json
-    # Elixir https://trivy.dev/v0.69/docs/coverage/language/elixir/
+    # Elixir https://trivy.dev/v0.61/docs/coverage/language/elixir/
     - mix.lock
-    # Go https://trivy.dev/v0.69/docs/coverage/language/golang/
+    # Go https://trivy.dev/v0.61/docs/coverage/language/golang/
     - go.mod
-    # Java https://trivy.dev/v0.69/docs/coverage/language/java/
+    # Java https://trivy.dev/v0.61/docs/coverage/language/java/
     - "*gradle.lockfile"
     - pom.xml
     - "*.sbt.lock"
-    # NodeJs https://trivy.dev/v0.69/docs/coverage/language/nodejs/
+    # NodeJs https://trivy.dev/v0.61/docs/coverage/language/nodejs/
     - package-lock.json
     - yarn.lock
     - pnpm-lock.yaml
-    - bun.lock
-    # Php https://trivy.dev/v0.69/docs/coverage/language/php/
+    # Php https://trivy.dev/v0.61/docs/coverage/language/php/
     - composer.lock
     - installed.json
-    # Python https://trivy.dev/v0.69/docs/coverage/language/python/
+    # Python https://trivy.dev/v0.61/docs/coverage/language/python/
     - Pipfile.lock
     - requirements.txt
     - poetry.lock
     - uv.lock
-    # Ruby https://trivy.dev/v0.69/docs/coverage/language/ruby/
+    # Ruby https://trivy.dev/v0.61/docs/coverage/language/ruby/
     - Gemfile.lock
     - .gemspec
     # RUST https://trivy.dev/v0.61/docs/coverage/language/rust/
@@ -49,7 +48,7 @@ config:
     # Swift https://trivy.dev/v0.61/docs/coverage/language/swift/
     - Package.resolved
     - Podfile.lock
-    # Julia https://trivy.dev/v0.69/docs/coverage/language/julia/
+    # Julia https://trivy.dev/v0.61/docs/coverage/language/julia/
     - Manifest.toml
 
 setup:
