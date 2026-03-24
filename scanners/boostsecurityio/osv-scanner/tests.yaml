@@ -25,3 +25,13 @@ tests:
     source:
       url: "https://github.com/openvinotoolkit/openvino.git"
       ref: "2024.1.0"
+  - name: "SCA-jar" # java/archive
+    type: "source-code"
+    source:
+      url: "https://github.com/boost-sandbox/SCA-jar.git"
+      ref: "main"
+  - name: "SCA-csproj" # nuget/csproj
+    type: "source-code"
+    source:
+      url: "https://github.com/boost-sandbox/SCA-csproj.git"
+      ref: "main"
