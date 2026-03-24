@@ -23,6 +23,7 @@ config:
     - cabal.project.freeze
     - stack.yaml.lock
     # Java
+    - "*.jar"
     - buildscript-gradle.lockfile
     - gradle.lockfile
     - verification-metadata.xml
