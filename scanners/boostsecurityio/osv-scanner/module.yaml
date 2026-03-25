@@ -70,7 +70,7 @@ steps:
       docker:
         image: public.ecr.aws/boostsecurityio/boost-scanner-osv:dcc0109@sha256:019010c2a5943ae080423d3737246989dfd5e81a2e2128c571467df1d731092a
         command: |
-           -c 'osv-scanner scan source --recursive --call-analysis=all --experimental-plugins=lockfile,sbom,directory,java/archive,dotnet/csproj --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
+           -c 'GOGC=50 osv-scanner scan source --recursive --call-analysis=all --experimental-plugins=lockfile,sbom,directory,java/archive,dotnet/csproj --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
         workdir: /project
     format: sarif
     post-processor:
