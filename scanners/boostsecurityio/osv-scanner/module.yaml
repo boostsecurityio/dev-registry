@@ -23,6 +23,7 @@ config:
     - cabal.project.freeze
     - stack.yaml.lock
     # Java
+    - "*.jar"
     - buildscript-gradle.lockfile
     - gradle.lockfile
     - verification-metadata.xml
@@ -32,6 +33,7 @@ config:
     - pnpm-lock.yaml
     - yarn.lock
     # .Net
+    - "*.csproj"
     - deps.json
     - packages.config
     - packages.lock.json
@@ -63,9 +65,9 @@ steps:
 - scan:
     command:
       docker:
-        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:2778df1@sha256:73af9ca6458c5dd11dfc61dfa919a9b597f08946622f18628e26696c6e1565ce
+        image: public.ecr.aws/boostsecurityio/boost-scanner-osv:63fef86@sha256:ad3d944f0dfd99a2ed47d5235a83968c632ca8328eef10752ae1e114ec44db53
         command: |
-           -c 'osv-scanner scan source --recursive --call-analysis=all --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
+           -c 'GOGC=50 osv-scanner scan source --recursive --call-analysis=all --experimental-plugins=lockfile,sbom,directory,java/archive,dotnet/csproj --format json . 2> /dev/null; exit_code=$?; if [ $exit_code -gt 126 ]; then exit $exit_code; fi'
         workdir: /project
     format: sarif
     post-processor:

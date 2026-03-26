@@ -4,6 +4,7 @@ mix.lock
 go.mod
 cabal.project.freeze
 stack.yaml.lock
+*.jar
 buildscript-gradle.lockfile
 gradle.lockfile
 verification-metadata.xml
@@ -13,6 +14,7 @@ pnpm-lock.yaml
 yarn.lock
 deps.json
 packages.config
+*.csproj
 packages.lock.json
 composer.lock
 Pipfile.lock
