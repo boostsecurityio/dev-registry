@@ -24,5 +24,5 @@ rules:
     name: forbidden-component
     group: component-violations
     pretty_name: Project with Unauthorized Component
-    ref: https://docs.boostsecurity.io/rules/index.html
+    ref: https://docs.boostsecurity.io/user-guide/reference-guides/scanners/rules/boost-scanner.html#open-source-software
     recommended: true
