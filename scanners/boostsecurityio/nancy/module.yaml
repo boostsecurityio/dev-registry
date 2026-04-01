@@ -16,28 +16,28 @@ config:
     - Gopkg.toml
 
 setup:
-  - name: Install Nancy
+  - name: Download Nancy
     environment:
-      VERSION: v1.0.46
-      LINUX_X86_64_SHA: 467c47c75677411074fcc44e392e616dac90c23d5991ddbc7cd2186057d8c2cf
-      LINUX_ARM64_SHA: 9ba37dabeb5d50c23c531eb962067916ebd886ddcf5b807021eaaf554a94b5ce
-      MACOS_ARM64_SHA: db841b68fb34978b5bf543af79707cf47b624df6bc7592506bfb1f66179fe36d
+      VERSION: 1.0.46
+      LINUX_X86_64_SHA: 3cbbc1e88ed754255a12face312832bf7af9ed1cc13a50eaf69cfa759d3d65f0
+      LINUX_ARM64_SHA: 618810dfd654f2eaa64a516a5b6181f181755573a5a484012a2bef3ab857f478
+      MACOS_ARM64_SHA: ab60af4228a15468ee710bf2a92cb5e05c21d55a83698aebec4f29028c9d3c66
     run: |
-      BASE_URL="https://github.com/sonatype-nexus-community/nancy/releases/download/$VERSION/"
+      BINARY_URL="https://assets.build.boostsecurity.io/scanners/nancy/nancy-${VERSION}"
       ARCH=$(uname -m)
 
       case "$(uname -sm)" in
         "Linux x86_64")
-          FILENAME="nancy-$VERSION-linux-amd64"
-          SHA="${LINUX_X86_64_SHA}"
+          BINARY_URL="${BINARY_URL}/linux/amd64/nancy.gz"
+          SHA="${LINUX_X86_64_SHA} nancy.gz"
           ;;
         "Linux aarch64")
-          FILENAME="nancy-$VERSION-linux-arm64"
-          SHA="${LINUX_ARM64_SHA}"
+          BINARY_URL="${BINARY_URL}/linux/arm64/nancy.gz"
+          SHA="${LINUX_ARM64_SHA} nancy.gz"
           ;;
         "Darwin arm64")
-          FILENAME="nancy-$VERSION-darwin-arm64"
-          SHA="${MACOS_ARM64_SHA}"
+          BINARY_URL="${BINARY_URL}/darwin/arm64/nancy.gz"
+          SHA="${MACOS_ARM64_SHA} nancy.gz"
           ;;
         *)
           echo "Unsupported machine: ${OPTARG}"
@@ -45,8 +45,10 @@ setup:
           ;;
       esac
 
-      curl -o nancy -fsSL "$BASE_URL$FILENAME"
-      echo "$SHA  nancy" | sha256sum --check
+      curl -o nancy.gz -fsSL "${BINARY_URL}"
+      echo "${SHA}" | sha256sum --check
+
+      gunzip nancy.gz
       chmod +x nancy
 
 steps:
