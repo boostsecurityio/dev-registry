@@ -83,7 +83,7 @@ setup:
           ;;
       esac
 
-      curl -o trivy.tgz -fsSL "${BINARY_URL}"
+      curl -o trivy.gz -fsSL "${BINARY_URL}"
       echo "${SHA}" | sha256sum --check
 
       gunzip trivy.gz
