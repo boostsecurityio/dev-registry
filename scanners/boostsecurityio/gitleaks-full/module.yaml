@@ -14,30 +14,25 @@ setup:
 - name: Download Gitleaks
   environment:
     VERSION: 8.28.0
-    LINUX_X86_64_SHA: a65b5253807a68ac0cafa4414031fd740aeb55f54fb7e55f386acb52e6a840eb
-    LINUX_ARM64_SHA: eff65261156100e5d94a6b3dec313d532fddfe19ae1590bf7a2b4f2699128356
-    MACOS_ARM64_SHA: d942f3ad147250c9edbaab3fed9e482f98d3b59ba10ae97b8d75647e3ade492c
-    MACOS_X86_64_SHA: edf5a507008b0d2ef4959575772772770586409c1f6f74dabf19cbe7ec341ced
+    LINUX_X86_64_SHA: f633b7152951fa251da6e933e3cae70077d1f85320f831f816f0673c524ddc0d
+    LINUX_ARM64_SHA: eb19f13e443b1fa9d76ab53a56469d2ccd91d578f0ac42b2b3ba97e6496c7a73
+    MACOS_ARM64_SHA: 2dd5c3747f5ad7e59569306520d124a7719d4521c47dda0a501cf91c45130542
   run: |
-    BINARY_URL="https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}"
+    BINARY_URL="https://assets.build.boostsecurity.io/scanners/gitleaks/gitleaks-${VERSION}"
     ARCH=$(uname -m)
 
     case "$(uname -sm)" in
       "Linux x86_64")
-        BINARY_URL="${BINARY_URL}/gitleaks_${VERSION}_linux_x64.tar.gz"
-        SHA="${LINUX_X86_64_SHA} gitleaks.tgz"
+        BINARY_URL="${BINARY_URL}/linux/amd64/gitleaks.gz"
+        SHA="${LINUX_X86_64_SHA} gitleaks.gz"
         ;;
       "Linux aarch64")
-        BINARY_URL="${BINARY_URL}/gitleaks_${VERSION}_linux_arm64.tar.gz"
-        SHA="${LINUX_ARM64_SHA} gitleaks.tgz"
+        BINARY_URL="${BINARY_URL}/linux/arm64/gitleaks.gz"
+        SHA="${LINUX_ARM64_SHA} gitleaks.gz"
         ;;
       "Darwin arm64")
-        BINARY_URL="${BINARY_URL}/gitleaks_${VERSION}_darwin_arm64.tar.gz"
-        SHA="${MACOS_ARM64_SHA} gitleaks.tgz"
-        ;;
-      "Darwin x86_64")
-        BINARY_URL="${BINARY_URL}/gitleaks_${VERSION}_darwin_x64.tar.gz"
-        SHA="${MACOS_X86_64_SHA} gitleaks.tgz"
+        BINARY_URL="${BINARY_URL}/darwin/arm64/gitleaks.gz"
+        SHA="${MACOS_ARM64_SHA} gitleaks.gz"
         ;;
       *)
         echo "Unsupported machine: ${OPTARG}"
@@ -45,12 +40,12 @@ setup:
         ;;
     esac
 
-    curl -o gitleaks.tgz -fsSL "${BINARY_URL}"
+    curl -o gitleaks.gz -fsSL "${BINARY_URL}"
     echo "${SHA}" | sha256sum --check
 
-    tar --no-same-owner -zxf gitleaks.tgz gitleaks
-    rm gitleaks.tgz
+    gunzip gitleaks.gz
     chmod +x gitleaks
+    
 - name: Copy Boost Gitleaks Rules
   run: |
       cp $REGISTRY_PATH/scanners/boostsecurityio/gitleaks/boost.toml $SETUP_PATH/
