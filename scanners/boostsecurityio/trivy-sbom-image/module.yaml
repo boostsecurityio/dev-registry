@@ -13,30 +13,25 @@ setup:
   - name: download trivy
     environment:
       VERSION: 0.69.2
-      LINUX_X86_64_SHA: affa59a1e37d86e4b8ab2cd02f0ab2e63d22f1bf9cf6a7aa326c884e25e26ce3
-      LINUX_ARM64_SHA: c73b97699c317b0d25532b3f188564b4e29d13d5472ce6f8eb078082546a6481
-      MACOS_X86_64_SHA: 41f6eac3ebe3a00448a16f08038b55ce769fe2d5128cb0d64bdf282cdad4831a
-      MACOS_ARM64_SHA: 320c0e6af90b5733b9326da0834240e944c6f44091e50019abdf584237ff4d0c
+      LINUX_X86_64_SHA: 65b5755bbc851699be0286b453b51c3b1f139a8c1ce731f444210eeaf9a1aa61
+      LINUX_ARM64_SHA: 524e496954c761ce5cd9c92baf2f7c2180958015bc25edad31570e102592a37c
+      MACOS_ARM64_SHA: 28243bee903a5e00fe9074baeb9e57c51ae05514261a53da66ef7f2cc0b352f9
     run: |
-      BINARY_URL="https://github.com/aquasecurity/trivy/releases/download/v${VERSION}"
+      BINARY_URL="https://assets.build.boostsecurity.io/scanners/trivy/trivy-${VERSION}"
       ARCH=$(uname -m)
 
       case "$(uname -sm)" in
         "Linux x86_64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-64bit.tar.gz"
-          SHA="${LINUX_X86_64_SHA} trivy.tgz"
+          BINARY_URL="${BINARY_URL}/linux/amd64/trivy.gz"
+          SHA="${LINUX_X86_64_SHA} trivy.gz"
           ;;
         "Linux aarch64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_Linux-ARM64.tar.gz"
-          SHA="${LINUX_ARM64_SHA} trivy.tgz"
-          ;;
-        "Darwin x86_64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-64bit.tar.gz"
-          SHA="${MACOS_X86_64_SHA} trivy.tgz"
+          BINARY_URL="${BINARY_URL}/linux/arm64/trivy.gz"
+          SHA="${LINUX_ARM64_SHA} trivy.gz"
           ;;
         "Darwin arm64")
-          BINARY_URL="${BINARY_URL}/trivy_${VERSION}_macOS-ARM64.tar.gz"
-          SHA="${MACOS_ARM64_SHA} trivy.tgz"
+          BINARY_URL="${BINARY_URL}/darwin/arm64/trivy.gz"
+          SHA="${MACOS_ARM64_SHA} trivy.gz"
           ;;
         *)
           echo "Unsupported machine: ${OPTARG}"
@@ -44,11 +39,10 @@ setup:
           ;;
       esac
 
-      curl -o trivy.tgz -fsSL "${BINARY_URL}"
+      curl -o trivy.gz -fsSL "${BINARY_URL}"
       echo "${SHA}" | sha256sum --check
 
-      tar --no-same-owner -zxf trivy.tgz trivy
-      rm trivy.tgz
+      gunzip trivy.gz
       chmod +x trivy
 
 steps:
