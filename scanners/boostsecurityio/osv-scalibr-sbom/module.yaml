@@ -1,0 +1,105 @@
+api_version: 1.0
+
+id: boostsecurityio/osv-scalibr-sbom
+name: OSV Scalibr (FS SBOM)
+namespace: boostsecurityio/osv-scalibr-sbom
+scan_types:
+  - sbom
+
+config:
+  support_diff_scan: false
+  include_files:
+        # C/C++
+    - conan.lock
+    # Dart
+    - pubspec.lock
+    # Elixir
+    - mix.lock
+    # Go
+    - go.mod
+    # Haskell
+    - cabal.project.freeze
+    - stack.yaml.lock
+    # Java
+    - "*.jar"
+    - buildscript-gradle.lockfile
+    - gradle.lockfile
+    - verification-metadata.xml
+    - pom.xml
+    # Javascript
+    - bun.lock
+    - package-lock.json
+    - pnpm-lock.yaml
+    - yarn.lock
+    # .Net
+    - "*.csproj"
+    - deps.json
+    - packages.config
+    - packages.lock.json
+    # PHP
+    - composer.lock
+    # Python
+    - Pipfile.lock
+    - poetry.lock
+    - requirements.txt
+    - pdm.lock
+    - pylock.toml
+    - uv.lock
+    # R
+    - renv.lock
+    # Ruby
+    - Gemfile.lock
+    - gems.locked
+    # Rust
+    - Cargo.lock
+    # Custom lockfile http://google.github.io/osv-scanner/supported-languages-and-lockfiles/#custom-lockfiles
+    - osv-scanner.json
+
+setup:
+  - name: Utility scripts
+    run: |
+      mkdir -p $SETUP_PATH/pre-scan-checks/
+      cp $REGISTRY_MODULE_PATH/prescan_checks.sh $SETUP_PATH/pre-scan-checks/osv-scalibr-sbom-scanner
+
+  - name: download osv-scalibr-sbom scanner
+    environment:
+      VERSION: v0.4.5
+      LINUX_X86_64_SHA: 35ce0ea2e16186852a5fa618441b308d328349a858078f66b3105eda9d95dc92
+    run: |
+      BASE_URL="https://assets.build.boostsecurity.io/scanners/osv-scalibr/osv-scalibr-${VERSION}"
+      ARCH=$(uname -m)
+
+      case "$(uname -sm)" in
+        "Linux x86_64")
+          BINARY_URL="${BASE_URL}/linux/amd64/osv-scalibr.gz"
+          SHA="${LINUX_X86_64_SHA} osv-scalibr.gz"
+          ;;
+        *)
+          echo "Unsupported machine: ${OPTARG}"
+          exit 1
+          ;;
+      esac
+
+      curl -o osv-scalibr.gz -fsSL "${BINARY_URL}"
+      echo "${SHA}" | sha256sum --check
+
+      gunzip osv-scalibr.gz
+      chmod +x osv-scalibr
+
+steps:
+  - run: $SETUP_PATH/pre-scan-checks/osv-scalibr-sbom-scanner
+  - scan:
+      command:
+        run: >
+          $SETUP_PATH/osv-scalibr -o
+          spdx23-json=result.spdx.json
+          --plugins=dotnet/csproj,java/archive
+          . &&
+          cat result.spdx.json 2>&1
+      format: cyclonedx
+      post-processor:
+        docker:
+          image: public.ecr.aws/boostsecurityio/boost-scanner-osv-scalibr-sbom:c5d385e@sha256:b1a91854cbc39752eecf50a9f6be78f7dba44dcffb8a50c79f06c6a8a610ee62
+          command: process
+          environment:
+            PYTHONIOENCODING: utf-8
