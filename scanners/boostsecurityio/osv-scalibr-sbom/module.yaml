@@ -64,7 +64,7 @@ setup:
   - name: download osv-scalibr-sbom scanner
     environment:
       VERSION: v0.4.5
-      LINUX_X86_64_SHA: 35ce0ea2e16186852a5fa618441b308d328349a858078f66b3105eda9d95dc92
+      LINUX_X86_64_SHA: 8059587ad55fc7b30502ba58a1bb9754f92f13d95f315167c5870276954ff4c2
     run: |
       BASE_URL="https://assets.build.boostsecurity.io/scanners/osv-scalibr/osv-scalibr-${VERSION}"
       ARCH=$(uname -m)
