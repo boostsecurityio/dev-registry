@@ -87,7 +87,9 @@ setup:
       chmod +x osv-scalibr
 
 steps:
+  - run: ls -laih $SETUP_PATH/
   - run: $SETUP_PATH/pre-scan-checks/osv-scalibr-sbom-scanner
+  - run: ls -laih $SETUP_PATH/
   - scan:
       command:
         run: >
