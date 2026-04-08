@@ -101,7 +101,7 @@ steps:
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-osv-scalibr-sbom:3e8ea64@sha256:622179947c049eb405c088e194ff8920b855bc42987c873a8976cef8048415ba
+          image: public.ecr.aws/boostsecurityio/boost-scanner-osv-scalibr-sbom:78da93e@sha256:3070c5bafcc69ac16bda9bc690a30631201777c546db38c51545f4ff34f1259f
           command: process
           environment:
             PYTHONIOENCODING: utf-8
