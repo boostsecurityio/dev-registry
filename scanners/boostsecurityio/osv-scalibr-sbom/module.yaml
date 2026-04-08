@@ -95,7 +95,7 @@ steps:
         run: >
           $SETUP_PATH/osv-scalibr -o
           spdx23-json=result.spdx.json
-          --plugins=dotnet/csproj,java/archive
+          --plugins=sbom,sourcecode,dotnet/csproj,java/archive
           . &&
           cat result.spdx.json 2>&1
       format: cyclonedx
