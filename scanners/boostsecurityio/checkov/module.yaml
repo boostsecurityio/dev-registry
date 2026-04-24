@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: ghcr.io/scott-boost-dev-org/scott-checkov@sha256:91f29652249971a3dc45a5df87fd0dd016b9b3acd60ae50141651e51da9c56a1
+          image: ghcr.io/scott-boost-dev-org/scott-checkov@sha256:4ae4f055ccefc1846b807441932cab503a4c8dc940d9669c5098bd6215694c4f
           command: --directory . --output json --soft-fail --quiet --skip-download --skip-framework secrets
           workdir: /src
       format: sarif
