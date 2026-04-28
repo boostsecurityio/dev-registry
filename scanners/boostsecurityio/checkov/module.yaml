@@ -14,7 +14,7 @@ steps:
   - scan:
       command:
         docker:
-          image: ghcr.io/scott-boost-dev-org/scott-checkov@sha256:09930a698685c3afdce52832b5c5452216aecbee1fea9aaa87e29ca70d4fd7ac
+          image: public.ecr.aws/boostsecurityio/checkov:388e194@sha256:237833f0cff6e0ae2e89cb1331d43c173f12770736f55c4ad19aa99bef98fa12
           command: --directory . --output json --soft-fail --quiet --skip-download --skip-framework secrets
           workdir: /src
       format: sarif
