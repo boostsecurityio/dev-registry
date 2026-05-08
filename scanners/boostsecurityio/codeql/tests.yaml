@@ -1,0 +1,9 @@
+version: "1.0"
+tests:
+  - name: "railsgoat"
+    type: "source-code"
+    source:
+      url: "https://github.com/owasp/railsgoat.git"
+      ref: "main"
+    env:
+      CODEQL_LANGUAGE: "ruby"
