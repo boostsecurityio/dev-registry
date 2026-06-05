@@ -75,6 +75,8 @@ steps:
     format: sarif
     post-processor:
       run: |
+        CONVERTER_IMAGE=public.ecr.aws/boostsecurityio/boost-converter-sca:817e7c4@sha256:98ff73fa027617790b0ed277fd17b9cbab34a87449c985ec3009e4fa25c21504
+
         if [ -z "$BOOST_SCAN_PATH" ]; then
           # set since osv-scanner generates absolute paths instead of relative
           export BOOST_SCAN_CMD_EXEC_PATH="/project"
@@ -83,4 +85,4 @@ steps:
           export BOOST_SCAN_CMD_EXEC_PATH="/project/${BOOST_SCAN_PATH}"
         fi
         export PYTHONIOENCODING="utf-8"
-        docker run -i -e BOOST_SCAN_CMD_EXEC_PATH="$BOOST_SCAN_CMD_EXEC_PATH" -e PYTHONIOENCODING="utf-8" public.ecr.aws/boostsecurityio/boost-converter-sca:fe417cd@sha256:95e68d6b39ca8b4e3e7f9269daa6f3ccfae3e40f6e93e3d068139ab975d0355d process --scanner osv
+        docker run -i -e BOOST_SCAN_CMD_EXEC_PATH="$BOOST_SCAN_CMD_EXEC_PATH" -e PYTHONIOENCODING="utf-8" "${CONVERTER_IMAGE}" process --scanner osv
