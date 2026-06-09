@@ -75,7 +75,7 @@ steps:
     format: sarif
     post-processor:
       run: |
-        CONVERTER_IMAGE=ghcr.io/boostsecurityio/scanner-publishing/boost-converter-sca:6dda157@sha256:4c5efbeb02675e75703e376d4a916f7e1c8ec317f75b14cd57205497d9a2f9de
+        CONVERTER_IMAGE=ghcr.io/boostsecurityio/scanner-publishing/boost-converter-sca:0006182@sha256:355688481b8a830c1b8b72b3558f5bb728570310651dbd3568aa847499199592
 
         if [ -z "$BOOST_SCAN_PATH" ]; then
           # set since osv-scanner generates absolute paths instead of relative
