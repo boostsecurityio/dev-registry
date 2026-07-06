@@ -17,7 +17,7 @@ steps:
   - scan:
       command:
         docker:
-          image: python:3.11.0-alpine3.16@sha256:2a068b9442f61f4480306d44e3b166bfe3343761e9bd57c38f66302ebf28fd9e
+          image: public.ecr.aws/docker/library/python:3.11.0-alpine3.16@sha256:2a068b9442f61f4480306d44e3b166bfe3343761e9bd57c38f66302ebf28fd9e
           command: |
             sh -c 'pip install --quiet safety==2.3.5 2>/dev/null && python -m safety check --json --continue-on-error -r "$REQUIREMENTS_TXT"'
           workdir: /src
@@ -28,7 +28,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-converter-sca:eeb51da@sha256:d407b67666b200602c5900c62330f82a565cd80757315b362df1ec9976c0f8ac
+            image: ghcr.io/boostsecurityio/scanner-publishing/boost-converter-sca:6dda157@sha256:4c5efbeb02675e75703e376d4a916f7e1c8ec317f75b14cd57205497d9a2f9de
             command: |
               process --scanner safety
             environment:

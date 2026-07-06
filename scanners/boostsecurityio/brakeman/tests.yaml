@@ -4,7 +4,7 @@ tests:
     type: "source-code"
     source:
       url: "https://github.com/OWASP/railsgoat.git"
-      ref: "master"
+      ref: "main"
   - name: "postal"
     type: "source-code"
     source:

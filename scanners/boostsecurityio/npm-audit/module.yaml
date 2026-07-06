@@ -23,7 +23,7 @@ steps:
   - scan:
       command:
         docker:
-          image: node:22-alpine3.21@sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd
+          image: public.ecr.aws/docker/library/node:22-alpine3.21@sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd
           command: |
             sh -c 'npm audit --json $NPM_AUDIT_ARGS || true'
           workdir: /src
@@ -33,7 +33,7 @@ steps:
       format: sarif
       post-processor:
         docker:
-            image: public.ecr.aws/boostsecurityio/boost-converter-sca:aed3eaa@sha256:c8edd485fea85b39974551af5ef160426d8a0f56de08b56173d466927f81f988
+            image: ghcr.io/boostsecurityio/scanner-publishing/boost-converter-sca:6dda157@sha256:4c5efbeb02675e75703e376d4a916f7e1c8ec317f75b14cd57205497d9a2f9de
             command: |
               process --scanner npm-audit
             environment:
