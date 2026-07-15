@@ -58,7 +58,7 @@ steps:
           GITLEAKS_CONFIG: ${GITLEAKS_CONFIG:-}
         run: |
           [ -z "$GITLEAKS_CONFIG" ] && [ -z "$GITLEAKS_CONFIG_TOML" ] && [ ! -f ".gitleaks.toml" ] && cp $SETUP_PATH/boost.toml .gitleaks.toml || true
-          $SETUP_PATH/gitleaks git --no-banner --exit-code 0 --report-format sarif --report-path $SETUP_PATH/gitleaks-output.sarif -l error .
+          $SETUP_PATH/gitleaks git --no-banner --exit-code 0 --report-format sarif --report-path $SETUP_PATH/gitleaks-output.sarif -l error --max-decode-depth=2 .
           cat $SETUP_PATH/gitleaks-output.sarif
       post-processor:
         - docker:
