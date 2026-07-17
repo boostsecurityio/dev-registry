@@ -97,15 +97,27 @@ steps:
           NO_COLOR: "true"
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
-        run: >
-          $SETUP_PATH/trivy fs
-          --format=cyclonedx
-          --license-full
-          --no-progress
-          --scanners vuln
-          --cache-dir=/tmp/trivy/
-          --skip-version-check 
-          . 2>&1
+          TRIVY_SCANNERS: ${TRIVY_SCANNERS:-vuln}
+          TRIVY_ADDITIONAL_ARGS: ${TRIVY_ADDITIONAL_ARGS:-}
+          TRIVY_CACHE_DIR: ${TRIVY_CACHE_DIR:-/tmp/trivy/}
+          SCANNER_LOGS: ${SCANNER_LOGS:-scanner.log}
+          SCANNER_REPORT_PATH: ${SCANNER_REPORT_PATH:-report.cdx.json}
+        run: |
+          $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} \
+                               --no-progress \
+                               --skip-version-check \
+                               --debug \
+                               --license-full \
+                               --format=cyclonedx \
+                               --output ${SCANNER_REPORT_PATH} \
+                               --scanners ${TRIVY_SCANNERS} \
+                               . > ${SCANNER_LOGS} 2>&1 && exit_code=$? || exit_code=$?
+          if [ "$exit_code" != "0" ]
+          then 
+              cat ${SCANNER_LOGS}
+              exit 0
+          fi
+          cat ${SCANNER_REPORT_PATH}
       format: cyclonedx
       post-processor:
         docker:
