@@ -104,15 +104,15 @@ steps:
           SCANNER_REPORT_PATH: ${SCANNER_REPORT_PATH:-report.cdx.json}
           SCANNER_LOGS: ${SCANNER_LOGS:-scanner.log}
           TRIVY_CACHE_DIR: ${TRIVY_CACHE_DIR:-/tmp/trivy/}  
-        run: >
+        run: |
           $SETUP_PATH/trivy fs ${TRIVY_ADDITIONAL_ARGS} \
                                --no-progress \
                                --skip-version-check \
                                --debug \
+                               --license-full \
                                --format=cyclonedx \
-                               --scanners ${TRIVY_SCANNERS} \
-                               --license-full \ 
                                --output ${SCANNER_REPORT_PATH} \
+                               --scanners ${TRIVY_SCANNERS} \
                                . > ${SCANNER_LOGS} 2>&1 && exit_code=$? || exit_code=$?
           if [ "$exit_code" != "0" ]
           then 
