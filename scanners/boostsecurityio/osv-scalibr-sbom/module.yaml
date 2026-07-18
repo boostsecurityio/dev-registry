@@ -97,7 +97,7 @@ steps:
           spdx23-json=result.spdx.json
           --plugins=sbom,sourcecode,dotnet/csproj,java/archive
           . &&
-          cat result.spdx.json 2>&1
+          cat result.spdx.json
       format: cyclonedx
       post-processor:
         docker:

@@ -107,8 +107,8 @@ steps:
           --license-full
           --no-progress
           --scanners vuln
-          --skip-version-check 
-          . 2>&1
+          --skip-version-check
+          .
       format: cyclonedx
       post-processor:
         docker:
