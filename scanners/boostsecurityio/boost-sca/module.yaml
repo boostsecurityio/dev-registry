@@ -111,8 +111,10 @@ steps:
                                --skip-version-check \
                                . 2>"$LOG"
           ec=$?
-          cat "$LOG"
-          cat "$LOG" >&2
+          # trivy's logs carry the "no language files" signal AND its fatal errors;
+          # both readers consume a different stream, so emit the logs to each:
+          cat "$LOG"      # stdout: the post-processor reads the "no language files" count here
+          cat "$LOG" >&2  # stderr: the CLI's failure telemetry only reads stderr, so errors surface
           exit "$ec"
       format: cyclonedx
       post-processor:
