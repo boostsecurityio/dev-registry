@@ -23,7 +23,7 @@ setup:
             # valid rule token; do nothing
             ;;
           *)
-            echo "Semgrep Community Rules cannot be used. Provide a URL or relative path to rules file or leave blank for Boost curated rules."
+            echo "Semgrep Community Rules cannot be used. Provide a URL or relative path to rules file or leave blank for Boost curated rules." >&2
             exit 1
             ;;
         esac
