@@ -104,13 +104,21 @@ steps:
           set +e
           LOG=$(mktemp)
           $SETUP_PATH/trivy fs --cache-dir=/tmp/trivy/ \
-                               --format=cyclonedx \
+                               --format=json \
+                               --output=trivy-report.json \
                                --license-full \
                                --no-progress \
                                --scanners vuln \
                                --skip-version-check \
                                . 2>"$LOG"
           ec=$?
+          # the post-processor reads trivy-report.json from the mounted scan dir to stamp
+          # boost:relationship; stdout stays the CycloneDX it has always been. `convert` is a
+          # local reformat of the report just produced -- no second scan, no DB pull.
+          if [ "$ec" -eq 0 ]; then
+            $SETUP_PATH/trivy convert --quiet --format cyclonedx trivy-report.json 2>>"$LOG"
+            ec=$?
+          fi
           # trivy's logs carry the "no language files" signal AND its fatal errors;
           # both readers consume a different stream, so emit the logs to each:
           cat "$LOG"      # stdout: the post-processor reads the "no language files" count here
@@ -119,7 +127,8 @@ steps:
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:9b693ef@sha256:249ee707158424d8bd333198e1512ca295fe30c6fff2d2b1adff9e8f914b42cb
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:68831d5@sha256:2b7878a72c2d7e1720ef3a44ef0cdc865cd3f95dc42996c6dbb5232438e87eb8
           command: process
+          workdir: /app
           environment:
             PYTHONIOENCODING: utf-8

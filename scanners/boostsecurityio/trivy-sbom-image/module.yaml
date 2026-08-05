@@ -52,17 +52,24 @@ steps:
           IMAGE_NAME: ${BOOST_IMAGE_NAME}
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
+        # the post-processor reads trivy-report.json from the mounted scan dir to stamp
+        # boost:relationship; stdout stays the CycloneDX it has always been. `convert` is a
+        # local reformat of the report just produced -- no second scan, no DB pull.
         run: >
-          $SETUP_PATH/trivy image 
+          $SETUP_PATH/trivy image
           ${TRIVY_ADDITIONAL_ARGS}
-          --format cyclonedx 
+          --format json
+          --output trivy-report.json
           --license-full
           --skip-version-check
           ${BOOST_IMAGE_NAME}
+          &&
+          $SETUP_PATH/trivy convert --quiet --format cyclonedx trivy-report.json
       format: cyclonedx
       post-processor:
         docker:
-          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:9b693ef@sha256:249ee707158424d8bd333198e1512ca295fe30c6fff2d2b1adff9e8f914b42cb
+          image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:68831d5@sha256:2b7878a72c2d7e1720ef3a44ef0cdc865cd3f95dc42996c6dbb5232438e87eb8
           command: process
+          workdir: /app
           environment:
             PYTHONIOENCODING: utf-8
