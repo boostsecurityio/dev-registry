@@ -70,6 +70,8 @@ steps:
         docker:
           image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:68831d5@sha256:2b7878a72c2d7e1720ef3a44ef0cdc865cd3f95dc42996c6dbb5232438e87eb8
           command: process
-          workdir: /app
+          # NOT /app: the executor bind-mounts the scan dir AT workdir, and this image
+          # installs itself under /app -- mounting there hides its own entrypoint.
+          workdir: /scan
           environment:
             PYTHONIOENCODING: utf-8
