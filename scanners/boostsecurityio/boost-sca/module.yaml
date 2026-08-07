@@ -112,9 +112,6 @@ steps:
                                --skip-version-check \
                                . 2>"$LOG"
           ec=$?
-          # the post-processor reads trivy-report.json from the mounted scan dir to stamp
-          # boost:relationship; stdout stays the CycloneDX it has always been. `convert` is a
-          # local reformat of the report just produced -- no second scan, no DB pull.
           if [ "$ec" -eq 0 ]; then
             $SETUP_PATH/trivy convert --quiet --format cyclonedx trivy-report.json 2>>"$LOG"
             ec=$?
@@ -129,8 +126,7 @@ steps:
         docker:
           image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:68831d5@sha256:2b7878a72c2d7e1720ef3a44ef0cdc865cd3f95dc42996c6dbb5232438e87eb8
           command: process
-          # NOT /app: the executor bind-mounts the scan dir AT workdir, and this image
-          # installs itself under /app -- mounting there hides its own entrypoint.
+          # not /app: srcdir is bind-mounted at workdir and the image lives under /app
           workdir: /scan
           environment:
             PYTHONIOENCODING: utf-8

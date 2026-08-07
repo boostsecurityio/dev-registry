@@ -52,11 +52,7 @@ steps:
           IMAGE_NAME: ${BOOST_IMAGE_NAME}
           TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2,ghcr.io/aquasecurity/trivy-db:2
           TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1,ghcr.io/aquasecurity/trivy-java-db:1
-        # the post-processor reads trivy-report.json from the mounted scan dir to stamp
-        # boost:relationship; stdout stays the CycloneDX it has always been. `convert` is a
-        # local reformat of the report just produced -- no second scan, no DB pull.
-        # `--scanners ""` is load-bearing: cyclonedx defaulted to SBOM-only, but json
-        # defaults to vuln,secret, and convert would carry those vulns into the output.
+        # keep --scanners "": --format json defaults to vuln,secret (cyclonedx didn't) -> convert would add vulns
         run: >
           $SETUP_PATH/trivy image
           ${TRIVY_ADDITIONAL_ARGS}
@@ -74,8 +70,7 @@ steps:
         docker:
           image: public.ecr.aws/boostsecurityio/boost-scanner-trivy-sbom:68831d5@sha256:2b7878a72c2d7e1720ef3a44ef0cdc865cd3f95dc42996c6dbb5232438e87eb8
           command: process
-          # NOT /app: the executor bind-mounts the scan dir AT workdir, and this image
-          # installs itself under /app -- mounting there hides its own entrypoint.
+          # not /app: srcdir is bind-mounted at workdir and the image lives under /app
           workdir: /scan
           environment:
             PYTHONIOENCODING: utf-8
