@@ -107,6 +107,22 @@ rules:
     pretty_name: CI/CD - GitHub Action Unsecure Commands
     ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-unsecure-commands.html'
     recommended: true
+  cicd-gha-unpinned-action:
+    categories:
+      - ALL
+      - supply-chain
+      - supply-chain-missing-artifact-integrity-verification
+      - boost-baseline
+      - boost-hardened
+    description: Checks for GitHub Action workflows and composite actions referencing
+      actions or reusable workflows that are not pinned to a full commit SHA. A
+      mutable reference such as a branch or a tag can be repointed at different code
+      after review, so the pinned artifact is not the one that was audited.
+    group: supply-chain-missing-artifact-integrity-verification
+    name: cicd-gha-unpinned-action
+    pretty_name: CI/CD - GitHub Action Unpinned Action
+    ref: '{BOOSTSEC_DOC_BASE_URL}/rules/cicd-gha-unpinned-action.html'
+    recommended: true
   cicd-unpinned-dependencies:
     categories:
       - ALL
