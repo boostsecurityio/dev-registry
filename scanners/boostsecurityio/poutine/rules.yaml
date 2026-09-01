@@ -1,0 +1,185 @@
+import:
+  - boostsecurityio/mitre-cwe
+  - boostsecurityio/sbom-sca
+rules:
+  injection:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - cwe-77
+    - cwe-94
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - supply-chain-cicd-severe-issues
+    description: The pipeline contains an injection into bash or JavaScript with an expression that can contain user input. Prefer placing the expression in an environment variable instead of interpolating it directly into a script.
+    name: injection
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Injection with Arbitrary External Contributor Input
+    ref: https://boostsecurityio.github.io/poutine/rules/injection/
+    recommended: true
+  untrusted_checkout_exec:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - cwe-829
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - supply-chain-cicd-severe-issues
+    description: The workflow appears to checkout untrusted code from a fork and uses a command that is known to allow code execution.
+    name: untrusted_checkout_exec
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Arbitrary Code Execution from Untrusted Code Changes
+    ref: https://boostsecurityio.github.io/poutine/rules/untrusted_checkout_exec/
+    recommended: true
+  debug_enabled:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - cwe-532
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: The workflow is configured to increase the verbosity of the runner. This can potentially expose sensitive information.
+    name: debug_enabled
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: CI Runner Debug Enabled
+    ref: https://boostsecurityio.github.io/poutine/rules/debug_enabled/
+    recommended: true
+  known_vulnerability_in_build_component:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - vulnerable-and-outdated-components
+    description: The workflow or action depends on a GitHub Action with known vulnerabilities.
+    name: known_vulnerability_in_build_component
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Build Component with a Known Vulnerability used
+    ref: https://boostsecurityio.github.io/poutine/rules/known_vulnerability_in_build_component/
+    recommended: true
+  confused_deputy_auto_merge:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - cwe-863
+    - cwe-441
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: Confused Deputy for GitHub Actions is a situation where a GitHub event attribute (ex. github.actor) is used to check the last interaction of a certain event. This allows an attacker abuse an event triggered by a Bot (ex. @dependabot recreate) and trigger as a side effect other privileged workflows, which may for instance automatically merge unapproved changes.
+    name: confused_deputy_auto_merge
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Confused Deputy Auto-Merge
+    ref: https://boostsecurityio.github.io/poutine/rules/confused_deputy_auto_merge/
+    recommended: true
+  default_permissions_on_risky_events:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: The workflow and some of its jobs do not explicitly define permissions and the workflow triggers on events that are typically used to run builds from forks. Because no permissions is set, the workflow inherits the default permissions configured on the repository or the organization.
+    name: default_permissions_on_risky_events
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Default permissions used on risky events
+    ref: https://boostsecurityio.github.io/poutine/rules/default_permissions_on_risky_events/
+    recommended: true
+  github_action_from_unverified_creator_used:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: Usage of the following GitHub Actions repositories was detected in workflows or composite actions, but their owner is not a verified creator.
+    name: github_action_from_unverified_creator_used
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Github Action from Unverified Creator used
+    ref: https://boostsecurityio.github.io/poutine/rules/github_action_from_unverified_creator_used/
+    recommended: true
+  if_always_true:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: GitHub Actions expressions used in if condition of jobs or steps must not contain extra characters or spaces. Otherwise, the condition is always true.
+    name: if_always_true
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: If condition always evaluates to true
+    ref: https://boostsecurityio.github.io/poutine/rules/if_always_true/
+    recommended: true
+  job_all_secrets:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: The GitHub Actions Runner attempts to keep in memory only the secrets that are necessary to execute a workflow job. If a job converts the secrets object to JSON or accesses it using an expression, all secrets will be retained in memory for the duration of the job.
+    name: job_all_secrets
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Workflow job exposes all secrets
+    ref: https://boostsecurityio.github.io/poutine/rules/job_all_secrets/
+    recommended: true
+  known_vulnerability_in_build_platform:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    - vulnerable-and-outdated-components
+    description: The build or SCM provider used has a known vulnerability.
+    name: known_vulnerability_in_build_platform
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Build Platform with a Known Vulnerability used
+    ref: https://boostsecurityio.github.io/poutine/rules/known_vulnerability_in_build_platform/
+    recommended: true
+  pr_runs_on_self_hosted:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: This job runs on a self-hosted GitHub Actions runner in a workflow that is triggered by a pull request event.
+    name: pr_runs_on_self_hosted
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Pull Request Runs on Self-Hosted GitHub Actions Runner
+    ref: https://boostsecurityio.github.io/poutine/rules/pr_runs_on_self_hosted/
+    recommended: true
+  unpinnable_action:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - cwe-494
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: Pinning this GitHub Action is likely ineffective as it depends on other mutable supply chain components.
+    name: unpinnable_action
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Unpinnable CI component used
+    ref: https://boostsecurityio.github.io/poutine/rules/unpinnable_action/
+    recommended: true
+  unverified_script_exec:
+    categories:
+    - ALL
+    - boost-baseline
+    - boost-hardened
+    - supply-chain
+    - supply-chain-cicd-vulnerable-pipeline
+    description: The pipeline executes a script or binary fetched from a remote server without verifying its integrity.
+    name: unverified_script_exec
+    group: supply-chain-cicd-vulnerable-pipeline
+    pretty_name: Unverified Script Execution
+    ref: https://boostsecurityio.github.io/poutine/rules/unverified_script_exec/
+    recommended: true
+

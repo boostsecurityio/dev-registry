@@ -1,0 +1,60 @@
+api_version: 1.0
+
+id: boostsecurityio/poutine
+name: BoostSecurity Poutine
+namespace: boostsecurityio/Poutine
+scan_types:
+  - sast
+
+config:
+  support_diff_scan: true
+  require_full_repo: true
+
+setup:
+- name: download poutine
+  environment:
+    VERSION: 1.0.2
+    LINUX_X86_64_SHA: f22beeaaecb1ed4ee5a9f8cc0f3fac81c04e7be514024d9519ddc833064b6663
+    LINUX_ARM64_SHA: 31dbd4e75cdeae637e604c90cca407c524e0d406c237d81656ad0696ee70188a
+    MACOS_X86_64_SHA: 2e16f9e262e941089a372f29e3fc93b90fa787f760dee11b3f7decd0f2e997a8
+    MACOS_ARM64_SHA: 7b4d2079660ce74a7e439421b481cd906f40c873b5b1b00594f709ced597ed50
+  run: |
+    BINARY_URL="https://github.com/boostsecurityio/poutine/releases/download/v${VERSION}"
+    ARCH=$(uname -m)
+    
+    case "$(uname -sm)" in
+      "Linux x86_64")
+        BINARY_URL="${BINARY_URL}/poutine_Linux_x86_64.tar.gz"
+        SHA="${LINUX_X86_64_SHA} poutine.tgz"
+        ;;
+      "Linux aarch64")
+        BINARY_URL="${BINARY_URL}/poutine_Linux_arm64.tar.gz"
+        SHA="${LINUX_ARM64_SHA} poutine.tgz"
+        ;;
+      "Darwin x86_64")
+        BINARY_URL="${BINARY_URL}/poutine_Darwin_x86_64.tar.gz"
+        SHA="${MACOS_X86_64_SHA} poutine.tgz"
+        ;;
+      "Darwin arm64")
+        BINARY_URL="${BINARY_URL}/poutine_Darwin_arm64.tar.gz"
+        SHA="${MACOS_ARM64_SHA} poutine.tgz"
+        ;;
+      *)
+        echo "Unsupported machine: ${OPTARG}"
+        exit 1
+        ;;
+    esac
+    
+    curl -o poutine.tgz -fsSL "${BINARY_URL}"
+    echo "${SHA}" | sha256sum --check
+    
+    tar --no-same-owner -zxf poutine.tgz poutine
+    rm poutine.tgz
+    chmod +x poutine
+
+steps:
+  - scan:
+      command:
+        run: |
+          $SETUP_PATH/poutine analyze_local . --format sarif
+      format: sarif
